@@ -10,10 +10,17 @@
         .nav-pills .nav-link{border-radius:50px;margin-right:5px;color:#555;font-weight:700}
         .nav-pills .nav-link.active{background:#0d6efd;color:#fff}
         .card{border:none;border-radius:15px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
-        .text-up{color:#e01e37;font-weight:bold}
-        .text-down{color:#2a9d8f;font-weight:bold}
+        
+        /* 漲跌顏色定義 */
+        .text-up{color:#e01e37 !important;} /* 紅色 (漲) */
+        .text-down{color:#2a9d8f !important;} /* 綠色 (跌) */
+        
         .tag{font-size:12px;padding:2px 8px;border-radius:4px;color:#fff}
         .tag-mk-1{background:#0077b6}.tag-mk-2{background:#2a9d8f}
+        
+        /* 分盤標籤顏色 */
+        .badge-20 { background-color: #dc3545 !important; color: white; }
+        .badge-5 { background-color: #ffc107 !important; color: #000; }
     </style>
 </head>
 <body class="p-3">
@@ -30,7 +37,6 @@
     </div>
     <script>
         let D={};
-        // 加上時間戳記避免快取
         fetch('data.json?t='+new Date().getTime()).then(r=>r.json()).then(j=>{
             D=j; document.getElementById('time').innerText=j.update_time;
             document.getElementById('n1').innerText=j.disposal_stocks.length;
@@ -49,13 +55,13 @@
                 if(k==='etf_stocks'){
                     h+=`<div class="col"><div class="card p-3"><span class="badge ${i.action=='新增'?'bg-danger':'bg-success'} w-25 mb-2">${i.action}</span><h5>${i.name} <small>${i.code}</small></h5><hr><div class="d-flex align-items-center"><span class="me-2 text-muted">變動:</span><strong>${i.stock}</strong></div><small class="text-muted mt-2">${i.date}</small></div></div>`;
                 }else{
-                    let c=parseFloat(i.change), cc=c>0?'text-up':(c<0?'text-down':'text-muted'), arrow=c>0?'▲':(c<0?'▼':'');
-                    let badge=i.market=='上市'?'tag-mk-1':'tag-mk-2';
+                    // 1. 計算顏色 Class
+                    let c=parseFloat(i.change);
+                    let colorClass = c > 0 ? 'text-up' : (c < 0 ? 'text-down' : 'text-muted');
+                    let arrow = c > 0 ? '▲' : (c < 0 ? '▼' : '');
                     
-                    // === 這裡直接指定顏色 class ===
-                    // 20分盤 -> 紅色 (bg-danger)
-                    // 5分盤 -> 黃色 (bg-warning)
-                    let levelClass = i.level.includes('20') ? 'bg-danger text-white' : 'bg-warning text-dark';
+                    let badge=i.market=='上市'?'tag-mk-1':'tag-mk-2';
+                    let levelClass = i.level.includes('20') ? 'badge-20' : 'badge-5';
                     
                     let footer = k==='exited_stocks' 
                         ? `<div class="alert alert-success py-1 mt-2 text-center small">✅ ${i.exit_date} 出關</div>` 
@@ -68,10 +74,12 @@
                                     <span class="badge ${levelClass}">${i.level||'5分盤'}</span>
                                 </div>
                                 <h5 class="fw-bold">${i.name} <small class="text-muted">${i.code}</small></h5>
+                                
                                 <div class="d-flex justify-content-between align-items-end border-bottom pb-2 my-2">
-                                    <span>${i.price}</span>
-                                    <span class="${cc}">${arrow} ${i.change}%</span>
+                                    <span class="fs-4 fw-bold ${colorClass}">${i.price}</span>
+                                    <span class="${colorClass}">${arrow} ${i.change}%</span>
                                 </div>
+                                
                                 <small class="text-muted">${i.period}</small>
                                 ${footer}
                             </div>
