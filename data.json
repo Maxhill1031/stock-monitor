@@ -1,23 +1,10 @@
 {
-    "update_time": "2026-01-19 17:33:22",
+    "update_time": "2026-01-19 17:39:06",
     "disposal_stocks": [
         {
             "market": "上櫃",
             "code": "3691",
             "name": "碩禾",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 121.5,
-            "change": 6.11
-        },
-        {
-            "market": "上櫃",
-            "code": "3691",
-            "name": "碩禾三",
             "publish_date": "",
             "period": "日期未抓取",
             "reason": "",
@@ -55,19 +42,6 @@
         },
         {
             "market": "上櫃",
-            "code": "3138",
-            "name": "耀登二",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": "N/A",
-            "change": "N/A"
-        },
-        {
-            "market": "上櫃",
             "code": "8080",
             "name": "泰霖",
             "publish_date": "",
@@ -94,19 +68,6 @@
         },
         {
             "market": "上櫃",
-            "code": "2337",
-            "name": "旺宏二",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": "N/A",
-            "change": "N/A"
-        },
-        {
-            "market": "上櫃",
             "code": "3163",
             "name": "波若威",
             "publish_date": "",
@@ -117,19 +78,6 @@
             "countdown": 0,
             "price": 349.5,
             "change": -2.92
-        },
-        {
-            "market": "上櫃",
-            "code": "3006",
-            "name": "晶豪科一",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": "N/A",
-            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -195,32 +143,6 @@
             "countdown": 0,
             "price": 1980.0,
             "change": 4.76
-        },
-        {
-            "market": "上櫃",
-            "code": "8299",
-            "name": "群聯二",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 1980.0,
-            "change": 4.76
-        },
-        {
-            "market": "上櫃",
-            "code": "3006",
-            "name": "晶豪科一",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": "N/A",
-            "change": "N/A"
         },
         {
             "market": "上櫃",
