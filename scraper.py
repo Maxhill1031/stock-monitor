@@ -89,4 +89,105 @@ def scrape_current():
         res.encoding = 'utf-8' # 強制編碼
         
         if res.status_code == 200:
-            #
+            # 用 StringIO 包裝 html 文字給 pandas 讀取
+            dfs = pd.read_html(StringIO(res.text), header=0)
+            if dfs:
+                df = dfs[0]
+                print(f"上櫃成功抓到 {len(df)} 筆")
+                if '證券代號' in df.columns:
+                    for _, r in df.iterrows():
+                        p = str(r['處置期間'])
+                        end_date = p.split('-')[1] if '-' in p else p
+                        data.append({
+                            "market": "上櫃",
+                            "code": str(r['證券代號']),
+                            "name": str(r['證券名稱']),
+                            "reason": str(r['處置措施']),
+                            "period": p,
+                            "end_date": end_date
+                        })
+        else:
+            print(f"上櫃抓取失敗，狀態碼: {res.status_code}")
+    except Exception as e:
+        print(f"上櫃抓取發生錯誤: {e}")
+
+    return data
+
+def main():
+    print("=== 程式開始執行 ===")
+    
+    # 讀取舊資料
+    old_data = {"disposal_stocks": [], "exited_stocks": []}
+    if os.path.exists('data.json'):
+        try:
+            with open('data.json', 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+        except: pass
+    
+    old_codes = {s['code'] for s in old_data.get('disposal_stocks', [])}
+    
+    # 執行抓取
+    raw_new = scrape_current()
+    
+    if len(raw_new) == 0:
+        print("⚠️ 警告：本次沒有抓到任何處置股，請檢查 Log 確認是否被證交所封鎖 IP。")
+    
+    new_processed = []
+    new_codes = set()
+    tg_msg_list = []
+
+    for s in raw_new:
+        code = s['code']
+        new_codes.add(code)
+        
+        if code not in old_codes:
+            tg_msg_list.append(s)
+            
+        price, change = get_price(code, s['market'])
+        level = "20分盤" if "20分鐘" in s['reason'] else ("45分盤" if "45分鐘" in s['reason'] else "5分盤")
+        
+        new_processed.append({
+            **s, "price": price, "change": change, "level": level, "countdown": calc_countdown(s['end_date'])
+        })
+
+    new_processed.sort(key=lambda x: x['countdown'])
+
+    # 處理出關
+    recently_exited = []
+    for ex in old_data.get('exited_stocks', []):
+        try:
+            if (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days <= 5:
+                recently_exited.append(ex)
+        except: pass
+    
+    for old_s in old_data.get('disposal_stocks', []):
+        if old_s['code'] not in new_codes:
+            p, c = get_price(old_s['code'], old_s['market'])
+            old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
+            recently_exited.insert(0, old_s)
+
+    # 模擬 ETF
+    etf_data = [
+        {"code":"00940","name":"元大臺灣價值高息","action":"新增","stock":"長榮航(2618)","date":"2026-05-17"},
+        {"code":"00878","name":"國泰永續高股息","action":"刪除","stock":"英業達(2356)","date":"2026-05-20"}
+    ]
+
+    if tg_msg_list:
+        msg = "🚨 **台股處置新增**\n" + "\n".join([f"{x['name']}({x['code']})" for x in tg_msg_list])
+        send_tg(msg)
+
+    final_output = {
+        "update_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "disposal_stocks": new_processed,
+        "exited_stocks": recently_exited,
+        "etf_stocks": etf_data
+    }
+    
+    # 確保不管怎樣都存檔，不然網頁會壞掉
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(final_output, f, ensure_ascii=False, indent=4)
+        
+    print("=== 執行結束，資料已儲存 ===")
+
+if __name__ == "__main__":
+    main()
