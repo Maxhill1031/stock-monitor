@@ -5,7 +5,6 @@ import json
 import os
 import time
 from datetime import datetime, date
-from io import StringIO
 
 # --- 設定區 ---
 TG_TOKEN = os.environ.get("TG_TOKEN")
@@ -25,6 +24,10 @@ def send_tg(message):
     except: pass
 
 def get_price(code, market):
+    # 防呆：如果代號不是數字（例如抓到日期），直接回傳 N/A
+    if not code or not code[0].isdigit():
+        return "N/A", "N/A"
+        
     suffix = ".TW" if market == "上市" else ".TWO"
     try:
         ticker = yf.Ticker(f"{code}{suffix}")
@@ -38,6 +41,7 @@ def get_price(code, market):
 
 def calc_countdown(end_date_str):
     try:
+        # 處理可能的民國年格式 113/05/20
         parts = end_date_str.split('/')
         y = int(parts[0])
         y = y + 1911 if y < 1911 else y
@@ -55,54 +59,71 @@ def scrape_current():
         res = requests.get("https://www.twse.com.tw/rwd/zh/announcement/punish?response=json", headers=HEADERS, timeout=15)
         js = res.json()
         if js['stat'] == 'OK':
-            print(f"上市成功抓到 {len(js['data'])} 筆")
+            print(f"上市成功抓到 {len(js['data'])} 筆 raw data")
             for r in js['data']:
                 try:
-                    # 這裡加上 str() 強制轉型，並加上獨立容錯
-                    period = str(r[4]) 
+                    # [修正] 證交所欄位位移：r[1]是日期, r[2]是代號, r[3]是名稱
+                    # 先確認 r[2] 是不是數字，如果不是就嘗試 r[1]
+                    raw_code = str(r[2])
+                    raw_name = str(r[3])
+                    raw_reason = str(r[4])
+                    raw_period = str(r[5])
+                    
+                    # 再次確認，避免欄位又改
+                    if not raw_code.isdigit() and str(r[1]).isdigit():
+                         raw_code = str(r[1]) # fallback
+
+                    period = raw_period
                     end_date = period.split('-')[1] if '-' in period else period
+                    
                     data.append({
                         "market": "上市",
-                        "code": str(r[1]),
-                        "name": str(r[2]),
-                        "reason": str(r[3]),
+                        "code": raw_code,
+                        "name": raw_name,
+                        "reason": raw_reason,
                         "period": period,
                         "end_date": end_date
                     })
                 except Exception as row_err:
-                    print(f"跳過一筆異常資料: {row_err}")
+                    print(f"上市資料解析略過一筆: {row_err}")
                     continue
         else:
             print(f"上市回傳狀態: {js.get('stat')}")
     except Exception as e:
         print(f"上市抓取發生錯誤: {e}")
 
-    # 2. 抓取上櫃 (TPEx)
-    print("正在抓取上櫃資料...")
+    # 2. 抓取上櫃 (TPEx) - 改用 JSON API
+    print("正在抓取上櫃資料 (JSON Mode)...")
     try:
-        url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information.php?l=zh-tw"
+        # TPEx 的隱藏 JSON API，比爬 HTML 穩
+        url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
         res = requests.get(url, headers=HEADERS, timeout=15)
-        res.encoding = 'utf-8'
+        js = res.json()
         
-        # 指定使用 html5lib 解析
-        dfs = pd.read_html(StringIO(res.text), flavor='html5lib', header=0)
-        if dfs:
-            df = dfs[0]
-            print(f"上櫃成功抓到 {len(df)} 筆")
-            if '證券代號' in df.columns:
-                for _, r in df.iterrows():
-                    try:
-                        p = str(r['處置期間'])
-                        end_date = p.split('-')[1] if '-' in p else p
-                        data.append({
-                            "market": "上櫃",
-                            "code": str(r['證券代號']),
-                            "name": str(r['證券名稱']),
-                            "reason": str(r['處置措施']),
-                            "period": p,
-                            "end_date": end_date
-                        })
-                    except: continue
+        # TPEx JSON 結構通常在 aaData 裡
+        if 'aaData' in js:
+            tpex_rows = js['aaData']
+            print(f"上櫃成功抓到 {len(tpex_rows)} 筆")
+            for r in tpex_rows:
+                try:
+                    # TPEx JSON 順序: [0]日期 [1]代號 [2]名稱 [3]處置措施 [4]處置期間
+                    p = str(r[4])
+                    end_date = p.split('-')[1] if '-' in p else p
+                    # 移除 HTML tag (TPEx有時會回傳帶連結的代號)
+                    clean_code = str(r[1]).replace(" ", "")
+                    
+                    data.append({
+                        "market": "上櫃",
+                        "code": clean_code,
+                        "name": str(r[2]),
+                        "reason": str(r[3]),
+                        "period": p,
+                        "end_date": end_date
+                    })
+                except: continue
+        else:
+            print("上櫃 JSON 回傳無 aaData 欄位")
+            
     except Exception as e:
         print(f"上櫃抓取發生錯誤: {e}")
 
@@ -111,7 +132,6 @@ def scrape_current():
 def main():
     print("=== 程式開始執行 ===")
     
-    # 讀取舊資料
     old_data = {"disposal_stocks": [], "exited_stocks": []}
     if os.path.exists('data.json'):
         try:
@@ -121,8 +141,10 @@ def main():
     
     old_codes = {s['code'] for s in old_data.get('disposal_stocks', [])}
     
-    # 執行抓取
     raw_new = scrape_current()
+    
+    if len(raw_new) == 0:
+        print("⚠️ 警告：沒有抓到任何處置股，請確認網站是否改版")
     
     new_processed = []
     new_codes = set()
@@ -130,6 +152,10 @@ def main():
 
     for s in raw_new:
         code = s['code']
+        # 再次過濾非數字代號
+        if not code.isdigit(): 
+            continue
+            
         new_codes.add(code)
         
         if code not in old_codes:
