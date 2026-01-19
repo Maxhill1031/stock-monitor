@@ -13,7 +13,6 @@ TG_CHAT_ID = os.environ.get("TG_CHAT_ID")
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json, text/javascript, */*; q=0.01',
-    'Referer': 'https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information.php?l=zh-tw'
 }
 
 def send_tg(message):
@@ -43,41 +42,40 @@ def get_price(code, market):
     except: return "N/A", "N/A"
 
 def clean_html(raw_html):
-    """強力清除 HTML 標籤，只保留文字"""
     if raw_html is None: return ""
-    # 將 <br> 換成空格，避免文字黏在一起
-    text = str(raw_html).replace('<br>', ' ').replace('<br/>', ' ')
-    # 清除所有標籤
-    cleanr = re.compile('<[^<]+?>')
-    return re.sub(cleanr, '', text).strip()
+    return re.sub(re.compile('<[^<]+?>'), '', str(raw_html)).strip()
 
 def parse_dates(period_str):
     """
-    解析日期字串，將區間切開，只回傳結束日期與倒數天數
-    輸入: "115/01/20~115/02/02"
-    輸出: (倒數天數, "115/02/02")
+    從字串中暴力抓取日期區間
+    回傳: (倒數天數, 結束日期字串, 完整區間字串)
     """
     try:
         # 1. 統一分隔符號
         clean_str = clean_html(period_str).replace('～', '~').replace(' ', '')
         
-        # 2. 抓取所有日期
+        # 2. 抓取所有日期 (格式: 115/01/20)
+        # 這裡會抓取字串中所有的日期
         matches = re.findall(r'(\d{3})[-/~](\d{2})[-/~](\d{2})', clean_str)
         
-        if matches:
-            # 取最後一組 (結束日)
-            y_str, m_str, d_str = matches[-1]
-            y = int(y_str)
-            y = y + 1911 if y < 1911 else y
+        if len(matches) >= 2:
+            # 假設最後一個是結束日，倒數第二個是開始日
+            y_end, m_end, d_end = matches[-1]
+            y_start, m_start, d_start = matches[-2]
             
-            target = date(y, int(m_str), int(d_str))
+            # 結束日計算
+            y = int(y_end)
+            y = y + 1911 if y < 1911 else y
+            target = date(y, int(m_end), int(d_end))
             diff = (target - date.today()).days
             
-            # 格式化結束日期字串
-            end_date_str = f"{y_str}/{m_str}/{d_str}"
-            return (diff if diff >= 0 else 0), end_date_str
+            end_date_str = f"{y_end}/{m_end}/{d_end}"
+            full_period = f"{y_start}/{m_start}/{d_start}~{end_date_str}"
+            
+            return (diff if diff >= 0 else 0), end_date_str, full_period
+            
     except: pass
-    return 0, ""
+    return 0, "", period_str
 
 def scrape_current():
     data = []
@@ -85,9 +83,7 @@ def scrape_current():
     # --- 1. 上市 (TWSE) ---
     print("正在抓取上市資料...")
     try:
-        twse_headers = HEADERS.copy()
-        twse_headers.pop('Referer', None)
-        res = requests.get("https://www.twse.com.tw/rwd/zh/announcement/punish?response=json", headers=twse_headers, timeout=15)
+        res = requests.get("https://www.twse.com.tw/rwd/zh/announcement/punish?response=json", headers=HEADERS, timeout=15)
         js = res.json()
         if js['stat'] == 'OK':
             print(f"上市抓到 {len(js['data'])} 筆")
@@ -108,8 +104,7 @@ def scrape_current():
                     elif "60分鐘" in raw_detail: level = "60分盤"
 
                     if raw_code.isdigit() and len(raw_code) == 4:
-                        # 解析日期
-                        countdown, pure_end_date = parse_dates(raw_period)
+                        countdown, pure_end_date, _ = parse_dates(raw_period)
                         if not pure_end_date: pure_end_date = raw_period
 
                         data.append({
@@ -120,63 +115,85 @@ def scrape_current():
                             "period": raw_period,
                             "reason": raw_measure,
                             "level": level,
-                            "end_date": pure_end_date, # 純日期
+                            "end_date": pure_end_date,
                             "countdown": countdown
                         })
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) ---
-    print("正在抓取上櫃資料 (Web API)...")
+    # --- 2. 上櫃 (TPEx) - 改用 OpenAPI + 暴力搜索 ---
+    print("正在抓取上櫃資料 (OpenAPI)...")
     try:
-        url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
+        # 使用官方 Open Data，這不會被擋
+        url = "https://www.tpex.org.tw/openapi/v1/tpex_disposal_information"
         res = requests.get(url, headers=HEADERS, timeout=15)
-        js = res.json()
-        rows = js.get('aaData', [])
+        rows = res.json()
+        
+        # 如果 OpenAPI 也是空的 (極少見)，嘗試 Web API 備援
+        if not rows:
+             print("OpenAPI 無資料，嘗試 Web API...")
+             url_web = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
+             res_web = requests.get(url_web, headers={'Referer': 'https://www.tpex.org.tw/'}, timeout=15)
+             rows = res_web.json().get('aaData', [])
+
         print(f"上櫃抓到 {len(rows)} 筆")
         
         for r in rows:
             try:
-                # 依據你的截圖，資料是包在 HTML 裡的
-                # r[1] = 公布日期
-                # r[2] = 證券代號
-                # r[3] = 證券名稱
-                # r[5] = 處置起迄時間 (關鍵!)
-                # r[7] = 處置內容
+                # 不管 r 是 list 還是 dict，先轉成字串方便搜索
+                row_str = json.dumps(r, ensure_ascii=False)
                 
-                raw_pub_date = clean_html(r[1])
-                raw_code = clean_html(r[2])
-                raw_name = clean_html(r[3])
-                raw_period = clean_html(r[5]) # 這裡會抓到 "115/01/20~115/02/02"
-                raw_detail = clean_html(r[7])
+                # 1. 暴力搜代號 (4位數字)
+                # 排除年份 (11x) 開頭的，通常代號在 3xxx-9xxx
+                code_matches = re.findall(r'[^0-9]([1-9]\d{3})[^0-9]', " " + row_str + " ")
+                raw_code = ""
+                for c in code_matches:
+                    # 簡單過濾：通常不是年份
+                    if not c.startswith("11"): 
+                        raw_code = c
+                        break
                 
-                # 判斷分盤
-                full_row_str = str(r)
-                level = "5分盤"
-                if "20分鐘" in full_row_str or "二十分鐘" in full_row_str: level = "20分盤"
-                elif "45分鐘" in full_row_str or "四十五分鐘" in full_row_str: level = "45分盤"
-                elif "60分鐘" in full_row_str: level = "60分盤"
-                elif "第二次" in full_row_str: level = "20分盤"
+                # 2. 暴力搜日期區間 (115/01/20~115/02/02)
+                # 這裡會回傳 (countdown, end_date, full_period)
+                countdown, pure_end_date, full_period = parse_dates(row_str)
+                
+                # 3. 暴力搜名稱 (假設名稱在代號附近，這裡先簡化，如果 OpenAPI 有 key 就用 key)
+                raw_name = "未知"
+                if isinstance(r, dict):
+                    raw_name = r.get('CompanyName', r.get('證券名稱', '未知'))
+                    if not raw_code: raw_code = r.get('SecuritiesCompanyCode', r.get('證券代號', ''))
+                elif isinstance(r, list):
+                    # 如果是 Web API 格式，Index 3 是名稱
+                    if len(r) > 3: raw_name = clean_html(r[3])
+                    if not raw_code and len(r) > 2: raw_code = clean_html(r[2])
 
-                if raw_code.isdigit() and len(raw_code) == 4:
-                    # 解析日期：這裡會把 period 切開，只拿後面的日期
-                    countdown, pure_end_date = parse_dates(raw_period)
-                    
-                    # 容錯：如果切失敗，暫時用原始字串，但只要代號對就會顯示
-                    if not pure_end_date: pure_end_date = raw_period
+                # 4. 暴力搜分盤資訊
+                level = "5分盤"
+                if "20分鐘" in row_str or "二十分鐘" in row_str: level = "20分盤"
+                elif "45分鐘" in row_str or "四十五分鐘" in row_str: level = "45分盤"
+                elif "60分鐘" in row_str: level = "60分盤"
+                elif "第二次" in row_str: level = "20分盤"
+
+                if raw_code and raw_code.isdigit() and len(raw_code) == 4:
+                    # 如果沒抓到日期，暫時用空白，但一定要加進去，不能讓它消失
+                    if not pure_end_date: 
+                        pure_end_date = "日期未抓取"
+                        full_period = "日期未抓取"
 
                     data.append({
                         "market": "上櫃",
                         "code": raw_code,
                         "name": raw_name,
-                        "publish_date": raw_pub_date,
-                        "period": raw_period,       # 顯示用：完整區間
+                        "publish_date": "", # OpenAPI 可能沒這欄，不重要
+                        "period": full_period,      # 顯示用：完整區間
                         "reason": "", 
                         "level": level,
                         "end_date": pure_end_date,  # 邏輯用：只存結束日
                         "countdown": countdown
                     })
-            except Exception as ex: continue
+            except Exception as ex: 
+                # print(f"解析錯誤: {ex}")
+                continue
             
     except Exception as e: print(f"上櫃錯誤: {e}")
 
@@ -195,7 +212,6 @@ def main():
     valid_old_stocks = [s for s in old_data.get('disposal_stocks', []) 
                         if str(s['code']).isdigit() and len(str(s['code'])) == 4]
     
-    # 抓取新資料
     raw_new = scrape_current()
     
     new_processed = []
@@ -211,8 +227,6 @@ def main():
             tg_msg_list.append(s)
             
         price, change = get_price(code, s['market'])
-        
-        # 這裡不需要再算 countdown，因為上面 scrape_current 已經切好日期並算好了
         
         new_processed.append({
             **s, "price": price, "change": change
@@ -232,10 +246,7 @@ def main():
     # 2. 檢查剛出關清單 (復活機制)
     for ex in old_data.get('exited_stocks', []):
         try:
-            # 如果這次抓到了(在 new_codes 裡)，代表之前誤判出關，現在把它移除出關區
-            if ex['code'] in new_codes:
-                continue
-
+            if ex['code'] in new_codes: continue
             days_diff = (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days
             if days_diff <= 5:
                 if ex['code'] not in [x['code'] for x in recently_exited]:
@@ -250,8 +261,7 @@ def main():
     if tg_msg_list:
         msg_lines = ["🚨 **台股處置新增**"]
         for x in tg_msg_list:
-            pub = x.get('publish_date', '未知')
-            msg_lines.append(f"{x['name']}({x['code']})\n{x['level']} | 公布: {pub}")
+            msg_lines.append(f"{x['name']}({x['code']})\n{x['level']}")
         send_tg("\n\n".join(msg_lines))
 
     final_output = {
