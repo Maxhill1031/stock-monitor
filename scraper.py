@@ -48,21 +48,20 @@ def clean_str(s):
 
 def parse_dates(period_str):
     """
-    從字串中解析日期 (支援 115/01/20 或 1150120)
+    萬能日期解析：支援 115/01/20 或 1150120
     回傳: (倒數天數, 結束日期, 完整區間)
     """
     try:
         text = clean_str(period_str)
-        # 抓取民國年日期 (相容 / - 或無分隔符)
-        # 格式1: 115/01/20
+        # 策略1: 抓取標準格式 115/01/20
         matches = re.findall(r'(\d{3})[-/](\d{2})[-/](\d{2})', text)
         
+        # 策略2: 如果抓不到，抓取連續數字格式 1150120
         if not matches:
-            # 格式2: 1150120 (OpenAPI 有時會給這種)
             matches = re.findall(r'(\d{3})(\d{2})(\d{2})', text)
 
         if len(matches) >= 2:
-            # 假設最後一個是結束日
+            # 假設最後一個是結束日，倒數第二個是開始日
             y_end, m_end, d_end = matches[-1]
             y_start, m_start, d_start = matches[-2]
             
@@ -123,10 +122,10 @@ def scrape_current():
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) - OpenAPI 正規軍 ---
+    # --- 2. 上櫃 (TPEx) - 強制使用 OpenAPI ---
     print("正在抓取上櫃資料 (OpenAPI)...")
     try:
-        # 這是政府開放資料平台，絕對不擋 IP
+        # 使用政府開放資料平台 (OpenAPI)，這個絕對不會擋 IP
         url = "https://www.tpex.org.tw/openapi/v1/tpex_disposal_information"
         res = requests.get(url, headers=HEADERS, timeout=15)
         rows = res.json()
@@ -135,29 +134,28 @@ def scrape_current():
 
         for r in rows:
             try:
-                # OpenAPI 是字典格式 (Key-Value)，不用猜 Index
-                # 欄位通常是: SecuritiesCompanyCode, CompanyName, DisposePeriod, DisposeMeasure
-                # 但有時會變成中文 Key，所以兩邊都抓
+                # OpenAPI 是字典格式 (Key-Value)
+                # 欄位通常是: SecuritiesCompanyCode, CompanyName, DisposePeriod
                 
                 raw_code = r.get('SecuritiesCompanyCode', r.get('證券代號', ''))
                 raw_name = r.get('CompanyName', r.get('證券名稱', ''))
                 raw_period = r.get('DisposePeriod', r.get('處置起迄時間', ''))
-                raw_measure = r.get('DisposeMeasure', r.get('處置措施', ''))
-
-                # 強制轉字串並去空白
+                
+                # 強制轉字串
                 raw_code = str(raw_code).strip()
                 raw_name = str(raw_name).strip()
+                raw_period = str(raw_period).strip()
                 
-                # 【嚴格過濾】只留 4 位數字 (踢掉權證、可轉債)
+                # 【嚴格過濾】只留 4 位數字 (踢掉權證)
                 if not (raw_code.isdigit() and len(raw_code) == 4):
                     continue
 
-                # 解析日期
+                # 解析日期 (OpenAPI 的格式很乾淨，通常是 1150120 或 115/01/20)
                 countdown, pure_end_date, full_period = parse_dates(raw_period)
                 
-                # 判斷分盤
+                # 判斷分盤 (把整筆資料轉字串來搜)
                 level = "5分盤"
-                full_text = str(r) # 掃描整筆資料比較保險
+                full_text = str(r)
                 if "20分鐘" in full_text or "二十分鐘" in full_text: level = "20分盤"
                 elif "45分鐘" in full_text or "四十五分鐘" in full_text: level = "45分盤"
                 elif "60分鐘" in full_text: level = "60分盤"
@@ -168,7 +166,7 @@ def scrape_current():
                     "market": "上櫃",
                     "code": raw_code,
                     "name": raw_name,
-                    "publish_date": "", # OpenAPI 通常沒這個，留空
+                    "publish_date": "", # OpenAPI 無公布日，留空
                     "period": full_period if full_period else raw_period,
                     "reason": "", 
                     "level": level,
@@ -176,7 +174,6 @@ def scrape_current():
                     "countdown": countdown
                 })
             except Exception as ex: 
-                # print(f"解析失敗: {ex}")
                 continue
             
     except Exception as e: print(f"上櫃錯誤: {e}")
@@ -196,20 +193,13 @@ def main():
     # 抓取新資料
     raw_new = scrape_current()
     
-    # 如果抓到 0 筆，可能是網路問題，保留舊資料 (但如果舊資料是空的就沒辦法了)
+    # 【關鍵修正】
+    # 只有當「完全抓不到資料」(API掛掉) 時，才保留舊資料。
+    # 這裡我們信任 raw_new，因為 OpenAPI 不會擋人。
+    # 如果 raw_new 是空的，而 old_data 有資料，才沿用舊的。
     if len(raw_new) == 0 and len(old_data.get('disposal_stocks', [])) > 0:
         print("⚠️ 警告：本次未抓到資料，暫時使用舊資料")
         new_processed = old_data['disposal_stocks']
-        # 重新計算倒數
-        for s in new_processed:
-            s['countdown'] = 0 # 簡單歸零，避免錯誤
-            try:
-                # 嘗試重新計算
-                y, m, d = s['end_date'].split('/')
-                y = int(y) + 1911 if int(y) < 1911 else int(y)
-                diff = (date(y, int(m), int(d)) - date.today()).days
-                s['countdown'] = diff if diff >= 0 else 0
-            except: pass
     else:
         new_processed = []
         new_codes = set()
@@ -232,7 +222,7 @@ def main():
     new_codes_set = {s['code'] for s in new_processed}
 
     # 1. 檢查誰消失了 (真的出關)
-    # 前提是這次有抓到資料 (raw_new > 0)，否則不做刪除動作
+    # 只有當這次有抓到資料時才判斷
     if len(raw_new) > 0:
         for old_s in valid_old_stocks:
             if old_s['code'] not in new_codes_set:
