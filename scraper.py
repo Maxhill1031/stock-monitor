@@ -41,16 +41,26 @@ def get_price(code, market):
     except: return "N/A", "N/A"
 
 def clean_html(raw_html):
+    """清除 HTML 標籤"""
     return re.sub(re.compile('<[^<]+?>'), '', str(raw_html)).strip()
 
 def calc_countdown(period_str):
+    """
+    解析日期：處理 115/01/20~115/02/02
+    """
     try:
-        clean_str = str(period_str).replace('～', '~')
-        matches = re.findall(r'(\d{3})[-/~](\d{2})[-/~](\d{2})', clean_str)
+        # 1. 統一分隔符號，把全形～半形~都換成空格，方便 regex
+        clean_str = str(period_str).replace('～', ' ').replace('~', ' ').replace('-', ' ')
+        
+        # 2. 抓取所有像是日期的字串
+        matches = re.findall(r'(\d{3})[/](\d{2})[/](\d{2})', clean_str)
+        
         if matches:
+            # 取最後一組當作結束日
             y_str, m_str, d_str = matches[-1]
             y = int(y_str)
-            y = y + 1911 if y < 1911 else y
+            y = y + 1911 if y < 1911 else y # 民國轉西元
+            
             target = date(y, int(m_str), int(d_str))
             diff = (target - date.today()).days
             return diff if diff >= 0 else 0
@@ -71,8 +81,8 @@ def scrape_current():
             print(f"上市抓到 {len(js['data'])} 筆")
             for r in js['data']:
                 try:
-                    # 依據截圖：[1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
-                    raw_pub_date = str(r[1]).strip() # 新增：公布日期
+                    # [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
+                    raw_pub_date = str(r[1]).strip()
                     raw_code = str(r[2]).strip()
                     raw_name = str(r[3]).strip()
                     raw_period = str(r[6]).strip()
@@ -90,7 +100,7 @@ def scrape_current():
                             "market": "上市",
                             "code": raw_code,
                             "name": raw_name,
-                            "publish_date": raw_pub_date, # 儲存公布日期
+                            "publish_date": raw_pub_date,
                             "period": raw_period,
                             "reason": raw_measure,
                             "level": level,
@@ -99,7 +109,7 @@ def scrape_current():
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) ---
+    # --- 2. 上櫃 (TPEx) - 指定欄位版 ---
     print("正在抓取上櫃資料 (Web API)...")
     try:
         url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
@@ -110,47 +120,45 @@ def scrape_current():
         
         for r in rows:
             try:
-                # 依據截圖：[1]公布日 [2]代號 [3]名稱 [5]期間
-                raw_pub_date = clean_html(r[1]) # 新增：公布日期
+                # 依照你的截圖指定索引 (0-based index)
+                # 截圖欄位2(公布日期) -> Index 1
+                # 截圖欄位3(證券代號) -> Index 2
+                # 截圖欄位4(證券名稱) -> Index 3
+                # 截圖欄位6(處置區間) -> Index 5
                 
-                # 初始化變數
-                found_code = None
-                found_name = None
-                found_period = None
-                found_measure = ""
+                raw_pub_date = clean_html(r[1])
+                raw_code = clean_html(r[2])
+                raw_name = clean_html(r[3])
+                raw_period = clean_html(r[5])
                 
-                # 自動掃描欄位補強
-                for cell in r:
-                    txt = clean_html(cell)
-                    if not found_code and re.match(r'^\d{4}$', txt):
-                        found_code = txt
-                        continue
-                    if not found_period and ('~' in txt or '～' in txt) and re.search(r'\d{3}/\d{2}/\d{2}', txt):
-                        found_period = txt
-                        continue
-                    if not found_name and not re.search(r'\d', txt) and len(txt) > 0 and len(txt) < 10 and "檢視" not in txt:
-                        found_name = txt
-                    found_measure += txt
-
-                # 判斷分盤
+                # 判斷分盤：檢查整行內容
+                full_row_str = str(r)
                 level = "5分盤"
-                if "20分鐘" in found_measure or "二十分鐘" in found_measure: level = "20分盤"
-                elif "45分鐘" in found_measure: level = "45分盤"
-                elif "60分鐘" in found_measure: level = "60分盤"
-                elif "第二次" in found_measure: level = "20分盤"
+                if "20分鐘" in full_row_str or "二十分鐘" in full_row_str: level = "20分盤"
+                elif "45分鐘" in full_row_str: level = "45分盤"
+                elif "60分鐘" in full_row_str: level = "60分盤"
+                elif "第二次" in full_row_str: level = "20分盤"
 
-                if found_code and found_period:
+                # 只要代號正確，就算日期有問題，也先加進去 (避免被誤判為出關)
+                if raw_code.isdigit() and len(raw_code) == 4:
+                    
+                    # 嘗試修復日期格式：如果抓到的日期包含HTML，再清一次
+                    if '<' in raw_period:
+                         raw_period = clean_html(raw_period)
+
                     data.append({
                         "market": "上櫃",
-                        "code": found_code,
-                        "name": found_name if found_name else "未知",
-                        "publish_date": raw_pub_date, # 儲存公布日期
-                        "period": found_period,
+                        "code": raw_code,
+                        "name": raw_name,
+                        "publish_date": raw_pub_date,
+                        "period": raw_period,
                         "reason": "", 
                         "level": level,
-                        "end_date": found_period
+                        "end_date": raw_period
                     })
-            except Exception as ex: continue
+            except Exception as ex: 
+                print(f"上櫃單筆解析失敗: {ex}")
+                continue
             
     except Exception as e: print(f"上櫃錯誤: {e}")
 
@@ -170,6 +178,7 @@ def main():
                         if str(s['code']).isdigit() and len(str(s['code'])) == 4]
     old_codes = {s['code'] for s in valid_old_stocks}
     
+    # 抓取新資料
     raw_new = scrape_current()
     
     new_processed = []
@@ -180,22 +189,28 @@ def main():
         code = s['code']
         new_codes.add(code)
         
-        # 通知邏輯：如果是新出現的股票
+        # 通知邏輯
         if code not in old_codes and len(old_codes) > 0:
             tg_msg_list.append(s)
             
         price, change = get_price(code, s['market'])
+        
+        # 計算倒數，如果日期格式真的很爛算不出來，會回傳 0
+        # 但資料本身已經被加入 new_processed，所以不會跑去出關區
         countdown = calc_countdown(s['end_date'])
         
         new_processed.append({
             **s, "price": price, "change": change, "countdown": countdown
         })
 
+    # 排序：倒數天數少的排前面，如果天數是 0 (日期解析失敗的) 也會排在一起方便檢查
     new_processed.sort(key=lambda x: x['countdown'])
 
+    # === 關鍵：只有當新名單裡「真的沒有」該代號時，才算已出關 ===
     recently_exited = []
     for old_s in valid_old_stocks:
         if old_s['code'] not in new_codes:
+            # 這裡代表 old_s 在今天的名單 raw_new 裡完全找不到，才算真的出關
             p, c = get_price(old_s['code'], old_s['market'])
             old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
             recently_exited.append(old_s)
@@ -214,13 +229,11 @@ def main():
         {"code":"00878","name":"國泰永續高股息","action":"刪除","stock":"英業達(2356)","date":"2026-05-20"}
     ]
 
-    # TG 通知加上公布日期
     if tg_msg_list:
         msg_lines = ["🚨 **台股處置新增**"]
         for x in tg_msg_list:
             pub = x.get('publish_date', '未知')
             msg_lines.append(f"{x['name']}({x['code']})\n{x['level']} | 公布: {pub}")
-        
         send_tg("\n\n".join(msg_lines))
 
     final_output = {
