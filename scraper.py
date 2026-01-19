@@ -46,20 +46,20 @@ def clean_html(raw_html):
 
 def calc_countdown(period_str):
     """
-    解析日期：處理 115/01/20~115/02/02
+    解析日期：處理 115/01/20~115/02/02 (包含波浪號)
     """
     try:
-        # 1. 統一分隔符號，把全形～半形~都換成空格，方便 regex
-        clean_str = str(period_str).replace('～', ' ').replace('~', ' ').replace('-', ' ')
+        # 1. 統一分隔符號，把波浪號換成空格
+        clean_str = str(period_str).replace('～', ' ').replace('~', ' ')
         
-        # 2. 抓取所有像是日期的字串
-        matches = re.findall(r'(\d{3})[/](\d{2})[/](\d{2})', clean_str)
+        # 2. 抓取所有日期 (民國年/月/日)
+        matches = re.findall(r'(\d{3})[-/](\d{2})[-/](\d{2})', clean_str)
         
         if matches:
-            # 取最後一組當作結束日
+            # 取最後一組 (結束日)
             y_str, m_str, d_str = matches[-1]
             y = int(y_str)
-            y = y + 1911 if y < 1911 else y # 民國轉西元
+            y = y + 1911 if y < 1911 else y
             
             target = date(y, int(m_str), int(d_str))
             diff = (target - date.today()).days
@@ -81,7 +81,7 @@ def scrape_current():
             print(f"上市抓到 {len(js['data'])} 筆")
             for r in js['data']:
                 try:
-                    # [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
+                    # 上市欄位: [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
                     raw_pub_date = str(r[1]).strip()
                     raw_code = str(r[2]).strip()
                     raw_name = str(r[3]).strip()
@@ -109,7 +109,7 @@ def scrape_current():
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) - 指定欄位版 ---
+    # --- 2. 上櫃 (TPEx) - 依據截圖指定欄位 ---
     print("正在抓取上櫃資料 (Web API)...")
     try:
         url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
@@ -120,16 +120,16 @@ def scrape_current():
         
         for r in rows:
             try:
-                # 依照你的截圖指定索引 (0-based index)
-                # 截圖欄位2(公布日期) -> Index 1
-                # 截圖欄位3(證券代號) -> Index 2
-                # 截圖欄位4(證券名稱) -> Index 3
-                # 截圖欄位6(處置區間) -> Index 5
+                # === 關鍵修正：依照你的截圖指定 Index ===
+                # 截圖第 2 欄 (Index 1) = 公布日期
+                # 截圖第 3 欄 (Index 2) = 證券代號
+                # 截圖第 4 欄 (Index 3) = 證券名稱
+                # 截圖第 6 欄 (Index 5) = 處置起迄時間
                 
-                raw_pub_date = clean_html(r[1])
-                raw_code = clean_html(r[2])
-                raw_name = clean_html(r[3])
-                raw_period = clean_html(r[5])
+                raw_pub_date = clean_html(r[1]) # Index 1
+                raw_code = clean_html(r[2])     # Index 2
+                raw_name = clean_html(r[3])     # Index 3
+                raw_period = clean_html(r[5])   # Index 5
                 
                 # 判斷分盤：檢查整行內容
                 full_row_str = str(r)
@@ -139,13 +139,7 @@ def scrape_current():
                 elif "60分鐘" in full_row_str: level = "60分盤"
                 elif "第二次" in full_row_str: level = "20分盤"
 
-                # 只要代號正確，就算日期有問題，也先加進去 (避免被誤判為出關)
                 if raw_code.isdigit() and len(raw_code) == 4:
-                    
-                    # 嘗試修復日期格式：如果抓到的日期包含HTML，再清一次
-                    if '<' in raw_period:
-                         raw_period = clean_html(raw_period)
-
                     data.append({
                         "market": "上櫃",
                         "code": raw_code,
@@ -157,7 +151,7 @@ def scrape_current():
                         "end_date": raw_period
                     })
             except Exception as ex: 
-                print(f"上櫃單筆解析失敗: {ex}")
+                # print(f"上櫃單筆失敗: {ex}") 
                 continue
             
     except Exception as e: print(f"上櫃錯誤: {e}")
@@ -178,7 +172,7 @@ def main():
                         if str(s['code']).isdigit() and len(str(s['code'])) == 4]
     old_codes = {s['code'] for s in valid_old_stocks}
     
-    # 抓取新資料
+    # 執行抓取
     raw_new = scrape_current()
     
     new_processed = []
@@ -194,32 +188,39 @@ def main():
             tg_msg_list.append(s)
             
         price, change = get_price(code, s['market'])
-        
-        # 計算倒數，如果日期格式真的很爛算不出來，會回傳 0
-        # 但資料本身已經被加入 new_processed，所以不會跑去出關區
         countdown = calc_countdown(s['end_date'])
         
         new_processed.append({
             **s, "price": price, "change": change, "countdown": countdown
         })
 
-    # 排序：倒數天數少的排前面，如果天數是 0 (日期解析失敗的) 也會排在一起方便檢查
+    # 排序
     new_processed.sort(key=lambda x: x['countdown'])
 
-    # === 關鍵：只有當新名單裡「真的沒有」該代號時，才算已出關 ===
+    # === 關鍵修正：修正「誤判出關」的問題 ===
+    # 只有當代號「真的」不在新的清單(new_codes)裡，才算是出關
     recently_exited = []
+    
+    # 1. 檢查原本在處置中的，是否真的消失了
     for old_s in valid_old_stocks:
         if old_s['code'] not in new_codes:
-            # 這裡代表 old_s 在今天的名單 raw_new 裡完全找不到，才算真的出關
+            # 真的消失了，加入出關清單
             p, c = get_price(old_s['code'], old_s['market'])
             old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
             recently_exited.append(old_s)
 
+    # 2. 檢查原本就在出關清單的
     for ex in old_data.get('exited_stocks', []):
         try:
             if str(ex['code']).isdigit() and len(str(ex['code'])) == 4:
+                # === 重要：如果這個代號現在出現在新名單(new_codes)裡，就不要把它加回出關區 ===
+                # 這會自動修復那些被誤判的股票
+                if ex['code'] in new_codes:
+                    continue
+
                 days_diff = (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days
                 if days_diff <= 5:
+                    # 避免重複
                     if ex['code'] not in [x['code'] for x in recently_exited]:
                         recently_exited.append(ex)
         except: pass
