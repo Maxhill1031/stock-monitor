@@ -32,7 +32,6 @@ def get_price(code, market):
     suffix = ".TW" if market == "上市" else ".TWO"
     try:
         ticker = yf.Ticker(f"{code}{suffix}")
-        # 增加 timeout 並減少錯誤
         hist = ticker.history(period="1d", timeout=5)
         if hist.empty: return "N/A", "N/A"
         
@@ -51,7 +50,7 @@ def get_price(code, market):
 def calc_countdown(period_str):
     """
     處理格式：115/01/14 ~ 115/01/27
-    或是 115/01/14-115/01/27
+    關鍵修正：處理 '~' 符號
     """
     try:
         # 1. 統一分隔符號，把 '~' 換成 '-'
@@ -94,18 +93,15 @@ def scrape_current():
                     raw_name = str(r[3]).strip()
                     raw_period = str(r[6]).strip()
                     raw_measure = str(r[7]).strip() # 措施 (第一次/第二次)
-                    raw_details = str(r[8]).strip() # 內容 (幾分鐘撮合)
 
                     # 判斷分盤等級
                     level = "5分盤" # 預設
                     if "第二次" in raw_measure:
                         level = "20分盤" # 第二次處置通常是 20 分鐘
-                    elif "20分鐘" in raw_details or "二十分鐘" in raw_details:
+                    elif "20分鐘" in str(r[8]): # 檢查詳細內容 row[8]
                         level = "20分盤"
-                    elif "45分鐘" in raw_details or "四十五分鐘" in raw_details:
+                    elif "45分鐘" in str(r[8]):
                         level = "45分盤"
-                    elif "60分鐘" in raw_details or "六十分鐘" in raw_details:
-                        level = "60分盤"
 
                     # 只有代號是 4 位數字才加入 (過濾掉表頭或異常資料)
                     if raw_code.isdigit() and len(raw_code) == 4:
@@ -114,9 +110,9 @@ def scrape_current():
                             "code": raw_code,
                             "name": raw_name,
                             "period": raw_period,
-                            "reason": raw_measure, # 顯示 "第二次處置" 比較直觀
-                            "level": level,        # 邏輯判斷後的 20分盤
-                            "end_date": raw_period # 之後會傳給 calc_countdown 處理
+                            "reason": raw_measure, 
+                            "level": level,
+                            "end_date": raw_period
                         })
                 except Exception as row_err:
                     print(f"上市資料解析略過一筆: {row_err}")
@@ -136,8 +132,6 @@ def scrape_current():
             print(f"上櫃成功抓到 {len(tpex_rows)} 筆")
             for r in tpex_rows:
                 try:
-                    # 上櫃 JSON 順序通常是：[0]編號 [1]代號 [2]名稱 [3]措施 [4]期間
-                    # 需去除 HTML 標籤
                     def clean(s): return re.sub('<[^<]+?>', '', str(s)).strip()
                     
                     raw_code = clean(r[1])
@@ -145,14 +139,9 @@ def scrape_current():
                     raw_reason = clean(r[3])
                     raw_period = clean(r[4])
                     
-                    # 上櫃判斷分盤
                     level = "5分盤"
                     if "20分鐘" in raw_reason or "二十分鐘" in raw_reason:
                         level = "20分盤"
-                    elif "45分鐘" in raw_reason:
-                        level = "45分盤"
-                    elif "60分鐘" in raw_reason:
-                        level = "60分盤"
 
                     if raw_code.isdigit():
                         data.append({
@@ -180,7 +169,10 @@ def main():
                 old_data = json.load(f)
         except: pass
     
-    old_codes = {s['code'] for s in old_data.get('disposal_stocks', [])}
+    # --- 關鍵修正：清理舊資料的髒數據 ---
+    # 只有當舊代號是 4 位數字時，才認列為有效舊資料
+    # 這樣可以排除之前抓錯的 "115/01/13" 這種日期代號
+    old_codes = {s['code'] for s in old_data.get('disposal_stocks', []) if s['code'].isdigit() and len(s['code'])==4}
     
     raw_new = scrape_current()
     
@@ -195,10 +187,10 @@ def main():
         code = s['code']
         new_codes.add(code)
         
-        if code not in old_codes:
+        # 只有當舊資料也是乾淨的時候，才發通知，避免全部重發
+        if code not in old_codes and len(old_codes) > 0:
             tg_msg_list.append(s)
             
-        # 抓取股價 (現在代號正確了，這裡應該會成功)
         price, change = get_price(code, s['market'])
         
         new_processed.append({
@@ -208,24 +200,30 @@ def main():
             "countdown": calc_countdown(s['end_date'])
         })
 
-    # 排序
     new_processed.sort(key=lambda x: x['countdown'])
 
     # 處理出關 (保留5天)
     recently_exited = []
+    
+    # 1. 檢查真正剛出關的 (舊的有，新的沒有)
+    for old_s in old_data.get('disposal_stocks', []):
+        # 防呆：只處理正常的舊資料
+        if old_s['code'].isdigit() and len(old_s['code'])==4:
+            if old_s['code'] not in new_codes:
+                p, c = get_price(old_s['code'], old_s['market'])
+                old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
+                recently_exited.append(old_s)
+
+    # 2. 加上之前已出關的
     for ex in old_data.get('exited_stocks', []):
         try:
             if (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days <= 5:
-                recently_exited.append(ex)
+                # 避免重複
+                if ex['code'] not in [x['code'] for x in recently_exited]:
+                    recently_exited.append(ex)
         except: pass
-    
-    for old_s in old_data.get('disposal_stocks', []):
-        if old_s['code'] not in new_codes:
-            p, c = get_price(old_s['code'], old_s['market'])
-            old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
-            recently_exited.insert(0, old_s)
 
-    # 模擬 ETF (維持不變)
+    # 模擬 ETF
     etf_data = [
         {"code":"00940","name":"元大臺灣價值高息","action":"新增","stock":"長榮航(2618)","date":"2026-05-17"},
         {"code":"00878","name":"國泰永續高股息","action":"刪除","stock":"英業達(2356)","date":"2026-05-20"}
