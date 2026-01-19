@@ -4,7 +4,7 @@ import yfinance as yf
 import json
 import os
 import re
-from datetime import datetime, date, timedelta
+from datetime import datetime, date
 
 # --- 設定區 ---
 TG_TOKEN = os.environ.get("TG_TOKEN")
@@ -58,13 +58,14 @@ def roc_to_ad_str(roc_date_str):
 def parse_dates(period_str):
     """
     萬能日期解析
-    回傳: (倒數天數, 結束日期ROC, 完整區間)
-    注意：這裡不再鎖定倒數天數 >= 0，允許回傳負數
+    回傳: (倒數天數, 結束日期字串, 完整區間字串)
     """
     try:
         text = clean_str(period_str)
+        # 抓取所有日期 (例如 115/01/20)
         matches = re.findall(r'(\d{3})[-/](\d{2})[-/](\d{2})', text)
         
+        # 如果抓不到，試試無分隔符 (例如 1150120)
         if not matches:
             matches = re.findall(r'(\d{3})(\d{2})(\d{2})', text)
 
@@ -77,14 +78,12 @@ def parse_dates(period_str):
             target = date(y, int(m_end), int(d_end))
             diff = (target - date.today()).days
             
-            # 【關鍵修改】這裡直接回傳 diff，不設下限 0
-            # 這樣我們才能知道哪些已經過期了 (負數)
-            
             end_date_str = f"{y_end}/{m_end}/{d_end}"
             full_period = f"{y_start}/{m_start}/{d_start}~{end_date_str}"
             
             return diff, end_date_str, full_period
     except: pass
+    # 失敗時回傳原始字串
     return 0, "", period_str
 
 def scrape_current():
@@ -114,15 +113,17 @@ def scrape_current():
                     elif "45分鐘" in raw_detail or "四十五分鐘" in raw_detail: level = "45分盤"
                     elif "60分鐘" in raw_detail: level = "60分盤"
 
-                    countdown, pure_end_date, _ = parse_dates(raw_period)
-                    if not pure_end_date: pure_end_date = raw_period
+                    countdown, pure_end_date, full_period = parse_dates(raw_period)
+                    if not pure_end_date: 
+                        pure_end_date = raw_period
+                        full_period = raw_period
 
                     data.append({
                         "market": "上市",
                         "code": raw_code,
                         "name": raw_name,
                         "publish_date": raw_pub_date,
-                        "period": raw_period,
+                        "period": full_period, # 確保這裡傳入完整區間
                         "reason": raw_measure,
                         "level": level,
                         "end_date": pure_end_date,
@@ -142,20 +143,20 @@ def scrape_current():
 
         for r in rows:
             try:
-                raw_code = r.get('SecuritiesCompanyCode', r.get('證券代號', ''))
-                raw_name = r.get('CompanyName', r.get('證券名稱', ''))
-                raw_period = r.get('DisposePeriod', r.get('處置起迄時間', ''))
+                # 抓取資料
+                raw_code = str(r.get('SecuritiesCompanyCode', r.get('證券代號', ''))).strip()
+                raw_name = str(r.get('CompanyName', r.get('證券名稱', ''))).strip()
+                raw_period = str(r.get('DisposePeriod', r.get('處置起迄時間', ''))).strip()
                 
-                raw_code = str(raw_code).strip()
-                raw_name = str(raw_name).strip()
-                raw_period = str(raw_period).strip()
-                
+                # 4位數過濾
                 if not (raw_code.isdigit() and len(raw_code) == 4): continue
 
+                # 解析日期
                 countdown, pure_end_date, full_period = parse_dates(raw_period)
                 
-                level = "5分盤"
+                # 判斷分盤 (全字串掃描)
                 full_text = str(r)
+                level = "5分盤"
                 if "20分鐘" in full_text or "二十分鐘" in full_text: level = "20分盤"
                 elif "45分鐘" in full_text or "四十五分鐘" in full_text: level = "45分盤"
                 elif "60分鐘" in full_text: level = "60分盤"
@@ -166,7 +167,7 @@ def scrape_current():
                     "code": raw_code,
                     "name": raw_name,
                     "publish_date": "", 
-                    "period": full_period if full_period else raw_period,
+                    "period": full_period if full_period else raw_period, # 關鍵：如果解析失敗，回傳原始字串
                     "reason": "", 
                     "level": level,
                     "end_date": pure_end_date if pure_end_date else "日期未抓取",
@@ -191,26 +192,26 @@ def main():
     # 抓取新資料
     raw_new = scrape_current()
     
-    # 防呆
+    # 防呆機制
     if len(raw_new) == 0 and len(old_data.get('disposal_stocks', [])) > 0:
         print("⚠️ 警告：本次未抓到資料，暫時使用舊資料")
         raw_new = old_data['disposal_stocks']
         # 重新計算倒數
         for s in raw_new:
             try:
-                y, m, d = re.split(r'[-/]', s['end_date'])
-                y = int(y) + 1911 if int(y) < 1911 else int(y)
-                s['countdown'] = (date(y, int(m), int(d)) - date.today()).days
-            except: s['countdown'] = 0
+                # 嘗試重新解析日期來更新倒數天數
+                diff, _, _ = parse_dates(s['period'])
+                s['countdown'] = diff
+            except: pass
 
-    new_processed = [] # 準備放「處置中」
-    recently_exited = [] # 準備放「剛出關」
+    new_processed = [] 
+    recently_exited = [] 
     new_codes = set()
     
-    # 讀取舊的已出關資料，避免被覆蓋
+    # 讀取舊的已出關資料
     old_exited = old_data.get('exited_stocks', [])
 
-    # === 關鍵邏輯修改：分類 ===
+    # === 分類邏輯 ===
     for s in raw_new:
         code = s['code']
         # 取得最新股價
@@ -219,20 +220,19 @@ def main():
         s['change'] = change
 
         if s['countdown'] >= 0:
-            # 倒數天數 >= 0，代表還在處置中 (或今天是最後一天)
+            # 還在處置中 (倒數 >= 0)
             if code not in new_codes:
                 new_processed.append(s)
                 new_codes.add(code)
         else:
-            # 倒數天數 < 0，代表已經結束了 (API 尚未移除)
-            # 強制加入「剛出關」清單
-            print(f"發現過期股票仍在 API 清單中，強制移至出關: {s['name']} ({s['code']})")
+            # 已經過期 (倒數 < 0)，強制移出
+            print(f"發現過期股票: {s['name']} ({s['code']})，移至已出關")
             
-            # 設定出關日期為它的結束日期 (轉為西元格式)
+            # 設定出關日期 (使用結束日期)
             exit_date = roc_to_ad_str(s['end_date'])
             s['exit_date'] = exit_date
             
-            # 檢查是否已存在，避免重複
+            # 檢查是否已存在
             is_exist = False
             for ex in recently_exited:
                 if ex['code'] == code: is_exist = True
@@ -242,26 +242,25 @@ def main():
 
     new_processed.sort(key=lambda x: x['countdown'])
 
-    # --- 處理真正從 API 消失的股票 (原本的出關邏輯) ---
+    # --- 整合舊資料 ---
     valid_old_stocks = [s for s in old_data.get('disposal_stocks', []) 
                         if str(s['code']).isdigit() and len(str(s['code'])) == 4]
     
-    # 只有當我們有抓到新資料時才做比對
+    # 如果這次有抓到新資料，檢查是否有股票「真正消失了」(而不只是過期)
     if len(raw_new) > 0:
         for old_s in valid_old_stocks:
-            # 如果舊股票不在「新的處置名單(new_codes)」裡
-            # 也不在「剛剛被強制移出(recently_exited)」裡
+            # 如果不在新名單，也不在剛剛移出的過期名單
             if old_s['code'] not in new_codes and old_s['code'] not in [x['code'] for x in recently_exited]:
                 p, c = get_price(old_s['code'], old_s['market'])
                 old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
                 recently_exited.append(old_s)
 
-    # --- 整合舊的出關資料 ---
+    # 整合舊的出關資料
     for ex in old_exited:
         try:
             if not (str(ex['code']).isdigit() and len(str(ex['code'])) == 4): continue
             
-            # 如果它現在跑回去處置中了(復活)，就不加
+            # 如果它現在復活了(回到處置中)，就不加
             if ex['code'] in new_codes: continue
             
             # 如果它已經在新的出關清單了，也不加
@@ -272,7 +271,7 @@ def main():
                 recently_exited.append(ex)
         except: pass
 
-    # TG 通知
+    # TG 通知 (只通知新加入處置的)
     tg_msg_list = []
     old_codes_set = {s['code'] for s in valid_old_stocks}
     for s in new_processed:
