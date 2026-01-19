@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-01-19 17:13:33",
+    "update_time": "2026-01-19 17:22:52",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -9,10 +9,10 @@
             "period": "115/01/07～115/01/20",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/07～115/01/20",
+            "end_date": "115/01/20",
+            "countdown": 1,
             "price": 26.3,
-            "change": 9.81,
-            "countdown": 1
+            "change": 9.81
         },
         {
             "market": "上市",
@@ -22,10 +22,10 @@
             "period": "115/01/07～115/01/20",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/07～115/01/20",
+            "end_date": "115/01/20",
+            "countdown": 1,
             "price": 28.8,
-            "change": 8.27,
-            "countdown": 1
+            "change": 8.27
         },
         {
             "market": "上市",
@@ -35,10 +35,10 @@
             "period": "115/01/09～115/01/22",
             "reason": "第二次處置",
             "level": "20分盤",
-            "end_date": "115/01/09～115/01/22",
+            "end_date": "115/01/22",
+            "countdown": 3,
             "price": 275.0,
-            "change": 10.0,
-            "countdown": 3
+            "change": 10.0
         },
         {
             "market": "上市",
@@ -48,10 +48,10 @@
             "period": "115/01/09～115/01/22",
             "reason": "第二次處置",
             "level": "20分盤",
-            "end_date": "115/01/09～115/01/22",
+            "end_date": "115/01/22",
+            "countdown": 3,
             "price": 158.5,
-            "change": 2.59,
-            "countdown": 3
+            "change": 2.59
         },
         {
             "market": "上市",
@@ -61,10 +61,10 @@
             "period": "115/01/09～115/01/22",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/09～115/01/22",
+            "end_date": "115/01/22",
+            "countdown": 3,
             "price": 62.0,
-            "change": 9.93,
-            "countdown": 3
+            "change": 9.93
         },
         {
             "market": "上市",
@@ -74,10 +74,10 @@
             "period": "115/01/09～115/01/22",
             "reason": "第二次處置",
             "level": "20分盤",
-            "end_date": "115/01/09～115/01/22",
+            "end_date": "115/01/22",
+            "countdown": 3,
             "price": 62.7,
-            "change": 6.27,
-            "countdown": 3
+            "change": 6.27
         },
         {
             "market": "上市",
@@ -87,10 +87,10 @@
             "period": "115/01/12～115/01/23",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/12～115/01/23",
+            "end_date": "115/01/23",
+            "countdown": 4,
             "price": 73.7,
-            "change": 10.0,
-            "countdown": 4
+            "change": 10.0
         },
         {
             "market": "上市",
@@ -100,10 +100,10 @@
             "period": "115/01/12～115/01/23",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/12～115/01/23",
+            "end_date": "115/01/23",
+            "countdown": 4,
             "price": 10.8,
-            "change": 9.87,
-            "countdown": 4
+            "change": 9.87
         },
         {
             "market": "上市",
@@ -113,10 +113,10 @@
             "period": "115/01/09～115/01/26",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/09～115/01/26",
+            "end_date": "115/01/26",
+            "countdown": 7,
             "price": 116.5,
-            "change": 9.39,
-            "countdown": 7
+            "change": 9.39
         },
         {
             "market": "上市",
@@ -126,10 +126,10 @@
             "period": "115/01/13～115/01/26",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/13～115/01/26",
+            "end_date": "115/01/26",
+            "countdown": 7,
             "price": 217.5,
-            "change": 6.88,
-            "countdown": 7
+            "change": 6.88
         },
         {
             "market": "上市",
@@ -139,10 +139,10 @@
             "period": "115/01/14～115/01/27",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/14～115/01/27",
+            "end_date": "115/01/27",
+            "countdown": 8,
             "price": 27.1,
-            "change": 3.24,
-            "countdown": 8
+            "change": 3.24
         },
         {
             "market": "上市",
@@ -152,10 +152,10 @@
             "period": "115/01/15～115/01/28",
             "reason": "第二次處置",
             "level": "20分盤",
-            "end_date": "115/01/15～115/01/28",
+            "end_date": "115/01/28",
+            "countdown": 9,
             "price": 145.0,
-            "change": -3.65,
-            "countdown": 9
+            "change": -3.65
         },
         {
             "market": "上市",
@@ -165,10 +165,10 @@
             "period": "115/01/16～115/01/29",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/16～115/01/29",
+            "end_date": "115/01/29",
+            "countdown": 10,
             "price": 165.5,
-            "change": 8.17,
-            "countdown": 10
+            "change": 8.17
         },
         {
             "market": "上市",
@@ -178,10 +178,10 @@
             "period": "115/01/16～115/01/29",
             "reason": "第二次處置",
             "level": "20分盤",
-            "end_date": "115/01/16～115/01/29",
+            "end_date": "115/01/29",
+            "countdown": 10,
             "price": 709.0,
-            "change": 4.26,
-            "countdown": 10
+            "change": 4.26
         },
         {
             "market": "上市",
@@ -191,10 +191,10 @@
             "period": "115/01/20～115/02/02",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/20～115/02/02",
+            "end_date": "115/02/02",
+            "countdown": 14,
             "price": 35.4,
-            "change": 5.04,
-            "countdown": 14
+            "change": 5.04
         },
         {
             "market": "上市",
@@ -204,10 +204,10 @@
             "period": "115/01/20～115/02/02",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/01/20～115/02/02",
+            "end_date": "115/02/02",
+            "countdown": 14,
             "price": 37.35,
-            "change": 5.36,
-            "countdown": 14
+            "change": 5.36
         }
     ],
     "exited_stocks": [
