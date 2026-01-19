@@ -43,20 +43,25 @@ def get_price(code, market):
     except: return "N/A", "N/A"
 
 def clean_html(raw_html):
-    """清除 HTML 標籤，只保留文字"""
+    """強力清除 HTML 標籤，只保留文字"""
     if raw_html is None: return ""
-    return re.sub(re.compile('<[^<]+?>'), '', str(raw_html)).strip()
+    # 將 <br> 換成空格，避免文字黏在一起
+    text = str(raw_html).replace('<br>', ' ').replace('<br/>', ' ')
+    # 清除所有標籤
+    cleanr = re.compile('<[^<]+?>')
+    return re.sub(cleanr, '', text).strip()
 
 def parse_dates(period_str):
     """
-    解析日期字串，回傳 (剩餘天數, 純結束日期字串)
-    輸入範例: "115/01/20～115/02/02"
+    解析日期字串，將區間切開，只回傳結束日期與倒數天數
+    輸入: "115/01/20~115/02/02"
+    輸出: (倒數天數, "115/02/02")
     """
     try:
-        # 統一分隔符號
+        # 1. 統一分隔符號
         clean_str = clean_html(period_str).replace('～', '~').replace(' ', '')
         
-        # 抓取所有日期
+        # 2. 抓取所有日期
         matches = re.findall(r'(\d{3})[-/~](\d{2})[-/~](\d{2})', clean_str)
         
         if matches:
@@ -68,12 +73,10 @@ def parse_dates(period_str):
             target = date(y, int(m_str), int(d_str))
             diff = (target - date.today()).days
             
-            # 回傳: (倒數天數, 格式化的結束日期 115/02/02)
+            # 格式化結束日期字串
             end_date_str = f"{y_str}/{m_str}/{d_str}"
             return (diff if diff >= 0 else 0), end_date_str
-            
     except: pass
-    
     return 0, ""
 
 def scrape_current():
@@ -90,7 +93,7 @@ def scrape_current():
             print(f"上市抓到 {len(js['data'])} 筆")
             for r in js['data']:
                 try:
-                    # [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
+                    # 上市欄位: [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
                     raw_pub_date = str(r[1]).strip()
                     raw_code = str(r[2]).strip()
                     raw_name = str(r[3]).strip()
@@ -107,8 +110,6 @@ def scrape_current():
                     if raw_code.isdigit() and len(raw_code) == 4:
                         # 解析日期
                         countdown, pure_end_date = parse_dates(raw_period)
-                        
-                        # 如果解析失敗，直接用原始字串當 end_date (防止空白)
                         if not pure_end_date: pure_end_date = raw_period
 
                         data.append({
@@ -119,7 +120,7 @@ def scrape_current():
                             "period": raw_period,
                             "reason": raw_measure,
                             "level": level,
-                            "end_date": pure_end_date, # 這裡現在是純日期了
+                            "end_date": pure_end_date, # 純日期
                             "countdown": countdown
                         })
                 except: continue
@@ -136,37 +137,19 @@ def scrape_current():
         
         for r in rows:
             try:
-                # 先清洗所有欄位
-                clean_r = [clean_html(x) for x in r]
+                # 依據你的截圖，資料是包在 HTML 裡的
+                # r[1] = 公布日期
+                # r[2] = 證券代號
+                # r[3] = 證券名稱
+                # r[5] = 處置起迄時間 (關鍵!)
+                # r[7] = 處置內容
                 
-                # 預設使用你指定的 Index
-                # Index 1: 公布日
-                # Index 2: 代號
-                # Index 3: 名稱
-                # Index 5: 期間 (115/01/20~115/02/02)
-                # Index 7: 內容
+                raw_pub_date = clean_html(r[1])
+                raw_code = clean_html(r[2])
+                raw_name = clean_html(r[3])
+                raw_period = clean_html(r[5]) # 這裡會抓到 "115/01/20~115/02/02"
+                raw_detail = clean_html(r[7])
                 
-                raw_pub_date = clean_r[1] if len(clean_r) > 1 else ""
-                raw_code = clean_r[2] if len(clean_r) > 2 else ""
-                raw_name = clean_r[3] if len(clean_r) > 3 else ""
-                raw_period = clean_r[5] if len(clean_r) > 5 else ""
-                raw_detail = clean_r[7] if len(clean_r) > 7 else ""
-                
-                # 防呆機制：如果指定欄位沒抓到日期，就掃描整行
-                if not re.search(r'\d{3}/\d{2}/\d{2}', raw_period):
-                    for col in clean_r:
-                        # 找長得像 115/01/20~115/02/02 的
-                        if re.search(r'\d{3}/\d{2}/\d{2}.*~.*\d{3}/\d{2}/\d{2}', col):
-                            raw_period = col
-                            break
-                
-                # 防呆機制：如果代號不是4位數，掃描整行找代號
-                if not (raw_code.isdigit() and len(raw_code) == 4):
-                    for col in clean_r:
-                        if col.isdigit() and len(col) == 4:
-                            raw_code = col
-                            break
-
                 # 判斷分盤
                 full_row_str = str(r)
                 level = "5分盤"
@@ -176,11 +159,10 @@ def scrape_current():
                 elif "第二次" in full_row_str: level = "20分盤"
 
                 if raw_code.isdigit() and len(raw_code) == 4:
-                    # 解析日期
+                    # 解析日期：這裡會把 period 切開，只拿後面的日期
                     countdown, pure_end_date = parse_dates(raw_period)
                     
-                    # 只要抓到代號，就算日期有問題也要加進去 (避免誤判出關)
-                    # 如果日期解析失敗，end_date 暫時顯示原始字串
+                    # 容錯：如果切失敗，暫時用原始字串，但只要代號對就會顯示
                     if not pure_end_date: pure_end_date = raw_period
 
                     data.append({
@@ -188,10 +170,10 @@ def scrape_current():
                         "code": raw_code,
                         "name": raw_name,
                         "publish_date": raw_pub_date,
-                        "period": raw_period, # 完整區間
+                        "period": raw_period,       # 顯示用：完整區間
                         "reason": "", 
                         "level": level,
-                        "end_date": pure_end_date, # 純日期
+                        "end_date": pure_end_date,  # 邏輯用：只存結束日
                         "countdown": countdown
                     })
             except Exception as ex: continue
@@ -213,6 +195,7 @@ def main():
     valid_old_stocks = [s for s in old_data.get('disposal_stocks', []) 
                         if str(s['code']).isdigit() and len(str(s['code'])) == 4]
     
+    # 抓取新資料
     raw_new = scrape_current()
     
     new_processed = []
@@ -223,15 +206,13 @@ def main():
         code = s['code']
         new_codes.add(code)
         
-        # 通知邏輯
         old_codes = {s['code'] for s in valid_old_stocks}
         if code not in old_codes and len(old_codes) > 0:
             tg_msg_list.append(s)
             
         price, change = get_price(code, s['market'])
         
-        # 補上這行確保 countdown 與 end_date 使用已經解析好的值
-        # 這裡不需要再呼叫 calc_countdown，因為 scrape_current 已經算好了
+        # 這裡不需要再算 countdown，因為上面 scrape_current 已經切好日期並算好了
         
         new_processed.append({
             **s, "price": price, "change": change
@@ -241,17 +222,17 @@ def main():
 
     recently_exited = []
     
-    # 1. 檢查原本在「處置中」的，是否真的消失了
+    # 1. 檢查舊處置股是否消失
     for old_s in valid_old_stocks:
         if old_s['code'] not in new_codes:
             p, c = get_price(old_s['code'], old_s['market'])
             old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
             recently_exited.append(old_s)
 
-    # 2. 檢查「剛出關」清單
+    # 2. 檢查剛出關清單 (復活機制)
     for ex in old_data.get('exited_stocks', []):
         try:
-            # 復活機制：如果新名單有抓到，就不要讓它留在出關區
+            # 如果這次抓到了(在 new_codes 裡)，代表之前誤判出關，現在把它移除出關區
             if ex['code'] in new_codes:
                 continue
 
