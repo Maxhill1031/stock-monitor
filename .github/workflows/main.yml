@@ -1,30 +1,57 @@
 name: Update Stock Data
 
 on:
+  # 1. 允許手動按按鈕執行 (測試用)
+  workflow_dispatch:
+  
+  # 2. 設定排程自動執行 (GitHub 使用 UTC 時間)
   schedule:
-    - cron: '30 06 * * 1-5' # 每天台灣時間 14:30 執行
-  workflow_dispatch: # 允許手動執行
+    # --- 盤中股價更新 (09:05 ~ 13:30) ---
+    # 說明：UTC 01:05 ~ 05:30 (每 5 分鐘)
+    # 拆解成三段是為了精準控制時間範圍
+    
+    # 09:05 ~ 09:55 (UTC 01:05 ~ 01:55)
+    - cron: '5-59/5 1 * * 1-5'
+    
+    # 10:00 ~ 12:55 (UTC 02:00 ~ 04:55)
+    - cron: '*/5 2-4 * * 1-5'
+    
+    # 13:00 ~ 13:30 (UTC 05:00 ~ 05:30)
+    - cron: '0-30/5 5 * * 1-5'
+
+    # --- 盤後處置股名單更新 (18:40) ---
+    # 說明：UTC 10:40 (台灣通常在 18:00~18:30 公佈新名單)
+    - cron: '40 10 * * 1-5'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-      - run: pip install -r requirements.txt
-      
-      - name: Run Scraper
-        env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-        run: python scraper.py
-        
-      - name: Commit and Push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add data.json
-          git commit -m "Auto update" || exit 0
-          git push
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests pandas yfinance
+
+    - name: Run scraper
+      env:
+        TG_TOKEN: ${{ secrets.TG_TOKEN }}
+        TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+      run: python scraper.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        # 檢查是否有變更
+        git add data.json
+        # 只有在 data.json 真的有變動時才 Commit，避免 Log 充滿無意義的紀錄
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update stock data" && git push)
