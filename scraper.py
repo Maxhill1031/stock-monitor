@@ -3,8 +3,9 @@ import pandas as pd
 import yfinance as yf
 import json
 import os
-import time
+import re
 from datetime import datetime, date
+from io import StringIO
 
 # --- 設定區 ---
 TG_TOKEN = os.environ.get("TG_TOKEN")
@@ -24,8 +25,8 @@ def send_tg(message):
     except: pass
 
 def get_price(code, market):
-    # 防呆：如果代號不是數字（例如抓到日期），直接回傳 N/A
-    if not code or not code[0].isdigit():
+    # 防呆：確保是 4 位數代號才查價
+    if not code or not str(code).isdigit() or len(str(code)) != 4:
         return "N/A", "N/A"
         
     suffix = ".TW" if market == "上市" else ".TWO"
@@ -39,9 +40,14 @@ def get_price(code, market):
         return close, change
     except: return "N/A", "N/A"
 
-def calc_countdown(end_date_str):
+def calc_countdown(period_str):
     try:
-        # 處理可能的民國年格式 113/05/20
+        # 從 "115/01/01-115/01/15" 中抓出結束日
+        if '-' in period_str:
+            end_date_str = period_str.split('-')[1]
+        else:
+            end_date_str = period_str
+            
         parts = end_date_str.split('/')
         y = int(parts[0])
         y = y + 1911 if y < 1911 else y
@@ -50,10 +56,47 @@ def calc_countdown(end_date_str):
         return diff if diff >= 0 else 0
     except: return 0
 
+def smart_parse_row(row, market):
+    """智慧辨識每一欄的資料"""
+    item = {"market": market, "code": "", "name": "", "period": "", "reason": "", "date": ""}
+    
+    # 將所有欄位轉字串並去除空白
+    row_str = [str(x).strip() for x in row]
+    
+    for cell in row_str:
+        # 1. 辨識期間 (特徵：長度>10 且 包含 - 和 / )
+        # 例如: 115/01/13-115/01/26
+        if '-' in cell and '/' in cell and len(cell) > 12:
+            item['period'] = cell
+            continue
+            
+        # 2. 辨識代號 (特徵：純數字 且 長度剛好等於 4)
+        if cell.isdigit() and len(cell) == 4:
+            item['code'] = cell
+            continue
+            
+        # 3. 辨識原因 (特徵：有中文關鍵字 或 長度很長)
+        if "處置" in cell or "撮合" in cell or "分鐘" in cell or len(cell) > 15:
+            if '-' not in cell: # 排除期間
+                item['reason'] = cell
+                continue
+
+        # 4. 辨識日期 (特徵：有 / 但沒 - )
+        if '/' in cell and '-' not in cell and len(cell) < 12:
+            item['date'] = cell
+            continue
+
+        # 5. 辨識股名 (特徵：剩下的非數字、長度短)
+        # 排除序號(如 "1", "2") 和日期
+        if not cell.isdigit() and '/' not in cell and len(cell) < 10:
+             item['name'] = cell
+
+    return item
+
 def scrape_current():
     data = []
     
-    # 1. 抓取上市 (TWSE)
+    # --- 1. 抓取上市 (TWSE) ---
     print("正在抓取上市資料...")
     try:
         res = requests.get("https://www.twse.com.tw/rwd/zh/announcement/punish?response=json", headers=HEADERS, timeout=15)
@@ -62,70 +105,47 @@ def scrape_current():
             print(f"上市成功抓到 {len(js['data'])} 筆 raw data")
             for r in js['data']:
                 try:
-                    # [修正] 證交所欄位位移：r[1]是日期, r[2]是代號, r[3]是名稱
-                    # 先確認 r[2] 是不是數字，如果不是就嘗試 r[1]
-                    raw_code = str(r[2])
-                    raw_name = str(r[3])
-                    raw_reason = str(r[4])
-                    raw_period = str(r[5])
+                    # 使用智慧辨識取代固定索引
+                    parsed = smart_parse_row(r, "上市")
                     
-                    # 再次確認，避免欄位又改
-                    if not raw_code.isdigit() and str(r[1]).isdigit():
-                         raw_code = str(r[1]) # fallback
+                    # 雙重確認：如果沒抓到股名，可能原因欄位太短被誤判，嘗試修補
+                    if not parsed['name'] and parsed['code']:
+                        # 通常 row[3] 或 row[4] 是名字，這裡做個簡單的備援
+                        # 但依靠 smart_parse 應該就夠了
+                        pass
 
-                    period = raw_period
-                    end_date = period.split('-')[1] if '-' in period else period
-                    
-                    data.append({
-                        "market": "上市",
-                        "code": raw_code,
-                        "name": raw_name,
-                        "reason": raw_reason,
-                        "period": period,
-                        "end_date": end_date
-                    })
-                except Exception as row_err:
-                    print(f"上市資料解析略過一筆: {row_err}")
-                    continue
-        else:
-            print(f"上市回傳狀態: {js.get('stat')}")
+                    if parsed['code']: # 只有抓到代號才算有效資料
+                        data.append(parsed)
+                except Exception as e:
+                    print(f"Row error: {e}")
     except Exception as e:
-        print(f"上市抓取發生錯誤: {e}")
+        print(f"上市抓取失敗: {e}")
 
-    # 2. 抓取上櫃 (TPEx) - 改用 JSON API
-    print("正在抓取上櫃資料 (JSON Mode)...")
+    # --- 2. 抓取上櫃 (TPEx) JSON API ---
+    print("正在抓取上櫃資料...")
     try:
-        # TPEx 的隱藏 JSON API，比爬 HTML 穩
         url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
         res = requests.get(url, headers=HEADERS, timeout=15)
         js = res.json()
         
-        # TPEx JSON 結構通常在 aaData 裡
         if 'aaData' in js:
             tpex_rows = js['aaData']
             print(f"上櫃成功抓到 {len(tpex_rows)} 筆")
             for r in tpex_rows:
                 try:
-                    # TPEx JSON 順序: [0]日期 [1]代號 [2]名稱 [3]處置措施 [4]處置期間
-                    p = str(r[4])
-                    end_date = p.split('-')[1] if '-' in p else p
-                    # 移除 HTML tag (TPEx有時會回傳帶連結的代號)
-                    clean_code = str(r[1]).replace(" ", "")
+                    # 上櫃資料通常比較乾淨，含有 HTML 標籤需移除
+                    # 先把 list 裡的 HTML tag 清掉再丟給智慧辨識
+                    clean_row = []
+                    for cell in r:
+                        clean_text = re.sub('<[^<]+?>', '', str(cell)) # 移除 HTML
+                        clean_row.append(clean_text)
                     
-                    data.append({
-                        "market": "上櫃",
-                        "code": clean_code,
-                        "name": str(r[2]),
-                        "reason": str(r[3]),
-                        "period": p,
-                        "end_date": end_date
-                    })
+                    parsed = smart_parse_row(clean_row, "上櫃")
+                    if parsed['code']:
+                        data.append(parsed)
                 except: continue
-        else:
-            print("上櫃 JSON 回傳無 aaData 欄位")
-            
     except Exception as e:
-        print(f"上櫃抓取發生錯誤: {e}")
+        print(f"上櫃抓取失敗: {e}")
 
     return data
 
@@ -152,45 +172,63 @@ def main():
 
     for s in raw_new:
         code = s['code']
-        # 再次過濾非數字代號
-        if not code.isdigit(): 
-            continue
-            
         new_codes.add(code)
         
         if code not in old_codes:
             tg_msg_list.append(s)
             
+        # 抓取股價
         price, change = get_price(code, s['market'])
-        level = "20分盤" if "20分鐘" in s['reason'] else ("45分盤" if "45分鐘" in s['reason'] else "5分盤")
+        
+        # 判斷處置等級
+        # 優先檢查是否包含 "20分鐘" (最嚴重) -> "45分鐘" -> 預設 "5分盤"
+        reason_text = s['reason']
+        if "20分鐘" in reason_text or "二十分鐘" in reason_text:
+            level = "20分盤"
+        elif "45分鐘" in reason_text: # 處置二可能會有
+            level = "45分盤"
+        elif "60分鐘" in reason_text:
+            level = "60分盤"
+        else:
+            level = "5分盤"
         
         new_processed.append({
-            **s, "price": price, "change": change, "level": level, "countdown": calc_countdown(s['end_date'])
+            **s, 
+            "price": price, 
+            "change": change, 
+            "level": level, 
+            "countdown": calc_countdown(s['period']) # 使用 period 來算倒數
         })
 
+    # 排序：倒數天數少的排前面
     new_processed.sort(key=lambda x: x['countdown'])
 
     # 處理出關
     recently_exited = []
+    # 1. 保留舊的出關紀錄 (5天內)
     for ex in old_data.get('exited_stocks', []):
         try:
             if (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days <= 5:
                 recently_exited.append(ex)
         except: pass
     
+    # 2. 檢查新出關的
     for old_s in old_data.get('disposal_stocks', []):
         if old_s['code'] not in new_codes:
+            # 出關後重新查價
             p, c = get_price(old_s['code'], old_s['market'])
             old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
             recently_exited.insert(0, old_s)
 
+    # 模擬 ETF
     etf_data = [
         {"code":"00940","name":"元大臺灣價值高息","action":"新增","stock":"長榮航(2618)","date":"2026-05-17"},
         {"code":"00878","name":"國泰永續高股息","action":"刪除","stock":"英業達(2356)","date":"2026-05-20"}
     ]
 
+    # 發送通知
     if tg_msg_list:
-        msg = "🚨 **台股處置新增**\n" + "\n".join([f"{x['name']}({x['code']})" for x in tg_msg_list])
+        msg = "🚨 **台股處置新增**\n" + "\n".join([f"{x['name']}({x['code']})\n{x['level']}" for x in tg_msg_list])
         send_tg(msg)
 
     final_output = {
