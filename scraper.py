@@ -43,16 +43,20 @@ def get_price(code, market):
     except: return "N/A", "N/A"
 
 def clean_html(raw_html):
-    """清除 HTML 標籤"""
+    """清除 HTML 標籤，只保留文字"""
     if raw_html is None: return ""
     return re.sub(re.compile('<[^<]+?>'), '', str(raw_html)).strip()
 
 def calc_countdown(period_str):
     try:
-        clean_str = clean_html(period_str).replace('～', '~').replace(' ', '')
-        matches = re.findall(r'(\d{3})[-/~](\d{2})[-/~](\d{2})', clean_str)
+        # 1. 統一分隔符號，把 ~ ～ - 都換成空格
+        clean_str = clean_html(period_str).replace('～', ' ').replace('~', ' ').replace('-', ' ')
+        
+        # 2. 抓取所有日期 (格式: 115/01/20)
+        matches = re.findall(r'(\d{3})[/](\d{2})[/](\d{2})', clean_str)
         
         if matches:
+            # 取最後一組 (結束日)
             y_str, m_str, d_str = matches[-1]
             y = int(y_str)
             y = y + 1911 if y < 1911 else y
@@ -76,7 +80,7 @@ def scrape_current():
             print(f"上市抓到 {len(js['data'])} 筆")
             for r in js['data']:
                 try:
-                    # [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
+                    # 上市欄位: [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
                     raw_pub_date = str(r[1]).strip()
                     raw_code = str(r[2]).strip()
                     raw_name = str(r[3]).strip()
@@ -84,7 +88,6 @@ def scrape_current():
                     raw_measure = str(r[7]).strip()
                     raw_detail = str(r[8]).strip()
 
-                    # 判斷分盤 (加入 45 分鐘判斷)
                     level = "5分盤"
                     if "第二次" in raw_measure: level = "20分盤"
                     elif "20分鐘" in raw_detail or "二十分鐘" in raw_detail: level = "20分盤"
@@ -116,18 +119,25 @@ def scrape_current():
         
         for r in rows:
             try:
-                # 依截圖指定 Index
-                # r[1]=公布日, r[2]=代號, r[3]=名稱, r[5]=期間, r[7]=內容
+                # === 依截圖指定 Index ===
+                # r[0]=編號 (忽略)
+                # r[1]=公布日期 (115/01/19)
+                # r[2]=證券代號 (3691)
+                # r[3]=證券名稱 (碩禾)
+                # r[4]=累計 (忽略)
+                # r[5]=處置起訖時間 (115/01/20~115/02/02)
+                # r[6]=處置原因 (忽略)
+                # r[7]=處置內容 (抓45分鐘/20分鐘)
+                
                 raw_pub_date = clean_html(r[1])
                 raw_code = clean_html(r[2])
                 raw_name = clean_html(r[3])
                 raw_period = clean_html(r[5])
                 raw_detail = clean_html(r[7])
                 
-                # 判斷分盤 (掃描整行以防萬一)
+                # 判斷分盤
                 full_row_str = str(r)
                 level = "5分盤"
-                
                 if "20分鐘" in full_row_str or "二十分鐘" in full_row_str: level = "20分盤"
                 elif "45分鐘" in full_row_str or "四十五分鐘" in full_row_str: level = "45分盤"
                 elif "60分鐘" in full_row_str: level = "60分盤"
@@ -188,15 +198,21 @@ def main():
     new_processed.sort(key=lambda x: x['countdown'])
 
     recently_exited = []
+    
+    # 1. 檢查原本在「處置中」的，是否真的消失了
     for old_s in valid_old_stocks:
         if old_s['code'] not in new_codes:
             p, c = get_price(old_s['code'], old_s['market'])
             old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
             recently_exited.append(old_s)
 
+    # 2. 檢查「剛出關」清單 (修正邏輯：如果這次有抓到，就不要放在出關區)
     for ex in old_data.get('exited_stocks', []):
         try:
-            if ex['code'] in new_codes: continue
+            # 如果這個股票出現在新名單(new_codes)裡，代表它還在處置中，跳過它(不加入出關區)
+            if ex['code'] in new_codes:
+                continue
+
             days_diff = (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days
             if days_diff <= 5:
                 if ex['code'] not in [x['code'] for x in recently_exited]:
