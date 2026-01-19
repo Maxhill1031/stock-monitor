@@ -31,11 +31,12 @@ def get_price(code, market):
     suffix = ".TW" if market == "上市" else ".TWO"
     try:
         ticker = yf.Ticker(f"{code}{suffix}")
+        # 設定 timeout 避免卡住
         hist = ticker.history(period="1d", timeout=5)
         if hist.empty: return "N/A", "N/A"
         
         close = round(hist['Close'].iloc[-1], 2)
-        # 嘗試取得昨日收盤
+        # 嘗試取得昨日收盤價計算漲跌
         prev = ticker.info.get('previousClose', None)
         if prev is None and len(hist['Open']) > 0: prev = hist['Open'].iloc[0]
         
@@ -48,9 +49,10 @@ def get_price(code, market):
 def calc_countdown(period_str):
     """
     暴力解析日期：抓取字串中最後一組 '115/01/27' 格式的日期
+    不管中間是用 ~ 還是 - 連接
     """
     try:
-        # 尋找所有類似 115/01/27 的日期
+        # 尋找所有類似 115/01/27 的日期格式
         matches = re.findall(r'(\d{3})/(\d{2})/(\d{2})', str(period_str))
         if matches:
             # 取最後一個當作結束日
@@ -65,8 +67,8 @@ def calc_countdown(period_str):
     return 0
 
 def clean_html(raw_html):
-    """清除上櫃資料中的 HTML 標籤"""
-    cleanr = re.compile('<.*?>')
+    """清除上櫃資料中的 HTML 標籤 (例如 <a href...>)"""
+    cleanr = re.compile('<[^<]+?>')
     return re.sub(cleanr, '', str(raw_html)).strip()
 
 def scrape_current():
@@ -112,16 +114,23 @@ def scrape_current():
     print("正在抓取上櫃資料 (API)...")
     try:
         # 這是櫃買中心新舊版網頁背後的共用 API，非常穩定
+        # 即使新版網頁介面改了，這個 JSON 接口通常還是活著的
         url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
         res = requests.get(url, headers=HEADERS, timeout=15)
-        js = res.json()
         
+        # 檢查是否成功回傳 JSON
+        try:
+            js = res.json()
+        except:
+            print("上櫃 API 回傳非 JSON 格式，可能被擋")
+            js = {}
+
         if 'aaData' in js:
             tpex_rows = js['aaData']
             print(f"上櫃抓到 {len(tpex_rows)} 筆")
             for r in tpex_rows:
                 try:
-                    # API 欄位：[1]代號 [2]名稱 [3]措施 [4]期間
+                    # API 回傳欄位通常是：[1]代號 [2]名稱 [3]措施 [4]期間
                     # 注意：上櫃的代號欄位通常包著 HTML <a href..>，需要清洗
                     raw_code = clean_html(r[1])
                     raw_name = clean_html(r[2])
@@ -145,8 +154,11 @@ def scrape_current():
                             "end_date": raw_period
                         })
                 except Exception as ex: 
-                    print(f"上櫃單筆錯誤: {ex}")
+                    # print(f"上櫃單筆錯誤: {ex}") 
                     continue
+        else:
+            print("上櫃 API 回傳無 aaData，可能今日無處置股或格式改變")
+            
     except Exception as e: print(f"上櫃錯誤: {e}")
 
     return data
