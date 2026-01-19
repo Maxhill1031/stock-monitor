@@ -13,6 +13,7 @@ TG_CHAT_ID = os.environ.get("TG_CHAT_ID")
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'Referer': 'https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information.php?l=zh-tw'
 }
 
 def send_tg(message):
@@ -23,7 +24,7 @@ def send_tg(message):
     except: pass
 
 def get_price(code, market):
-    # 防呆：再次確認只有 4 位數才查價
+    # 嚴格檢查：只有 4 位數字才去查股價
     if not code or not str(code).isdigit() or len(str(code)) != 4:
         return "N/A", "N/A"
     suffix = ".TW" if market == "上市" else ".TWO"
@@ -43,25 +44,28 @@ def get_price(code, market):
     except: return "N/A", "N/A"
 
 def clean_str(s):
-    """清除字串中的特殊符號與 HTML"""
-    if not s: return ""
-    # 移除 HTML
+    """清除 HTML 標籤與特殊符號"""
+    if s is None: return ""
+    # 移除 HTML 標籤
     s = re.sub(r'<[^<]+?>', '', str(s))
-    # 統一分隔符號
-    return s.replace('～', '~').replace(' ', '').strip()
+    # 移除全形波浪號等干擾字元，統一變成空格
+    return s.replace('～', ' ').replace('~', ' ').replace('-', ' ').strip()
 
-def parse_dates_from_text(text):
+def extract_date_range(full_text):
     """
-    從任意文字中暴力抓取日期區間 (格式: 115/01/20)
-    回傳: (倒數天數, 結束日期, 完整區間字串)
+    從一長串文字中暴力搜尋日期
+    回傳: (倒數天數, 結束日期, 原始字串)
     """
     try:
-        cleaned = clean_str(text)
-        # 抓取所有日期 (民國年 3碼 + 月 2碼 + 日 2碼)
-        matches = re.findall(r'(\d{3})[-/~](\d{2})[-/~](\d{2})', cleaned)
+        # 清洗整串文字
+        cleaned = clean_str(full_text)
+        
+        # 搜尋所有類似 115/01/20 的日期
+        # 格式：3位數字 + 分隔符 + 2位數字 + 分隔符 + 2位數字
+        matches = re.findall(r'(\d{3})[./](\d{2})[./](\d{2})', cleaned)
         
         if len(matches) >= 2:
-            # 假設最後一個是結束日，倒數第二個是開始日
+            # 只要找到兩個以上的日期，通常最後一個就是結束日
             y_end, m_end, d_end = matches[-1]
             y_start, m_start, d_start = matches[-2]
             
@@ -71,10 +75,12 @@ def parse_dates_from_text(text):
             target = date(y, int(m_end), int(d_end))
             diff = (target - date.today()).days
             
+            # 組合字串
             end_date_str = f"{y_end}/{m_end}/{d_end}"
-            full_period = f"{y_start}/{m_start}/{d_start}~{end_date_str}"
+            period_str = f"{y_start}/{m_start}/{d_start} ~ {end_date_str}"
             
-            return (diff if diff >= 0 else 0), end_date_str, full_period
+            return (diff if diff >= 0 else 0), end_date_str, period_str
+            
     except: pass
     return 0, "", ""
 
@@ -84,23 +90,23 @@ def scrape_current():
     # --- 1. 上市 (TWSE) ---
     print("正在抓取上市資料...")
     try:
-        res = requests.get("https://www.twse.com.tw/rwd/zh/announcement/punish?response=json", headers=HEADERS, timeout=15)
+        twse_headers = HEADERS.copy()
+        twse_headers.pop('Referer', None)
+        res = requests.get("https://www.twse.com.tw/rwd/zh/announcement/punish?response=json", headers=twse_headers, timeout=15)
         js = res.json()
         if js['stat'] == 'OK':
             print(f"上市抓到 {len(js['data'])} 筆")
             for r in js['data']:
                 try:
-                    # 上市欄位: [1]公布日 [2]代號 [3]名稱 [6]期間 [7]措施
-                    raw_pub_date = str(r[1]).strip()
+                    # 上市欄位固定
                     raw_code = str(r[2]).strip()
                     raw_name = str(r[3]).strip()
                     raw_period = str(r[6]).strip()
                     raw_measure = str(r[7]).strip()
                     raw_detail = str(r[8]).strip()
 
-                    # 【嚴格過濾】只有 4 位數才要，其他直接跳過
-                    if not (raw_code.isdigit() and len(raw_code) == 4):
-                        continue
+                    # 過濾：只留 4 位數
+                    if not (raw_code.isdigit() and len(raw_code) == 4): continue
 
                     level = "5分盤"
                     if "第二次" in raw_measure: level = "20分盤"
@@ -108,16 +114,16 @@ def scrape_current():
                     elif "45分鐘" in raw_detail or "四十五分鐘" in raw_detail: level = "45分盤"
                     elif "60分鐘" in raw_detail: level = "60分盤"
 
-                    countdown, pure_end_date, _ = parse_dates_from_text(raw_period)
-                    if not pure_end_date: pure_end_date = raw_period
+                    countdown, pure_end_date, full_period = extract_date_range(raw_period)
+                    if not pure_end_date: 
+                        full_period = raw_period # 抓不到就顯示原文
+                        pure_end_date = raw_period
 
                     data.append({
                         "market": "上市",
                         "code": raw_code,
                         "name": raw_name,
-                        "publish_date": raw_pub_date,
-                        "period": raw_period,
-                        "reason": raw_measure,
+                        "period": full_period,
                         "level": level,
                         "end_date": pure_end_date,
                         "countdown": countdown
@@ -125,82 +131,64 @@ def scrape_current():
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) - OpenAPI + 暴力搜索 ---
-    print("正在抓取上櫃資料 (OpenAPI)...")
+    # --- 2. 上櫃 (TPEx) - 改回 Web API + 暴力掃描 ---
+    print("正在抓取上櫃資料 (Web API)...")
     try:
-        url = "https://www.tpex.org.tw/openapi/v1/tpex_disposal_information"
+        # 使用 Web API，因為你確認這裡有資料
+        url = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
         res = requests.get(url, headers=HEADERS, timeout=15)
-        rows = res.json()
-        
-        # OpenAPI 沒資料時備援 Web API
-        if not rows:
-             print("OpenAPI 無資料，嘗試 Web API...")
-             url_web = "https://www.tpex.org.tw/web/bulletin/disposal_information/disposal_information_result.php?l=zh-tw&o=json"
-             res_web = requests.get(url_web, headers={'Referer': 'https://www.tpex.org.tw/'}, timeout=15)
-             rows = res_web.json().get('aaData', [])
-
-        print(f"上櫃抓到 {len(rows)} 筆 (含非個股)")
+        js = res.json()
+        rows = js.get('aaData', [])
+        print(f"上櫃抓到 {len(rows)} 筆 (含權證)")
         
         for r in rows:
             try:
-                row_str = json.dumps(r, ensure_ascii=False)
+                # 1. 把整行資料轉成一個大字串，直接搜！
+                # 這樣就不用管它到底在第幾欄，也不用管 HTML 標籤
+                full_row_str = str(r) 
                 
-                # 1. 抓取代號
-                raw_code = ""
-                if isinstance(r, dict):
-                    raw_code = str(r.get('SecuritiesCompanyCode', r.get('證券代號', ''))).strip()
-                elif isinstance(r, list) and len(r) > 2:
-                    # Web API 格式
-                    raw_code = clean_str(r[2])
-
-                # 如果 Key 抓不到，用 Regex 補救 (只抓 4 位數)
-                if not raw_code:
-                    code_match = re.search(r'[^0-9]([1-9]\d{3})[^0-9]', " " + row_str + " ")
-                    if code_match: raw_code = code_match.group(1)
+                # 2. 抓取代號 (暴力搜 4 位數)
+                # 先嘗試標準位置 r[2]
+                raw_code = clean_str(r[2])
+                if not (raw_code.isdigit() and len(raw_code) == 4):
+                    # 如果標準位置不是，就搜整行找 "3691" 這種格式
+                    codes = re.findall(r'[^0-9]([1-9]\d{3})[^0-9]', " " + clean_str(full_row_str) + " ")
+                    raw_code = ""
+                    for c in codes:
+                        if not c.startswith("11"): # 排除年份
+                            raw_code = c
+                            break
                 
-                # 【嚴格過濾】重點在這：如果不是 4 位數，直接下一位
+                # 【嚴格過濾】如果還是沒抓到 4 位數代號，直接跳過
                 if not (raw_code.isdigit() and len(raw_code) == 4):
                     continue
 
-                # 2. 抓取名稱
-                raw_name = "未知"
-                if isinstance(r, dict):
-                    raw_name = r.get('CompanyName', r.get('證券名稱', '未知'))
-                elif isinstance(r, list) and len(r) > 3:
-                    raw_name = clean_str(r[3])
+                # 3. 抓取名稱 (r[3])
+                raw_name = clean_str(r[3])
 
-                # 3. 解析日期
-                # 優先嘗試欄位
-                raw_period = ""
-                if isinstance(r, dict):
-                    raw_period = r.get('DisposePeriod', r.get('處置起迄時間', ''))
+                # 4. 抓取日期 (暴力搜整行)
+                # 你說的沒錯，如果能抓到 "20分盤"，一定也能抓到 "115/01/20"
+                countdown, pure_end_date, full_period = extract_date_range(full_row_str)
                 
-                countdown, pure_end_date, full_period = parse_dates_from_text(raw_period)
-                if not pure_end_date:
-                     # 欄位空的？搜整行
-                     countdown, pure_end_date, full_period = parse_dates_from_text(row_str)
+                # 如果暴力搜不到，試著讀 r[5] (你指出的區間欄位)
+                if not pure_end_date and len(r) > 5:
+                     countdown, pure_end_date, full_period = extract_date_range(r[5])
 
-                # 4. 判斷分盤
+                # 5. 抓取分盤 (暴力搜整行)
                 level = "5分盤"
-                if "20分鐘" in row_str or "二十分鐘" in row_str: level = "20分盤"
-                elif "45分鐘" in row_str or "四十五分鐘" in row_str: level = "45分盤"
-                elif "60分鐘" in row_str: level = "60分盤"
-                elif "第二次" in row_str: level = "20分盤"
+                if "20分鐘" in full_row_str or "二十分鐘" in full_row_str: level = "20分盤"
+                elif "45分鐘" in full_row_str or "四十五分鐘" in full_row_str: level = "45分盤"
+                elif "60分鐘" in full_row_str: level = "60分盤"
+                elif "第二次" in full_row_str: level = "20分盤"
 
-                # 如果沒抓到日期，給個預設值，但資料一定要留著
-                if not pure_end_date: 
-                    pure_end_date = "日期未抓取"
-                    full_period = raw_period if raw_period else "日期未抓取"
-
+                # 只要有代號，就加進去。如果日期真的沒抓到，顯示「未抓取」但保留資料
                 data.append({
                     "market": "上櫃",
-                    "code": str(raw_code),
-                    "name": raw_name if raw_name else "未知",
-                    "publish_date": "", 
-                    "period": full_period,      
-                    "reason": "", 
+                    "code": raw_code,
+                    "name": raw_name,
+                    "period": full_period if full_period else "日期未抓取",
                     "level": level,
-                    "end_date": pure_end_date,
+                    "end_date": pure_end_date if pure_end_date else "日期未抓取",
                     "countdown": countdown
                 })
             except Exception as ex: continue
@@ -219,7 +207,10 @@ def main():
                 old_data = json.load(f)
         except: pass
     
-    # 抓取新資料
+    # 只保留舊資料裡的 4 位數股票
+    valid_old_stocks = [s for s in old_data.get('disposal_stocks', []) 
+                        if str(s['code']).isdigit() and len(str(s['code'])) == 4]
+    
     raw_new = scrape_current()
     
     new_processed = []
@@ -230,23 +221,20 @@ def main():
         code = s['code']
         new_codes.add(code)
         
+        # 取得股價
         price, change = get_price(code, s['market'])
         
         new_processed.append({
             **s, "price": price, "change": change
         })
 
+    # 排序
     new_processed.sort(key=lambda x: x['countdown'])
 
     # --- 處理出關 ---
     recently_exited = []
     
-    # 讀取舊的處置名單 (一樣只要 4 位數)
-    valid_old_stocks = [s for s in old_data.get('disposal_stocks', []) 
-                        if str(s['code']).isdigit() and len(str(s['code'])) == 4]
-
-    # 1. 檢查舊處置股是否消失
-    # 只有當我們確定有抓到資料時 (raw_new > 0)，才敢判斷別人出關
+    # 只有當這次有抓到資料時，才去判斷出關
     if len(raw_new) > 0:
         for old_s in valid_old_stocks:
             if old_s['code'] not in new_codes:
@@ -254,17 +242,14 @@ def main():
                 old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
                 recently_exited.append(old_s)
     else:
-        print("⚠️ 警告：本次未抓到任何資料，保留舊資料防止誤判")
+        # 如果網路掛了抓到 0 筆，保留舊資料，不要誤刪
         new_processed = valid_old_stocks
 
-    # 2. 檢查剛出關清單 (復活機制)
+    # 檢查剛出關清單 (只留 4 位數)
     for ex in old_data.get('exited_stocks', []):
         try:
-            if ex['code'] in new_codes: continue
-            
-            # 確保出關的也是 4 位數 (過濾舊髒資料)
-            if not (str(ex['code']).isdigit() and len(str(ex['code'])) == 4):
-                continue
+            if not (str(ex['code']).isdigit() and len(str(ex['code'])) == 4): continue
+            if ex['code'] in new_codes: continue # 復活機制
 
             days_diff = (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days
             if days_diff <= 5:
@@ -272,7 +257,7 @@ def main():
                     recently_exited.append(ex)
         except: pass
 
-    # 產生通知
+    # TG 通知
     old_codes_set = {s['code'] for s in valid_old_stocks}
     for s in new_processed:
         if s['code'] not in old_codes_set and len(old_codes_set) > 0:
@@ -286,8 +271,7 @@ def main():
     if tg_msg_list:
         msg_lines = ["🚨 **台股處置新增**"]
         for x in tg_msg_list:
-            pub = x.get('publish_date', '')
-            msg_lines.append(f"{x['name']}({x['code']})\n{x['level']} {pub}")
+            msg_lines.append(f"{x['name']}({x['code']})\n{x['level']}")
         send_tg("\n\n".join(msg_lines))
 
     final_output = {
