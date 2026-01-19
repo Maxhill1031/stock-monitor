@@ -1,0 +1,21 @@
+{
+    "update_time": "2026-01-19 14:51:50",
+    "disposal_stocks": [],
+    "exited_stocks": [],
+    "etf_stocks": [
+        {
+            "code": "00940",
+            "name": "元大臺灣價值高息",
+            "action": "新增",
+            "stock": "長榮航(2618)",
+            "date": "2026-05-17"
+        },
+        {
+            "code": "00878",
+            "name": "國泰永續高股息",
+            "action": "刪除",
+            "stock": "英業達(2356)",
+            "date": "2026-05-20"
+        }
+    ]
+}
