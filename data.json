@@ -1,6 +1,7 @@
 {
-    "update_time": "2026-01-19 16:44:54",
-    "disposal_stocks": [
+    "update_time": "2026-01-19 16:50:10",
+    "disposal_stocks": [],
+    "exited_stocks": [
         {
             "market": "上市",
             "code": "3308",
@@ -12,7 +13,8 @@
             "end_date": "115/01/07～115/01/20",
             "price": 26.3,
             "change": 9.81,
-            "countdown": 1
+            "countdown": 1,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -25,7 +27,8 @@
             "end_date": "115/01/07～115/01/20",
             "price": 28.8,
             "change": 8.27,
-            "countdown": 1
+            "countdown": 1,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -38,7 +41,8 @@
             "end_date": "115/01/09～115/01/22",
             "price": 275.0,
             "change": 10.0,
-            "countdown": 3
+            "countdown": 3,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -51,7 +55,8 @@
             "end_date": "115/01/09～115/01/22",
             "price": 158.5,
             "change": 2.59,
-            "countdown": 3
+            "countdown": 3,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -64,7 +69,8 @@
             "end_date": "115/01/09～115/01/22",
             "price": 62.0,
             "change": 9.93,
-            "countdown": 3
+            "countdown": 3,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -77,7 +83,8 @@
             "end_date": "115/01/09～115/01/22",
             "price": 62.7,
             "change": 6.27,
-            "countdown": 3
+            "countdown": 3,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -90,7 +97,8 @@
             "end_date": "115/01/12～115/01/23",
             "price": 73.7,
             "change": 10.0,
-            "countdown": 4
+            "countdown": 4,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -103,7 +111,8 @@
             "end_date": "115/01/12～115/01/23",
             "price": 10.8,
             "change": 9.87,
-            "countdown": 4
+            "countdown": 4,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -116,7 +125,8 @@
             "end_date": "115/01/09～115/01/26",
             "price": 116.5,
             "change": 9.39,
-            "countdown": 7
+            "countdown": 7,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -129,7 +139,8 @@
             "end_date": "115/01/13～115/01/26",
             "price": 217.5,
             "change": 6.88,
-            "countdown": 7
+            "countdown": 7,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -142,7 +153,8 @@
             "end_date": "115/01/14～115/01/27",
             "price": 27.1,
             "change": 3.24,
-            "countdown": 8
+            "countdown": 8,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -155,7 +167,8 @@
             "end_date": "115/01/15～115/01/28",
             "price": 145.0,
             "change": -3.65,
-            "countdown": 9
+            "countdown": 9,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -168,7 +181,8 @@
             "end_date": "115/01/16～115/01/29",
             "price": 165.5,
             "change": 8.17,
-            "countdown": 10
+            "countdown": 10,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -181,7 +195,8 @@
             "end_date": "115/01/16～115/01/29",
             "price": 709.0,
             "change": 4.26,
-            "countdown": 10
+            "countdown": 10,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -194,7 +209,8 @@
             "end_date": "115/01/20～115/02/02",
             "price": 35.4,
             "change": 5.04,
-            "countdown": 14
+            "countdown": 14,
+            "exit_date": "2026-01-19"
         },
         {
             "market": "上市",
@@ -207,10 +223,9 @@
             "end_date": "115/01/20～115/02/02",
             "price": 37.35,
             "change": 5.36,
-            "countdown": 14
-        }
-    ],
-    "exited_stocks": [
+            "countdown": 14,
+            "exit_date": "2026-01-19"
+        },
         {
             "market": "上櫃",
             "code": "3691",
