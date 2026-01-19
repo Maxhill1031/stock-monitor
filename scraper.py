@@ -24,6 +24,7 @@ def send_tg(message):
     except: pass
 
 def get_price(code, market):
+    # 防呆：確保是 4 位數代號才查價
     if not code or not str(code).isdigit() or len(str(code)) != 4:
         return "N/A", "N/A"
     suffix = ".TW" if market == "上市" else ".TWO"
@@ -43,9 +44,14 @@ def get_price(code, market):
     except: return "N/A", "N/A"
 
 def calc_countdown(period_str):
+    """
+    暴力解析日期：抓取字串中最後一組 '115/01/27' 格式的日期
+    """
     try:
+        # 尋找所有類似 115/01/27 的日期
         matches = re.findall(r'(\d{3})/(\d{2})/(\d{2})', str(period_str))
         if matches:
+            # 取最後一個當作結束日
             y_str, m_str, d_str = matches[-1]
             y = int(y_str)
             y = y + 1911 if y < 1911 else y
@@ -55,6 +61,11 @@ def calc_countdown(period_str):
             return diff if diff >= 0 else 0
     except: return 0
     return 0
+
+def clean_html(raw_html):
+    """清除 HTML 標籤"""
+    cleanr = re.compile('<[^<]+?>')
+    return re.sub(cleanr, '', str(raw_html)).strip()
 
 def scrape_current():
     data = []
@@ -94,31 +105,43 @@ def scrape_current():
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) - 改用 OpenAPI ---
+    # --- 2. 上櫃 (TPEx) - OpenAPI ---
     print("正在抓取上櫃資料 (OpenAPI)...")
     try:
-        # 這是櫃買中心官方 Open Data，格式非常穩定
         url = "https://www.tpex.org.tw/openapi/v1/tpex_disposal_information"
         res = requests.get(url, headers=HEADERS, timeout=15)
         
-        # OpenAPI 通常直接回傳 List，不是 Dict
+        js_list = []
         try:
             js_list = res.json()
         except:
             print("上櫃 OpenAPI 回傳非 JSON")
-            js_list = []
 
         if isinstance(js_list, list):
             print(f"上櫃抓到 {len(js_list)} 筆")
             for r in js_list:
                 try:
-                    # OpenAPI 的欄位通常是中文 Key
-                    # 例如: "證券代號", "證券名稱", "處置起迄時間", "處置措施"
+                    # 1. 抓取代號與名稱 (優先嘗試已知欄位，若無則 fallback)
                     raw_code = str(r.get("SecuritiesCompanyCode", r.get("證券代號", ""))).strip()
                     raw_name = str(r.get("CompanyName", r.get("證券名稱", ""))).strip()
-                    raw_period = str(r.get("DisposePeriod", r.get("處置起迄時間", ""))).strip()
                     raw_measure = str(r.get("DisposeMeasure", r.get("處置措施", ""))).strip()
-
+                    
+                    # 2. 【關鍵修正】智慧搜尋日期欄位
+                    # 不管 key 叫什麼，只要 value 看起來像日期範圍，就抓出來
+                    raw_period = ""
+                    # 先試試看已知欄位
+                    candidate = str(r.get("DisposePeriod", r.get("處置起迄時間", ""))).strip()
+                    if re.search(r'\d{3}/\d{2}/\d{2}', candidate):
+                        raw_period = candidate
+                    else:
+                        # 找不到？掃描所有欄位！
+                        for v in r.values():
+                            s = str(v).strip()
+                            # 找類似 113/01/01 的格式，且包含分隔符號
+                            if re.search(r'\d{3}/\d{2}/\d{2}', s) and ('-' in s or '~' in s or '至' in s):
+                                raw_period = s
+                                break
+                    
                     # 判斷分盤
                     level = "5分盤"
                     if "20分鐘" in raw_measure or "二十分鐘" in raw_measure: level = "20分盤"
@@ -131,14 +154,14 @@ def scrape_current():
                             "market": "上櫃",
                             "code": raw_code,
                             "name": raw_name,
-                            "period": raw_period,
+                            "period": raw_period, # 這裡現在一定會有值了
                             "reason": raw_measure,
                             "level": level,
                             "end_date": raw_period
                         })
                 except Exception as ex: continue
         else:
-            print(f"上櫃 OpenAPI 回傳格式非 List: {type(js_list)}")
+            print(f"上櫃 OpenAPI 格式異常")
 
     except Exception as e: print(f"上櫃錯誤: {e}")
 
