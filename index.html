@@ -9,18 +9,19 @@
         body{background:#f4f7f6;font-family:sans-serif}
         .nav-pills .nav-link{border-radius:50px;margin-right:5px;color:#555;font-weight:700}
         .nav-pills .nav-link.active{background:#0d6efd;color:#fff}
-        .card{border:none;border-radius:15px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+        .card{border:none;border-radius:15px;box-shadow:0 2px 10px rgba(0,0,0,.05); transition: transform 0.2s;}
         
-        /* 漲跌顏色定義 */
-        .text-up{color:#e01e37 !important;} /* 紅色 (漲) */
-        .text-down{color:#2a9d8f !important;} /* 綠色 (跌) */
+        .text-up{color:#e01e37 !important;} 
+        .text-down{color:#2a9d8f !important;} 
         
         .tag{font-size:12px;padding:2px 8px;border-radius:4px;color:#fff}
         .tag-mk-1{background:#0077b6}.tag-mk-2{background:#2a9d8f}
         
-        /* 分盤標籤顏色 */
-        .badge-20 { background-color: #dc3545 !important; color: white; }
-        .badge-5 { background-color: #ffc107 !important; color: #000; }
+        /* === 分盤顏色定義 === */
+        .badge-20 { background-color: #dc3545 !important; color: white; } /* 紅色 (20分盤) */
+        .badge-45 { background-color: #000000 !important; color: white; } /* 黑色 (45分盤) <-- 修改這裡 */
+        .badge-5 { background-color: #ffc107 !important; color: #000; }  /* 黃色 (5分盤) */
+        .badge-60 { background-color: #6f42c1 !important; color: white; } /* 紫色 (60分盤) */
     </style>
 </head>
 <body class="p-3">
@@ -55,13 +56,16 @@
                 if(k==='etf_stocks'){
                     h+=`<div class="col"><div class="card p-3"><span class="badge ${i.action=='新增'?'bg-danger':'bg-success'} w-25 mb-2">${i.action}</span><h5>${i.name} <small>${i.code}</small></h5><hr><div class="d-flex align-items-center"><span class="me-2 text-muted">變動:</span><strong>${i.stock}</strong></div><small class="text-muted mt-2">${i.date}</small></div></div>`;
                 }else{
-                    // 1. 計算顏色 Class
                     let c=parseFloat(i.change);
                     let colorClass = c > 0 ? 'text-up' : (c < 0 ? 'text-down' : 'text-muted');
                     let arrow = c > 0 ? '▲' : (c < 0 ? '▼' : '');
-                    
                     let badge=i.market=='上市'?'tag-mk-1':'tag-mk-2';
-                    let levelClass = i.level.includes('20') ? 'badge-20' : 'badge-5';
+                    
+                    // === 顏色邏輯 ===
+                    let levelClass = 'badge-5'; 
+                    if (i.level.includes('20')) levelClass = 'badge-20';       
+                    else if (i.level.includes('45')) levelClass = 'badge-45';  
+                    else if (i.level.includes('60')) levelClass = 'badge-60';  
                     
                     let footer = k==='exited_stocks' 
                         ? `<div class="alert alert-success py-1 mt-2 text-center small">✅ ${i.exit_date} 出關</div>` 
@@ -74,12 +78,10 @@
                                     <span class="badge ${levelClass}">${i.level||'5分盤'}</span>
                                 </div>
                                 <h5 class="fw-bold">${i.name} <small class="text-muted">${i.code}</small></h5>
-                                
                                 <div class="d-flex justify-content-between align-items-end border-bottom pb-2 my-2">
                                     <span class="fs-4 fw-bold ${colorClass}">${i.price}</span>
                                     <span class="${colorClass}">${arrow} ${i.change}%</span>
                                 </div>
-                                
                                 <small class="text-muted">${i.period}</small>
                                 ${footer}
                             </div>
