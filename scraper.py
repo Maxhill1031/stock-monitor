@@ -4,7 +4,7 @@ import yfinance as yf
 import json
 import os
 import re
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 # --- 設定區 ---
 TG_TOKEN = os.environ.get("TG_TOKEN")
@@ -23,7 +23,6 @@ def send_tg(message):
     except: pass
 
 def get_price(code, market):
-    # 嚴格防呆：只查 4 位數
     if not code or not str(code).isdigit() or len(str(code)) != 4:
         return "N/A", "N/A"
     suffix = ".TW" if market == "上市" else ".TWO"
@@ -46,27 +45,30 @@ def clean_str(s):
     if s is None: return ""
     return str(s).replace('～', '~').replace(' ', '').strip()
 
-def extract_dates_from_row(row_dict):
+def roc_to_ad_str(roc_date_str):
+    """將 115/01/20 轉為 2026-01-20"""
+    try:
+        parts = re.split(r'[-/]', roc_date_str)
+        if len(parts) == 3:
+            y = int(parts[0]) + 1911
+            return f"{y}-{parts[1]}-{parts[2]}"
+    except: pass
+    return datetime.now().strftime("%Y-%m-%d")
+
+def parse_dates(period_str):
     """
-    不指定欄位，直接掃描整筆資料的所有 Values，找出日期
-    回傳: (倒數天數, 結束日期, 完整區間)
+    萬能日期解析
+    回傳: (倒數天數, 結束日期ROC, 完整區間)
+    注意：這裡不再鎖定倒數天數 >= 0，允許回傳負數
     """
     try:
-        # 把整筆資料的所有值串在一起變成一個大字串
-        # 例如: "3691 碩禾 1150120 1150202 ..."
-        full_text = " ".join([str(v) for v in row_dict.values()])
-        full_text = clean_str(full_text)
+        text = clean_str(period_str)
+        matches = re.findall(r'(\d{3})[-/](\d{2})[-/](\d{2})', text)
         
-        # 策略1: 抓取標準格式 115/01/20
-        matches = re.findall(r'(\d{3})[-/](\d{2})[-/](\d{2})', full_text)
-        
-        # 策略2: 如果抓不到，抓取連續數字格式 1150120 (OpenAPI 常見格式)
         if not matches:
-            matches = re.findall(r'(\d{3})(\d{2})(\d{2})', full_text)
+            matches = re.findall(r'(\d{3})(\d{2})(\d{2})', text)
 
         if len(matches) >= 2:
-            # 假設最後一個是結束日，倒數第二個是開始日
-            # (通常日期會成對出現：開始日、結束日)
             y_end, m_end, d_end = matches[-1]
             y_start, m_start, d_start = matches[-2]
             
@@ -75,12 +77,15 @@ def extract_dates_from_row(row_dict):
             target = date(y, int(m_end), int(d_end))
             diff = (target - date.today()).days
             
+            # 【關鍵修改】這裡直接回傳 diff，不設下限 0
+            # 這樣我們才能知道哪些已經過期了 (負數)
+            
             end_date_str = f"{y_end}/{m_end}/{d_end}"
             full_period = f"{y_start}/{m_start}/{d_start}~{end_date_str}"
             
-            return (diff if diff >= 0 else 0), end_date_str, full_period
+            return diff, end_date_str, full_period
     except: pass
-    return 0, "", ""
+    return 0, "", period_str
 
 def scrape_current():
     data = []
@@ -101,7 +106,6 @@ def scrape_current():
                     raw_measure = str(r[7]).strip()
                     raw_detail = str(r[8]).strip()
 
-                    # 【嚴格過濾】非 4 位數直接丟棄
                     if not (raw_code.isdigit() and len(raw_code) == 4): continue
 
                     level = "5分盤"
@@ -110,8 +114,7 @@ def scrape_current():
                     elif "45分鐘" in raw_detail or "四十五分鐘" in raw_detail: level = "45分盤"
                     elif "60分鐘" in raw_detail: level = "60分盤"
 
-                    # 這裡用原本的解析邏輯
-                    countdown, pure_end_date, _ = extract_dates_from_row({'p': raw_period})
+                    countdown, pure_end_date, _ = parse_dates(raw_period)
                     if not pure_end_date: pure_end_date = raw_period
 
                     data.append({
@@ -128,40 +131,29 @@ def scrape_current():
                 except: continue
     except Exception as e: print(f"上市錯誤: {e}")
 
-    # --- 2. 上櫃 (TPEx) - OpenAPI 正規軍 ---
+    # --- 2. 上櫃 (TPEx) - OpenAPI ---
     print("正在抓取上櫃資料 (OpenAPI)...")
     try:
         url = "https://www.tpex.org.tw/openapi/v1/tpex_disposal_information"
         res = requests.get(url, headers=HEADERS, timeout=15)
         rows = res.json()
         
-        print(f"上櫃 OpenAPI 連線成功！共 {len(rows)} 筆 raw data")
-        
-        # 除錯用：印出第一筆資料的所有欄位名稱 (讓你下次知道 key 叫什麼)
-        if len(rows) > 0:
-            print("目前 OpenAPI 的欄位名稱有:", list(rows[0].keys()))
+        print(f"上櫃 OpenAPI 抓到 {len(rows)} 筆")
 
         for r in rows:
             try:
-                # 1. 抓代號 & 名稱 (優先用已知 Key，失敗則掃描)
-                raw_code = str(r.get('SecuritiesCompanyCode', r.get('證券代號', ''))).strip()
-                raw_name = str(r.get('CompanyName', r.get('證券名稱', ''))).strip()
+                raw_code = r.get('SecuritiesCompanyCode', r.get('證券代號', ''))
+                raw_name = r.get('CompanyName', r.get('證券名稱', ''))
+                raw_period = r.get('DisposePeriod', r.get('處置起迄時間', ''))
                 
-                # 如果 Key 抓不到，嘗試從 Values 裡找 4 位數
-                if not raw_code:
-                    for v in r.values():
-                        if str(v).isdigit() and len(str(v)) == 4:
-                            raw_code = str(v)
-                            break
-
-                # 【嚴格過濾】只留 4 位數字 (踢掉權證 36913 等)
-                if not (raw_code.isdigit() and len(raw_code) == 4):
-                    continue
-
-                # 2. 全欄位掃描找日期 (不管日期欄位叫什麼，直接搜內容)
-                countdown, pure_end_date, full_period = extract_dates_from_row(r)
+                raw_code = str(raw_code).strip()
+                raw_name = str(raw_name).strip()
+                raw_period = str(raw_period).strip()
                 
-                # 3. 判斷分盤 (掃描整筆資料)
+                if not (raw_code.isdigit() and len(raw_code) == 4): continue
+
+                countdown, pure_end_date, full_period = parse_dates(raw_period)
+                
                 level = "5分盤"
                 full_text = str(r)
                 if "20分鐘" in full_text or "二十分鐘" in full_text: level = "20分盤"
@@ -172,16 +164,15 @@ def scrape_current():
                 data.append({
                     "market": "上櫃",
                     "code": raw_code,
-                    "name": raw_name if raw_name else "未知",
+                    "name": raw_name,
                     "publish_date": "", 
-                    "period": full_period if full_period else "日期未抓取",
+                    "period": full_period if full_period else raw_period,
                     "reason": "", 
                     "level": level,
                     "end_date": pure_end_date if pure_end_date else "日期未抓取",
                     "countdown": countdown
                 })
-            except Exception as ex: 
-                continue
+            except Exception as ex: continue
             
     except Exception as e: print(f"上櫃錯誤: {e}")
 
@@ -200,51 +191,85 @@ def main():
     # 抓取新資料
     raw_new = scrape_current()
     
-    # 防呆：如果完全沒抓到 (0筆)，且舊資料有東西，則沿用舊資料
+    # 防呆
     if len(raw_new) == 0 and len(old_data.get('disposal_stocks', [])) > 0:
-        print("⚠️ 警告：本次未抓到有效資料，暫時使用舊資料")
-        new_processed = old_data['disposal_stocks']
-    else:
-        new_processed = []
-        new_codes = set()
+        print("⚠️ 警告：本次未抓到資料，暫時使用舊資料")
+        raw_new = old_data['disposal_stocks']
+        # 重新計算倒數
         for s in raw_new:
-            code = s['code']
-            # 去重：避免重複添加
-            if code in new_codes: continue
-            new_codes.add(code)
+            try:
+                y, m, d = re.split(r'[-/]', s['end_date'])
+                y = int(y) + 1911 if int(y) < 1911 else int(y)
+                s['countdown'] = (date(y, int(m), int(d)) - date.today()).days
+            except: s['countdown'] = 0
+
+    new_processed = [] # 準備放「處置中」
+    recently_exited = [] # 準備放「剛出關」
+    new_codes = set()
+    
+    # 讀取舊的已出關資料，避免被覆蓋
+    old_exited = old_data.get('exited_stocks', [])
+
+    # === 關鍵邏輯修改：分類 ===
+    for s in raw_new:
+        code = s['code']
+        # 取得最新股價
+        price, change = get_price(code, s['market'])
+        s['price'] = price
+        s['change'] = change
+
+        if s['countdown'] >= 0:
+            # 倒數天數 >= 0，代表還在處置中 (或今天是最後一天)
+            if code not in new_codes:
+                new_processed.append(s)
+                new_codes.add(code)
+        else:
+            # 倒數天數 < 0，代表已經結束了 (API 尚未移除)
+            # 強制加入「剛出關」清單
+            print(f"發現過期股票仍在 API 清單中，強制移至出關: {s['name']} ({s['code']})")
             
-            price, change = get_price(code, s['market'])
-            new_processed.append({**s, "price": price, "change": change})
+            # 設定出關日期為它的結束日期 (轉為西元格式)
+            exit_date = roc_to_ad_str(s['end_date'])
+            s['exit_date'] = exit_date
+            
+            # 檢查是否已存在，避免重複
+            is_exist = False
+            for ex in recently_exited:
+                if ex['code'] == code: is_exist = True
+            
+            if not is_exist:
+                recently_exited.append(s)
 
     new_processed.sort(key=lambda x: x['countdown'])
 
-    # --- 處理出關 ---
-    recently_exited = []
-    
-    # 讀取舊的 4 位數處置股
+    # --- 處理真正從 API 消失的股票 (原本的出關邏輯) ---
     valid_old_stocks = [s for s in old_data.get('disposal_stocks', []) 
                         if str(s['code']).isdigit() and len(str(s['code'])) == 4]
     
-    new_codes_set = {s['code'] for s in new_processed}
-
-    # 1. 檢查誰真的出關了 (只在有抓到新資料時執行)
+    # 只有當我們有抓到新資料時才做比對
     if len(raw_new) > 0:
         for old_s in valid_old_stocks:
-            if old_s['code'] not in new_codes_set:
+            # 如果舊股票不在「新的處置名單(new_codes)」裡
+            # 也不在「剛剛被強制移出(recently_exited)」裡
+            if old_s['code'] not in new_codes and old_s['code'] not in [x['code'] for x in recently_exited]:
                 p, c = get_price(old_s['code'], old_s['market'])
                 old_s.update({"price": p, "change": c, "exit_date": datetime.now().strftime("%Y-%m-%d")})
                 recently_exited.append(old_s)
 
-    # 2. 檢查剛出關清單
-    for ex in old_data.get('exited_stocks', []):
+    # --- 整合舊的出關資料 ---
+    for ex in old_exited:
         try:
             if not (str(ex['code']).isdigit() and len(str(ex['code'])) == 4): continue
-            if ex['code'] in new_codes_set: continue
+            
+            # 如果它現在跑回去處置中了(復活)，就不加
+            if ex['code'] in new_codes: continue
+            
+            # 如果它已經在新的出關清單了，也不加
+            if ex['code'] in [x['code'] for x in recently_exited]: continue
 
             days_diff = (datetime.now() - datetime.strptime(ex['exit_date'], "%Y-%m-%d")).days
-            if days_diff <= 5:
-                if ex['code'] not in [x['code'] for x in recently_exited]:
-                    recently_exited.append(ex)
+            if days_diff <= 5: # 只保留 5 天內的
+                recently_exited.append(ex)
         except: pass
 
     # TG 通知
@@ -275,7 +300,9 @@ def main():
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_output, f, ensure_ascii=False, indent=4)
         
-    print(f"=== 執行結束，成功處理 {len(new_processed)} 筆資料 ===")
+    print(f"=== 執行結束 ===")
+    print(f"處置中: {len(new_processed)} 筆")
+    print(f"已出關: {len(recently_exited)} 筆")
 
 if __name__ == "__main__":
     main()
