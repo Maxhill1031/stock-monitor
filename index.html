@@ -85,6 +85,10 @@
                         ? `<div class="alert alert-success py-2 mt-3 text-center fw-bold" style="font-size:0.9rem">✅ ${i.exit_date} 出關</div>` 
                         : `<div class="bg-light py-2 mt-3 text-center rounded fw-bold" style="font-size:0.95rem; color:#555;">剩 <span class="text-danger" style="font-size:1.1rem">${i.countdown}</span> 天</div>`;
                     
+                    // 設定字體大小變數，方便統一管理
+                    // 股名 = 股價 = 2.2rem
+                    // 股號 = 漲跌 = 1.3rem
+                    
                     h+=`<div class="col">
                             <div class="card p-3 h-100">
                                 <div class="d-flex justify-content-between mb-2">
@@ -92,16 +96,17 @@
                                     <span class="badge badge-level ${levelClass}">${i.level||'5分盤'}</span>
                                 </div>
                                 
-                                <h5 class="fw-bold mb-0 text-dark" style="font-size: 1.3rem;">${i.name}</h5>
-                                <div class="text-muted fw-bold mb-2" style="font-size: 0.95rem;">${i.code}</div>
+                                <h5 class="fw-bold mb-0 text-dark text-truncate" style="font-size: 2.2rem; line-height: 1.2;">${i.name}</h5>
                                 
-                                <div class="d-flex justify-content-between align-items-end border-bottom pb-2 my-1">
-                                    <span class="fw-bold ${colorClass}" style="font-size: 2.2rem; line-height: 1; letter-spacing: -1px;">
+                                <div class="text-muted fw-bold mb-3" style="font-size: 1.3rem;">${i.code}</div>
+                                
+                                <div class="mb-2">
+                                    <div class="fw-bold ${colorClass}" style="font-size: 2.2rem; line-height: 1; letter-spacing: -1px;">
                                         ${i.price}
-                                    </span>
-                                    <span class="fw-bold ${colorClass}" style="font-size: 1.3rem;">
+                                    </div>
+                                    <div class="fw-bold ${colorClass}" style="font-size: 1.3rem; margin-top: 5px;">
                                         ${arrow}${i.change}%
-                                    </span>
+                                    </div>
                                 </div>
                                 
                                 <div class="text-muted mt-2 small text-nowrap" style="font-size: 0.8rem;">
