@@ -75,3 +75,56 @@
                     let colorClass = c > 0 ? 'text-up' : (c < 0 ? 'text-down' : 'text-muted');
                     let arrow = c > 0 ? '▲' : (c < 0 ? '▼' : '');
                     let badge=i.market=='上市'?'tag-mk-1':'tag-mk-2';
+                    
+                    let levelClass = 'badge-5'; 
+                    if (i.level.includes('20')) levelClass = 'badge-20';       
+                    else if (i.level.includes('45')) levelClass = 'badge-45';  
+                    else if (i.level.includes('60')) levelClass = 'badge-60';  
+                    
+                    let footer = k==='exited_stocks' 
+                        ? `<div class="alert alert-success py-1 mt-2 text-center fw-bold" style="font-size:0.75rem">✅ ${i.exit_date} 出關</div>` 
+                        : `<div class="bg-light py-1 mt-2 text-center rounded fw-bold" style="font-size:0.8rem; color:#555;">剩 <span class="text-danger" style="font-size:0.9rem">${i.countdown}</span> 天</div>`;
+                    
+                    h+=`<div class="col">
+                            <div class="card p-2 h-100">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="tag ${badge}">${i.market}</span>
+                                    <span class="badge badge-level ${levelClass}">${i.level||'5分盤'}</span>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    
+                                    <div class="text-start" style="width: 50%; overflow: hidden;">
+                                        <h5 class="fw-bold mb-0 text-dark text-truncate" style="font-size: 1.5rem; line-height: 1.2;">
+                                            ${i.name}
+                                        </h5>
+                                        <div class="text-muted fw-bold" style="font-size: 1rem;">
+                                            ${i.code}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="text-end" style="width: 50%;">
+                                        <div class="fw-bold ${colorClass}" style="font-size: 1.5rem; line-height: 1.2; letter-spacing: -0.5px;">
+                                            ${i.price}
+                                        </div>
+                                        <div class="fw-bold ${colorClass}" style="font-size: 1rem;">
+                                            ${arrow}${i.change}%
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="text-muted mt-2 text-center fw-bold" style="font-size: 1.2rem; line-height: 1.2;">
+                                    ${i.period || ''}
+                                </div>
+                                
+                                ${footer}
+                            </div>
+                        </div>`;
+                }
+            });
+            document.getElementById('list').innerHTML=h;
+        }
+    </script>
+</body>
+</html>
