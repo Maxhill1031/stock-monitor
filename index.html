@@ -8,44 +8,42 @@
     <style>
         body{background:#f4f7f6;font-family:sans-serif}
         
-        /* 導覽列按鈕 */
+        /* 導覽列 */
         .nav-pills .nav-link{border-radius:50px;margin-right:5px;color:#555;font-weight:700; white-space: nowrap; font-size: 1.1rem;}
         .nav-pills .nav-link.active{background:#0d6efd;color:#fff}
         
-        /* 卡片樣式 */
-        .card{border:none;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.08); transition: transform 0.2s;}
+        /* 卡片 */
+        .card{border:none;border-radius:12px;box-shadow:0 3px 6px rgba(0,0,0,.06); transition: transform 0.2s;}
         
-        /* 漲跌顏色 */
+        /* 顏色 */
         .text-up{color:#e01e37 !important;} 
         .text-down{color:#2a9d8f !important;} 
         
-        /* 標籤樣式 */
-        .tag{font-size:0.85rem; padding:3px 8px; border-radius:6px; color:#fff; font-weight: bold;}
+        /* 標籤 */
+        .tag{font-size:0.75rem; padding:2px 6px; border-radius:4px; color:#fff; font-weight: bold;}
         .tag-mk-1{background:#0077b6} /* 上市 */
         .tag-mk-2{background:#6f42c1} /* 上櫃 */
         
-        /* 分盤 Badge 樣式 */
-        .badge-level { font-size: 0.85rem !important; padding: 4px 8px; }
+        /* 分盤 Badge */
+        .badge-level { font-size: 0.75rem !important; padding: 4px 6px; }
         .badge-20 { background-color: #dc3545 !important; color: white; } 
         .badge-45 { background-color: #000000 !important; color: white; } 
         .badge-5 { background-color: #ffc107 !important; color: #000; }  
         .badge-60 { background-color: #6f42c1 !important; color: white; } 
     </style>
 </head>
-<body class="p-3"> 
-    <div class="container" style="max-width:800px">
+<body class="p-2"> <div class="container" style="max-width:800px">
         <div class="d-flex justify-content-between mb-3 align-items-center">
-            <h4 class="fw-bold m-0">📊 處置監控</h4>
-            <span class="text-muted fw-bold" style="font-size: 0.9rem;" id="time">Loading...</span>
+            <h5 class="fw-bold m-0">📊 處置監控</h5>
+            <span class="text-muted fw-bold" style="font-size: 0.8rem;" id="time">Loading...</span>
         </div>
         
-        <ul class="nav nav-pills mb-4 flex-nowrap" style="overflow-x: auto; padding-bottom: 5px;">
+        <ul class="nav nav-pills mb-3 flex-nowrap" style="overflow-x: auto; padding-bottom: 5px;">
             <li class="nav-item"><button class="nav-link active" onclick="show('disposal_stocks')">🔒 處置中 <span id="n1"></span></button></li>
             <li class="nav-item"><button class="nav-link" onclick="show('exited_stocks')">🚀 剛出關 <span id="n2"></span></button></li>
         </ul>
 
-        <div id="list" class="row row-cols-1 row-cols-md-2 g-3"></div> 
-        <div id="list" class="row row-cols-2 row-cols-md-3 g-3"></div>
+        <div id="list" class="row row-cols-2 row-cols-md-3 g-2"></div>
     </div>
 
     <script>
@@ -83,11 +81,13 @@
                     else if (i.level.includes('60')) levelClass = 'badge-60';  
                     
                     let footer = k==='exited_stocks' 
-                        ? `<div class="alert alert-success py-2 mt-3 text-center fw-bold" style="font-size:0.9rem">✅ ${i.exit_date} 出關</div>` 
-                        : `<div class="bg-light py-2 mt-3 text-center rounded fw-bold" style="font-size:0.95rem; color:#555;">剩 <span class="text-danger" style="font-size:1.1rem">${i.countdown}</span> 天</div>`;
+                        ? `<div class="alert alert-success py-1 mt-2 text-center fw-bold" style="font-size:0.75rem">✅ ${i.exit_date} 出關</div>` 
+                        : `<div class="bg-light py-1 mt-2 text-center rounded fw-bold" style="font-size:0.8rem; color:#555;">剩 <span class="text-danger" style="font-size:0.9rem">${i.countdown}</span> 天</div>`;
                     
+                    // 為了適應一行兩個，字體調整為 1.6rem (原本 2.2rem 會在兩欄模式下爆掉)
+                    // 但 1.6rem 在手機上看起來已經非常大了
                     h+=`<div class="col">
-                            <div class="card p-3 h-100">
+                            <div class="card p-2 h-100">
                                 <div class="d-flex justify-content-between mb-2">
                                     <span class="tag ${badge}">${i.market}</span>
                                     <span class="badge badge-level ${levelClass}">${i.level||'5分盤'}</span>
@@ -95,27 +95,27 @@
                                 
                                 <div class="d-flex justify-content-between align-items-center mb-1">
                                     
-                                    <div class="text-start" style="width: 55%; overflow: hidden;">
-                                        <h5 class="fw-bold mb-0 text-dark text-truncate" style="font-size: 2.2rem; line-height: 1.2;">
+                                    <div class="text-start" style="width: 50%; overflow: hidden;">
+                                        <h5 class="fw-bold mb-0 text-dark text-truncate" style="font-size: 1.5rem; line-height: 1.2;">
                                             ${i.name}
                                         </h5>
-                                        <div class="text-muted fw-bold" style="font-size: 1.3rem;">
+                                        <div class="text-muted fw-bold" style="font-size: 1rem;">
                                             ${i.code}
                                         </div>
                                     </div>
                                     
-                                    <div class="text-end">
-                                        <div class="fw-bold ${colorClass}" style="font-size: 2.2rem; line-height: 1; letter-spacing: -1px;">
+                                    <div class="text-end" style="width: 50%;">
+                                        <div class="fw-bold ${colorClass}" style="font-size: 1.5rem; line-height: 1.2; letter-spacing: -0.5px;">
                                             ${i.price}
                                         </div>
-                                        <div class="fw-bold ${colorClass}" style="font-size: 1.3rem; margin-top: 4px;">
+                                        <div class="fw-bold ${colorClass}" style="font-size: 1rem;">
                                             ${arrow}${i.change}%
                                         </div>
                                     </div>
                                     
                                 </div>
                                 
-                                <div class="text-muted mt-2 small text-nowrap" style="font-size: 0.8rem;">
+                                <div class="text-muted mt-1 small text-nowrap" style="font-size: 0.75rem;">
                                     ${i.period || ''}
                                 </div>
                                 
