@@ -44,6 +44,7 @@
             <li class="nav-item"><button class="nav-link" onclick="show('exited_stocks')">🚀 剛出關 <span id="n2"></span></button></li>
         </ul>
 
+        <div id="list" class="row row-cols-1 row-cols-md-2 g-3"></div> 
         <div id="list" class="row row-cols-2 row-cols-md-3 g-3"></div>
     </div>
 
@@ -85,10 +86,6 @@
                         ? `<div class="alert alert-success py-2 mt-3 text-center fw-bold" style="font-size:0.9rem">✅ ${i.exit_date} 出關</div>` 
                         : `<div class="bg-light py-2 mt-3 text-center rounded fw-bold" style="font-size:0.95rem; color:#555;">剩 <span class="text-danger" style="font-size:1.1rem">${i.countdown}</span> 天</div>`;
                     
-                    // 設定字體大小變數，方便統一管理
-                    // 股名 = 股價 = 2.2rem
-                    // 股號 = 漲跌 = 1.3rem
-                    
                     h+=`<div class="col">
                             <div class="card p-3 h-100">
                                 <div class="d-flex justify-content-between mb-2">
@@ -96,17 +93,26 @@
                                     <span class="badge badge-level ${levelClass}">${i.level||'5分盤'}</span>
                                 </div>
                                 
-                                <h5 class="fw-bold mb-0 text-dark text-truncate" style="font-size: 2.2rem; line-height: 1.2;">${i.name}</h5>
-                                
-                                <div class="text-muted fw-bold mb-3" style="font-size: 1.3rem;">${i.code}</div>
-                                
-                                <div class="mb-2">
-                                    <div class="fw-bold ${colorClass}" style="font-size: 2.2rem; line-height: 1; letter-spacing: -1px;">
-                                        ${i.price}
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    
+                                    <div class="text-start" style="width: 55%; overflow: hidden;">
+                                        <h5 class="fw-bold mb-0 text-dark text-truncate" style="font-size: 2.2rem; line-height: 1.2;">
+                                            ${i.name}
+                                        </h5>
+                                        <div class="text-muted fw-bold" style="font-size: 1.3rem;">
+                                            ${i.code}
+                                        </div>
                                     </div>
-                                    <div class="fw-bold ${colorClass}" style="font-size: 1.3rem; margin-top: 5px;">
-                                        ${arrow}${i.change}%
+                                    
+                                    <div class="text-end">
+                                        <div class="fw-bold ${colorClass}" style="font-size: 2.2rem; line-height: 1; letter-spacing: -1px;">
+                                            ${i.price}
+                                        </div>
+                                        <div class="fw-bold ${colorClass}" style="font-size: 1.3rem; margin-top: 4px;">
+                                            ${arrow}${i.change}%
+                                        </div>
                                     </div>
+                                    
                                 </div>
                                 
                                 <div class="text-muted mt-2 small text-nowrap" style="font-size: 0.8rem;">
