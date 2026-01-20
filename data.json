@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-01-20 17:25:05",
+    "update_time": "2026-01-20 17:55:50",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -351,6 +351,19 @@
             "countdown": 13,
             "price": 57.5,
             "change": -0.86
+        },
+        {
+            "market": "上市",
+            "code": "1721",
+            "name": "三晃",
+            "publish_date": "115/01/20",
+            "period": "115/01/21～115/02/03",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/03",
+            "countdown": 14,
+            "price": 20.85,
+            "change": -5.44
         }
     ],
     "exited_stocks": [
