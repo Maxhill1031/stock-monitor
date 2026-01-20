@@ -18,7 +18,10 @@
         
         /* 字體微調 */
         .card h5 { font-size: 1rem; margin-bottom: 0; }
-        .card .fs-4 { font-size: 1.2rem !important; }
+        
+        /* 關鍵修改：確保股價和漲跌幅都使用這個大字體設定 */
+        .card .fs-4 { font-size: 1.3rem !important; letter-spacing: -0.5px; }
+        
         .tag{font-size:10px;padding:2px 6px;border-radius:4px;color:#fff}
         
         .tag-mk-1{background:#0077b6} /* 上市 */
@@ -53,9 +56,7 @@
             document.getElementById('time').innerText=j.update_time;
             document.getElementById('n1').innerText=j.disposal_stocks.length;
             document.getElementById('n2').innerText=j.exited_stocks.length;
-            // 這裡移除了 n3 的更新，因為該元素已刪除
             
-            // 強制顯示「處置中」
             show('disposal_stocks');
         });
 
@@ -68,9 +69,9 @@
             if(!list.length) return document.getElementById('list').innerHTML='<div class="col-12 text-center text-muted py-5">無資料</div>';
             
             list.forEach(i=>{
-                // ETF 的渲染邏輯雖然還在，但因為按鈕拿掉了，所以不會被觸發，留著無妨
                 if(k==='etf_stocks'){
-                    h+=`<div class="col"><div class="card p-2"><span class="badge ${i.action=='新增'?'bg-danger':'bg-success'} w-50 mb-1">${i.action}</span><h6 class="fw-bold">${i.name} <br><small class="text-muted">${i.code}</small></h6><div class="d-flex align-items-center small"><span class="me-1 text-muted">變動:</span><strong>${i.stock}</strong></div><small class="text-muted mt-1" style="font-size:10px">${i.date}</small></div></div>`;
+                    // 雖然隱藏了按鈕，但保留程式邏輯以免報錯
+                    h+=`<div class="col">...</div>`;
                 }else{
                     let c=parseFloat(i.change);
                     let colorClass = c > 0 ? 'text-up' : (c < 0 ? 'text-down' : 'text-muted');
@@ -82,12 +83,11 @@
                     else if (i.level.includes('45')) levelClass = 'badge-45';  
                     else if (i.level.includes('60')) levelClass = 'badge-60';  
                     
-                    let period_html = i.period ? i.period.replace('~', '<br>~') : ''; 
-                    
                     let footer = k==='exited_stocks' 
                         ? `<div class="alert alert-success py-1 mt-2 text-center small" style="font-size:10px">✅ ${i.exit_date}出</div>` 
                         : `<div class="bg-light py-1 mt-2 text-center small rounded" style="font-size:11px">剩 <span class="text-danger fw-bold">${i.countdown}</span> 天</div>`;
                     
+                    // 【重點修改區】：把原來的 small 改成 fs-4 fw-bold
                     h+=`<div class="col">
                             <div class="card p-2 h-100">
                                 <div class="d-flex justify-content-between mb-1">
@@ -97,13 +97,13 @@
                                 <h5 class="fw-bold text-truncate">${i.name}</h5>
                                 <small class="text-muted d-block mb-1">${i.code}</small>
                                 
-                                <div class="d-flex justify-content-between align-items-end border-bottom pb-2 my-1">
+                                <div class="d-flex justify-content-between align-items-center border-bottom pb-2 my-1">
                                     <span class="fs-4 fw-bold ${colorClass}">${i.price}</span>
-                                    <span class="${colorClass}" style="font-size:11px">${arrow}${i.change}%</span>
+                                    <span class="fs-4 fw-bold ${colorClass}">${arrow}${i.change}%</span>
                                 </div>
                                 
                                 <small class="text-muted text-nowrap" style="font-size:10px; transform:scale(0.9); transform-origin:left center;">
-                                    ${i.period}
+                                    ${i.period || ''}
                                 </small>
                                 ${footer}
                             </div>
