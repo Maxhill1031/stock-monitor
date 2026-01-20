@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-01-19 18:19:07",
+    "update_time": "2026-01-20 09:17:35",
     "disposal_stocks": [
-        {
-            "market": "上櫃",
-            "code": "3264",
-            "name": "欣銓",
-            "publish_date": "",
-            "period": "115/01/06~115/01/19",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/01/19",
-            "countdown": 0,
-            "price": 154.5,
-            "change": 9.19
-        },
-        {
-            "market": "上櫃",
-            "code": "7728",
-            "name": "光焱科技",
-            "publish_date": "",
-            "period": "115/01/06~115/01/19",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/01/19",
-            "countdown": 0,
-            "price": 620.0,
-            "change": 1.97
-        },
         {
             "market": "上市",
             "code": "3308",
@@ -36,9 +10,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/20",
-            "countdown": 1,
-            "price": 26.3,
-            "change": 9.81
+            "countdown": 0,
+            "price": 26.05,
+            "change": -0.95
         },
         {
             "market": "上市",
@@ -49,9 +23,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/20",
-            "countdown": 1,
-            "price": 28.8,
-            "change": 8.27
+            "countdown": 0,
+            "price": 27.15,
+            "change": -5.73
         },
         {
             "market": "上櫃",
@@ -62,7 +36,7 @@
             "reason": "",
             "level": "45分盤",
             "end_date": "115/01/20",
-            "countdown": 1,
+            "countdown": 0,
             "price": 32.0,
             "change": 0.0
         },
@@ -75,9 +49,9 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/01/20",
-            "countdown": 1,
-            "price": 70.5,
-            "change": 8.63
+            "countdown": 0,
+            "price": 69.0,
+            "change": -2.13
         },
         {
             "market": "上櫃",
@@ -88,9 +62,9 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/01/20",
-            "countdown": 1,
-            "price": 1980.0,
-            "change": 4.76
+            "countdown": 0,
+            "price": 2005.0,
+            "change": 1.26
         },
         {
             "market": "上市",
@@ -101,9 +75,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/01/22",
-            "countdown": 3,
-            "price": 275.0,
-            "change": 10.0
+            "countdown": 2,
+            "price": 272.0,
+            "change": -1.09
         },
         {
             "market": "上市",
@@ -114,9 +88,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/01/22",
-            "countdown": 3,
-            "price": 158.5,
-            "change": 2.59
+            "countdown": 2,
+            "price": 152.0,
+            "change": -4.1
         },
         {
             "market": "上市",
@@ -127,9 +101,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/22",
-            "countdown": 3,
-            "price": 62.0,
-            "change": 9.93
+            "countdown": 2,
+            "price": 68.2,
+            "change": 10.0
         },
         {
             "market": "上市",
@@ -140,9 +114,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/01/22",
-            "countdown": 3,
-            "price": 62.7,
-            "change": 6.27
+            "countdown": 2,
+            "price": 62.0,
+            "change": -1.12
         },
         {
             "market": "上櫃",
@@ -153,9 +127,9 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/01/22",
-            "countdown": 3,
-            "price": 277.5,
-            "change": 2.02
+            "countdown": 2,
+            "price": 283.0,
+            "change": 1.98
         },
         {
             "market": "上櫃",
@@ -166,9 +140,9 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/01/22",
-            "countdown": 3,
-            "price": 319.5,
-            "change": 8.49
+            "countdown": 2,
+            "price": 298.0,
+            "change": -6.73
         },
         {
             "market": "上市",
@@ -179,9 +153,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/23",
-            "countdown": 4,
-            "price": 73.7,
-            "change": 10.0
+            "countdown": 3,
+            "price": 76.8,
+            "change": 4.21
         },
         {
             "market": "上市",
@@ -192,9 +166,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/23",
-            "countdown": 4,
-            "price": 10.8,
-            "change": 9.87
+            "countdown": 3,
+            "price": 10.25,
+            "change": -5.09
         },
         {
             "market": "上櫃",
@@ -205,9 +179,9 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/01/23",
-            "countdown": 4,
-            "price": 349.5,
-            "change": -2.92
+            "countdown": 3,
+            "price": 371.5,
+            "change": 6.29
         },
         {
             "market": "上市",
@@ -218,9 +192,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/26",
-            "countdown": 7,
-            "price": 116.5,
-            "change": 9.39
+            "countdown": 6,
+            "price": 113.0,
+            "change": -3.0
         },
         {
             "market": "上市",
@@ -231,9 +205,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/26",
-            "countdown": 7,
-            "price": 217.5,
-            "change": 6.88
+            "countdown": 6,
+            "price": 209.5,
+            "change": -3.68
         },
         {
             "market": "上市",
@@ -244,9 +218,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/27",
-            "countdown": 8,
-            "price": 27.1,
-            "change": 3.24
+            "countdown": 7,
+            "price": 28.25,
+            "change": 4.24
         },
         {
             "market": "上市",
@@ -257,9 +231,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/01/28",
-            "countdown": 9,
-            "price": 145.0,
-            "change": -3.65
+            "countdown": 8,
+            "price": 151.5,
+            "change": 4.48
         },
         {
             "market": "上櫃",
@@ -270,9 +244,9 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/01/28",
-            "countdown": 9,
-            "price": 357.5,
-            "change": 0.0
+            "countdown": 8,
+            "price": 350.0,
+            "change": -2.1
         },
         {
             "market": "上市",
@@ -283,9 +257,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/01/29",
-            "countdown": 10,
-            "price": 165.5,
-            "change": 8.17
+            "countdown": 9,
+            "price": 167.5,
+            "change": 1.21
         },
         {
             "market": "上市",
@@ -296,9 +270,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/01/29",
-            "countdown": 10,
-            "price": 709.0,
-            "change": 4.26
+            "countdown": 9,
+            "price": 727.0,
+            "change": 2.54
         },
         {
             "market": "上櫃",
@@ -309,9 +283,9 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/01/29",
-            "countdown": 10,
-            "price": 45.5,
-            "change": 5.81
+            "countdown": 9,
+            "price": 40.95,
+            "change": -10.0
         },
         {
             "market": "上市",
@@ -322,9 +296,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/02/02",
-            "countdown": 14,
-            "price": 35.4,
-            "change": 5.04
+            "countdown": 13,
+            "price": 34.95,
+            "change": -1.27
         },
         {
             "market": "上市",
@@ -335,9 +309,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/02/02",
-            "countdown": 14,
-            "price": 37.35,
-            "change": 5.36
+            "countdown": 13,
+            "price": 36.85,
+            "change": -1.34
         },
         {
             "market": "上櫃",
@@ -348,9 +322,9 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/02",
-            "countdown": 14,
-            "price": 121.5,
-            "change": 6.11
+            "countdown": 13,
+            "price": 125.5,
+            "change": 3.29
         },
         {
             "market": "上櫃",
@@ -361,9 +335,9 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/02/02",
-            "countdown": 14,
-            "price": 201.5,
-            "change": 0.0
+            "countdown": 13,
+            "price": 207.0,
+            "change": 2.73
         },
         {
             "market": "上櫃",
@@ -374,12 +348,40 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/02",
-            "countdown": 14,
-            "price": 58.0,
-            "change": 5.26
+            "countdown": 13,
+            "price": 57.5,
+            "change": -0.86
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3264",
+            "name": "欣銓",
+            "publish_date": "",
+            "period": "115/01/06~115/01/19",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/01/19",
+            "countdown": -1,
+            "price": 165.0,
+            "change": 6.8,
+            "exit_date": "2026-01-19"
+        },
+        {
+            "market": "上櫃",
+            "code": "7728",
+            "name": "光焱科技",
+            "publish_date": "",
+            "period": "115/01/06~115/01/19",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/01/19",
+            "countdown": -1,
+            "price": 682.0,
+            "change": 10.0,
+            "exit_date": "2026-01-19"
+        },
         {
             "market": "上櫃",
             "code": "6265",
