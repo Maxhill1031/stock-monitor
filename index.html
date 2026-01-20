@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body{background:#f4f7f6;font-family:sans-serif}
-        /* 調整按鈕樣式，讓它在手機上更緊湊，避免空間不足 */
+        /* 調整按鈕樣式，讓它在手機上更緊湊 */
         .nav-pills .nav-link{border-radius:50px;margin-right:5px;color:#555;font-weight:700; white-space: nowrap;}
         .nav-pills .nav-link.active{background:#0d6efd;color:#fff}
         
@@ -16,7 +16,7 @@
         .text-up{color:#e01e37 !important;} 
         .text-down{color:#2a9d8f !important;} 
         
-        /* 字體微調：因為變成兩欄，字太大概率會爆版，稍微縮小一點 */
+        /* 字體微調 */
         .card h5 { font-size: 1rem; margin-bottom: 0; }
         .card .fs-4 { font-size: 1.2rem !important; }
         .tag{font-size:10px;padding:2px 6px;border-radius:4px;color:#fff}
@@ -31,7 +31,8 @@
         .badge-60 { background-color: #6f42c1 !important; color: white; } 
     </style>
 </head>
-<body class="p-2"> <div class="container" style="max-width:800px">
+<body class="p-2"> 
+    <div class="container" style="max-width:800px">
         <div class="d-flex justify-content-between mb-3 align-items-center">
             <h5 class="fw-bold m-0">📊 處置監控</h5><small class="text-muted" style="font-size: 0.75rem;" id="time">Loading...</small>
         </div>
@@ -47,17 +48,25 @@
 
     <script>
         let D={};
-        // 加個隨機數避免緩存
+        
+        // 1. 抓取資料
         fetch('data.json?t='+new Date().getTime()).then(r=>r.json()).then(j=>{
-            D=j; document.getElementById('time').innerText=j.update_time;
+            D=j; 
+            document.getElementById('time').innerText=j.update_time;
             document.getElementById('n1').innerText=j.disposal_stocks.length;
             document.getElementById('n2').innerText=j.exited_stocks.length;
             document.getElementById('n3').innerText=j.etf_stocks.length;
+            
+            // 2. 資料載入完成後，強制顯示「處置中」頁面
             show('disposal_stocks');
         });
+
         function show(k){
+            // 3. 【關鍵修正】這裡改用屬性搜尋按鈕，而不是依賴點擊事件
+            // 這樣就算是用程式自動呼叫，按鈕也會正確亮起
             document.querySelectorAll('.nav-link').forEach(b=>b.classList.remove('active'));
-            event.target.closest('button').classList.add('active');
+            let activeBtn = document.querySelector(`button[onclick="show('${k}')"]`);
+            if(activeBtn) activeBtn.classList.add('active');
             
             let h='', list=D[k]||[];
             if(!list.length) return document.getElementById('list').innerHTML='<div class="col-12 text-center text-muted py-5">無資料</div>';
@@ -76,8 +85,7 @@
                     else if (i.level.includes('45')) levelClass = 'badge-45';  
                     else if (i.level.includes('60')) levelClass = 'badge-60';  
                     
-                    // 針對手機版兩欄顯示，調整一下日期顯示方式，避免太擠
-                    let period_html = i.period.replace('~', '<br>~'); // 換行顯示日期區間
+                    let period_html = i.period ? i.period.replace('~', '<br>~') : ''; 
                     
                     let footer = k==='exited_stocks' 
                         ? `<div class="alert alert-success py-1 mt-2 text-center small" style="font-size:10px">✅ ${i.exit_date}出</div>` 
