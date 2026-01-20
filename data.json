@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-01-20 17:55:50",
+    "update_time": "2026-01-20 18:58:16",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -364,6 +364,19 @@
             "countdown": 14,
             "price": 20.85,
             "change": -5.44
+        },
+        {
+            "market": "上櫃",
+            "code": "5328",
+            "name": "華容",
+            "publish_date": "",
+            "period": "115/01/21~115/02/03",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/03",
+            "countdown": 14,
+            "price": 33.6,
+            "change": 7.69
         }
     ],
     "exited_stocks": [
