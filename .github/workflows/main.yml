@@ -1,27 +1,24 @@
 name: Update Stock Data
 
 on:
-  # 1. 允許手動按按鈕執行 (測試用)
+  # 1. 允許手動按按鈕執行
   workflow_dispatch:
   
   # 2. 設定排程自動執行 (GitHub 使用 UTC 時間)
+  # 台灣時間 = UTC + 8
   schedule:
+    # --- 【新增】盤前更新：早上 07:00 (UTC 23:00, 週日~週四) ---
+    # 說明：UTC 23:00 + 8小時 = 台灣隔天 07:00
+    # 週日~週四 (0-4) 的 23:00 = 台灣週一~週五的 07:00
+    - cron: '0 23 * * 0-4'
+
     # --- 盤中股價更新 (09:05 ~ 13:30) ---
-    # 說明：UTC 01:05 ~ 05:30 (每 5 分鐘)
-    # 拆解成三段是為了精準控制時間範圍
-    
-    # 09:05 ~ 09:55 (UTC 01:05 ~ 01:55)
-    - cron: '5-59/5 1 * * 1-5'
-    
-    # 10:00 ~ 12:55 (UTC 02:00 ~ 04:55)
-    - cron: '*/5 2-4 * * 1-5'
-    
-    # 13:00 ~ 13:30 (UTC 05:00 ~ 05:30)
-    - cron: '0-30/5 5 * * 1-5'
+    - cron: '5-59/5 1 * * 1-5'   # 09:05 ~ 09:55 (UTC 01:05)
+    - cron: '*/5 2-4 * * 1-5'    # 10:00 ~ 12:55 (UTC 02:00)
+    - cron: '0-30/5 5 * * 1-5'   # 13:00 ~ 13:30 (UTC 05:00)
 
     # --- 盤後處置股名單更新 (18:40) ---
-    # 說明：UTC 10:40 (台灣通常在 18:00~18:30 公佈新名單)
-    - cron: '40 10 * * 1-5'
+    - cron: '40 10 * * 1-5'      # 18:40 (UTC 10:40)
 
 jobs:
   build:
@@ -34,7 +31,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
+        python-version: '3.11'  # 維持使用 3.11 避免報錯
 
     - name: Install dependencies
       run: |
@@ -51,7 +48,6 @@ jobs:
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
-        # 檢查是否有變更
         git add data.json
         # 只有在 data.json 真的有變動時才 Commit，避免 Log 充滿無意義的紀錄
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update stock data" && git push)
