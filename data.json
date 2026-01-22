@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-01-22 13:55:02",
+    "update_time": "2026-01-22 18:57:42",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -364,6 +364,58 @@
             "countdown": 13,
             "price": 100.5,
             "change": -1.47
+        },
+        {
+            "market": "上市",
+            "code": "1802",
+            "name": "台玻",
+            "publish_date": "115/01/22",
+            "period": "115/01/23～115/02/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/05",
+            "countdown": 14,
+            "price": 51.2,
+            "change": -5.19
+        },
+        {
+            "market": "上櫃",
+            "code": "3491",
+            "name": "昇達科",
+            "publish_date": "",
+            "period": "115/01/23~115/02/05",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/02/05",
+            "countdown": 14,
+            "price": 986.0,
+            "change": 4.67
+        },
+        {
+            "market": "上櫃",
+            "code": "4561",
+            "name": "健椿",
+            "publish_date": "",
+            "period": "115/01/23~115/02/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/05",
+            "countdown": 14,
+            "price": 45.75,
+            "change": 5.29
+        },
+        {
+            "market": "上櫃",
+            "code": "5475",
+            "name": "德宏",
+            "publish_date": "",
+            "period": "115/01/23~115/02/05",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/02/05",
+            "countdown": 14,
+            "price": 109.0,
+            "change": 6.86
         }
     ],
     "exited_stocks": [
