@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-01-28 13:54:07",
+    "update_time": "2026-01-28 18:58:37",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -312,6 +312,58 @@
             "countdown": 13,
             "price": 22.4,
             "change": -4.88
+        },
+        {
+            "market": "上市",
+            "code": "1471",
+            "name": "首利",
+            "publish_date": "115/01/28",
+            "period": "115/01/29～115/02/11",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/11",
+            "countdown": 14,
+            "price": 13.9,
+            "change": -5.12
+        },
+        {
+            "market": "上市",
+            "code": "6949",
+            "name": "沛爾生醫-創",
+            "publish_date": "115/01/28",
+            "period": "115/01/29～115/02/11",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/11",
+            "countdown": 14,
+            "price": 560.0,
+            "change": 9.16
+        },
+        {
+            "market": "上櫃",
+            "code": "7717",
+            "name": "萊德光電-KY",
+            "publish_date": "",
+            "period": "115/01/29~115/02/11",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/02/11",
+            "countdown": 14,
+            "price": 606.0,
+            "change": 2.02
+        },
+        {
+            "market": "上櫃",
+            "code": "7777",
+            "name": "能率亞洲",
+            "publish_date": "",
+            "period": "115/01/29~115/02/11",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/11",
+            "countdown": 14,
+            "price": 38.85,
+            "change": 9.9
         }
     ],
     "exited_stocks": [
