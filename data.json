@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-01-29 13:44:37",
+    "update_time": "2026-01-29 19:07:31",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/01/29",
             "countdown": 0,
-            "price": 182.5,
-            "change": -1.88
+            "price": 180.5,
+            "change": -2.96
         },
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/01/29",
             "countdown": 0,
-            "price": 785.0,
-            "change": 1.16
+            "price": 777.0,
+            "change": 0.13
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/01/29",
             "countdown": 0,
-            "price": 33.65,
-            "change": -7.81
+            "price": 33.05,
+            "change": -9.45
         },
         {
             "market": "上市",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 4,
-            "price": 27.4,
-            "change": 7.03
+            "price": 27.45,
+            "change": 7.23
         },
         {
             "market": "上市",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 4,
-            "price": 40.75,
-            "change": 2.13
+            "price": 40.8,
+            "change": 2.26
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 4,
-            "price": 125.5,
-            "change": -1.95
+            "price": 125.0,
+            "change": -2.34
         },
         {
             "market": "上櫃",
@@ -115,8 +115,8 @@
             "level": "5分盤",
             "end_date": "115/02/03",
             "countdown": 5,
-            "price": 18.15,
-            "change": -4.47
+            "price": 18.2,
+            "change": -4.21
         },
         {
             "market": "上櫃",
@@ -128,8 +128,8 @@
             "level": "5分盤",
             "end_date": "115/02/03",
             "countdown": 5,
-            "price": 27.4,
-            "change": -4.36
+            "price": 27.45,
+            "change": -4.19
         },
         {
             "market": "上市",
@@ -141,8 +141,8 @@
             "level": "20分盤",
             "end_date": "115/02/04",
             "countdown": 6,
-            "price": 28.0,
-            "change": -5.08
+            "price": 27.6,
+            "change": -6.44
         },
         {
             "market": "上市",
@@ -154,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/02/04",
             "countdown": 6,
-            "price": 18.35,
-            "change": -4.18
+            "price": 18.3,
+            "change": -4.44
         },
         {
             "market": "上櫃",
@@ -167,8 +167,8 @@
             "level": "5分盤",
             "end_date": "115/02/04",
             "countdown": 6,
-            "price": 97.3,
-            "change": -1.72
+            "price": 97.1,
+            "change": -1.92
         },
         {
             "market": "上市",
@@ -180,8 +180,8 @@
             "level": "5分盤",
             "end_date": "115/02/05",
             "countdown": 7,
-            "price": 49.9,
-            "change": -4.04
+            "price": 49.8,
+            "change": -4.23
         },
         {
             "market": "上櫃",
@@ -219,8 +219,8 @@
             "level": "20分盤",
             "end_date": "115/02/05",
             "countdown": 7,
-            "price": 104.5,
-            "change": -3.24
+            "price": 106.5,
+            "change": -1.39
         },
         {
             "market": "上市",
@@ -232,8 +232,8 @@
             "level": "5分盤",
             "end_date": "115/02/06",
             "countdown": 8,
-            "price": 26.85,
-            "change": -2.36
+            "price": 26.9,
+            "change": -2.18
         },
         {
             "market": "上市",
@@ -258,8 +258,8 @@
             "level": "5分盤",
             "end_date": "115/02/06",
             "countdown": 8,
-            "price": 7.49,
-            "change": 1.35
+            "price": 7.47,
+            "change": 1.08
         },
         {
             "market": "上市",
@@ -271,8 +271,8 @@
             "level": "20分盤",
             "end_date": "115/02/09",
             "countdown": 11,
-            "price": 368.5,
-            "change": -6.94
+            "price": 374.0,
+            "change": -5.56
         },
         {
             "market": "上市",
@@ -284,8 +284,8 @@
             "level": "5分盤",
             "end_date": "115/02/10",
             "countdown": 12,
-            "price": 21.1,
-            "change": -5.8
+            "price": 21.15,
+            "change": -5.58
         },
         {
             "market": "上市",
@@ -297,8 +297,8 @@
             "level": "5分盤",
             "end_date": "115/02/11",
             "countdown": 13,
-            "price": 12.65,
-            "change": -8.99
+            "price": 12.7,
+            "change": -8.63
         },
         {
             "market": "上市",
@@ -336,8 +336,21 @@
             "level": "5分盤",
             "end_date": "115/02/11",
             "countdown": 13,
-            "price": 41.0,
-            "change": 5.53
+            "price": 41.5,
+            "change": 6.82
+        },
+        {
+            "market": "上市",
+            "code": "2486",
+            "name": "一詮",
+            "publish_date": "115/01/29",
+            "period": "115/01/30～115/02/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/23",
+            "countdown": 25,
+            "price": 128.0,
+            "change": -2.29
         }
     ],
     "exited_stocks": [
@@ -351,8 +364,8 @@
             "level": "5分盤",
             "end_date": "115/01/28",
             "countdown": -1,
-            "price": 378.0,
-            "change": -3.45,
+            "price": 378.5,
+            "change": -3.32,
             "exit_date": "2026-01-28"
         },
         {
