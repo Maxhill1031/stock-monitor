@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-02 14:04:00",
+    "update_time": "2026-02-02 19:23:11",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -262,19 +262,6 @@
             "change": "N/A"
         },
         {
-            "market": "上市",
-            "code": "6949",
-            "name": "沛爾生醫-創",
-            "publish_date": "115/01/28",
-            "period": "115/01/29～115/02/11",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/11",
-            "countdown": 9,
-            "price": "N/A",
-            "change": "N/A"
-        },
-        {
             "market": "上櫃",
             "code": "7717",
             "name": "萊德光電-KY",
@@ -362,6 +349,58 @@
             "level": "20分盤",
             "end_date": "115/02/24",
             "countdown": 22,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "6446",
+            "name": "藥華藥",
+            "publish_date": "115/02/02",
+            "period": "115/02/03～115/02/25",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/25",
+            "countdown": 23,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "6949",
+            "name": "沛爾生醫-創",
+            "publish_date": "115/02/02",
+            "period": "115/02/03～115/02/25",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/02/25",
+            "countdown": 23,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上櫃",
+            "code": "6739",
+            "name": "竹陞科技",
+            "publish_date": "",
+            "period": "115/02/03~115/02/25",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/25",
+            "countdown": 23,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上櫃",
+            "code": "8096",
+            "name": "擎亞",
+            "publish_date": "",
+            "period": "115/02/03~115/02/25",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/25",
+            "countdown": 23,
             "price": "N/A",
             "change": "N/A"
         }
