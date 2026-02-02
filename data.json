@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-02 12:26:16",
+    "update_time": "2026-02-02 13:47:00",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 0,
-            "price": 25.45,
-            "change": -3.42
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上市",
@@ -24,167 +24,9 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 0,
-            "price": 38.55,
-            "change": -5.98
+            "price": "N/A",
+            "change": "N/A"
         },
-        {
-            "market": "上市",
-            "code": "1721",
-            "name": "三晃",
-            "publish_date": "115/01/20",
-            "period": "115/01/21～115/02/03",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/03",
-            "countdown": 1,
-            "price": 17.0,
-            "change": -2.58
-        },
-        {
-            "market": "上市",
-            "code": "1528",
-            "name": "恩德",
-            "publish_date": "115/01/21",
-            "period": "115/01/22～115/02/04",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/02/04",
-            "countdown": 2,
-            "price": 26.0,
-            "change": -6.64
-        },
-        {
-            "market": "上市",
-            "code": "3432",
-            "name": "台端",
-            "publish_date": "115/01/21",
-            "period": "115/01/22～115/02/04",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/04",
-            "countdown": 2,
-            "price": 17.0,
-            "change": -6.85
-        },
-        {
-            "market": "上市",
-            "code": "1802",
-            "name": "台玻",
-            "publish_date": "115/01/22",
-            "period": "115/01/23～115/02/05",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/05",
-            "countdown": 3,
-            "price": 44.35,
-            "change": -8.08
-        },
-        {
-            "market": "上市",
-            "code": "7780",
-            "name": "大研生醫*",
-            "publish_date": "115/01/23",
-            "period": "115/01/26～115/02/06",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/06",
-            "countdown": 4,
-            "price": 24.6,
-            "change": -7.87
-        },
-        {
-            "market": "上市",
-            "code": "8021",
-            "name": "尖點",
-            "publish_date": "115/01/23",
-            "period": "115/01/26～115/02/06",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/06",
-            "countdown": 4,
-            "price": 189.0,
-            "change": -7.8
-        },
-        {
-            "market": "上市",
-            "code": "8046",
-            "name": "南電",
-            "publish_date": "115/01/26",
-            "period": "115/01/27～115/02/09",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/02/09",
-            "countdown": 7,
-            "price": 360.0,
-            "change": -7.34
-        },
-        {
-            "market": "上市",
-            "code": "2489",
-            "name": "瑞軒",
-            "publish_date": "115/01/27",
-            "period": "115/01/28～115/02/10",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/10",
-            "countdown": 8,
-            "price": 20.7,
-            "change": 1.97
-        },
-        {
-            "market": "上市",
-            "code": "1471",
-            "name": "首利",
-            "publish_date": "115/01/28",
-            "period": "115/01/29～115/02/11",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/11",
-            "countdown": 9,
-            "price": 11.85,
-            "change": -5.2
-        },
-        {
-            "market": "上市",
-            "code": "6949",
-            "name": "沛爾生醫-創",
-            "publish_date": "115/01/28",
-            "period": "115/01/29～115/02/11",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/11",
-            "countdown": 9,
-            "price": 608.0,
-            "change": 1.33
-        },
-        {
-            "market": "上市",
-            "code": "2486",
-            "name": "一詮",
-            "publish_date": "115/01/29",
-            "period": "115/01/30～115/02/23",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/23",
-            "countdown": 21,
-            "price": 122.5,
-            "change": -4.3
-        },
-        {
-            "market": "上市",
-            "code": "9103",
-            "name": "美德醫療-DR",
-            "publish_date": "115/01/30",
-            "period": "115/02/02～115/02/24",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/02/24",
-            "countdown": 22,
-            "price": 6.25,
-            "change": -2.19
-        }
-    ],
-    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "3691",
@@ -195,9 +37,8 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 0,
-            "price": 115.0,
-            "change": -2.54,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -209,9 +50,8 @@
             "level": "20分盤",
             "end_date": "115/02/02",
             "countdown": 0,
-            "price": 227.0,
-            "change": -2.58,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -223,9 +63,21 @@
             "level": "5分盤",
             "end_date": "115/02/02",
             "countdown": 0,
-            "price": 48.4,
-            "change": -0.31,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "1721",
+            "name": "三晃",
+            "publish_date": "115/01/20",
+            "period": "115/01/21～115/02/03",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/03",
+            "countdown": 1,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -237,9 +89,34 @@
             "level": "5分盤",
             "end_date": "115/02/03",
             "countdown": 1,
-            "price": 26.2,
-            "change": -4.2,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "1528",
+            "name": "恩德",
+            "publish_date": "115/01/21",
+            "period": "115/01/22～115/02/04",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/02/04",
+            "countdown": 2,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "3432",
+            "name": "台端",
+            "publish_date": "115/01/21",
+            "period": "115/01/22～115/02/04",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/04",
+            "countdown": 2,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -251,9 +128,21 @@
             "level": "5分盤",
             "end_date": "115/02/04",
             "countdown": 2,
-            "price": 92.3,
-            "change": -2.33,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "1802",
+            "name": "台玻",
+            "publish_date": "115/01/22",
+            "period": "115/01/23～115/02/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/05",
+            "countdown": 3,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -265,9 +154,8 @@
             "level": "20分盤",
             "end_date": "115/02/05",
             "countdown": 3,
-            "price": 1155.0,
-            "change": 5.48,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -279,9 +167,8 @@
             "level": "5分盤",
             "end_date": "115/02/05",
             "countdown": 3,
-            "price": 43.6,
-            "change": -2.35,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -293,9 +180,34 @@
             "level": "20分盤",
             "end_date": "115/02/05",
             "countdown": 3,
-            "price": 111.5,
-            "change": 4.69,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "7780",
+            "name": "大研生醫*",
+            "publish_date": "115/01/23",
+            "period": "115/01/26～115/02/06",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/06",
+            "countdown": 4,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "115/01/23",
+            "period": "115/01/26～115/02/06",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/06",
+            "countdown": 4,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -307,9 +219,60 @@
             "level": "5分盤",
             "end_date": "115/02/06",
             "countdown": 4,
-            "price": 7.04,
-            "change": -2.9,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "8046",
+            "name": "南電",
+            "publish_date": "115/01/26",
+            "period": "115/01/27～115/02/09",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/02/09",
+            "countdown": 7,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "2489",
+            "name": "瑞軒",
+            "publish_date": "115/01/27",
+            "period": "115/01/28～115/02/10",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/10",
+            "countdown": 8,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "1471",
+            "name": "首利",
+            "publish_date": "115/01/28",
+            "period": "115/01/29～115/02/11",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/11",
+            "countdown": 9,
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "6949",
+            "name": "沛爾生醫-創",
+            "publish_date": "115/01/28",
+            "period": "115/01/29～115/02/11",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/11",
+            "countdown": 9,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -321,9 +284,8 @@
             "level": "20分盤",
             "end_date": "115/02/11",
             "countdown": 9,
-            "price": 568.0,
-            "change": 0.53,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -335,9 +297,21 @@
             "level": "5分盤",
             "end_date": "115/02/11",
             "countdown": 9,
-            "price": 35.35,
-            "change": -9.94,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "2486",
+            "name": "一詮",
+            "publish_date": "115/01/29",
+            "period": "115/01/30～115/02/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/23",
+            "countdown": 21,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -349,9 +323,8 @@
             "level": "20分盤",
             "end_date": "115/02/23",
             "countdown": 21,
-            "price": 955.0,
-            "change": -4.5,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -363,9 +336,21 @@
             "level": "20分盤",
             "end_date": "115/02/23",
             "countdown": 21,
-            "price": 245.0,
-            "change": -6.49,
-            "exit_date": "2026-02-02"
+            "price": "N/A",
+            "change": "N/A"
+        },
+        {
+            "market": "上市",
+            "code": "9103",
+            "name": "美德醫療-DR",
+            "publish_date": "115/01/30",
+            "period": "115/02/02～115/02/24",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/24",
+            "countdown": 22,
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -377,10 +362,11 @@
             "level": "20分盤",
             "end_date": "115/02/24",
             "countdown": 22,
-            "price": 431.0,
-            "change": -5.48,
-            "exit_date": "2026-02-02"
-        },
+            "price": "N/A",
+            "change": "N/A"
+        }
+    ],
+    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "8080",
