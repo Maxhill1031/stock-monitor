@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-03 13:52:14",
+    "update_time": "2026-02-03 19:09:51",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -237,19 +237,6 @@
         },
         {
             "market": "上櫃",
-            "code": "3081",
-            "name": "聯亞",
-            "publish_date": "",
-            "period": "115/01/30~115/02/23",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/02/23",
-            "countdown": 20,
-            "price": 1095.0,
-            "change": 9.61
-        },
-        {
-            "market": "上櫃",
             "code": "8358",
             "name": "金居",
             "publish_date": "",
@@ -338,6 +325,71 @@
             "countdown": 22,
             "price": 73.9,
             "change": 0.96
+        },
+        {
+            "market": "上市",
+            "code": "6442",
+            "name": "光聖",
+            "publish_date": "115/02/03",
+            "period": "115/02/04～115/02/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/02/26",
+            "countdown": 23,
+            "price": 1830.0,
+            "change": 7.02
+        },
+        {
+            "market": "上櫃",
+            "code": "3081",
+            "name": "聯亞",
+            "publish_date": "",
+            "period": "115/02/04~115/02/26",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/02/26",
+            "countdown": 23,
+            "price": 1095.0,
+            "change": 9.61
+        },
+        {
+            "market": "上櫃",
+            "code": "3555",
+            "name": "博士旺",
+            "publish_date": "",
+            "period": "115/02/04~115/02/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/26",
+            "countdown": 23,
+            "price": 125.0,
+            "change": 1.63
+        },
+        {
+            "market": "上櫃",
+            "code": "6588",
+            "name": "東典光電",
+            "publish_date": "",
+            "period": "115/02/04~115/02/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/26",
+            "countdown": 23,
+            "price": 66.0,
+            "change": -3.93
+        },
+        {
+            "market": "上櫃",
+            "code": "6683",
+            "name": "雍智科技",
+            "publish_date": "",
+            "period": "115/02/04~115/02/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/02/26",
+            "countdown": 23,
+            "price": 696.0,
+            "change": 9.95
         }
     ],
     "exited_stocks": [
