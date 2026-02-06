@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-06 13:54:24",
+    "update_time": "2026-02-06 19:10:32",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -263,19 +263,6 @@
         },
         {
             "market": "上櫃",
-            "code": "6683",
-            "name": "雍智科技",
-            "publish_date": "",
-            "period": "115/02/04~115/02/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/02/26",
-            "countdown": 20,
-            "price": 708.0,
-            "change": 1.14
-        },
-        {
-            "market": "上櫃",
             "code": "3491",
             "name": "昇達科",
             "publish_date": "",
@@ -312,6 +299,19 @@
             "countdown": 26,
             "price": 120.5,
             "change": -0.82
+        },
+        {
+            "market": "上櫃",
+            "code": "6683",
+            "name": "雍智科技",
+            "publish_date": "",
+            "period": "115/02/09~115/03/04",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/04",
+            "countdown": 26,
+            "price": 708.0,
+            "change": 1.14
         },
         {
             "market": "上櫃",
