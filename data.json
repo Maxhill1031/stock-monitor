@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-10 14:12:02",
+    "update_time": "2026-02-10 19:32:18",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -299,6 +299,32 @@
             "countdown": 23,
             "price": 262.0,
             "change": 1.55
+        },
+        {
+            "market": "上櫃",
+            "code": "5386",
+            "name": "青雲",
+            "publish_date": "",
+            "period": "115/02/11~115/03/06",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/03/06",
+            "countdown": 24,
+            "price": 145.0,
+            "change": 7.81
+        },
+        {
+            "market": "上櫃",
+            "code": "6584",
+            "name": "南俊國際",
+            "publish_date": "",
+            "period": "115/02/11~115/03/06",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/03/06",
+            "countdown": 24,
+            "price": 407.5,
+            "change": 8.09
         }
     ],
     "exited_stocks": [
