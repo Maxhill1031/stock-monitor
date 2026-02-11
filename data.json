@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-11 14:08:30",
+    "update_time": "2026-02-11 19:28:39",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -312,6 +312,32 @@
             "countdown": 23,
             "price": 445.0,
             "change": 9.2
+        },
+        {
+            "market": "上櫃",
+            "code": "3230",
+            "name": "錦明",
+            "publish_date": "",
+            "period": "115/02/23~115/03/09",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/03/09",
+            "countdown": 26,
+            "price": 42.05,
+            "change": 9.65
+        },
+        {
+            "market": "上櫃",
+            "code": "5340",
+            "name": "建榮",
+            "publish_date": "",
+            "period": "115/02/23~115/03/09",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/09",
+            "countdown": 26,
+            "price": 99.8,
+            "change": 4.83
         }
     ],
     "exited_stocks": [
