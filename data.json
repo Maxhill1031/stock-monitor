@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-19 19:24:31",
+    "update_time": "2026-02-20 07:31:51",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -10,7 +10,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/02/23",
-            "countdown": 4,
+            "countdown": 3,
             "price": 152.0,
             "change": 4.11
         },
@@ -23,7 +23,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/02/23",
-            "countdown": 4,
+            "countdown": 3,
             "price": 270.0,
             "change": 4.65
         },
@@ -36,7 +36,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/02/24",
-            "countdown": 5,
+            "countdown": 4,
             "price": 5.15,
             "change": 0.39
         },
@@ -49,7 +49,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/02/24",
-            "countdown": 5,
+            "countdown": 4,
             "price": 589.0,
             "change": 3.88
         },
@@ -62,7 +62,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/02/25",
-            "countdown": 6,
+            "countdown": 5,
             "price": 725.0,
             "change": -0.41
         },
@@ -75,7 +75,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/02/25",
-            "countdown": 6,
+            "countdown": 5,
             "price": 678.0,
             "change": -1.45
         },
@@ -88,7 +88,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/25",
-            "countdown": 6,
+            "countdown": 5,
             "price": 852.0,
             "change": 0.95
         },
@@ -101,7 +101,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/25",
-            "countdown": 6,
+            "countdown": 5,
             "price": 64.7,
             "change": 1.09
         },
@@ -114,7 +114,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/02/26",
-            "countdown": 7,
+            "countdown": 6,
             "price": 1950.0,
             "change": -1.76
         },
@@ -127,7 +127,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/02/26",
-            "countdown": 7,
+            "countdown": 6,
             "price": 1085.0,
             "change": -3.12
         },
@@ -140,7 +140,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/26",
-            "countdown": 7,
+            "countdown": 6,
             "price": 121.0,
             "change": 10.0
         },
@@ -153,7 +153,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/26",
-            "countdown": 7,
+            "countdown": 6,
             "price": 92.6,
             "change": 9.98
         },
@@ -166,7 +166,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/03/02",
-            "countdown": 11,
+            "countdown": 10,
             "price": 1400.0,
             "change": 7.28
         },
@@ -179,7 +179,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/03/03",
-            "countdown": 12,
+            "countdown": 11,
             "price": 778.0,
             "change": -1.27
         },
@@ -192,7 +192,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/03/04",
-            "countdown": 13,
+            "countdown": 12,
             "price": 154.5,
             "change": 9.57
         },
@@ -205,7 +205,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/03/04",
-            "countdown": 13,
+            "countdown": 12,
             "price": 790.0,
             "change": 9.87
         },
@@ -218,7 +218,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/03/04",
-            "countdown": 13,
+            "countdown": 12,
             "price": 401.0,
             "change": 0.12
         },
@@ -231,7 +231,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/03/05",
-            "countdown": 14,
+            "countdown": 13,
             "price": 35.0,
             "change": 5.58
         },
@@ -244,7 +244,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/03/05",
-            "countdown": 14,
+            "countdown": 13,
             "price": 269.0,
             "change": 2.67
         },
@@ -257,7 +257,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/03/06",
-            "countdown": 15,
+            "countdown": 14,
             "price": 159.5,
             "change": 10.0
         },
@@ -270,7 +270,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/03/06",
-            "countdown": 15,
+            "countdown": 14,
             "price": 445.0,
             "change": 9.2
         },
@@ -283,7 +283,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/03/09",
-            "countdown": 18,
+            "countdown": 17,
             "price": 42.05,
             "change": 9.65
         },
@@ -296,7 +296,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/03/09",
-            "countdown": 18,
+            "countdown": 17,
             "price": 99.8,
             "change": 4.83
         }
@@ -311,7 +311,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/02/11",
-            "countdown": -8,
+            "countdown": -9,
             "price": 631.0,
             "change": 8.79,
             "exit_date": "2026-02-11"
@@ -325,7 +325,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/02/11",
-            "countdown": -8,
+            "countdown": -9,
             "price": 34.75,
             "change": -0.14,
             "exit_date": "2026-02-11"
