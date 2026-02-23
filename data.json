@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-23 14:06:03",
+    "update_time": "2026-02-23 19:24:57",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -39,19 +39,6 @@
             "countdown": 1,
             "price": 5.07,
             "change": -1.55
-        },
-        {
-            "market": "上櫃",
-            "code": "3163",
-            "name": "波若威",
-            "publish_date": "",
-            "period": "115/02/02~115/02/24",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/02/24",
-            "countdown": 1,
-            "price": 647.0,
-            "change": 9.85
         },
         {
             "market": "上市",
@@ -299,6 +286,58 @@
             "countdown": 14,
             "price": 101.0,
             "change": 1.2
+        },
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "115/02/23",
+            "period": "115/02/24～115/03/10",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/10",
+            "countdown": 15,
+            "price": 278.0,
+            "change": 2.39
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/02/23",
+            "period": "115/02/24～115/03/10",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/10",
+            "countdown": 15,
+            "price": 285.5,
+            "change": 4.2
+        },
+        {
+            "market": "上櫃",
+            "code": "2230",
+            "name": "泰茂",
+            "publish_date": "",
+            "period": "115/02/24~115/03/10",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/03/10",
+            "countdown": 15,
+            "price": 50.3,
+            "change": -9.86
+        },
+        {
+            "market": "上櫃",
+            "code": "3163",
+            "name": "波若威",
+            "publish_date": "",
+            "period": "115/02/24~115/03/10",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/10",
+            "countdown": 15,
+            "price": 647.0,
+            "change": 9.85
         }
     ],
     "exited_stocks": [
