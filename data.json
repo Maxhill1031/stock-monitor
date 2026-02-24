@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-02-24 13:59:26",
+    "update_time": "2026-02-24 19:26:05",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -312,6 +312,19 @@
             "countdown": 14,
             "price": 711.0,
             "change": 9.89
+        },
+        {
+            "market": "上市",
+            "code": "8996",
+            "name": "高力",
+            "publish_date": "115/02/24",
+            "period": "115/02/25～115/03/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/11",
+            "countdown": 15,
+            "price": 931.0,
+            "change": 5.92
         }
     ],
     "exited_stocks": [
@@ -342,34 +355,6 @@
             "price": 300.5,
             "change": 9.87,
             "exit_date": "2026-02-23"
-        },
-        {
-            "market": "上櫃",
-            "code": "7717",
-            "name": "萊德光電-KY",
-            "publish_date": "",
-            "period": "115/01/29~115/02/11",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/02/11",
-            "countdown": -13,
-            "price": 761.0,
-            "change": 9.97,
-            "exit_date": "2026-02-11"
-        },
-        {
-            "market": "上櫃",
-            "code": "7777",
-            "name": "能率亞洲",
-            "publish_date": "",
-            "period": "115/01/29~115/02/11",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/02/11",
-            "countdown": -13,
-            "price": 34.0,
-            "change": -5.03,
-            "exit_date": "2026-02-11"
         },
         {
             "market": "上市",
