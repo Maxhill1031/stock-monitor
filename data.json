@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-02 13:53:34",
+    "update_time": "2026-03-02 19:21:03",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -364,6 +364,58 @@
             "countdown": 11,
             "price": 202.5,
             "change": -5.37
+        },
+        {
+            "market": "上市",
+            "code": "2360",
+            "name": "致茂",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 14,
+            "price": 1515.0,
+            "change": 9.78
+        },
+        {
+            "market": "上市",
+            "code": "3037",
+            "name": "欣興",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 14,
+            "price": 481.0,
+            "change": -0.1
+        },
+        {
+            "market": "上市",
+            "code": "4927",
+            "name": "泰鼎-KY",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 14,
+            "price": 46.4,
+            "change": -1.8
+        },
+        {
+            "market": "上市",
+            "code": "6861",
+            "name": "睿生光電",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 14,
+            "price": 125.0,
+            "change": 9.65
         }
     ],
     "exited_stocks": [
