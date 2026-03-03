@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-03 13:51:04",
+    "update_time": "2026-03-03 19:08:11",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -520,6 +520,58 @@
             "countdown": 13,
             "price": 1180.0,
             "change": -8.17
+        },
+        {
+            "market": "上市",
+            "code": "1802",
+            "name": "台玻",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/17",
+            "countdown": 14,
+            "price": 63.7,
+            "change": -5.21
+        },
+        {
+            "market": "上市",
+            "code": "2338",
+            "name": "光罩",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/17",
+            "countdown": 14,
+            "price": 53.9,
+            "change": -0.37
+        },
+        {
+            "market": "上市",
+            "code": "3092",
+            "name": "鴻碩",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/17",
+            "countdown": 14,
+            "price": 36.8,
+            "change": 4.1
+        },
+        {
+            "market": "上市",
+            "code": "3576",
+            "name": "聯合再生",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/17",
+            "countdown": 14,
+            "price": 26.7,
+            "change": 9.88
         }
     ],
     "exited_stocks": [
@@ -563,34 +615,6 @@
             "countdown": -5,
             "price": 121.0,
             "change": -5.1,
-            "exit_date": "2026-02-26"
-        },
-        {
-            "market": "上櫃",
-            "code": "6588",
-            "name": "東典光電",
-            "publish_date": "",
-            "period": "115/02/04~115/02/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/02/26",
-            "countdown": -5,
-            "price": 103.5,
-            "change": -10.0,
-            "exit_date": "2026-02-26"
-        },
-        {
-            "market": "上櫃",
-            "code": "6683",
-            "name": "雍智科技",
-            "publish_date": "",
-            "period": "115/02/04~115/02/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/02/26",
-            "countdown": -5,
-            "price": 833.0,
-            "change": -4.36,
             "exit_date": "2026-02-26"
         },
         {
