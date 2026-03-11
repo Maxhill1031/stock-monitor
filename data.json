@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-11 13:50:30",
+    "update_time": "2026-03-11 19:09:12",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -250,19 +250,6 @@
         },
         {
             "market": "上櫃",
-            "code": "5386",
-            "name": "青雲",
-            "publish_date": "",
-            "period": "115/03/03~115/03/16",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/16",
-            "countdown": 5,
-            "price": 319.0,
-            "change": 1.43
-        },
-        {
-            "market": "上櫃",
             "code": "6217",
             "name": "中探針",
             "publish_date": "",
@@ -286,19 +273,6 @@
             "countdown": 5,
             "price": 79.8,
             "change": 9.92
-        },
-        {
-            "market": "上櫃",
-            "code": "7717",
-            "name": "萊德光電-KY",
-            "publish_date": "",
-            "period": "115/03/03~115/03/16",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/16",
-            "countdown": 5,
-            "price": 605.0,
-            "change": 10.0
         },
         {
             "market": "上櫃",
@@ -364,19 +338,6 @@
             "countdown": 6,
             "price": 21.75,
             "change": 9.85
-        },
-        {
-            "market": "上櫃",
-            "code": "3491",
-            "name": "昇達科",
-            "publish_date": "",
-            "period": "115/03/04~115/03/17",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/17",
-            "countdown": 6,
-            "price": 1265.0,
-            "change": 10.0
         },
         {
             "market": "上櫃",
@@ -689,6 +650,71 @@
             "countdown": 12,
             "price": 13.3,
             "change": -9.83
+        },
+        {
+            "market": "上櫃",
+            "code": "3081",
+            "name": "聯亞",
+            "publish_date": "",
+            "period": "115/03/12~115/03/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/25",
+            "countdown": 14,
+            "price": 1555.0,
+            "change": 4.71
+        },
+        {
+            "market": "上櫃",
+            "code": "3491",
+            "name": "昇達科",
+            "publish_date": "",
+            "period": "115/03/12~115/03/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/25",
+            "countdown": 14,
+            "price": 1265.0,
+            "change": 10.0
+        },
+        {
+            "market": "上櫃",
+            "code": "4971",
+            "name": "IET-KY",
+            "publish_date": "",
+            "period": "115/03/12~115/03/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/25",
+            "countdown": 14,
+            "price": 481.5,
+            "change": 6.17
+        },
+        {
+            "market": "上櫃",
+            "code": "5386",
+            "name": "青雲",
+            "publish_date": "",
+            "period": "115/03/12~115/03/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/25",
+            "countdown": 14,
+            "price": 319.0,
+            "change": 1.43
+        },
+        {
+            "market": "上櫃",
+            "code": "7717",
+            "name": "萊德光電-KY",
+            "publish_date": "",
+            "period": "115/03/12~115/03/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/25",
+            "countdown": 14,
+            "price": 605.0,
+            "change": 10.0
         }
     ],
     "exited_stocks": [
