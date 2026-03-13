@@ -1,6 +1,58 @@
 {
-    "update_time": "2026-03-13 07:30:02",
+    "update_time": "2026-03-13 11:32:58",
     "disposal_stocks": [
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "115/02/26",
+            "period": "115/03/02～115/03/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/13",
+            "countdown": 0,
+            "price": 231.5,
+            "change": 3.81
+        },
+        {
+            "market": "上市",
+            "code": "6426",
+            "name": "統新",
+            "publish_date": "115/02/26",
+            "period": "115/03/02～115/03/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/13",
+            "countdown": 0,
+            "price": 137.5,
+            "change": 6.18
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/02/26",
+            "period": "115/03/02～115/03/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/13",
+            "countdown": 0,
+            "price": 328.0,
+            "change": -1.2
+        },
+        {
+            "market": "上市",
+            "code": "8046",
+            "name": "南電",
+            "publish_date": "115/02/26",
+            "period": "115/03/02～115/03/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/13",
+            "countdown": 0,
+            "price": 499.5,
+            "change": 6.62
+        },
         {
             "market": "上櫃",
             "code": "3163",
@@ -11,8 +63,8 @@
             "level": "20分盤",
             "end_date": "115/03/13",
             "countdown": 0,
-            "price": 841.0,
-            "change": 9.22
+            "price": 869.0,
+            "change": 3.33
         },
         {
             "market": "上櫃",
@@ -24,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/03/13",
             "countdown": 0,
-            "price": 585.0,
-            "change": -3.62
+            "price": 614.0,
+            "change": 4.96
         },
         {
             "market": "上櫃",
@@ -37,8 +89,47 @@
             "level": "5分盤",
             "end_date": "115/03/13",
             "countdown": 0,
-            "price": 14.65,
-            "change": 9.74
+            "price": 15.0,
+            "change": 2.39
+        },
+        {
+            "market": "上市",
+            "code": "2360",
+            "name": "致茂",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 3,
+            "price": 1440.0,
+            "change": -3.68
+        },
+        {
+            "market": "上市",
+            "code": "3037",
+            "name": "欣興",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 3,
+            "price": 505.0,
+            "change": 5.21
+        },
+        {
+            "market": "上市",
+            "code": "4927",
+            "name": "泰鼎-KY",
+            "publish_date": "115/03/02",
+            "period": "115/03/03～115/03/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/16",
+            "countdown": 3,
+            "price": 46.2,
+            "change": 5.12
         },
         {
             "market": "上櫃",
@@ -50,8 +141,8 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 306.5,
-            "change": 2.51
+            "price": 312.5,
+            "change": 1.96
         },
         {
             "market": "上櫃",
@@ -63,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 29.3,
-            "change": 3.35
+            "price": 29.2,
+            "change": -0.34
         },
         {
             "market": "上櫃",
@@ -76,8 +167,8 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 96.8,
-            "change": 3.53
+            "price": 99.0,
+            "change": 2.27
         },
         {
             "market": "上櫃",
@@ -89,8 +180,8 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 387.5,
-            "change": 1.04
+            "price": 395.0,
+            "change": 1.94
         },
         {
             "market": "上櫃",
@@ -102,8 +193,8 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 51.2,
-            "change": -3.4
+            "price": 52.8,
+            "change": 3.12
         },
         {
             "market": "上櫃",
@@ -115,8 +206,8 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 124.0,
-            "change": 9.73
+            "price": 136.0,
+            "change": 9.68
         },
         {
             "market": "上櫃",
@@ -141,8 +232,60 @@
             "level": "5分盤",
             "end_date": "115/03/16",
             "countdown": 3,
-            "price": 1325.0,
-            "change": 1.92
+            "price": 1330.0,
+            "change": 0.38
+        },
+        {
+            "market": "上市",
+            "code": "1802",
+            "name": "台玻",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/17",
+            "countdown": 4,
+            "price": 56.3,
+            "change": 2.36
+        },
+        {
+            "market": "上市",
+            "code": "2338",
+            "name": "光罩",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/17",
+            "countdown": 4,
+            "price": 50.3,
+            "change": 1.62
+        },
+        {
+            "market": "上市",
+            "code": "3092",
+            "name": "鴻碩",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/17",
+            "countdown": 4,
+            "price": 32.05,
+            "change": 0.63
+        },
+        {
+            "market": "上市",
+            "code": "3576",
+            "name": "聯合再生",
+            "publish_date": "115/03/03",
+            "period": "115/03/04～115/03/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/17",
+            "countdown": 4,
+            "price": 23.85,
+            "change": 1.06
         },
         {
             "market": "上櫃",
@@ -154,8 +297,8 @@
             "level": "20分盤",
             "end_date": "115/03/17",
             "countdown": 4,
-            "price": 327.0,
-            "change": -3.68
+            "price": 325.0,
+            "change": -0.61
         },
         {
             "market": "上櫃",
@@ -167,8 +310,8 @@
             "level": "20分盤",
             "end_date": "115/03/17",
             "countdown": 4,
-            "price": 73.8,
-            "change": -0.94
+            "price": 74.3,
+            "change": 0.68
         },
         {
             "market": "上櫃",
@@ -180,8 +323,8 @@
             "level": "20分盤",
             "end_date": "115/03/17",
             "countdown": 4,
-            "price": 111.0,
-            "change": 6.73
+            "price": 108.5,
+            "change": -2.25
         },
         {
             "market": "上櫃",
@@ -193,8 +336,8 @@
             "level": "20分盤",
             "end_date": "115/03/17",
             "countdown": 4,
-            "price": 469.0,
-            "change": -4.87
+            "price": 479.0,
+            "change": 2.13
         },
         {
             "market": "上櫃",
@@ -206,8 +349,47 @@
             "level": "5分盤",
             "end_date": "115/03/17",
             "countdown": 4,
-            "price": 33.6,
-            "change": 1.05
+            "price": 34.5,
+            "change": 2.68
+        },
+        {
+            "market": "上市",
+            "code": "2367",
+            "name": "燿華",
+            "publish_date": "115/03/04",
+            "period": "115/03/05～115/03/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/18",
+            "countdown": 5,
+            "price": 73.5,
+            "change": 0.68
+        },
+        {
+            "market": "上市",
+            "code": "2467",
+            "name": "志聖",
+            "publish_date": "115/03/04",
+            "period": "115/03/05～115/03/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/18",
+            "countdown": 5,
+            "price": 357.0,
+            "change": -2.19
+        },
+        {
+            "market": "上市",
+            "code": "2489",
+            "name": "瑞軒",
+            "publish_date": "115/03/04",
+            "period": "115/03/05～115/03/18",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/18",
+            "countdown": 5,
+            "price": 38.5,
+            "change": 2.39
         },
         {
             "market": "上櫃",
@@ -219,8 +401,8 @@
             "level": "20分盤",
             "end_date": "115/03/18",
             "countdown": 5,
-            "price": 34.8,
-            "change": 1.02
+            "price": 35.35,
+            "change": 1.58
         },
         {
             "market": "上櫃",
@@ -232,8 +414,8 @@
             "level": "5分盤",
             "end_date": "115/03/18",
             "countdown": 5,
-            "price": 460.0,
-            "change": 4.43
+            "price": 460.5,
+            "change": 0.11
         },
         {
             "market": "上櫃",
@@ -245,8 +427,47 @@
             "level": "5分盤",
             "end_date": "115/03/18",
             "countdown": 5,
-            "price": 187.0,
-            "change": -3.61
+            "price": 184.0,
+            "change": -1.6
+        },
+        {
+            "market": "上市",
+            "code": "6141",
+            "name": "柏承",
+            "publish_date": "115/03/05",
+            "period": "115/03/06～115/03/19",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/19",
+            "countdown": 6,
+            "price": 19.4,
+            "change": 6.59
+        },
+        {
+            "market": "上市",
+            "code": "6861",
+            "name": "睿生光電",
+            "publish_date": "115/03/05",
+            "period": "115/03/06～115/03/19",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/19",
+            "countdown": 6,
+            "price": 177.5,
+            "change": 0.0
+        },
+        {
+            "market": "上市",
+            "code": "8033",
+            "name": "雷虎",
+            "publish_date": "115/03/05",
+            "period": "115/03/06～115/03/19",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/19",
+            "countdown": 6,
+            "price": 142.5,
+            "change": -1.38
         },
         {
             "market": "上櫃",
@@ -258,8 +479,8 @@
             "level": "5分盤",
             "end_date": "115/03/19",
             "countdown": 6,
-            "price": 104.0,
-            "change": -1.42
+            "price": 105.0,
+            "change": 0.96
         },
         {
             "market": "上櫃",
@@ -271,8 +492,8 @@
             "level": "20分盤",
             "end_date": "115/03/19",
             "countdown": 6,
-            "price": 624.0,
-            "change": 6.48
+            "price": 640.0,
+            "change": 2.56
         },
         {
             "market": "上櫃",
@@ -284,8 +505,8 @@
             "level": "5分盤",
             "end_date": "115/03/19",
             "countdown": 6,
-            "price": 104.0,
-            "change": -2.8
+            "price": 106.0,
+            "change": 1.92
         },
         {
             "market": "上櫃",
@@ -297,8 +518,73 @@
             "level": "20分盤",
             "end_date": "115/03/19",
             "countdown": 6,
-            "price": 229.0,
-            "change": 1.55
+            "price": 242.0,
+            "change": 5.68
+        },
+        {
+            "market": "上市",
+            "code": "6230",
+            "name": "尼得科超眾",
+            "publish_date": "115/03/06",
+            "period": "115/03/09～115/03/20",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/20",
+            "countdown": 7,
+            "price": 172.0,
+            "change": 2.38
+        },
+        {
+            "market": "上市",
+            "code": "6442",
+            "name": "光聖",
+            "publish_date": "115/03/06",
+            "period": "115/03/09～115/03/20",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/20",
+            "countdown": 7,
+            "price": 1685.0,
+            "change": -0.3
+        },
+        {
+            "market": "上市",
+            "code": "1589",
+            "name": "永冠-KY",
+            "publish_date": "115/03/09",
+            "period": "115/03/10～115/03/23",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/03/23",
+            "countdown": 10,
+            "price": 7.98,
+            "change": 9.92
+        },
+        {
+            "market": "上市",
+            "code": "2616",
+            "name": "山隆",
+            "publish_date": "115/03/09",
+            "period": "115/03/10～115/03/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/23",
+            "countdown": 10,
+            "price": 18.05,
+            "change": -0.82
+        },
+        {
+            "market": "上市",
+            "code": "6830",
+            "name": "汎銓",
+            "publish_date": "115/03/09",
+            "period": "115/03/10～115/03/23",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/23",
+            "countdown": 10,
+            "price": 383.0,
+            "change": -1.29
         },
         {
             "market": "上櫃",
@@ -310,8 +596,8 @@
             "level": "20分盤",
             "end_date": "115/03/25",
             "countdown": 12,
-            "price": 1440.0,
-            "change": -7.4
+            "price": 1430.0,
+            "change": -0.69
         },
         {
             "market": "上櫃",
@@ -323,8 +609,8 @@
             "level": "20分盤",
             "end_date": "115/03/25",
             "countdown": 12,
-            "price": 1350.0,
-            "change": 6.72
+            "price": 1315.0,
+            "change": -2.59
         },
         {
             "market": "上櫃",
@@ -336,8 +622,8 @@
             "level": "20分盤",
             "end_date": "115/03/25",
             "countdown": 12,
-            "price": 452.0,
-            "change": -6.13
+            "price": 461.0,
+            "change": 1.99
         },
         {
             "market": "上櫃",
@@ -350,7 +636,7 @@
             "end_date": "115/03/25",
             "countdown": 12,
             "price": 287.5,
-            "change": -9.87
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -362,8 +648,47 @@
             "level": "20分盤",
             "end_date": "115/03/25",
             "countdown": 12,
-            "price": 625.0,
-            "change": 3.31
+            "price": 601.0,
+            "change": -3.84
+        },
+        {
+            "market": "上市",
+            "code": "3054",
+            "name": "立萬利",
+            "publish_date": "115/03/12",
+            "period": "115/03/13～115/03/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/26",
+            "countdown": 13,
+            "price": 70.7,
+            "change": 7.61
+        },
+        {
+            "market": "上市",
+            "code": "5521",
+            "name": "工信",
+            "publish_date": "115/03/12",
+            "period": "115/03/13～115/03/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/26",
+            "countdown": 13,
+            "price": 14.85,
+            "change": 3.12
+        },
+        {
+            "market": "上市",
+            "code": "6715",
+            "name": "嘉基",
+            "publish_date": "115/03/12",
+            "period": "115/03/13～115/03/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/26",
+            "countdown": 13,
+            "price": 300.0,
+            "change": -1.32
         },
         {
             "market": "上櫃",
@@ -375,8 +700,8 @@
             "level": "20分盤",
             "end_date": "115/03/26",
             "countdown": 13,
-            "price": 14.0,
-            "change": 5.26
+            "price": 14.45,
+            "change": 3.21
         }
     ],
     "exited_stocks": [
@@ -390,8 +715,8 @@
             "level": "5分盤",
             "end_date": "115/03/12",
             "countdown": -1,
-            "price": 86.0,
-            "change": 5.65,
+            "price": 87.7,
+            "change": 1.98,
             "exit_date": "2026-03-12"
         },
         {
@@ -404,8 +729,8 @@
             "level": "5分盤",
             "end_date": "115/03/12",
             "countdown": -1,
-            "price": 2470.0,
-            "change": -0.6,
+            "price": 2495.0,
+            "change": 1.01,
             "exit_date": "2026-03-12"
         },
         {
@@ -418,8 +743,8 @@
             "level": "20分盤",
             "end_date": "115/03/12",
             "countdown": -1,
-            "price": 221.0,
-            "change": 9.95,
+            "price": 233.5,
+            "change": 5.66,
             "exit_date": "2026-03-12"
         },
         {
@@ -432,8 +757,8 @@
             "level": "5分盤",
             "end_date": "115/03/12",
             "countdown": -1,
-            "price": 73.8,
-            "change": -0.94,
+            "price": 74.3,
+            "change": 0.68,
             "exit_date": "2026-03-12"
         },
         {
@@ -446,8 +771,8 @@
             "level": "5分盤",
             "end_date": "115/03/12",
             "countdown": -1,
-            "price": 111.0,
-            "change": 6.73,
+            "price": 108.5,
+            "change": -2.25,
             "exit_date": "2026-03-12"
         },
         {
@@ -460,8 +785,8 @@
             "level": "5分盤",
             "end_date": "115/03/12",
             "countdown": -1,
-            "price": 469.0,
-            "change": -4.87,
+            "price": 479.0,
+            "change": 2.13,
             "exit_date": "2026-03-12"
         },
         {
@@ -477,356 +802,6 @@
             "price": 79.8,
             "change": 0.0,
             "exit_date": "2026-03-11"
-        },
-        {
-            "market": "上市",
-            "code": "2455",
-            "name": "全新",
-            "publish_date": "115/02/26",
-            "period": "115/03/02～115/03/13",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/13",
-            "countdown": 1,
-            "price": 223.0,
-            "change": 0.68,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6426",
-            "name": "統新",
-            "publish_date": "115/02/26",
-            "period": "115/03/02～115/03/13",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/13",
-            "countdown": 1,
-            "price": 129.5,
-            "change": -3.0,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "7610",
-            "name": "聯友金屬-創",
-            "publish_date": "115/02/26",
-            "period": "115/03/02～115/03/13",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/13",
-            "countdown": 1,
-            "price": 332.0,
-            "change": -2.64,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "8046",
-            "name": "南電",
-            "publish_date": "115/02/26",
-            "period": "115/03/02～115/03/13",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/13",
-            "countdown": 1,
-            "price": 468.5,
-            "change": -0.43,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "2360",
-            "name": "致茂",
-            "publish_date": "115/03/02",
-            "period": "115/03/03～115/03/16",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/16",
-            "countdown": 4,
-            "price": 1495.0,
-            "change": 0.0,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "3037",
-            "name": "欣興",
-            "publish_date": "115/03/02",
-            "period": "115/03/03～115/03/16",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/16",
-            "countdown": 4,
-            "price": 480.0,
-            "change": 3.0,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "4927",
-            "name": "泰鼎-KY",
-            "publish_date": "115/03/02",
-            "period": "115/03/03～115/03/16",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/16",
-            "countdown": 4,
-            "price": 43.95,
-            "change": 1.03,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "1802",
-            "name": "台玻",
-            "publish_date": "115/03/03",
-            "period": "115/03/04～115/03/17",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/17",
-            "countdown": 5,
-            "price": 55.0,
-            "change": -3.85,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "2338",
-            "name": "光罩",
-            "publish_date": "115/03/03",
-            "period": "115/03/04～115/03/17",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/17",
-            "countdown": 5,
-            "price": 49.5,
-            "change": 1.43,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "3092",
-            "name": "鴻碩",
-            "publish_date": "115/03/03",
-            "period": "115/03/04～115/03/17",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/17",
-            "countdown": 5,
-            "price": 31.85,
-            "change": -0.47,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "3576",
-            "name": "聯合再生",
-            "publish_date": "115/03/03",
-            "period": "115/03/04～115/03/17",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/17",
-            "countdown": 5,
-            "price": 23.6,
-            "change": 8.51,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "2367",
-            "name": "燿華",
-            "publish_date": "115/03/04",
-            "period": "115/03/05～115/03/18",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/18",
-            "countdown": 6,
-            "price": 73.0,
-            "change": 5.49,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "2467",
-            "name": "志聖",
-            "publish_date": "115/03/04",
-            "period": "115/03/05～115/03/18",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/18",
-            "countdown": 6,
-            "price": 365.0,
-            "change": -0.82,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "2489",
-            "name": "瑞軒",
-            "publish_date": "115/03/04",
-            "period": "115/03/05～115/03/18",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/18",
-            "countdown": 6,
-            "price": 37.6,
-            "change": 0.4,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6141",
-            "name": "柏承",
-            "publish_date": "115/03/05",
-            "period": "115/03/06～115/03/19",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/19",
-            "countdown": 7,
-            "price": 18.2,
-            "change": 0.55,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6861",
-            "name": "睿生光電",
-            "publish_date": "115/03/05",
-            "period": "115/03/06～115/03/19",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/19",
-            "countdown": 7,
-            "price": 177.5,
-            "change": 8.56,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "8033",
-            "name": "雷虎",
-            "publish_date": "115/03/05",
-            "period": "115/03/06～115/03/19",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/19",
-            "countdown": 7,
-            "price": 144.5,
-            "change": 0.7,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6230",
-            "name": "尼得科超眾",
-            "publish_date": "115/03/06",
-            "period": "115/03/09～115/03/20",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/20",
-            "countdown": 8,
-            "price": 168.0,
-            "change": -2.33,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6442",
-            "name": "光聖",
-            "publish_date": "115/03/06",
-            "period": "115/03/09～115/03/20",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/20",
-            "countdown": 8,
-            "price": 1690.0,
-            "change": -6.63,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "1589",
-            "name": "永冠-KY",
-            "publish_date": "115/03/09",
-            "period": "115/03/10～115/03/23",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/03/23",
-            "countdown": 11,
-            "price": 7.26,
-            "change": 10.0,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "2616",
-            "name": "山隆",
-            "publish_date": "115/03/09",
-            "period": "115/03/10～115/03/23",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/23",
-            "countdown": 11,
-            "price": 18.2,
-            "change": -6.19,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6830",
-            "name": "汎銓",
-            "publish_date": "115/03/09",
-            "period": "115/03/10～115/03/23",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/03/23",
-            "countdown": 11,
-            "price": 388.0,
-            "change": -1.27,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "3054",
-            "name": "立萬利",
-            "publish_date": "115/03/12",
-            "period": "115/03/13～115/03/26",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/26",
-            "countdown": 14,
-            "price": 65.7,
-            "change": 9.87,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "5521",
-            "name": "工信",
-            "publish_date": "115/03/12",
-            "period": "115/03/13～115/03/26",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/26",
-            "countdown": 14,
-            "price": 14.4,
-            "change": -5.88,
-            "exit_date": "2026-03-13"
-        },
-        {
-            "market": "上市",
-            "code": "6715",
-            "name": "嘉基",
-            "publish_date": "115/03/12",
-            "period": "115/03/13～115/03/26",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/26",
-            "countdown": 14,
-            "price": 304.0,
-            "change": 7.8,
-            "exit_date": "2026-03-13"
         },
         {
             "market": "上市",
