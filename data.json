@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-16 14:19:41",
+    "update_time": "2026-03-16 19:29:21",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -637,6 +637,45 @@
             "countdown": 11,
             "price": 1130.0,
             "change": 0.0
+        },
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "115/03/16",
+            "period": "115/03/17～115/03/30",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/03/30",
+            "countdown": 14,
+            "price": 367.0,
+            "change": -6.02
+        },
+        {
+            "market": "上市",
+            "code": "4960",
+            "name": "誠美材",
+            "publish_date": "115/03/16",
+            "period": "115/03/17～115/03/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/30",
+            "countdown": 14,
+            "price": 25.55,
+            "change": 9.89
+        },
+        {
+            "market": "上市",
+            "code": "8271",
+            "name": "宇瞻",
+            "publish_date": "115/03/16",
+            "period": "115/03/17～115/03/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/03/30",
+            "countdown": 14,
+            "price": 190.5,
+            "change": 9.8
         }
     ],
     "exited_stocks": [
@@ -821,20 +860,6 @@
             "price": 834.0,
             "change": 8.45,
             "exit_date": "2026-03-12"
-        },
-        {
-            "market": "上市",
-            "code": "3167",
-            "name": "大量",
-            "publish_date": "115/02/23",
-            "period": "115/02/24～115/03/10",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/03/10",
-            "countdown": 0,
-            "price": 294.0,
-            "change": 5.76,
-            "exit_date": "2026-03-11"
         }
     ],
     "etf_stocks": [
