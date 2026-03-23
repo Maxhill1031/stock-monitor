@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-23 14:10:53",
+    "update_time": "2026-03-23 19:26:57",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -234,19 +234,6 @@
             "countdown": 9,
             "price": 19.0,
             "change": -2.56
-        },
-        {
-            "market": "上市",
-            "code": "2337",
-            "name": "旺宏",
-            "publish_date": "115/03/18",
-            "period": "115/03/19～115/04/01",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/01",
-            "countdown": 9,
-            "price": 148.5,
-            "change": -7.19
         },
         {
             "market": "上市",
@@ -666,6 +653,19 @@
         },
         {
             "market": "上市",
+            "code": "2337",
+            "name": "旺宏",
+            "publish_date": "115/03/23",
+            "period": "115/03/24～115/04/08",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/08",
+            "countdown": 16,
+            "price": 148.5,
+            "change": -7.19
+        },
+        {
+            "market": "上市",
             "code": "3189",
             "name": "景碩",
             "publish_date": "115/03/19",
@@ -676,6 +676,19 @@
             "countdown": 16,
             "price": 346.0,
             "change": -8.95
+        },
+        {
+            "market": "上市",
+            "code": "7711",
+            "name": "永擎",
+            "publish_date": "115/03/23",
+            "period": "115/03/24～115/04/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/08",
+            "countdown": 16,
+            "price": 288.5,
+            "change": 9.9
         }
     ],
     "exited_stocks": [
