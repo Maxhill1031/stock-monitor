@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-25 14:02:10",
+    "update_time": "2026-03-25 19:26:09",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -728,6 +728,19 @@
             "countdown": 15,
             "price": 568.0,
             "change": 5.19
+        },
+        {
+            "market": "上市",
+            "code": "6515",
+            "name": "穎崴",
+            "publish_date": "115/03/25",
+            "period": "115/03/26～115/04/10",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/10",
+            "countdown": 16,
+            "price": 8450.0,
+            "change": 3.17
         }
     ],
     "exited_stocks": [
