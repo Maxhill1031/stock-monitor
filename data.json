@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-26 12:34:25",
+    "update_time": "2026-03-26 14:01:50",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,34 +11,8 @@
             "level": "5分盤",
             "end_date": "115/03/26",
             "countdown": 0,
-            "price": 13.65,
-            "change": -0.73
-        },
-        {
-            "market": "上櫃",
-            "code": "4416",
-            "name": "三圓",
-            "publish_date": "",
-            "period": "115/03/13~115/03/26",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/26",
-            "countdown": 0,
-            "price": 13.4,
-            "change": 4.69
-        },
-        {
-            "market": "上櫃",
-            "code": "6683",
-            "name": "雍智科技",
-            "publish_date": "",
-            "period": "115/03/16~115/03/27",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/27",
-            "countdown": 1,
-            "price": 1295.0,
-            "change": 9.75
+            "price": 13.35,
+            "change": -2.91
         },
         {
             "market": "上市",
@@ -50,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/03/30",
             "countdown": 4,
-            "price": 361.0,
-            "change": 3.59
+            "price": 349.5,
+            "change": 0.29
         },
         {
             "market": "上市",
@@ -63,21 +37,8 @@
             "level": "5分盤",
             "end_date": "115/03/30",
             "countdown": 4,
-            "price": 26.65,
-            "change": 0.0
-        },
-        {
-            "market": "上櫃",
-            "code": "5340",
-            "name": "建榮",
-            "publish_date": "",
-            "period": "115/03/17~115/03/30",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/30",
-            "countdown": 4,
-            "price": 105.0,
-            "change": 0.0
+            "price": 25.0,
+            "change": -6.19
         },
         {
             "market": "上市",
@@ -89,8 +50,8 @@
             "level": "20分盤",
             "end_date": "115/03/31",
             "countdown": 5,
-            "price": 66.5,
-            "change": 2.31
+            "price": 65.0,
+            "change": 0.0
         },
         {
             "market": "上市",
@@ -102,34 +63,8 @@
             "level": "20分盤",
             "end_date": "115/03/31",
             "countdown": 5,
-            "price": 328.0,
-            "change": 7.72
-        },
-        {
-            "market": "上櫃",
-            "code": "3163",
-            "name": "波若威",
-            "publish_date": "",
-            "period": "115/03/18~115/03/31",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/31",
-            "countdown": 5,
-            "price": 879.0,
-            "change": -2.12
-        },
-        {
-            "market": "上櫃",
-            "code": "6727",
-            "name": "亞泰金屬",
-            "publish_date": "",
-            "period": "115/03/18~115/03/31",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/03/31",
-            "countdown": 5,
-            "price": 287.0,
-            "change": 3.05
+            "price": 322.0,
+            "change": 5.75
         },
         {
             "market": "上市",
@@ -141,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/04/01",
             "countdown": 6,
-            "price": 20.6,
-            "change": -0.72
+            "price": 20.65,
+            "change": -0.48
         },
         {
             "market": "上市",
@@ -154,8 +89,8 @@
             "level": "20分盤",
             "end_date": "115/04/01",
             "countdown": 6,
-            "price": 36.85,
-            "change": 1.8
+            "price": 33.6,
+            "change": -7.18
         },
         {
             "market": "上市",
@@ -167,8 +102,8 @@
             "level": "20分盤",
             "end_date": "115/04/01",
             "countdown": 6,
-            "price": 525.0,
-            "change": 3.75
+            "price": 502.0,
+            "change": -0.79
         },
         {
             "market": "上市",
@@ -180,47 +115,8 @@
             "level": "5分盤",
             "end_date": "115/04/01",
             "countdown": 6,
-            "price": 22.05,
-            "change": -2.86
-        },
-        {
-            "market": "上櫃",
-            "code": "3260",
-            "name": "威剛",
-            "publish_date": "",
-            "period": "115/03/19~115/04/01",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/01",
-            "countdown": 6,
-            "price": 378.0,
-            "change": -6.67
-        },
-        {
-            "market": "上櫃",
-            "code": "5351",
-            "name": "鈺創",
-            "publish_date": "",
-            "period": "115/03/19~115/04/01",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/01",
-            "countdown": 6,
-            "price": 72.9,
-            "change": -1.62
-        },
-        {
-            "market": "上櫃",
-            "code": "6103",
-            "name": "合邦",
-            "publish_date": "",
-            "period": "115/03/19~115/04/01",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/01",
-            "countdown": 6,
-            "price": 48.45,
-            "change": 0.0
+            "price": 21.7,
+            "change": -4.41
         },
         {
             "market": "上市",
@@ -232,8 +128,8 @@
             "level": "5分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 39.5,
-            "change": -2.71
+            "price": 38.55,
+            "change": -5.05
         },
         {
             "market": "上市",
@@ -245,8 +141,8 @@
             "level": "5分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 27.0,
-            "change": 2.27
+            "price": 26.8,
+            "change": 1.52
         },
         {
             "market": "上市",
@@ -258,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 79.1,
-            "change": -1.13
+            "price": 78.7,
+            "change": -1.62
         },
         {
             "market": "上市",
@@ -271,8 +167,8 @@
             "level": "20分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 149.0,
-            "change": -3.56
+            "price": 147.5,
+            "change": -4.53
         },
         {
             "market": "上市",
@@ -297,8 +193,8 @@
             "level": "20分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 21.75,
-            "change": -5.43
+            "price": 21.4,
+            "change": -6.96
         },
         {
             "market": "上市",
@@ -310,8 +206,8 @@
             "level": "5分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 12.8,
-            "change": -3.03
+            "price": 12.45,
+            "change": -5.68
         },
         {
             "market": "上市",
@@ -323,8 +219,8 @@
             "level": "5分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 343.0,
-            "change": 7.52
+            "price": 332.0,
+            "change": 4.08
         },
         {
             "market": "上市",
@@ -336,164 +232,8 @@
             "level": "20分盤",
             "end_date": "115/04/02",
             "countdown": 7,
-            "price": 149.0,
-            "change": -6.88
-        },
-        {
-            "market": "上櫃",
-            "code": "1799",
-            "name": "易威",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 38.8,
-            "change": 3.19
-        },
-        {
-            "market": "上櫃",
-            "code": "3066",
-            "name": "李洲",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 20.35,
-            "change": 2.01
-        },
-        {
-            "market": "上櫃",
-            "code": "3093",
-            "name": "港建*",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 43.5,
-            "change": 4.44
-        },
-        {
-            "market": "上櫃",
-            "code": "3555",
-            "name": "博士旺",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 164.5,
-            "change": -5.46
-        },
-        {
-            "market": "上櫃",
-            "code": "4973",
-            "name": "廣穎",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 65.4,
-            "change": -7.76
-        },
-        {
-            "market": "上櫃",
-            "code": "5289",
-            "name": "宜鼎",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 940.0,
-            "change": -7.39
-        },
-        {
-            "market": "上櫃",
-            "code": "5386",
-            "name": "青雲",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 299.0,
-            "change": -6.85
-        },
-        {
-            "market": "上櫃",
-            "code": "6167",
-            "name": "久正",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 14.05,
-            "change": -2.43
-        },
-        {
-            "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 185.5,
-            "change": 9.76
-        },
-        {
-            "market": "上櫃",
-            "code": "6574",
-            "name": "霈方",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 119.0,
-            "change": -5.93
-        },
-        {
-            "market": "上櫃",
-            "code": "7751",
-            "name": "竑騰",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 1620.0,
-            "change": 3.18
-        },
-        {
-            "market": "上櫃",
-            "code": "8240",
-            "name": "華宏",
-            "publish_date": "",
-            "period": "115/03/20~115/04/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 7,
-            "price": 52.0,
-            "change": -6.47
+            "price": 146.0,
+            "change": -8.75
         },
         {
             "market": "上市",
@@ -505,8 +245,8 @@
             "level": "5分盤",
             "end_date": "115/04/07",
             "countdown": 12,
-            "price": 30.7,
-            "change": -2.69
+            "price": 29.25,
+            "change": -7.29
         },
         {
             "market": "上市",
@@ -518,8 +258,8 @@
             "level": "5分盤",
             "end_date": "115/04/07",
             "countdown": 12,
-            "price": 240.5,
-            "change": -5.69
+            "price": 242.0,
+            "change": -5.1
         },
         {
             "market": "上市",
@@ -531,34 +271,8 @@
             "level": "20分盤",
             "end_date": "115/04/07",
             "countdown": 12,
-            "price": 150.0,
-            "change": -2.28
-        },
-        {
-            "market": "上櫃",
-            "code": "3693",
-            "name": "營邦",
-            "publish_date": "",
-            "period": "115/03/23~115/04/07",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/07",
-            "countdown": 12,
-            "price": 492.5,
-            "change": -3.24
-        },
-        {
-            "market": "上櫃",
-            "code": "6907",
-            "name": "雅特力-KY",
-            "publish_date": "",
-            "period": "115/03/23~115/04/07",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/07",
-            "countdown": 12,
-            "price": 129.5,
-            "change": -2.26
+            "price": 144.5,
+            "change": -5.86
         },
         {
             "market": "上市",
@@ -583,8 +297,8 @@
             "level": "5分盤",
             "end_date": "115/04/08",
             "countdown": 13,
-            "price": 358.5,
-            "change": 1.99
+            "price": 351.5,
+            "change": 0.0
         },
         {
             "market": "上市",
@@ -596,8 +310,331 @@
             "level": "5分盤",
             "end_date": "115/04/08",
             "countdown": 13,
-            "price": 282.5,
-            "change": 2.36
+            "price": 280.0,
+            "change": 1.45
+        },
+        {
+            "market": "上市",
+            "code": "6515",
+            "name": "穎崴",
+            "publish_date": "115/03/25",
+            "period": "115/03/26～115/04/10",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/10",
+            "countdown": 15,
+            "price": 8145.0,
+            "change": -3.61
+        }
+    ],
+    "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4416",
+            "name": "三圓",
+            "publish_date": "",
+            "period": "115/03/13~115/03/26",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/26",
+            "countdown": 0,
+            "price": 13.35,
+            "change": 4.3,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6683",
+            "name": "雍智科技",
+            "publish_date": "",
+            "period": "115/03/16~115/03/27",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/27",
+            "countdown": 1,
+            "price": 1260.0,
+            "change": 6.78,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "5340",
+            "name": "建榮",
+            "publish_date": "",
+            "period": "115/03/17~115/03/30",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/30",
+            "countdown": 4,
+            "price": 105.0,
+            "change": 0.0,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "3163",
+            "name": "波若威",
+            "publish_date": "",
+            "period": "115/03/18~115/03/31",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/03/31",
+            "countdown": 5,
+            "price": 809.0,
+            "change": -9.91,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6727",
+            "name": "亞泰金屬",
+            "publish_date": "",
+            "period": "115/03/18~115/03/31",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/03/31",
+            "countdown": 5,
+            "price": 280.5,
+            "change": 0.72,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "3260",
+            "name": "威剛",
+            "publish_date": "",
+            "period": "115/03/19~115/04/01",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/01",
+            "countdown": 6,
+            "price": 371.0,
+            "change": -8.4,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "5351",
+            "name": "鈺創",
+            "publish_date": "",
+            "period": "115/03/19~115/04/01",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/01",
+            "countdown": 6,
+            "price": 71.6,
+            "change": -3.37,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6103",
+            "name": "合邦",
+            "publish_date": "",
+            "period": "115/03/19~115/04/01",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/01",
+            "countdown": 6,
+            "price": 48.45,
+            "change": 0.0,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "1799",
+            "name": "易威",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 38.8,
+            "change": 3.19,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "3066",
+            "name": "李洲",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 20.0,
+            "change": 0.25,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "3093",
+            "name": "港建*",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 43.1,
+            "change": 3.48,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "3555",
+            "name": "博士旺",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 161.5,
+            "change": -7.18,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "4973",
+            "name": "廣穎",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 64.1,
+            "change": -9.59,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "5289",
+            "name": "宜鼎",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 916.0,
+            "change": -9.75,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "5386",
+            "name": "青雲",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 289.0,
+            "change": -9.97,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6167",
+            "name": "久正",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 14.1,
+            "change": -2.08,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 175.0,
+            "change": 3.55,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6574",
+            "name": "霈方",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 120.0,
+            "change": -5.14,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "7751",
+            "name": "竑騰",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 1620.0,
+            "change": 3.18,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "8240",
+            "name": "華宏",
+            "publish_date": "",
+            "period": "115/03/20~115/04/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/02",
+            "countdown": 7,
+            "price": 50.7,
+            "change": -8.81,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "3693",
+            "name": "營邦",
+            "publish_date": "",
+            "period": "115/03/23~115/04/07",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/07",
+            "countdown": 12,
+            "price": 485.0,
+            "change": -4.72,
+            "exit_date": "2026-03-26"
+        },
+        {
+            "market": "上櫃",
+            "code": "6907",
+            "name": "雅特力-KY",
+            "publish_date": "",
+            "period": "115/03/23~115/04/07",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/07",
+            "countdown": 12,
+            "price": 124.0,
+            "change": -6.42,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -609,8 +646,9 @@
             "level": "5分盤",
             "end_date": "115/04/08",
             "countdown": 13,
-            "price": 46.6,
-            "change": 3.33
+            "price": 46.5,
+            "change": 3.1,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -622,8 +660,9 @@
             "level": "5分盤",
             "end_date": "115/04/08",
             "countdown": 13,
-            "price": 268.0,
-            "change": 0.0
+            "price": 265.0,
+            "change": -1.12,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -635,8 +674,9 @@
             "level": "20分盤",
             "end_date": "115/04/09",
             "countdown": 14,
-            "price": 660.0,
-            "change": -2.65
+            "price": 639.0,
+            "change": -5.75,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -648,8 +688,9 @@
             "level": "5分盤",
             "end_date": "115/04/09",
             "countdown": 14,
-            "price": 84.4,
-            "change": 0.72
+            "price": 84.5,
+            "change": 0.84,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -662,7 +703,8 @@
             "end_date": "115/04/09",
             "countdown": 14,
             "price": 52.0,
-            "change": -7.96
+            "change": -7.96,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -674,21 +716,9 @@
             "level": "20分盤",
             "end_date": "115/04/09",
             "countdown": 14,
-            "price": 549.0,
-            "change": -3.35
-        },
-        {
-            "market": "上市",
-            "code": "6515",
-            "name": "穎崴",
-            "publish_date": "115/03/25",
-            "period": "115/03/26～115/04/10",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/10",
-            "countdown": 15,
-            "price": 7905.0,
-            "change": -6.45
+            "price": 558.0,
+            "change": -1.76,
+            "exit_date": "2026-03-26"
         },
         {
             "market": "上櫃",
@@ -700,11 +730,10 @@
             "level": "5分盤",
             "end_date": "115/04/10",
             "countdown": 15,
-            "price": 240.0,
-            "change": -4.57
-        }
-    ],
-    "exited_stocks": [
+            "price": 232.0,
+            "change": -7.75,
+            "exit_date": "2026-03-26"
+        },
         {
             "market": "上櫃",
             "code": "3081",
@@ -745,20 +774,6 @@
             "countdown": -1,
             "price": 526.0,
             "change": 9.81,
-            "exit_date": "2026-03-25"
-        },
-        {
-            "market": "上櫃",
-            "code": "5386",
-            "name": "青雲",
-            "publish_date": "",
-            "period": "115/03/12~115/03/25",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/03/25",
-            "countdown": -1,
-            "price": 299.0,
-            "change": -6.85,
             "exit_date": "2026-03-25"
         },
         {
