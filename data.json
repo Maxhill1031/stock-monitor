@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-27 14:12:54",
+    "update_time": "2026-03-27 19:26:30",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -639,19 +639,6 @@
             "change": 5.96
         },
         {
-            "market": "上櫃",
-            "code": "6584",
-            "name": "南俊國際",
-            "publish_date": "",
-            "period": "115/03/25~115/04/09",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/04/09",
-            "countdown": 13,
-            "price": 609.0,
-            "change": 9.14
-        },
-        {
             "market": "上市",
             "code": "6515",
             "name": "穎崴",
@@ -702,6 +689,32 @@
             "countdown": 17,
             "price": 446.0,
             "change": 0.9
+        },
+        {
+            "market": "上櫃",
+            "code": "6187",
+            "name": "萬潤",
+            "publish_date": "",
+            "period": "115/03/30~115/04/14",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/14",
+            "countdown": 18,
+            "price": 968.0,
+            "change": 3.09
+        },
+        {
+            "market": "上櫃",
+            "code": "6584",
+            "name": "南俊國際",
+            "publish_date": "",
+            "period": "115/03/30~115/04/14",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/14",
+            "countdown": 18,
+            "price": 609.0,
+            "change": 9.14
         }
     ],
     "exited_stocks": [
