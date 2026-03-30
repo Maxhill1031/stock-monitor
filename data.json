@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-30 14:52:58",
+    "update_time": "2026-03-30 19:37:18",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -702,6 +702,19 @@
             "countdown": 15,
             "price": 602.0,
             "change": -1.15
+        },
+        {
+            "market": "上市",
+            "code": "2231",
+            "name": "為升",
+            "publish_date": "115/03/30",
+            "period": "115/03/31～115/04/15",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/15",
+            "countdown": 16,
+            "price": 137.5,
+            "change": 10.0
         }
     ],
     "exited_stocks": [
