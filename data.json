@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-03-31 14:16:21",
+    "update_time": "2026-03-31 19:29:55",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -689,6 +689,19 @@
             "countdown": 15,
             "price": 54.9,
             "change": -10.0
+        },
+        {
+            "market": "上市",
+            "code": "3135",
+            "name": "凌航",
+            "publish_date": "115/03/31",
+            "period": "115/04/01～115/04/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/16",
+            "countdown": 16,
+            "price": 102.0,
+            "change": -7.27
         }
     ],
     "exited_stocks": [
