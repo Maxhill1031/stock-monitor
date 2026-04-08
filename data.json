@@ -1,71 +1,6 @@
 {
-    "update_time": "2026-04-08 19:34:31",
+    "update_time": "2026-04-09 07:39:39",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2337",
-            "name": "旺宏",
-            "publish_date": "115/03/23",
-            "period": "115/03/24～115/04/08",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/04/08",
-            "countdown": 0,
-            "price": 150.0,
-            "change": 9.89
-        },
-        {
-            "market": "上市",
-            "code": "3189",
-            "name": "景碩",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/08",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/08",
-            "countdown": 0,
-            "price": 394.0,
-            "change": 9.9
-        },
-        {
-            "market": "上市",
-            "code": "7711",
-            "name": "永擎",
-            "publish_date": "115/03/23",
-            "period": "115/03/24～115/04/08",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/08",
-            "countdown": 0,
-            "price": 294.0,
-            "change": 6.52
-        },
-        {
-            "market": "上櫃",
-            "code": "6465",
-            "name": "威潤",
-            "publish_date": "",
-            "period": "115/03/24~115/04/08",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/08",
-            "countdown": 0,
-            "price": 46.5,
-            "change": 4.14
-        },
-        {
-            "market": "上櫃",
-            "code": "8155",
-            "name": "博智",
-            "publish_date": "",
-            "period": "115/03/24~115/04/08",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/08",
-            "countdown": 0,
-            "price": 296.0,
-            "change": 6.47
-        },
         {
             "market": "上櫃",
             "code": "3363",
@@ -75,7 +10,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/09",
-            "countdown": 1,
+            "countdown": 0,
             "price": 720.0,
             "change": 9.09
         },
@@ -88,7 +23,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/09",
-            "countdown": 1,
+            "countdown": 0,
             "price": 84.0,
             "change": 1.2
         },
@@ -101,7 +36,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/09",
-            "countdown": 1,
+            "countdown": 0,
             "price": 59.5,
             "change": 0.34
         },
@@ -114,7 +49,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/04/10",
-            "countdown": 2,
+            "countdown": 1,
             "price": 7810.0,
             "change": 10.0
         },
@@ -127,7 +62,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/10",
-            "countdown": 2,
+            "countdown": 1,
             "price": 254.5,
             "change": 7.61
         },
@@ -140,7 +75,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/13",
-            "countdown": 5,
+            "countdown": 4,
             "price": 421.5,
             "change": 4.2
         },
@@ -153,7 +88,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/13",
-            "countdown": 5,
+            "countdown": 4,
             "price": 517.0,
             "change": 9.88
         },
@@ -166,7 +101,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/14",
-            "countdown": 6,
+            "countdown": 5,
             "price": 980.0,
             "change": 6.52
         },
@@ -179,7 +114,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/14",
-            "countdown": 6,
+            "countdown": 5,
             "price": 654.0,
             "change": 9.73
         },
@@ -192,7 +127,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/04/15",
-            "countdown": 7,
+            "countdown": 6,
             "price": 118.5,
             "change": 3.04
         },
@@ -205,7 +140,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/15",
-            "countdown": 7,
+            "countdown": 6,
             "price": 333.5,
             "change": 9.88
         },
@@ -218,7 +153,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/15",
-            "countdown": 7,
+            "countdown": 6,
             "price": 53.5,
             "change": 2.88
         },
@@ -231,7 +166,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/04/16",
-            "countdown": 8,
+            "countdown": 7,
             "price": 114.0,
             "change": 9.62
         },
@@ -244,7 +179,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/16",
-            "countdown": 8,
+            "countdown": 7,
             "price": 14.45,
             "change": 2.12
         },
@@ -257,7 +192,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/16",
-            "countdown": 8,
+            "countdown": 7,
             "price": 118.5,
             "change": 9.72
         },
@@ -270,7 +205,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/04/17",
-            "countdown": 9,
+            "countdown": 8,
             "price": 14.1,
             "change": -3.75
         },
@@ -283,7 +218,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/04/17",
-            "countdown": 9,
+            "countdown": 8,
             "price": 81.6,
             "change": -2.51
         },
@@ -296,7 +231,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/20",
-            "countdown": 12,
+            "countdown": 11,
             "price": 645.0,
             "change": 7.14
         },
@@ -309,7 +244,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/04/21",
-            "countdown": 13,
+            "countdown": 12,
             "price": 539.0,
             "change": 10.0
         },
@@ -322,7 +257,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/21",
-            "countdown": 13,
+            "countdown": 12,
             "price": 367.0,
             "change": 3.53
         },
@@ -335,7 +270,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/21",
-            "countdown": 13,
+            "countdown": 12,
             "price": 2440.0,
             "change": 4.95
         },
@@ -348,9 +283,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/04/22",
-            "countdown": 14,
-            "price": 662.0,
-            "change": 9.97
+            "countdown": 13,
+            "price": 661.0,
+            "change": 9.8
         },
         {
             "market": "上櫃",
@@ -361,7 +296,7 @@
             "reason": "",
             "level": "45分盤",
             "end_date": "115/04/22",
-            "countdown": 14,
+            "countdown": 13,
             "price": 8.25,
             "change": -3.17
         },
@@ -374,12 +309,40 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/22",
-            "countdown": 14,
+            "countdown": 13,
             "price": 45.85,
             "change": 2.46
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "6465",
+            "name": "威潤",
+            "publish_date": "",
+            "period": "115/03/24~115/04/08",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/08",
+            "countdown": -1,
+            "price": 46.5,
+            "change": 4.14,
+            "exit_date": "2026-04-08"
+        },
+        {
+            "market": "上櫃",
+            "code": "8155",
+            "name": "博智",
+            "publish_date": "",
+            "period": "115/03/24~115/04/08",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/08",
+            "countdown": -1,
+            "price": 296.0,
+            "change": 6.47,
+            "exit_date": "2026-04-08"
+        },
         {
             "market": "上櫃",
             "code": "3693",
@@ -389,7 +352,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/04/07",
-            "countdown": -1,
+            "countdown": -2,
             "price": 547.0,
             "change": 9.84,
             "exit_date": "2026-04-07"
@@ -403,10 +366,52 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/04/07",
-            "countdown": -1,
+            "countdown": -2,
             "price": 118.5,
             "change": 9.72,
             "exit_date": "2026-04-07"
+        },
+        {
+            "market": "上市",
+            "code": "2337",
+            "name": "旺宏",
+            "publish_date": "115/03/23",
+            "period": "115/03/24～115/04/08",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/08",
+            "countdown": 0,
+            "price": 150.0,
+            "change": 9.89,
+            "exit_date": "2026-04-09"
+        },
+        {
+            "market": "上市",
+            "code": "3189",
+            "name": "景碩",
+            "publish_date": "115/03/19",
+            "period": "115/03/20～115/04/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/08",
+            "countdown": 0,
+            "price": 394.0,
+            "change": 9.9,
+            "exit_date": "2026-04-09"
+        },
+        {
+            "market": "上市",
+            "code": "7711",
+            "name": "永擎",
+            "publish_date": "115/03/23",
+            "period": "115/03/24～115/04/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/08",
+            "countdown": 0,
+            "price": 294.0,
+            "change": 6.52,
+            "exit_date": "2026-04-09"
         },
         {
             "market": "上市",
@@ -449,132 +454,6 @@
             "price": 173.0,
             "change": 9.84,
             "exit_date": "2026-04-08"
-        },
-        {
-            "market": "上市",
-            "code": "1711",
-            "name": "永光",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 37.5,
-            "change": -3.72,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "1735",
-            "name": "日勝化",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 23.0,
-            "change": -9.8,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "2485",
-            "name": "兆赫",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 78.5,
-            "change": -3.68,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "2486",
-            "name": "一詮",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 149.0,
-            "change": 2.76,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "3006",
-            "name": "晶豪科",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 150.5,
-            "change": -3.83,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "6141",
-            "name": "柏承",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 20.95,
-            "change": 0.24,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "6226",
-            "name": "光鼎",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 12.0,
-            "change": -6.98,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "6451",
-            "name": "訊芯-KY",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 295.5,
-            "change": -3.11,
-            "exit_date": "2026-04-03"
-        },
-        {
-            "market": "上市",
-            "code": "8271",
-            "name": "宇瞻",
-            "publish_date": "115/03/19",
-            "period": "115/03/20～115/04/02",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/04/02",
-            "countdown": 0,
-            "price": 145.5,
-            "change": 1.75,
-            "exit_date": "2026-04-03"
         }
     ],
     "etf_stocks": [
