@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-08 14:21:09",
+    "update_time": "2026-04-08 19:34:31",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -289,19 +289,6 @@
         },
         {
             "market": "上櫃",
-            "code": "4741",
-            "name": "泓瀚",
-            "publish_date": "",
-            "period": "115/04/02~115/04/17",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/17",
-            "countdown": 9,
-            "price": 45.85,
-            "change": 2.46
-        },
-        {
-            "market": "上櫃",
             "code": "4971",
             "name": "IET-KY",
             "publish_date": "",
@@ -351,6 +338,45 @@
             "countdown": 13,
             "price": 2440.0,
             "change": 4.95
+        },
+        {
+            "market": "上市",
+            "code": "6830",
+            "name": "汎銓",
+            "publish_date": "115/04/08",
+            "period": "115/04/09～115/04/22",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/22",
+            "countdown": 14,
+            "price": 662.0,
+            "change": 9.97
+        },
+        {
+            "market": "上櫃",
+            "code": "3664",
+            "name": "安瑞-KY",
+            "publish_date": "",
+            "period": "115/04/09~115/04/22",
+            "reason": "",
+            "level": "45分盤",
+            "end_date": "115/04/22",
+            "countdown": 14,
+            "price": 8.25,
+            "change": -3.17
+        },
+        {
+            "market": "上櫃",
+            "code": "4741",
+            "name": "泓瀚",
+            "publish_date": "",
+            "period": "115/04/09~115/04/22",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/22",
+            "countdown": 14,
+            "price": 45.85,
+            "change": 2.46
         }
     ],
     "exited_stocks": [
