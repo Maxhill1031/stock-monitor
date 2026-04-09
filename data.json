@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-09 14:21:05",
+    "update_time": "2026-04-09 19:34:06",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -312,6 +312,32 @@
             "countdown": 13,
             "price": 46.85,
             "change": 2.18
+        },
+        {
+            "market": "上櫃",
+            "code": "3163",
+            "name": "波若威",
+            "publish_date": "",
+            "period": "115/04/10~115/04/23",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/04/23",
+            "countdown": 14,
+            "price": 1220.0,
+            "change": 6.55
+        },
+        {
+            "market": "上櫃",
+            "code": "3508",
+            "name": "位速",
+            "publish_date": "",
+            "period": "115/04/10~115/04/23",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/23",
+            "countdown": 14,
+            "price": 26.35,
+            "change": -9.91
         }
     ],
     "exited_stocks": [
