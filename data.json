@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-14 14:52:19",
+    "update_time": "2026-04-14 19:40:46",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -377,6 +377,123 @@
             "countdown": 13,
             "price": 36.8,
             "change": -4.17
+        },
+        {
+            "market": "上市",
+            "code": "2426",
+            "name": "鼎元",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 52.9,
+            "change": 1.73
+        },
+        {
+            "market": "上市",
+            "code": "2467",
+            "name": "志聖",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 548.0,
+            "change": -0.18
+        },
+        {
+            "market": "上市",
+            "code": "2486",
+            "name": "一詮",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 191.5,
+            "change": -1.29
+        },
+        {
+            "market": "上市",
+            "code": "2489",
+            "name": "瑞軒",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 45.7,
+            "change": -4.19
+        },
+        {
+            "market": "上市",
+            "code": "3026",
+            "name": "禾伸堂",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 229.5,
+            "change": 7.75
+        },
+        {
+            "market": "上市",
+            "code": "6451",
+            "name": "訊芯-KY",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 476.0,
+            "change": 0.21
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 601.0,
+            "change": 9.87
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 350.0,
+            "change": 0.29
+        },
+        {
+            "market": "上市",
+            "code": "8996",
+            "name": "高力",
+            "publish_date": "115/04/14",
+            "period": "115/04/15～115/04/28",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/28",
+            "countdown": 14,
+            "price": 1115.0,
+            "change": 1.83
         }
     ],
     "exited_stocks": [
