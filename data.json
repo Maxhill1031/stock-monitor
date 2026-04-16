@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-16 14:56:20",
+    "update_time": "2026-04-16 19:40:32",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -624,6 +624,110 @@
             "countdown": 13,
             "price": 155.0,
             "change": 9.93
+        },
+        {
+            "market": "上市",
+            "code": "3443",
+            "name": "創意",
+            "publish_date": "115/04/16",
+            "period": "115/04/17～115/04/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 3345.0,
+            "change": 8.96
+        },
+        {
+            "market": "上市",
+            "code": "3593",
+            "name": "力銘",
+            "publish_date": "115/04/16",
+            "period": "115/04/17～115/04/30",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 19.1,
+            "change": 2.69
+        },
+        {
+            "market": "上市",
+            "code": "4989",
+            "name": "榮科",
+            "publish_date": "115/04/16",
+            "period": "115/04/17～115/04/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 105.0,
+            "change": 6.82
+        },
+        {
+            "market": "上市",
+            "code": "6949",
+            "name": "沛爾生醫-創",
+            "publish_date": "115/04/16",
+            "period": "115/04/17～115/04/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 780.0,
+            "change": 0.65
+        },
+        {
+            "market": "上櫃",
+            "code": "3289",
+            "name": "宜特",
+            "publish_date": "",
+            "period": "115/04/17~115/04/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 182.0,
+            "change": -0.82
+        },
+        {
+            "market": "上櫃",
+            "code": "3581",
+            "name": "博磊",
+            "publish_date": "",
+            "period": "115/04/17~115/04/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 108.5,
+            "change": 9.6
+        },
+        {
+            "market": "上櫃",
+            "code": "6274",
+            "name": "台燿",
+            "publish_date": "",
+            "period": "115/04/17~115/04/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 960.0,
+            "change": 1.48
+        },
+        {
+            "market": "上櫃",
+            "code": "7556",
+            "name": "意德士",
+            "publish_date": "",
+            "period": "115/04/17~115/04/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/04/30",
+            "countdown": 14,
+            "price": 270.0,
+            "change": 2.27
         }
     ],
     "exited_stocks": [
