@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-21 14:58:06",
+    "update_time": "2026-04-21 19:42:38",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -910,6 +910,71 @@
             "countdown": 14,
             "price": 136.5,
             "change": -1.09
+        },
+        {
+            "market": "上市",
+            "code": "2484",
+            "name": "希華",
+            "publish_date": "115/04/21",
+            "period": "115/04/22～115/05/06",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/06",
+            "countdown": 15,
+            "price": 49.25,
+            "change": 5.69
+        },
+        {
+            "market": "上市",
+            "code": "4919",
+            "name": "新唐",
+            "publish_date": "115/04/21",
+            "period": "115/04/22～115/05/06",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/06",
+            "countdown": 15,
+            "price": 144.5,
+            "change": 2.12
+        },
+        {
+            "market": "上市",
+            "code": "4956",
+            "name": "光鋐",
+            "publish_date": "115/04/21",
+            "period": "115/04/22～115/05/06",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/06",
+            "countdown": 15,
+            "price": 53.2,
+            "change": -2.74
+        },
+        {
+            "market": "上市",
+            "code": "6141",
+            "name": "柏承",
+            "publish_date": "115/04/21",
+            "period": "115/04/22～115/05/06",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/05/06",
+            "countdown": 15,
+            "price": 34.95,
+            "change": 1.9
+        },
+        {
+            "market": "上市",
+            "code": "6442",
+            "name": "光聖",
+            "publish_date": "115/04/21",
+            "period": "115/04/22～115/05/06",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/06",
+            "countdown": 15,
+            "price": 2340.0,
+            "change": -1.27
         }
     ],
     "exited_stocks": [
