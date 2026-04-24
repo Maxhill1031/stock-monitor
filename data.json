@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-24 15:04:17",
+    "update_time": "2026-04-24 19:43:19",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -195,19 +195,6 @@
             "countdown": 4,
             "price": 216.0,
             "change": -3.36
-        },
-        {
-            "market": "上市",
-            "code": "8021",
-            "name": "尖點",
-            "publish_date": "115/04/14",
-            "period": "115/04/15～115/04/28",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/28",
-            "countdown": 4,
-            "price": 451.0,
-            "change": -4.35
         },
         {
             "market": "上市",
@@ -1209,6 +1196,32 @@
             "countdown": 17,
             "price": 276.0,
             "change": 0.55
+        },
+        {
+            "market": "上市",
+            "code": "6531",
+            "name": "愛普*",
+            "publish_date": "115/04/24",
+            "period": "115/04/27～115/05/11",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/11",
+            "countdown": 17,
+            "price": 788.0,
+            "change": 0.38
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "115/04/24",
+            "period": "115/04/27～115/05/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/05/11",
+            "countdown": 17,
+            "price": 451.0,
+            "change": -4.35
         }
     ],
     "exited_stocks": [
