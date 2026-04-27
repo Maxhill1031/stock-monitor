@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-27 15:34:19",
+    "update_time": "2026-04-27 20:09:49",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -26,19 +26,6 @@
             "countdown": 0,
             "price": 736.0,
             "change": -9.69
-        },
-        {
-            "market": "上市",
-            "code": "6443",
-            "name": "元晶",
-            "publish_date": "115/04/13",
-            "period": "115/04/14～115/04/27",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/04/27",
-            "countdown": 0,
-            "price": 37.45,
-            "change": 2.6
         },
         {
             "market": "上市",
@@ -1248,6 +1235,45 @@
             "countdown": 14,
             "price": 133.5,
             "change": 9.88
+        },
+        {
+            "market": "上市",
+            "code": "2429",
+            "name": "銘旺科",
+            "publish_date": "115/04/27",
+            "period": "115/04/28～115/05/12",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/12",
+            "countdown": 15,
+            "price": 54.9,
+            "change": -9.85
+        },
+        {
+            "market": "上市",
+            "code": "6443",
+            "name": "元晶",
+            "publish_date": "115/04/27",
+            "period": "115/04/28～115/05/12",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/05/12",
+            "countdown": 15,
+            "price": 37.45,
+            "change": 2.6
+        },
+        {
+            "market": "上櫃",
+            "code": "7734",
+            "name": "印能科技",
+            "publish_date": "",
+            "period": "115/04/28~115/05/12",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/05/12",
+            "countdown": 15,
+            "price": 3390.0,
+            "change": -9.96
         }
     ],
     "exited_stocks": [
