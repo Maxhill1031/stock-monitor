@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-28 15:31:12",
+    "update_time": "2026-04-28 20:14:17",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -939,19 +939,6 @@
         },
         {
             "market": "上市",
-            "code": "6861",
-            "name": "睿生光電",
-            "publish_date": "115/04/23",
-            "period": "115/04/24～115/05/08",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/05/08",
-            "countdown": 10,
-            "price": 273.0,
-            "change": 1.87
-        },
-        {
-            "market": "上市",
             "code": "8271",
             "name": "宇瞻",
             "publish_date": "115/04/23",
@@ -1209,6 +1196,58 @@
             "countdown": 14,
             "price": 3340.0,
             "change": -1.47
+        },
+        {
+            "market": "上市",
+            "code": "6658",
+            "name": "聯策",
+            "publish_date": "115/04/28",
+            "period": "115/04/29～115/05/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/13",
+            "countdown": 15,
+            "price": 133.5,
+            "change": 9.88
+        },
+        {
+            "market": "上市",
+            "code": "6861",
+            "name": "睿生光電",
+            "publish_date": "115/04/28",
+            "period": "115/04/29～115/05/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/05/13",
+            "countdown": 15,
+            "price": 273.0,
+            "change": 1.87
+        },
+        {
+            "market": "上市",
+            "code": "7711",
+            "name": "永擎",
+            "publish_date": "115/04/28",
+            "period": "115/04/29～115/05/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/05/13",
+            "countdown": 15,
+            "price": 432.0,
+            "change": 5.62
+        },
+        {
+            "market": "上櫃",
+            "code": "7751",
+            "name": "竑騰",
+            "publish_date": "",
+            "period": "115/04/29~115/05/13",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/05/13",
+            "countdown": 15,
+            "price": 2715.0,
+            "change": 2.65
         }
     ],
     "exited_stocks": [
