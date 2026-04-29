@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-29 15:23:54",
+    "update_time": "2026-04-29 20:06:19",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -977,19 +977,6 @@
             "change": -1.67
         },
         {
-            "market": "上櫃",
-            "code": "6735",
-            "name": "美達科技",
-            "publish_date": "",
-            "period": "115/04/27~115/05/11",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/05/11",
-            "countdown": 12,
-            "price": 132.0,
-            "change": -8.97
-        },
-        {
             "market": "上市",
             "code": "2429",
             "name": "銘旺科",
@@ -1079,6 +1066,45 @@
             "countdown": 14,
             "price": 2530.0,
             "change": -6.81
+        },
+        {
+            "market": "上櫃",
+            "code": "4529",
+            "name": "淳紳",
+            "publish_date": "",
+            "period": "115/04/30~115/05/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/05/14",
+            "countdown": 15,
+            "price": 5.7,
+            "change": -5.16
+        },
+        {
+            "market": "上櫃",
+            "code": "4542",
+            "name": "科嶠",
+            "publish_date": "",
+            "period": "115/04/30~115/05/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/05/14",
+            "countdown": 15,
+            "price": 196.0,
+            "change": 9.8
+        },
+        {
+            "market": "上櫃",
+            "code": "6735",
+            "name": "美達科技",
+            "publish_date": "",
+            "period": "115/04/30~115/05/14",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/05/14",
+            "countdown": 15,
+            "price": 132.0,
+            "change": -8.97
         }
     ],
     "exited_stocks": [
