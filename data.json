@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-04-30 15:28:04",
+    "update_time": "2026-04-30 20:03:34",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -1001,6 +1001,19 @@
             "countdown": 14,
             "price": 121.5,
             "change": -7.95
+        },
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "115/05/04~115/05/15",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/05/15",
+            "countdown": 15,
+            "price": 22.05,
+            "change": 9.98
         }
     ],
     "exited_stocks": [
