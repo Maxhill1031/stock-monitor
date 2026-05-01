@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-01 13:43:27",
+    "update_time": "2026-05-01 15:25:25",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -1008,20 +1008,6 @@
             "countdown": -2,
             "price": 165.0,
             "change": -8.84,
-            "exit_date": "2026-04-29"
-        },
-        {
-            "market": "上櫃",
-            "code": "4908",
-            "name": "前鼎",
-            "publish_date": "",
-            "period": "115/04/16~115/04/29",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/04/29",
-            "countdown": -2,
-            "price": 214.0,
-            "change": 9.46,
             "exit_date": "2026-04-29"
         },
         {
