@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-05 15:18:06",
+    "update_time": "2026-05-05 19:49:55",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -845,6 +845,32 @@
             "countdown": 13,
             "price": 24.85,
             "change": -0.2
+        },
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "115/05/05",
+            "period": "115/05/06～115/05/19",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/05/19",
+            "countdown": 14,
+            "price": 386.5,
+            "change": 11.22
+        },
+        {
+            "market": "上市",
+            "code": "6405",
+            "name": "悅城",
+            "publish_date": "115/05/05",
+            "period": "115/05/06～115/05/19",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/19",
+            "countdown": 14,
+            "price": 61.4,
+            "change": 20.63
         }
     ],
     "exited_stocks": [
