@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-12 13:40:02",
+    "update_time": "2026-05-12 15:42:19",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/05/12",
             "countdown": 0,
-            "price": 52.8,
-            "change": 2.52
+            "price": 51.6,
+            "change": 0.19
         },
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/05/12",
             "countdown": 0,
-            "price": 41.45,
-            "change": 0.12
+            "price": 41.5,
+            "change": 0.24
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "20分盤",
             "end_date": "115/05/12",
             "countdown": 0,
-            "price": 3970.0,
-            "change": 4.47
+            "price": 3980.0,
+            "change": 4.74
         },
         {
             "market": "上市",
@@ -50,8 +50,8 @@
             "level": "20分盤",
             "end_date": "115/05/13",
             "countdown": 1,
-            "price": 414.0,
-            "change": -1.55
+            "price": 415.0,
+            "change": -1.31
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/05/14",
             "countdown": 2,
-            "price": 4.39,
-            "change": -2.44
+            "price": 4.38,
+            "change": -2.67
         },
         {
             "market": "上櫃",
@@ -89,8 +89,8 @@
             "level": "20分盤",
             "end_date": "115/05/14",
             "countdown": 2,
-            "price": 137.0,
-            "change": 9.6
+            "price": 135.5,
+            "change": 8.4
         },
         {
             "market": "上市",
@@ -102,8 +102,8 @@
             "level": "20分盤",
             "end_date": "115/05/18",
             "countdown": 6,
-            "price": 770.0,
-            "change": 5.77
+            "price": 760.0,
+            "change": 4.4
         },
         {
             "market": "上市",
@@ -154,8 +154,8 @@
             "level": "20分盤",
             "end_date": "115/05/19",
             "countdown": 7,
-            "price": 370.0,
-            "change": 2.78
+            "price": 375.0,
+            "change": 4.17
         },
         {
             "market": "上櫃",
@@ -167,8 +167,8 @@
             "level": "5分盤",
             "end_date": "115/05/19",
             "countdown": 7,
-            "price": 242.5,
-            "change": 8.74
+            "price": 241.5,
+            "change": 8.3
         },
         {
             "market": "上市",
@@ -180,8 +180,8 @@
             "level": "5分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 185.0,
-            "change": 1.65
+            "price": 187.0,
+            "change": 2.75
         },
         {
             "market": "上市",
@@ -193,8 +193,8 @@
             "level": "5分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 297.0,
-            "change": -1.82
+            "price": 298.0,
+            "change": -1.49
         },
         {
             "market": "上市",
@@ -206,8 +206,8 @@
             "level": "5分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 3740.0,
-            "change": -3.61
+            "price": 3700.0,
+            "change": -4.64
         },
         {
             "market": "上市",
@@ -232,8 +232,8 @@
             "level": "20分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 324.0,
-            "change": 0.93
+            "price": 324.5,
+            "change": 1.09
         },
         {
             "market": "上櫃",
@@ -271,8 +271,8 @@
             "level": "20分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 236.0,
-            "change": 3.74
+            "price": 237.0,
+            "change": 4.18
         },
         {
             "market": "上櫃",
@@ -284,8 +284,8 @@
             "level": "20分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 2335.0,
-            "change": 2.86
+            "price": 2370.0,
+            "change": 4.41
         },
         {
             "market": "上櫃",
@@ -297,8 +297,8 @@
             "level": "5分盤",
             "end_date": "115/05/20",
             "countdown": 8,
-            "price": 118.0,
-            "change": 3.96
+            "price": 118.5,
+            "change": 4.41
         },
         {
             "market": "上市",
@@ -310,8 +310,8 @@
             "level": "20分盤",
             "end_date": "115/05/21",
             "countdown": 9,
-            "price": 70.2,
-            "change": 5.25
+            "price": 69.9,
+            "change": 4.8
         },
         {
             "market": "上市",
@@ -323,8 +323,8 @@
             "level": "5分盤",
             "end_date": "115/05/21",
             "countdown": 9,
-            "price": 406.5,
-            "change": 2.39
+            "price": 408.0,
+            "change": 2.77
         },
         {
             "market": "上市",
@@ -336,8 +336,8 @@
             "level": "20分盤",
             "end_date": "115/05/21",
             "countdown": 9,
-            "price": 424.5,
-            "change": 9.13
+            "price": 426.0,
+            "change": 9.51
         },
         {
             "market": "上櫃",
@@ -349,8 +349,8 @@
             "level": "20分盤",
             "end_date": "115/05/21",
             "countdown": 9,
-            "price": 291.5,
-            "change": 1.92
+            "price": 292.0,
+            "change": 2.1
         },
         {
             "market": "上櫃",
@@ -375,8 +375,8 @@
             "level": "20分盤",
             "end_date": "115/05/21",
             "countdown": 9,
-            "price": 130.5,
-            "change": 7.41
+            "price": 132.0,
+            "change": 8.64
         },
         {
             "market": "上櫃",
@@ -388,8 +388,8 @@
             "level": "20分盤",
             "end_date": "115/05/21",
             "countdown": 9,
-            "price": 440.0,
-            "change": 0.11
+            "price": 448.0,
+            "change": 1.93
         },
         {
             "market": "上市",
@@ -401,8 +401,8 @@
             "level": "20分盤",
             "end_date": "115/05/22",
             "countdown": 10,
-            "price": 268.0,
-            "change": 0.0
+            "price": 264.5,
+            "change": -1.31
         },
         {
             "market": "上市",
@@ -414,8 +414,8 @@
             "level": "20分盤",
             "end_date": "115/05/22",
             "countdown": 10,
-            "price": 57.6,
-            "change": -0.69
+            "price": 58.2,
+            "change": 0.34
         },
         {
             "market": "上櫃",
@@ -427,8 +427,8 @@
             "level": "5分盤",
             "end_date": "115/05/22",
             "countdown": 10,
-            "price": 90.4,
-            "change": -3.93
+            "price": 90.5,
+            "change": -3.83
         },
         {
             "market": "上櫃",
@@ -440,8 +440,8 @@
             "level": "20分盤",
             "end_date": "115/05/22",
             "countdown": 10,
-            "price": 726.0,
-            "change": 5.83
+            "price": 740.0,
+            "change": 7.87
         },
         {
             "market": "上櫃",
@@ -466,8 +466,8 @@
             "level": "20分盤",
             "end_date": "115/05/22",
             "countdown": 10,
-            "price": 1445.0,
-            "change": -0.69
+            "price": 1450.0,
+            "change": -0.34
         },
         {
             "market": "上櫃",
@@ -518,8 +518,8 @@
             "level": "5分盤",
             "end_date": "115/05/25",
             "countdown": 13,
-            "price": 50.0,
-            "change": -3.1
+            "price": 50.2,
+            "change": -2.71
         },
         {
             "market": "上櫃",
@@ -531,8 +531,8 @@
             "level": "20分盤",
             "end_date": "115/05/25",
             "countdown": 13,
-            "price": 145.0,
-            "change": 8.21
+            "price": 147.0,
+            "change": 9.7
         },
         {
             "market": "上櫃",
@@ -544,8 +544,8 @@
             "level": "5分盤",
             "end_date": "115/05/25",
             "countdown": 13,
-            "price": 56.2,
-            "change": -4.1
+            "price": 56.3,
+            "change": -3.92
         },
         {
             "market": "上櫃",
@@ -557,8 +557,8 @@
             "level": "5分盤",
             "end_date": "115/05/25",
             "countdown": 13,
-            "price": 786.0,
-            "change": -5.87
+            "price": 785.0,
+            "change": -5.99
         },
         {
             "market": "上櫃",
@@ -570,8 +570,8 @@
             "level": "5分盤",
             "end_date": "115/05/25",
             "countdown": 13,
-            "price": 213.0,
-            "change": -5.75
+            "price": 212.5,
+            "change": -5.97
         },
         {
             "market": "上櫃",
@@ -598,8 +598,8 @@
             "level": "5分盤",
             "end_date": "115/05/11",
             "countdown": -1,
-            "price": 229.5,
-            "change": -4.97,
+            "price": 226.5,
+            "change": -6.21,
             "exit_date": "2026-05-11"
         },
         {
@@ -612,8 +612,8 @@
             "level": "5分盤",
             "end_date": "115/05/11",
             "countdown": -1,
-            "price": 176.0,
-            "change": 4.76,
+            "price": 178.0,
+            "change": 5.95,
             "exit_date": "2026-05-11"
         },
         {
@@ -640,8 +640,8 @@
             "level": "5分盤",
             "end_date": "115/05/11",
             "countdown": -1,
-            "price": 40.15,
-            "change": -2.07,
+            "price": 41.45,
+            "change": 1.1,
             "exit_date": "2026-05-11"
         },
         {
@@ -682,8 +682,8 @@
             "level": "5分盤",
             "end_date": "115/05/11",
             "countdown": -1,
-            "price": 137.0,
-            "change": 9.6,
+            "price": 135.5,
+            "change": 8.4,
             "exit_date": "2026-05-11"
         },
         {
