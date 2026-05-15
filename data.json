@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-15 15:52:14",
+    "update_time": "2026-05-15 20:19:10",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -509,19 +509,6 @@
             "change": -9.85
         },
         {
-            "market": "上櫃",
-            "code": "7751",
-            "name": "竑騰",
-            "publish_date": "",
-            "period": "115/05/13~115/05/26",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/05/26",
-            "countdown": 11,
-            "price": 1625.0,
-            "change": 4.84
-        },
-        {
             "market": "上市",
             "code": "7769",
             "name": "鴻勁",
@@ -689,6 +676,71 @@
             "countdown": 13,
             "price": 389.5,
             "change": -8.78
+        },
+        {
+            "market": "上市",
+            "code": "3135",
+            "name": "凌航",
+            "publish_date": "115/05/15",
+            "period": "115/05/18～115/05/29",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/05/29",
+            "countdown": 14,
+            "price": 216.0,
+            "change": -2.04
+        },
+        {
+            "market": "上櫃",
+            "code": "5228",
+            "name": "鈺鎧",
+            "publish_date": "",
+            "period": "115/05/18~115/05/29",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/05/29",
+            "countdown": 14,
+            "price": 49.15,
+            "change": -2.09
+        },
+        {
+            "market": "上櫃",
+            "code": "6829",
+            "name": "千附精密",
+            "publish_date": "",
+            "period": "115/05/18~115/05/29",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/05/29",
+            "countdown": 14,
+            "price": 198.0,
+            "change": -2.22
+        },
+        {
+            "market": "上櫃",
+            "code": "7751",
+            "name": "竑騰",
+            "publish_date": "",
+            "period": "115/05/18~115/05/29",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/05/29",
+            "countdown": 14,
+            "price": 1625.0,
+            "change": 4.84
+        },
+        {
+            "market": "上櫃",
+            "code": "8444",
+            "name": "綠河-KY",
+            "publish_date": "",
+            "period": "115/05/18~115/05/29",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/05/29",
+            "countdown": 14,
+            "price": 9.02,
+            "change": 1.81
         }
     ],
     "exited_stocks": [
