@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-15 13:56:38",
+    "update_time": "2026-05-15 15:52:14",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -733,20 +733,6 @@
             "price": 124.0,
             "change": -9.82,
             "exit_date": "2026-05-14"
-        },
-        {
-            "market": "上櫃",
-            "code": "7751",
-            "name": "竑騰",
-            "publish_date": "",
-            "period": "115/04/29~115/05/13",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/05/13",
-            "countdown": -2,
-            "price": 1625.0,
-            "change": 4.84,
-            "exit_date": "2026-05-13"
         },
         {
             "market": "上櫃",
