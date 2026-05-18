@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-18 16:44:53",
+    "update_time": "2026-05-18 22:07:06",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -741,6 +741,45 @@
             "countdown": 11,
             "price": 8.12,
             "change": -9.98
+        },
+        {
+            "market": "上市",
+            "code": "6449",
+            "name": "鈺邦",
+            "publish_date": "115/05/18",
+            "period": "115/05/19～115/06/01",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/01",
+            "countdown": 14,
+            "price": 271.0,
+            "change": 3.04
+        },
+        {
+            "market": "上櫃",
+            "code": "3498",
+            "name": "陽程",
+            "publish_date": "",
+            "period": "115/05/19~115/06/01",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/01",
+            "countdown": 14,
+            "price": 144.5,
+            "change": -3.02
+        },
+        {
+            "market": "上櫃",
+            "code": "4971",
+            "name": "IET-KY",
+            "publish_date": "",
+            "period": "115/05/19~115/06/01",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/01",
+            "countdown": 14,
+            "price": 716.0,
+            "change": 1.56
         }
     ],
     "exited_stocks": [
