@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-19 16:27:48",
+    "update_time": "2026-05-19 21:43:19",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -601,19 +601,6 @@
         },
         {
             "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "115/05/15~115/05/28",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/05/28",
-            "countdown": 9,
-            "price": 68.6,
-            "change": 9.94
-        },
-        {
-            "market": "上櫃",
             "code": "8358",
             "name": "金居",
             "publish_date": "",
@@ -728,6 +715,84 @@
             "countdown": 13,
             "price": 645.0,
             "change": -9.92
+        },
+        {
+            "market": "上市",
+            "code": "3008",
+            "name": "大立光",
+            "publish_date": "115/05/19",
+            "period": "115/05/20～115/06/02",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/02",
+            "countdown": 14,
+            "price": 3365.0,
+            "change": 2.28
+        },
+        {
+            "market": "上市",
+            "code": "3665",
+            "name": "貿聯-KY",
+            "publish_date": "115/05/19",
+            "period": "115/05/20～115/06/02",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/02",
+            "countdown": 14,
+            "price": 1990.0,
+            "change": -1.73
+        },
+        {
+            "market": "上市",
+            "code": "6924",
+            "name": "榮惠-KY創",
+            "publish_date": "115/05/19",
+            "period": "115/05/20～115/06/02",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/02",
+            "countdown": 14,
+            "price": 159.5,
+            "change": 10.0
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/05/20~115/06/02",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/02",
+            "countdown": 14,
+            "price": 265.5,
+            "change": -9.85
+        },
+        {
+            "market": "上櫃",
+            "code": "8091",
+            "name": "翔名",
+            "publish_date": "",
+            "period": "115/05/20~115/06/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/02",
+            "countdown": 14,
+            "price": 263.5,
+            "change": 1.15
+        },
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "115/05/20~115/06/02",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/02",
+            "countdown": 14,
+            "price": 68.6,
+            "change": 9.94
         }
     ],
     "exited_stocks": [
