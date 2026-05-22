@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-22 16:21:57",
+    "update_time": "2026-05-22 21:13:41",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -522,19 +522,6 @@
             "change": 8.54
         },
         {
-            "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "115/05/20~115/06/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/06/02",
-            "countdown": 11,
-            "price": 91.1,
-            "change": 9.89
-        },
-        {
             "market": "上市",
             "code": "6806",
             "name": "森崴能源",
@@ -611,6 +598,123 @@
             "countdown": 13,
             "price": 305.5,
             "change": 3.56
+        },
+        {
+            "market": "上市",
+            "code": "2911",
+            "name": "麗嬰房",
+            "publish_date": "115/05/22",
+            "period": "115/05/25～115/06/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 8.69,
+            "change": 10.0
+        },
+        {
+            "market": "上市",
+            "code": "6742",
+            "name": "澤米",
+            "publish_date": "115/05/22",
+            "period": "115/05/25～115/06/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 61.5,
+            "change": -0.32
+        },
+        {
+            "market": "上市",
+            "code": "6834",
+            "name": "天二科技",
+            "publish_date": "115/05/22",
+            "period": "115/05/25～115/06/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 70.5,
+            "change": 5.86
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/05/22",
+            "period": "115/05/25～115/06/05",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 1250.0,
+            "change": 1.63
+        },
+        {
+            "market": "上櫃",
+            "code": "3675",
+            "name": "德微",
+            "publish_date": "",
+            "period": "115/05/25~115/06/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 319.5,
+            "change": 0.95
+        },
+        {
+            "market": "上櫃",
+            "code": "5321",
+            "name": "美而快",
+            "publish_date": "",
+            "period": "115/05/25~115/06/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 38.9,
+            "change": 9.89
+        },
+        {
+            "market": "上櫃",
+            "code": "6538",
+            "name": "倉和",
+            "publish_date": "",
+            "period": "115/05/25~115/06/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 127.5,
+            "change": 8.97
+        },
+        {
+            "market": "上櫃",
+            "code": "8027",
+            "name": "鈦昇",
+            "publish_date": "",
+            "period": "115/05/25~115/06/05",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 244.5,
+            "change": 1.24
+        },
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "115/05/25~115/06/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/05",
+            "countdown": 14,
+            "price": 91.1,
+            "change": 9.89
         }
     ],
     "exited_stocks": [
@@ -781,20 +885,6 @@
             "price": 427.5,
             "change": 5.04,
             "exit_date": "2026-05-22"
-        },
-        {
-            "market": "上櫃",
-            "code": "8027",
-            "name": "鈦昇",
-            "publish_date": "",
-            "period": "115/05/06~115/05/19",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/05/19",
-            "countdown": -2,
-            "price": 243.5,
-            "change": 1.46,
-            "exit_date": "2026-05-19"
         },
         {
             "market": "上市",
