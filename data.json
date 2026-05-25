@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-25 16:56:49",
+    "update_time": "2026-05-25 21:46:44",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -195,19 +195,6 @@
             "countdown": 3,
             "price": 321.5,
             "change": 9.91
-        },
-        {
-            "market": "上市",
-            "code": "3026",
-            "name": "禾伸堂",
-            "publish_date": "115/05/14",
-            "period": "115/05/15～115/05/28",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/05/28",
-            "countdown": 3,
-            "price": 523.0,
-            "change": 9.76
         },
         {
             "market": "上市",
@@ -457,19 +444,6 @@
             "change": 2.43
         },
         {
-            "market": "上市",
-            "code": "6806",
-            "name": "森崴能源",
-            "publish_date": "115/05/20",
-            "period": "115/05/21～115/06/03",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/06/03",
-            "countdown": 9,
-            "price": 8.35,
-            "change": -9.92
-        },
-        {
             "market": "上櫃",
             "code": "1591",
             "name": "駿吉-KY",
@@ -650,6 +624,136 @@
             "countdown": 11,
             "price": 100.0,
             "change": 9.77
+        },
+        {
+            "market": "上市",
+            "code": "2327",
+            "name": "國巨*",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 691.0,
+            "change": 9.86
+        },
+        {
+            "market": "上市",
+            "code": "2424",
+            "name": "隴華",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 13.15,
+            "change": -9.93
+        },
+        {
+            "market": "上市",
+            "code": "2478",
+            "name": "大毅",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 120.0,
+            "change": -5.88
+        },
+        {
+            "market": "上市",
+            "code": "3026",
+            "name": "禾伸堂",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 523.0,
+            "change": 9.76
+        },
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 879.0,
+            "change": 5.78
+        },
+        {
+            "market": "上市",
+            "code": "4722",
+            "name": "國精化",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 284.0,
+            "change": -0.87
+        },
+        {
+            "market": "上市",
+            "code": "4916",
+            "name": "事欣科",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 101.5,
+            "change": 3.26
+        },
+        {
+            "market": "上市",
+            "code": "6806",
+            "name": "森崴能源",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 8.35,
+            "change": -9.92
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "115/05/25",
+            "period": "115/05/26～115/06/08",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 464.0,
+            "change": 9.95
+        },
+        {
+            "market": "上櫃",
+            "code": "3491",
+            "name": "昇達科",
+            "publish_date": "",
+            "period": "115/05/26~115/06/08",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/08",
+            "countdown": 14,
+            "price": 2090.0,
+            "change": 8.29
         }
     ],
     "exited_stocks": [
