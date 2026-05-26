@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-26 16:31:06",
+    "update_time": "2026-05-26 21:36:46",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -117,19 +117,6 @@
             "countdown": 1,
             "price": 147.0,
             "change": 8.89
-        },
-        {
-            "market": "上市",
-            "code": "2492",
-            "name": "華新科",
-            "publish_date": "115/05/14",
-            "period": "115/05/15～115/05/28",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/05/28",
-            "countdown": 2,
-            "price": 328.5,
-            "change": 2.18
         },
         {
             "market": "上市",
@@ -419,19 +406,6 @@
         },
         {
             "market": "上市",
-            "code": "3090",
-            "name": "日電貿",
-            "publish_date": "115/05/21",
-            "period": "115/05/22～115/06/04",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/06/04",
-            "countdown": 9,
-            "price": 232.0,
-            "change": -1.9
-        },
-        {
-            "market": "上市",
             "code": "6449",
             "name": "鈺邦",
             "publish_date": "115/05/21",
@@ -689,6 +663,58 @@
             "countdown": 13,
             "price": 2075.0,
             "change": -0.72
+        },
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "115/05/26",
+            "period": "115/05/27～115/06/09",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/09",
+            "countdown": 14,
+            "price": 423.5,
+            "change": -4.62
+        },
+        {
+            "market": "上市",
+            "code": "2492",
+            "name": "華新科",
+            "publish_date": "115/05/26",
+            "period": "115/05/27～115/06/09",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/09",
+            "countdown": 14,
+            "price": 328.5,
+            "change": 2.18
+        },
+        {
+            "market": "上市",
+            "code": "3090",
+            "name": "日電貿",
+            "publish_date": "115/05/26",
+            "period": "115/05/27～115/06/09",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/09",
+            "countdown": 14,
+            "price": 232.0,
+            "change": -1.9
+        },
+        {
+            "market": "上櫃",
+            "code": "4127",
+            "name": "天良",
+            "publish_date": "",
+            "period": "115/05/27~115/06/09",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/09",
+            "countdown": 14,
+            "price": 68.1,
+            "change": -1.45
         }
     ],
     "exited_stocks": [
