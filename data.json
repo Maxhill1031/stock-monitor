@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-05-28 16:42:07",
+    "update_time": "2026-05-28 22:20:49",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -393,19 +393,6 @@
         },
         {
             "market": "上市",
-            "code": "3026",
-            "name": "禾伸堂",
-            "publish_date": "115/05/25",
-            "period": "115/05/26～115/06/08",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/06/08",
-            "countdown": 11,
-            "price": 605.0,
-            "change": -0.49
-        },
-        {
-            "market": "上市",
             "code": "3167",
             "name": "大量",
             "publish_date": "115/05/25",
@@ -442,19 +429,6 @@
             "countdown": 11,
             "price": 102.5,
             "change": 3.12
-        },
-        {
-            "market": "上市",
-            "code": "6806",
-            "name": "森崴能源",
-            "publish_date": "115/05/25",
-            "period": "115/05/26～115/06/08",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/06/08",
-            "countdown": 11,
-            "price": 6.1,
-            "change": -9.9
         },
         {
             "market": "上市",
@@ -728,6 +702,97 @@
             "countdown": 13,
             "price": 133.0,
             "change": 9.92
+        },
+        {
+            "market": "上市",
+            "code": "3026",
+            "name": "禾伸堂",
+            "publish_date": "115/05/28",
+            "period": "115/05/29～115/06/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 605.0,
+            "change": -0.49
+        },
+        {
+            "market": "上市",
+            "code": "3532",
+            "name": "台勝科",
+            "publish_date": "115/05/28",
+            "period": "115/05/29～115/06/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 290.0,
+            "change": -0.17
+        },
+        {
+            "market": "上市",
+            "code": "6239",
+            "name": "力成",
+            "publish_date": "115/05/28",
+            "period": "115/05/29～115/06/11",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 357.5,
+            "change": 4.99
+        },
+        {
+            "market": "上市",
+            "code": "6405",
+            "name": "悅城",
+            "publish_date": "115/05/28",
+            "period": "115/05/29～115/06/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 76.9,
+            "change": -5.06
+        },
+        {
+            "market": "上市",
+            "code": "6806",
+            "name": "森崴能源",
+            "publish_date": "115/05/28",
+            "period": "115/05/29～115/06/11",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 6.1,
+            "change": -9.9
+        },
+        {
+            "market": "上櫃",
+            "code": "3191",
+            "name": "雲嘉南",
+            "publish_date": "",
+            "period": "115/05/29~115/06/11",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 24.05,
+            "change": 9.82
+        },
+        {
+            "market": "上櫃",
+            "code": "6821",
+            "name": "聯寶",
+            "publish_date": "",
+            "period": "115/05/29~115/06/11",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/11",
+            "countdown": 14,
+            "price": 72.0,
+            "change": 0.14
         }
     ],
     "exited_stocks": [
@@ -912,34 +977,6 @@
             "price": 133.0,
             "change": 9.92,
             "exit_date": "2026-05-26"
-        },
-        {
-            "market": "上市",
-            "code": "3532",
-            "name": "台勝科",
-            "publish_date": "115/05/08",
-            "period": "115/05/11～115/05/22",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/05/22",
-            "countdown": 0,
-            "price": 248.5,
-            "change": 9.96,
-            "exit_date": "2026-05-25"
-        },
-        {
-            "market": "上市",
-            "code": "6405",
-            "name": "悅城",
-            "publish_date": "115/05/08",
-            "period": "115/05/11～115/05/22",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/05/22",
-            "countdown": 0,
-            "price": 62.8,
-            "change": 9.98,
-            "exit_date": "2026-05-25"
         }
     ],
     "etf_stocks": [
