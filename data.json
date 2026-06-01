@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-01 14:59:58",
+    "update_time": "2026-06-01 18:21:10",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -754,6 +754,45 @@
             "countdown": 11,
             "price": 1450.0,
             "change": 2.84
+        },
+        {
+            "market": "上市",
+            "code": "2302",
+            "name": "麗正",
+            "publish_date": "115/06/01",
+            "period": "115/06/02～115/06/15",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/15",
+            "countdown": 14,
+            "price": 38.25,
+            "change": 2.0
+        },
+        {
+            "market": "上市",
+            "code": "3528",
+            "name": "安馳",
+            "publish_date": "115/06/01",
+            "period": "115/06/02～115/06/15",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/15",
+            "countdown": 14,
+            "price": 129.0,
+            "change": 9.79
+        },
+        {
+            "market": "上市",
+            "code": "6770",
+            "name": "力積電",
+            "publish_date": "115/06/01",
+            "period": "115/06/02～115/06/15",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/15",
+            "countdown": 14,
+            "price": 87.0,
+            "change": -1.92
         }
     ],
     "exited_stocks": [
