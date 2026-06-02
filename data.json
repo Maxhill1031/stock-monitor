@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-02 17:07:08",
+    "update_time": "2026-06-02 22:37:46",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -819,6 +819,45 @@
             "countdown": 13,
             "price": 170.0,
             "change": 0.59
+        },
+        {
+            "market": "上市",
+            "code": "1563",
+            "name": "巧新",
+            "publish_date": "115/06/02",
+            "period": "115/06/03～115/06/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/16",
+            "countdown": 14,
+            "price": 69.8,
+            "change": -0.14
+        },
+        {
+            "market": "上市",
+            "code": "2337",
+            "name": "旺宏",
+            "publish_date": "115/06/02",
+            "period": "115/06/03～115/06/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/16",
+            "countdown": 14,
+            "price": 175.5,
+            "change": 4.78
+        },
+        {
+            "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "115/06/03~115/06/16",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/16",
+            "countdown": 14,
+            "price": 630.0,
+            "change": -3.08
         }
     ],
     "exited_stocks": [
