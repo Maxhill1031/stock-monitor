@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-04 16:48:58",
+    "update_time": "2026-06-04 21:44:39",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -588,19 +588,6 @@
         },
         {
             "market": "上櫃",
-            "code": "3523",
-            "name": "迎輝",
-            "publish_date": "",
-            "period": "115/06/02~115/06/15",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/06/15",
-            "countdown": 11,
-            "price": 23.25,
-            "change": 9.93
-        },
-        {
-            "market": "上櫃",
             "code": "4973",
             "name": "廣穎",
             "publish_date": "",
@@ -845,6 +832,84 @@
             "countdown": 13,
             "price": 12.0,
             "change": 5.26
+        },
+        {
+            "market": "上市",
+            "code": "3535",
+            "name": "晶彩科",
+            "publish_date": "115/06/04",
+            "period": "115/06/05～115/06/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/18",
+            "countdown": 14,
+            "price": 137.0,
+            "change": 1.11
+        },
+        {
+            "market": "上市",
+            "code": "8454",
+            "name": "富邦媒",
+            "publish_date": "115/06/04",
+            "period": "115/06/05～115/06/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/18",
+            "countdown": 14,
+            "price": 321.0,
+            "change": 9.93
+        },
+        {
+            "market": "上櫃",
+            "code": "3288",
+            "name": "點晶",
+            "publish_date": "",
+            "period": "115/06/05~115/06/18",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/18",
+            "countdown": 14,
+            "price": 24.25,
+            "change": 9.98
+        },
+        {
+            "market": "上櫃",
+            "code": "3523",
+            "name": "迎輝",
+            "publish_date": "",
+            "period": "115/06/05~115/06/18",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/18",
+            "countdown": 14,
+            "price": 23.25,
+            "change": 9.93
+        },
+        {
+            "market": "上櫃",
+            "code": "4707",
+            "name": "磐亞",
+            "publish_date": "",
+            "period": "115/06/05~115/06/18",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/18",
+            "countdown": 14,
+            "price": 21.1,
+            "change": 6.57
+        },
+        {
+            "market": "上櫃",
+            "code": "8358",
+            "name": "金居",
+            "publish_date": "",
+            "period": "115/06/05~115/06/18",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/18",
+            "countdown": 14,
+            "price": 565.0,
+            "change": -8.13
         }
     ],
     "exited_stocks": [
