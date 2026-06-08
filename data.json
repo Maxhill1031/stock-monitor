@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-08 17:22:32",
+    "update_time": "2026-06-08 22:37:05",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -286,19 +286,6 @@
             "countdown": 2,
             "price": 132.0,
             "change": -9.28
-        },
-        {
-            "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "115/05/28~115/06/10",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/06/10",
-            "countdown": 2,
-            "price": 63.9,
-            "change": -10.0
         },
         {
             "market": "上市",
@@ -962,6 +949,58 @@
             "countdown": 14,
             "price": 6.13,
             "change": -4.67
+        },
+        {
+            "market": "上市",
+            "code": "6890",
+            "name": "來億-KY",
+            "publish_date": "115/06/08",
+            "period": "115/06/09～115/06/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/23",
+            "countdown": 15,
+            "price": 249.5,
+            "change": 2.89
+        },
+        {
+            "market": "上櫃",
+            "code": "3114",
+            "name": "好德",
+            "publish_date": "",
+            "period": "115/06/09~115/06/23",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/23",
+            "countdown": 15,
+            "price": 44.7,
+            "change": 0.11
+        },
+        {
+            "market": "上櫃",
+            "code": "5426",
+            "name": "振發",
+            "publish_date": "",
+            "period": "115/06/09~115/06/23",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/23",
+            "countdown": 15,
+            "price": 32.9,
+            "change": 9.85
+        },
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "115/06/09~115/06/23",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/23",
+            "countdown": 15,
+            "price": 63.9,
+            "change": -10.0
         }
     ],
     "exited_stocks": [
