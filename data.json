@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-09 16:30:18",
+    "update_time": "2026-06-09 21:29:01",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -678,19 +678,6 @@
             "change": 9.35
         },
         {
-            "market": "上市",
-            "code": "8454",
-            "name": "富邦媒",
-            "publish_date": "115/06/04",
-            "period": "115/06/05～115/06/18",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/06/18",
-            "countdown": 9,
-            "price": 426.5,
-            "change": 9.92
-        },
-        {
             "market": "上櫃",
             "code": "3288",
             "name": "點晶",
@@ -897,6 +884,19 @@
             "countdown": 14,
             "price": 57.6,
             "change": -9.86
+        },
+        {
+            "market": "上市",
+            "code": "8454",
+            "name": "富邦媒",
+            "publish_date": "115/06/09",
+            "period": "115/06/10～115/06/24",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/24",
+            "countdown": 15,
+            "price": 426.5,
+            "change": 9.92
         }
     ],
     "exited_stocks": [
