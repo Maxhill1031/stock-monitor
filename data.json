@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-10 16:49:22",
+    "update_time": "2026-06-10 21:57:24",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -757,32 +757,6 @@
         },
         {
             "market": "上櫃",
-            "code": "3147",
-            "name": "大綜",
-            "publish_date": "",
-            "period": "115/06/08~115/06/22",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/06/22",
-            "countdown": 12,
-            "price": 320.0,
-            "change": 2.4
-        },
-        {
-            "market": "上櫃",
-            "code": "3581",
-            "name": "博磊",
-            "publish_date": "",
-            "period": "115/06/08~115/06/22",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/06/22",
-            "countdown": 12,
-            "price": 135.0,
-            "change": -4.26
-        },
-        {
-            "market": "上櫃",
             "code": "5701",
             "name": "劍湖山",
             "publish_date": "",
@@ -858,6 +832,32 @@
             "countdown": 14,
             "price": 449.5,
             "change": 5.39
+        },
+        {
+            "market": "上櫃",
+            "code": "3147",
+            "name": "大綜",
+            "publish_date": "",
+            "period": "115/06/11~115/06/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/25",
+            "countdown": 15,
+            "price": 320.0,
+            "change": 2.4
+        },
+        {
+            "market": "上櫃",
+            "code": "3581",
+            "name": "博磊",
+            "publish_date": "",
+            "period": "115/06/11~115/06/25",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/06/25",
+            "countdown": 15,
+            "price": 135.0,
+            "change": -4.26
         }
     ],
     "exited_stocks": [
