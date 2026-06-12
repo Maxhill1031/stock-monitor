@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-12 16:57:09",
+    "update_time": "2026-06-12 21:48:05",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -650,6 +650,71 @@
             "countdown": 14,
             "price": 42.55,
             "change": -8.98
+        },
+        {
+            "market": "上市",
+            "code": "6830",
+            "name": "汎銓",
+            "publish_date": "115/06/12",
+            "period": "115/06/15～115/06/29",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/29",
+            "countdown": 17,
+            "price": 497.0,
+            "change": -3.5
+        },
+        {
+            "market": "上市",
+            "code": "6924",
+            "name": "榮惠-KY創",
+            "publish_date": "115/06/12",
+            "period": "115/06/15～115/06/29",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/29",
+            "countdown": 17,
+            "price": 117.0,
+            "change": -3.31
+        },
+        {
+            "market": "上櫃",
+            "code": "4402",
+            "name": "郡都開發",
+            "publish_date": "",
+            "period": "115/06/15~115/06/29",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/29",
+            "countdown": 17,
+            "price": 16.4,
+            "change": -4.65
+        },
+        {
+            "market": "上櫃",
+            "code": "4556",
+            "name": "旭然",
+            "publish_date": "",
+            "period": "115/06/15~115/06/29",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/29",
+            "countdown": 17,
+            "price": 66.8,
+            "change": 9.87
+        },
+        {
+            "market": "上櫃",
+            "code": "5345",
+            "name": "馥鴻",
+            "publish_date": "",
+            "period": "115/06/15~115/06/29",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/06/29",
+            "countdown": 17,
+            "price": 33.1,
+            "change": -6.36
         }
     ],
     "exited_stocks": [
