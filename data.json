@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-12 13:56:21",
+    "update_time": "2026-06-12 14:43:59",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -683,20 +683,6 @@
         },
         {
             "market": "上櫃",
-            "code": "2061",
-            "name": "風青",
-            "publish_date": "",
-            "period": "115/05/28~115/06/10",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/06/10",
-            "countdown": -2,
-            "price": 36.15,
-            "change": 9.71,
-            "exit_date": "2026-06-10"
-        },
-        {
-            "market": "上櫃",
             "code": "3236",
             "name": "千如",
             "publish_date": "",
@@ -711,20 +697,6 @@
         },
         {
             "market": "上櫃",
-            "code": "5321",
-            "name": "美而快",
-            "publish_date": "",
-            "period": "115/05/28~115/06/10",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/06/10",
-            "countdown": -2,
-            "price": 36.0,
-            "change": -2.7,
-            "exit_date": "2026-06-10"
-        },
-        {
-            "market": "上櫃",
             "code": "6173",
             "name": "信昌電",
             "publish_date": "",
@@ -735,20 +707,6 @@
             "countdown": -2,
             "price": 276.5,
             "change": 9.94,
-            "exit_date": "2026-06-10"
-        },
-        {
-            "market": "上櫃",
-            "code": "6182",
-            "name": "合晶",
-            "publish_date": "",
-            "period": "115/05/28~115/06/10",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/06/10",
-            "countdown": -2,
-            "price": 88.9,
-            "change": 9.89,
             "exit_date": "2026-06-10"
         },
         {
@@ -777,20 +735,6 @@
             "countdown": -2,
             "price": 170.5,
             "change": 10.0,
-            "exit_date": "2026-06-10"
-        },
-        {
-            "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "115/05/28~115/06/10",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/06/10",
-            "countdown": -2,
-            "price": 42.55,
-            "change": -8.98,
             "exit_date": "2026-06-10"
         },
         {
