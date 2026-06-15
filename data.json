@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-15 15:22:58",
+    "update_time": "2026-06-15 18:54:51",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -637,6 +637,32 @@
             "countdown": 14,
             "price": 32.35,
             "change": -2.27
+        },
+        {
+            "market": "上市",
+            "code": "1714",
+            "name": "和桐",
+            "publish_date": "115/06/15",
+            "period": "115/06/16～115/06/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/06/30",
+            "countdown": 15,
+            "price": 16.7,
+            "change": 9.87
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "115/06/15",
+            "period": "115/06/16～115/06/30",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/06/30",
+            "countdown": 15,
+            "price": 506.0,
+            "change": -3.07
         }
     ],
     "exited_stocks": [
