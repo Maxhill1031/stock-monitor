@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-17 15:12:29",
+    "update_time": "2026-06-17 17:51:02",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -585,6 +585,45 @@
             "countdown": 14,
             "price": 43.1,
             "change": 9.95
+        },
+        {
+            "market": "上市",
+            "code": "2383",
+            "name": "台光電",
+            "publish_date": "115/06/17",
+            "period": "115/06/18～115/07/02",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/02",
+            "countdown": 15,
+            "price": 5200.0,
+            "change": 1.56
+        },
+        {
+            "market": "上市",
+            "code": "2493",
+            "name": "揚博",
+            "publish_date": "115/06/17",
+            "period": "115/06/18～115/07/02",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/02",
+            "countdown": 15,
+            "price": 249.0,
+            "change": -0.4
+        },
+        {
+            "market": "上市",
+            "code": "3026",
+            "name": "禾伸堂",
+            "publish_date": "115/06/17",
+            "period": "115/06/18～115/07/02",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/07/02",
+            "countdown": 15,
+            "price": 896.0,
+            "change": 9.94
         }
     ],
     "exited_stocks": [
