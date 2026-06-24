@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-24 16:22:07",
+    "update_time": "2026-06-24 20:35:18",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -653,6 +653,19 @@
         },
         {
             "market": "上市",
+            "code": "2316",
+            "name": "楠梓電",
+            "publish_date": "115/06/24",
+            "period": "115/06/25～115/07/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/08",
+            "countdown": 14,
+            "price": 220.5,
+            "change": 1.38
+        },
+        {
+            "market": "上市",
             "code": "3090",
             "name": "日電貿",
             "publish_date": "115/06/22",
@@ -663,6 +676,45 @@
             "countdown": 14,
             "price": 303.0,
             "change": 0.17
+        },
+        {
+            "market": "上市",
+            "code": "6715",
+            "name": "嘉基",
+            "publish_date": "115/06/24",
+            "period": "115/06/25～115/07/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/08",
+            "countdown": 14,
+            "price": 513.0,
+            "change": -9.84
+        },
+        {
+            "market": "上櫃",
+            "code": "3675",
+            "name": "德微",
+            "publish_date": "",
+            "period": "115/06/25~115/07/08",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/08",
+            "countdown": 14,
+            "price": 413.0,
+            "change": -7.3
+        },
+        {
+            "market": "上櫃",
+            "code": "7712",
+            "name": "博盛半導體",
+            "publish_date": "",
+            "period": "115/06/25~115/07/08",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/08",
+            "countdown": 14,
+            "price": 204.0,
+            "change": 2.0
         },
         {
             "market": "上櫃",
