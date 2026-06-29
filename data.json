@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-06-29 17:25:42",
+    "update_time": "2026-06-29 22:36:41",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -767,6 +767,84 @@
             "countdown": 11,
             "price": 1670.0,
             "change": -1.76
+        },
+        {
+            "market": "上市",
+            "code": "1435",
+            "name": "中福",
+            "publish_date": "115/06/29",
+            "period": "115/06/30～115/07/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/13",
+            "countdown": 14,
+            "price": 24.9,
+            "change": 9.93
+        },
+        {
+            "market": "上市",
+            "code": "2233",
+            "name": "宇隆",
+            "publish_date": "115/06/29",
+            "period": "115/06/30～115/07/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/13",
+            "countdown": 14,
+            "price": 193.0,
+            "change": -9.81
+        },
+        {
+            "market": "上市",
+            "code": "2483",
+            "name": "百容",
+            "publish_date": "115/06/29",
+            "period": "115/06/30～115/07/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/13",
+            "countdown": 14,
+            "price": 55.7,
+            "change": 0.0
+        },
+        {
+            "market": "上市",
+            "code": "3450",
+            "name": "聯鈞",
+            "publish_date": "115/06/29",
+            "period": "115/06/30～115/07/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/13",
+            "countdown": 14,
+            "price": 505.0,
+            "change": -4.72
+        },
+        {
+            "market": "上市",
+            "code": "6226",
+            "name": "光鼎",
+            "publish_date": "115/06/29",
+            "period": "115/06/30～115/07/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/13",
+            "countdown": 14,
+            "price": 20.05,
+            "change": 9.86
+        },
+        {
+            "market": "上櫃",
+            "code": "8024",
+            "name": "佑華",
+            "publish_date": "",
+            "period": "115/06/30~115/07/13",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/13",
+            "countdown": 14,
+            "price": 16.25,
+            "change": -6.88
         }
     ],
     "exited_stocks": [
