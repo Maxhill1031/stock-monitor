@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-01 16:49:42",
+    "update_time": "2026-07-01 21:20:06",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -793,6 +793,19 @@
             "countdown": 13,
             "price": 47.6,
             "change": 2.48
+        },
+        {
+            "market": "上市",
+            "code": "2303",
+            "name": "聯電",
+            "publish_date": "115/07/01",
+            "period": "115/07/02～115/07/15",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/15",
+            "countdown": 14,
+            "price": 169.0,
+            "change": 2.74
         }
     ],
     "exited_stocks": [
