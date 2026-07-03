@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-03 16:08:50",
+    "update_time": "2026-07-03 20:28:29",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -561,19 +561,6 @@
             "change": 0.32
         },
         {
-            "market": "上櫃",
-            "code": "3230",
-            "name": "錦明",
-            "publish_date": "",
-            "period": "115/07/01~115/07/14",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/14",
-            "countdown": 11,
-            "price": 51.6,
-            "change": 0.19
-        },
-        {
             "market": "上市",
             "code": "2303",
             "name": "聯電",
@@ -650,6 +637,97 @@
             "countdown": 13,
             "price": 204.5,
             "change": 9.95
+        },
+        {
+            "market": "上市",
+            "code": "1447",
+            "name": "力鵬",
+            "publish_date": "115/07/03",
+            "period": "115/07/06～115/07/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 9.99,
+            "change": 9.9
+        },
+        {
+            "market": "上市",
+            "code": "1617",
+            "name": "榮星",
+            "publish_date": "115/07/03",
+            "period": "115/07/06～115/07/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 24.5,
+            "change": 9.87
+        },
+        {
+            "market": "上市",
+            "code": "3055",
+            "name": "蔚華科",
+            "publish_date": "115/07/03",
+            "period": "115/07/06～115/07/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 152.5,
+            "change": 8.93
+        },
+        {
+            "market": "上市",
+            "code": "7795",
+            "name": "長廣",
+            "publish_date": "115/07/03",
+            "period": "115/07/06～115/07/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 626.0,
+            "change": 2.45
+        },
+        {
+            "market": "上櫃",
+            "code": "3147",
+            "name": "大綜",
+            "publish_date": "",
+            "period": "115/07/06~115/07/17",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 236.0,
+            "change": -1.26
+        },
+        {
+            "market": "上櫃",
+            "code": "3230",
+            "name": "錦明",
+            "publish_date": "",
+            "period": "115/07/06~115/07/17",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 51.6,
+            "change": 0.19
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/07/06~115/07/17",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/17",
+            "countdown": 14,
+            "price": 269.0,
+            "change": 1.51
         }
     ],
     "exited_stocks": [
