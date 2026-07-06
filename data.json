@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-06 16:59:43",
+    "update_time": "2026-07-06 22:08:42",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -650,6 +650,32 @@
             "countdown": 11,
             "price": 256.0,
             "change": -4.83
+        },
+        {
+            "market": "上市",
+            "code": "1515",
+            "name": "力山",
+            "publish_date": "115/07/06",
+            "period": "115/07/07～115/07/20",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/20",
+            "countdown": 14,
+            "price": 42.75,
+            "change": 1.79
+        },
+        {
+            "market": "上市",
+            "code": "1718",
+            "name": "中纖",
+            "publish_date": "115/07/06",
+            "period": "115/07/07～115/07/20",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/07/20",
+            "countdown": 14,
+            "price": 15.2,
+            "change": 1.67
         }
     ],
     "exited_stocks": [
