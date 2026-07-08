@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-08 15:28:59",
+    "update_time": "2026-07-08 20:06:15",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -367,19 +367,6 @@
         },
         {
             "market": "上市",
-            "code": "3055",
-            "name": "蔚華科",
-            "publish_date": "115/07/03",
-            "period": "115/07/06～115/07/17",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/07/17",
-            "countdown": 9,
-            "price": 168.5,
-            "change": -4.26
-        },
-        {
-            "market": "上市",
             "code": "7795",
             "name": "長廣",
             "publish_date": "115/07/03",
@@ -481,6 +468,58 @@
             "countdown": 13,
             "price": 117.5,
             "change": 5.38
+        },
+        {
+            "market": "上市",
+            "code": "3055",
+            "name": "蔚華科",
+            "publish_date": "115/07/08",
+            "period": "115/07/09～115/07/22",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/07/22",
+            "countdown": 14,
+            "price": 168.5,
+            "change": -4.26
+        },
+        {
+            "market": "上櫃",
+            "code": "4707",
+            "name": "磐亞",
+            "publish_date": "",
+            "period": "115/07/09~115/07/22",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/22",
+            "countdown": 14,
+            "price": 37.95,
+            "change": 3.69
+        },
+        {
+            "market": "上櫃",
+            "code": "6174",
+            "name": "安碁",
+            "publish_date": "",
+            "period": "115/07/09~115/07/22",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/22",
+            "countdown": 14,
+            "price": 61.2,
+            "change": 5.7
+        },
+        {
+            "market": "上市",
+            "code": "8261",
+            "name": "富鼎",
+            "publish_date": "115/07/08",
+            "period": "115/07/09～115/07/24",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/24",
+            "countdown": 16,
+            "price": 348.0,
+            "change": 1.75
         }
     ],
     "exited_stocks": [
