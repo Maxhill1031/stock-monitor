@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-09 16:27:38",
+    "update_time": "2026-07-09 21:34:15",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -442,6 +442,19 @@
             "countdown": 13,
             "price": 57.7,
             "change": -5.72
+        },
+        {
+            "market": "上市",
+            "code": "4169",
+            "name": "泰宗",
+            "publish_date": "115/07/09",
+            "period": "115/07/10～115/07/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/07/23",
+            "countdown": 14,
+            "price": 270.0,
+            "change": -3.23
         },
         {
             "market": "上市",
