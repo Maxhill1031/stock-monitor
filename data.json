@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-10 13:00:57",
+    "update_time": "2026-07-10 14:05:53",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -424,6 +424,20 @@
         },
         {
             "market": "上櫃",
+            "code": "3624",
+            "name": "光頡",
+            "publish_date": "",
+            "period": "115/06/24~115/07/09",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/09",
+            "countdown": -1,
+            "price": 144.0,
+            "change": 2.86,
+            "exit_date": "2026-07-09"
+        },
+        {
+            "market": "上櫃",
             "code": "3675",
             "name": "德微",
             "publish_date": "",
@@ -449,20 +463,6 @@
             "price": 185.0,
             "change": -2.63,
             "exit_date": "2026-07-08"
-        },
-        {
-            "market": "上櫃",
-            "code": "3624",
-            "name": "光頡",
-            "publish_date": "",
-            "period": "115/06/24~115/07/09",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/09",
-            "countdown": -1,
-            "price": 144.0,
-            "change": 2.86,
-            "exit_date": "2026-07-09"
         },
         {
             "market": "上市",
