@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-13 16:16:43",
+    "update_time": "2026-07-13 21:01:20",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -325,6 +325,19 @@
             "countdown": 11,
             "price": 292.5,
             "change": -10.0
+        },
+        {
+            "market": "上櫃",
+            "code": "8027",
+            "name": "鈦昇",
+            "publish_date": "",
+            "period": "115/07/14~115/07/27",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/27",
+            "countdown": 14,
+            "price": 241.0,
+            "change": -0.41
         }
     ],
     "exited_stocks": [
