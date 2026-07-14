@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-14 15:08:19",
+    "update_time": "2026-07-14 15:10:08",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "115/07/17",
             "countdown": 3,
-            "price": 23.4,
-            "change": -0.43
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上市",
