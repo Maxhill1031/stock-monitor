@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-15 15:14:25",
+    "update_time": "2026-07-15 20:04:26",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -119,6 +119,45 @@
             "change": 6.86
         },
         {
+            "market": "上櫃",
+            "code": "3147",
+            "name": "大綜",
+            "publish_date": "",
+            "period": "115/07/06~115/07/17",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/17",
+            "countdown": 2,
+            "price": 243.0,
+            "change": 9.21
+        },
+        {
+            "market": "上櫃",
+            "code": "3230",
+            "name": "錦明",
+            "publish_date": "",
+            "period": "115/07/06~115/07/17",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/17",
+            "countdown": 2,
+            "price": 54.0,
+            "change": 0.56
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/07/06~115/07/17",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/17",
+            "countdown": 2,
+            "price": 229.0,
+            "change": -0.22
+        },
+        {
             "market": "上市",
             "code": "1515",
             "name": "力山",
@@ -158,6 +197,19 @@
             "change": 10.0
         },
         {
+            "market": "上櫃",
+            "code": "6617",
+            "name": "共信-KY",
+            "publish_date": "",
+            "period": "115/07/08~115/07/21",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/21",
+            "countdown": 6,
+            "price": 108.5,
+            "change": 3.33
+        },
+        {
             "market": "上市",
             "code": "3055",
             "name": "蔚華科",
@@ -169,6 +221,32 @@
             "countdown": 7,
             "price": 193.0,
             "change": 9.97
+        },
+        {
+            "market": "上櫃",
+            "code": "4707",
+            "name": "磐亞",
+            "publish_date": "",
+            "period": "115/07/09~115/07/22",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/22",
+            "countdown": 7,
+            "price": 41.95,
+            "change": 9.24
+        },
+        {
+            "market": "上櫃",
+            "code": "6174",
+            "name": "安碁",
+            "publish_date": "",
+            "period": "115/07/09~115/07/22",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/22",
+            "countdown": 7,
+            "price": 58.5,
+            "change": 4.09
         },
         {
             "market": "上市",
@@ -197,6 +275,19 @@
             "change": -0.98
         },
         {
+            "market": "上櫃",
+            "code": "8027",
+            "name": "鈦昇",
+            "publish_date": "",
+            "period": "115/07/14~115/07/27",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/27",
+            "countdown": 12,
+            "price": 244.0,
+            "change": 4.05
+        },
+        {
             "market": "上市",
             "code": "2434",
             "name": "統懋",
@@ -221,106 +312,6 @@
             "countdown": 13,
             "price": 710.0,
             "change": 3.2
-        }
-    ],
-    "exited_stocks": [
-        {
-            "market": "上櫃",
-            "code": "3147",
-            "name": "大綜",
-            "publish_date": "",
-            "period": "115/07/06~115/07/17",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/17",
-            "countdown": 2,
-            "price": 243.0,
-            "change": 9.21,
-            "exit_date": "2026-07-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "3230",
-            "name": "錦明",
-            "publish_date": "",
-            "period": "115/07/06~115/07/17",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/17",
-            "countdown": 2,
-            "price": 54.0,
-            "change": 0.56,
-            "exit_date": "2026-07-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/07/06~115/07/17",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/17",
-            "countdown": 2,
-            "price": 229.0,
-            "change": -0.22,
-            "exit_date": "2026-07-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "6617",
-            "name": "共信-KY",
-            "publish_date": "",
-            "period": "115/07/08~115/07/21",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/21",
-            "countdown": 6,
-            "price": 108.5,
-            "change": 3.33,
-            "exit_date": "2026-07-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "4707",
-            "name": "磐亞",
-            "publish_date": "",
-            "period": "115/07/09~115/07/22",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/22",
-            "countdown": 7,
-            "price": 41.95,
-            "change": 9.24,
-            "exit_date": "2026-07-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "6174",
-            "name": "安碁",
-            "publish_date": "",
-            "period": "115/07/09~115/07/22",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/22",
-            "countdown": 7,
-            "price": 58.5,
-            "change": 4.09,
-            "exit_date": "2026-07-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "8027",
-            "name": "鈦昇",
-            "publish_date": "",
-            "period": "115/07/14~115/07/27",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/27",
-            "countdown": 12,
-            "price": 244.0,
-            "change": 4.05,
-            "exit_date": "2026-07-15"
         },
         {
             "market": "上櫃",
@@ -333,8 +324,7 @@
             "end_date": "115/07/28",
             "countdown": 13,
             "price": 372.0,
-            "change": 8.61,
-            "exit_date": "2026-07-15"
+            "change": 8.61
         },
         {
             "market": "上櫃",
@@ -347,8 +337,62 @@
             "end_date": "115/07/28",
             "countdown": 13,
             "price": 127.0,
-            "change": 5.39,
-            "exit_date": "2026-07-15"
+            "change": 5.39
+        },
+        {
+            "market": "上市",
+            "code": "2492",
+            "name": "華新科",
+            "publish_date": "115/07/15",
+            "period": "115/07/16～115/07/29",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/07/29",
+            "countdown": 14,
+            "price": 379.0,
+            "change": -2.82
+        },
+        {
+            "market": "上櫃",
+            "code": "8096",
+            "name": "擎亞",
+            "publish_date": "",
+            "period": "115/07/16~115/07/29",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/29",
+            "countdown": 14,
+            "price": 146.0,
+            "change": -7.3
+        },
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "115/07/16~115/07/29",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/29",
+            "countdown": 14,
+            "price": 24.9,
+            "change": -4.96
+        }
+    ],
+    "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3230",
+            "name": "錦明",
+            "publish_date": "",
+            "period": "115/07/01~115/07/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/14",
+            "countdown": -1,
+            "price": 54.0,
+            "change": 0.56,
+            "exit_date": "2026-07-14"
         },
         {
             "market": "上櫃",
