@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-16 15:21:58",
+    "update_time": "2026-07-16 20:05:54",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -364,6 +364,45 @@
             "countdown": 13,
             "price": 27.35,
             "change": 9.84
+        },
+        {
+            "market": "上櫃",
+            "code": "6173",
+            "name": "信昌電",
+            "publish_date": "",
+            "period": "115/07/17~115/07/30",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/30",
+            "countdown": 14,
+            "price": 215.5,
+            "change": -6.91
+        },
+        {
+            "market": "上櫃",
+            "code": "6907",
+            "name": "雅特力-KY",
+            "publish_date": "",
+            "period": "115/07/17~115/07/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/30",
+            "countdown": 14,
+            "price": 239.0,
+            "change": 2.8
+        },
+        {
+            "market": "上櫃",
+            "code": "7714",
+            "name": "創泓科技",
+            "publish_date": "",
+            "period": "115/07/17~115/07/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/07/30",
+            "countdown": 14,
+            "price": 201.5,
+            "change": -2.89
         }
     ],
     "exited_stocks": [
