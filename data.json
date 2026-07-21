@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-21 15:32:34",
+    "update_time": "2026-07-21 20:10:29",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -172,19 +172,6 @@
         },
         {
             "market": "上櫃",
-            "code": "6173",
-            "name": "信昌電",
-            "publish_date": "",
-            "period": "115/07/17~115/07/30",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/30",
-            "countdown": 9,
-            "price": 175.0,
-            "change": 0.0
-        },
-        {
-            "market": "上櫃",
             "code": "6907",
             "name": "雅特力-KY",
             "publish_date": "",
@@ -273,6 +260,110 @@
             "countdown": 13,
             "price": 39.95,
             "change": 6.53
+        },
+        {
+            "market": "上市",
+            "code": "2483",
+            "name": "百容",
+            "publish_date": "*115/07/21",
+            "period": "115/07/22～115/08/04",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 42.15,
+            "change": 0.6
+        },
+        {
+            "market": "上市",
+            "code": "3026",
+            "name": "禾伸堂",
+            "publish_date": "*115/07/21",
+            "period": "115/07/22～115/08/04",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 682.0,
+            "change": 9.82
+        },
+        {
+            "market": "上櫃",
+            "code": "3288",
+            "name": "點晶",
+            "publish_date": "",
+            "period": "115/07/22~115/08/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 26.45,
+            "change": -9.73
+        },
+        {
+            "market": "上櫃",
+            "code": "3624",
+            "name": "光頡",
+            "publish_date": "",
+            "period": "115/07/22~115/08/04",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 90.9,
+            "change": 1.56
+        },
+        {
+            "market": "上櫃",
+            "code": "3675",
+            "name": "德微",
+            "publish_date": "",
+            "period": "115/07/22~115/08/04",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 267.5,
+            "change": 1.13
+        },
+        {
+            "market": "上櫃",
+            "code": "6173",
+            "name": "信昌電",
+            "publish_date": "",
+            "period": "115/07/22~115/08/04",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 175.0,
+            "change": 0.0
+        },
+        {
+            "market": "上櫃",
+            "code": "6683",
+            "name": "雍智科技",
+            "publish_date": "",
+            "period": "115/07/22~115/08/04",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 1170.0,
+            "change": 5.88
+        },
+        {
+            "market": "上櫃",
+            "code": "6727",
+            "name": "亞泰金屬",
+            "publish_date": "",
+            "period": "115/07/22~115/08/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/04",
+            "countdown": 14,
+            "price": 332.5,
+            "change": 0.45
         }
     ],
     "exited_stocks": [
