@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-22 15:34:02",
+    "update_time": "2026-07-22 20:13:43",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -128,8 +128,8 @@
             "level": "20分盤",
             "end_date": "115/07/29",
             "countdown": 7,
-            "price": 140.5,
-            "change": 0.36
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -338,6 +338,32 @@
             "countdown": 13,
             "price": 365.5,
             "change": 9.92
+        },
+        {
+            "market": "上市",
+            "code": "8028",
+            "name": "昇陽半導體",
+            "publish_date": "*115/07/22",
+            "period": "115/07/23～115/08/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/05",
+            "countdown": 14,
+            "price": 308.0,
+            "change": 0.98
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/07/23~115/08/05",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/05",
+            "countdown": 14,
+            "price": 172.5,
+            "change": 2.07
         }
     ],
     "exited_stocks": [
@@ -395,20 +421,6 @@
             "countdown": -4,
             "price": 46.85,
             "change": 8.95,
-            "exit_date": "2026-07-17"
-        },
-        {
-            "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/07/06~115/07/17",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/17",
-            "countdown": -4,
-            "price": 171.0,
-            "change": -3.39,
             "exit_date": "2026-07-17"
         },
         {
