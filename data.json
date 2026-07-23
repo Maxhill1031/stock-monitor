@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-23 15:32:58",
+    "update_time": "2026-07-23 20:11:54",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -184,19 +184,6 @@
             "change": 0.0
         },
         {
-            "market": "上櫃",
-            "code": "4139",
-            "name": "馬光-KY",
-            "publish_date": "",
-            "period": "115/07/21~115/08/03",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/03",
-            "countdown": 11,
-            "price": 42.4,
-            "change": 0.95
-        },
-        {
             "market": "上市",
             "code": "2483",
             "name": "百容",
@@ -325,6 +312,45 @@
             "countdown": 13,
             "price": 170.0,
             "change": -1.45
+        },
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "*115/07/23",
+            "period": "115/07/24～115/08/06",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/06",
+            "countdown": 14,
+            "price": 688.0,
+            "change": -1.57
+        },
+        {
+            "market": "上櫃",
+            "code": "4139",
+            "name": "馬光-KY",
+            "publish_date": "",
+            "period": "115/07/24~115/08/06",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/06",
+            "countdown": 14,
+            "price": 42.4,
+            "change": 0.95
+        },
+        {
+            "market": "上櫃",
+            "code": "6182",
+            "name": "合晶",
+            "publish_date": "",
+            "period": "115/07/24~115/08/10",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/10",
+            "countdown": 18,
+            "price": 126.5,
+            "change": -1.94
         }
     ],
     "exited_stocks": [
