@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-24 15:30:55",
+    "update_time": "2026-07-24 20:04:50",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -78,19 +78,6 @@
             "countdown": 5,
             "price": 140.5,
             "change": 0.0
-        },
-        {
-            "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "115/07/16~115/07/29",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/29",
-            "countdown": 5,
-            "price": 39.95,
-            "change": -9.0
         },
         {
             "market": "上櫃",
@@ -325,6 +312,45 @@
             "countdown": 13,
             "price": 39.6,
             "change": -6.6
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "*115/07/24",
+            "period": "115/07/27～115/08/07",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/07",
+            "countdown": 14,
+            "price": 1660.0,
+            "change": 0.3
+        },
+        {
+            "market": "上市",
+            "code": "8033",
+            "name": "雷虎",
+            "publish_date": "*115/07/24",
+            "period": "115/07/27～115/08/07",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/07",
+            "countdown": 14,
+            "price": 187.0,
+            "change": -1.84
+        },
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "115/07/27~115/08/07",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/07",
+            "countdown": 14,
+            "price": 39.95,
+            "change": -9.0
         },
         {
             "market": "上櫃",
