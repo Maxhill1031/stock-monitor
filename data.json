@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-27 16:30:39",
+    "update_time": "2026-07-27 21:26:36",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -262,19 +262,6 @@
             "change": 3.49
         },
         {
-            "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/07/23~115/08/05",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/08/05",
-            "countdown": 9,
-            "price": 138.0,
-            "change": -9.8
-        },
-        {
             "market": "上市",
             "code": "3167",
             "name": "大量",
@@ -338,6 +325,32 @@
             "countdown": 11,
             "price": 43.9,
             "change": 9.89
+        },
+        {
+            "market": "上市",
+            "code": "6969",
+            "name": "成信實業*-創",
+            "publish_date": "*115/07/27",
+            "period": "115/07/28～115/08/10",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/10",
+            "countdown": 14,
+            "price": 34.7,
+            "change": -9.99
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/07/28~115/08/10",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/10",
+            "countdown": 14,
+            "price": 138.0,
+            "change": -9.8
         },
         {
             "market": "上櫃",
