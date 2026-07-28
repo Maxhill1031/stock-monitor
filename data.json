@@ -1,19 +1,6 @@
 {
-    "update_time": "2026-07-27 21:26:36",
+    "update_time": "2026-07-28 08:02:54",
     "disposal_stocks": [
-        {
-            "market": "上櫃",
-            "code": "8027",
-            "name": "鈦昇",
-            "publish_date": "",
-            "period": "115/07/14~115/07/27",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/27",
-            "countdown": 0,
-            "price": 193.5,
-            "change": -1.78
-        },
         {
             "market": "上市",
             "code": "6831",
@@ -23,7 +10,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/07/28",
-            "countdown": 1,
+            "countdown": 0,
             "price": 630.0,
             "change": -7.08
         },
@@ -36,7 +23,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/07/28",
-            "countdown": 1,
+            "countdown": 0,
             "price": 311.5,
             "change": -1.42
         },
@@ -49,7 +36,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/07/28",
-            "countdown": 1,
+            "countdown": 0,
             "price": 117.0,
             "change": -8.59
         },
@@ -62,7 +49,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/07/29",
-            "countdown": 2,
+            "countdown": 1,
             "price": 140.0,
             "change": -0.36
         },
@@ -75,7 +62,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/07/30",
-            "countdown": 3,
+            "countdown": 2,
             "price": 197.0,
             "change": -2.96
         },
@@ -88,7 +75,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/07/30",
-            "countdown": 3,
+            "countdown": 2,
             "price": 157.5,
             "change": -9.48
         },
@@ -101,7 +88,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/07/31",
-            "countdown": 4,
+            "countdown": 3,
             "price": 65.8,
             "change": -4.36
         },
@@ -114,7 +101,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/07/31",
-            "countdown": 4,
+            "countdown": 3,
             "price": 156.0,
             "change": -4.88
         },
@@ -127,7 +114,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/07/31",
-            "countdown": 4,
+            "countdown": 3,
             "price": 84.6,
             "change": -6.42
         },
@@ -140,7 +127,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/03",
-            "countdown": 7,
+            "countdown": 6,
             "price": 272.0,
             "change": -0.73
         },
@@ -153,7 +140,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 36.15,
             "change": -9.96
         },
@@ -166,7 +153,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 585.0,
             "change": -8.59
         },
@@ -179,7 +166,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 24.9,
             "change": 9.93
         },
@@ -192,7 +179,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 76.8,
             "change": -9.0
         },
@@ -205,7 +192,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 240.0,
             "change": 0.0
         },
@@ -218,7 +205,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 181.0,
             "change": 9.7
         },
@@ -231,7 +218,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 1155.0,
             "change": -2.94
         },
@@ -244,7 +231,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/04",
-            "countdown": 8,
+            "countdown": 7,
             "price": 381.0,
             "change": 2.28
         },
@@ -257,7 +244,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/08/05",
-            "countdown": 9,
+            "countdown": 8,
             "price": 311.0,
             "change": 3.49
         },
@@ -270,7 +257,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/06",
-            "countdown": 10,
+            "countdown": 9,
             "price": 595.0,
             "change": -4.03
         },
@@ -283,7 +270,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/08/06",
-            "countdown": 10,
+            "countdown": 9,
             "price": 39.95,
             "change": 0.88
         },
@@ -296,7 +283,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/07",
-            "countdown": 11,
+            "countdown": 10,
             "price": 1495.0,
             "change": -9.94
         },
@@ -309,7 +296,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/07",
-            "countdown": 11,
+            "countdown": 10,
             "price": 186.0,
             "change": -0.53
         },
@@ -322,7 +309,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/07",
-            "countdown": 11,
+            "countdown": 10,
             "price": 43.9,
             "change": 9.89
         },
@@ -330,12 +317,12 @@
             "market": "上市",
             "code": "6969",
             "name": "成信實業*-創",
-            "publish_date": "*115/07/27",
+            "publish_date": "115/07/27",
             "period": "115/07/28～115/08/10",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/08/10",
-            "countdown": 14,
+            "countdown": 13,
             "price": 34.7,
             "change": -9.99
         },
@@ -348,7 +335,7 @@
             "reason": "",
             "level": "20分盤",
             "end_date": "115/08/10",
-            "countdown": 14,
+            "countdown": 13,
             "price": 138.0,
             "change": -9.8
         },
@@ -361,12 +348,26 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/10",
-            "countdown": 14,
+            "countdown": 13,
             "price": 116.0,
             "change": 1.75
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "8027",
+            "name": "鈦昇",
+            "publish_date": "",
+            "period": "115/07/14~115/07/27",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/07/27",
+            "countdown": -1,
+            "price": 193.5,
+            "change": -1.78,
+            "exit_date": "2026-07-27"
+        },
         {
             "market": "上市",
             "code": "8261",
@@ -380,34 +381,6 @@
             "price": 217.0,
             "change": -7.66,
             "exit_date": "2026-07-27"
-        },
-        {
-            "market": "上櫃",
-            "code": "4707",
-            "name": "磐亞",
-            "publish_date": "",
-            "period": "115/07/09~115/07/22",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/07/22",
-            "countdown": -2,
-            "price": 35.3,
-            "change": 9.97,
-            "exit_date": "2026-07-22"
-        },
-        {
-            "market": "上櫃",
-            "code": "6174",
-            "name": "安碁",
-            "publish_date": "",
-            "period": "115/07/09~115/07/22",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/07/22",
-            "countdown": -2,
-            "price": 43.6,
-            "change": -1.13,
-            "exit_date": "2026-07-22"
         },
         {
             "market": "上市",
@@ -436,20 +409,6 @@
             "price": 165.5,
             "change": -2.07,
             "exit_date": "2026-07-23"
-        },
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/07/07",
-            "period": "115/07/08～115/07/21",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/07/21",
-            "countdown": 0,
-            "price": 118.0,
-            "change": -0.84,
-            "exit_date": "2026-07-22"
         }
     ],
     "etf_stocks": [
