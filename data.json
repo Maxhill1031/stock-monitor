@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-29 13:23:24",
+    "update_time": "2026-07-29 15:43:04",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/07/30",
             "countdown": 1,
-            "price": 131.5,
-            "change": -7.72
+            "price": 136.0,
+            "change": -4.56
         },
         {
             "market": "上市",
@@ -154,8 +154,8 @@
             "level": "20分盤",
             "end_date": "115/08/04",
             "countdown": 6,
-            "price": 195.0,
-            "change": -9.72
+            "price": 202.5,
+            "change": -6.25
         },
         {
             "market": "上櫃",
