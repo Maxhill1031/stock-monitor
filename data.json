@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-29 15:43:04",
+    "update_time": "2026-07-29 20:32:02",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -237,19 +237,6 @@
         },
         {
             "market": "上市",
-            "code": "7610",
-            "name": "聯友金屬-創",
-            "publish_date": "115/07/24",
-            "period": "115/07/27～115/08/07",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/07",
-            "countdown": 9,
-            "price": 1215.0,
-            "change": -10.0
-        },
-        {
-            "market": "上市",
             "code": "8033",
             "name": "雷虎",
             "publish_date": "115/07/24",
@@ -312,6 +299,45 @@
             "countdown": 12,
             "price": 94.1,
             "change": -9.95
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "*115/07/29",
+            "period": "115/07/30～115/08/12",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/12",
+            "countdown": 14,
+            "price": 1215.0,
+            "change": -10.0
+        },
+        {
+            "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "115/07/30~115/08/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 16,
+            "price": 384.5,
+            "change": -9.95
+        },
+        {
+            "market": "上櫃",
+            "code": "4991",
+            "name": "環宇-KY",
+            "publish_date": "",
+            "period": "115/07/30~115/08/14",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/14",
+            "countdown": 16,
+            "price": 356.5,
+            "change": -9.97
         }
     ],
     "exited_stocks": [
