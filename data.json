@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-30 15:33:18",
+    "update_time": "2026-07-30 20:13:33",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -197,19 +197,6 @@
             "change": -9.72
         },
         {
-            "market": "上市",
-            "code": "3167",
-            "name": "大量",
-            "publish_date": "115/07/23",
-            "period": "115/07/24～115/08/06",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/06",
-            "countdown": 7,
-            "price": 442.0,
-            "change": -8.39
-        },
-        {
             "market": "上櫃",
             "code": "4139",
             "name": "馬光-KY",
@@ -263,19 +250,6 @@
         },
         {
             "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/07/28~115/08/10",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/08/10",
-            "countdown": 11,
-            "price": 101.5,
-            "change": -9.78
-        },
-        {
-            "market": "上櫃",
             "code": "6182",
             "name": "合晶",
             "publish_date": "",
@@ -299,6 +273,71 @@
             "countdown": 13,
             "price": 1095.0,
             "change": -9.88
+        },
+        {
+            "market": "上市",
+            "code": "1515",
+            "name": "力山",
+            "publish_date": "*115/07/30",
+            "period": "115/07/31～115/08/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/13",
+            "countdown": 14,
+            "price": 27.4,
+            "change": -3.18
+        },
+        {
+            "market": "上市",
+            "code": "3055",
+            "name": "蔚華科",
+            "publish_date": "*115/07/30",
+            "period": "115/07/31～115/08/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/13",
+            "countdown": 14,
+            "price": 93.2,
+            "change": -9.95
+        },
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "*115/07/30",
+            "period": "115/07/31～115/08/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/13",
+            "countdown": 14,
+            "price": 442.0,
+            "change": -8.39
+        },
+        {
+            "market": "上市",
+            "code": "3532",
+            "name": "台勝科",
+            "publish_date": "*115/07/30",
+            "period": "115/07/31～115/08/13",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/13",
+            "countdown": 14,
+            "price": 277.5,
+            "change": -9.9
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/07/31~115/08/13",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/13",
+            "countdown": 14,
+            "price": 101.5,
+            "change": -9.78
         },
         {
             "market": "上櫃",
