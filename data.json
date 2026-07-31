@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-07-31 15:49:51",
+    "update_time": "2026-07-31 20:30:19",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -67,19 +67,6 @@
             "change": 9.98
         },
         {
-            "market": "上市",
-            "code": "3026",
-            "name": "禾伸堂",
-            "publish_date": "115/07/21",
-            "period": "115/07/22～115/08/04",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/04",
-            "countdown": 4,
-            "price": 450.0,
-            "change": 5.26
-        },
-        {
             "market": "上櫃",
             "code": "3288",
             "name": "點晶",
@@ -91,19 +78,6 @@
             "countdown": 4,
             "price": 25.7,
             "change": 6.86
-        },
-        {
-            "market": "上櫃",
-            "code": "3624",
-            "name": "光頡",
-            "publish_date": "",
-            "period": "115/07/22~115/08/04",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/08/04",
-            "countdown": 4,
-            "price": 62.5,
-            "change": 9.84
         },
         {
             "market": "上櫃",
@@ -223,19 +197,6 @@
             "change": 9.91
         },
         {
-            "market": "上櫃",
-            "code": "6182",
-            "name": "合晶",
-            "publish_date": "",
-            "period": "115/07/24~115/08/10",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/10",
-            "countdown": 10,
-            "price": 89.0,
-            "change": 5.08
-        },
-        {
             "market": "上市",
             "code": "7610",
             "name": "聯友金屬-創",
@@ -314,6 +275,97 @@
             "change": 9.36
         },
         {
+            "market": "上市",
+            "code": "3026",
+            "name": "禾伸堂",
+            "publish_date": "*115/07/31",
+            "period": "115/08/03～115/08/14",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 450.0,
+            "change": 5.26
+        },
+        {
+            "market": "上市",
+            "code": "4169",
+            "name": "泰宗",
+            "publish_date": "*115/07/31",
+            "period": "115/08/03～115/08/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 165.0,
+            "change": 1.23
+        },
+        {
+            "market": "上市",
+            "code": "6531",
+            "name": "愛普*",
+            "publish_date": "*115/07/31",
+            "period": "115/08/03～115/08/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 667.0,
+            "change": 9.88
+        },
+        {
+            "market": "上櫃",
+            "code": "3624",
+            "name": "光頡",
+            "publish_date": "",
+            "period": "115/08/03~115/08/14",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 62.5,
+            "change": 9.84
+        },
+        {
+            "market": "上櫃",
+            "code": "6182",
+            "name": "合晶",
+            "publish_date": "",
+            "period": "115/08/03~115/08/14",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 89.0,
+            "change": 5.08
+        },
+        {
+            "market": "上櫃",
+            "code": "6739",
+            "name": "竹陞科技",
+            "publish_date": "",
+            "period": "115/08/03~115/08/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 821.0,
+            "change": 6.9
+        },
+        {
+            "market": "上櫃",
+            "code": "7828",
+            "name": "創新服務",
+            "publish_date": "",
+            "period": "115/08/03~115/08/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 14,
+            "price": 1340.0,
+            "change": 9.84
+        },
+        {
             "market": "上櫃",
             "code": "4979",
             "name": "華星光",
@@ -338,6 +390,19 @@
             "countdown": 14,
             "price": 353.0,
             "change": 9.97
+        },
+        {
+            "market": "上市",
+            "code": "8046",
+            "name": "南電",
+            "publish_date": "*115/07/31",
+            "period": "115/08/03～115/08/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/18",
+            "countdown": 18,
+            "price": 920.0,
+            "change": 9.92
         }
     ],
     "exited_stocks": [
