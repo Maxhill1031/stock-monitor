@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-03 16:28:45",
+    "update_time": "2026-08-03 21:26:59",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -351,6 +351,19 @@
             "countdown": 11,
             "price": 388.0,
             "change": 9.92
+        },
+        {
+            "market": "上櫃",
+            "code": "4556",
+            "name": "旭然",
+            "publish_date": "",
+            "period": "115/08/04~115/08/17",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/17",
+            "countdown": 14,
+            "price": 83.1,
+            "change": 4.92
         },
         {
             "market": "上市",
