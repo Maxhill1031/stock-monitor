@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-04 15:39:35",
+    "update_time": "2026-08-04 20:27:43",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -364,6 +364,19 @@
             "countdown": 14,
             "price": 1045.0,
             "change": 9.65
+        },
+        {
+            "market": "上櫃",
+            "code": "3362",
+            "name": "先進光",
+            "publish_date": "",
+            "period": "115/08/05~115/08/20",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/20",
+            "countdown": 16,
+            "price": 179.5,
+            "change": -0.28
         }
     ],
     "exited_stocks": [
