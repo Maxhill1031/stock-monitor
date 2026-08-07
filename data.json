@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-07 14:08:50",
+    "update_time": "2026-08-07 19:26:48",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -120,6 +120,32 @@
         },
         {
             "market": "上市",
+            "code": "2059",
+            "name": "川湖",
+            "publish_date": "*115/08/07",
+            "period": "115/08/10～115/08/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 7,
+            "price": 11110.0,
+            "change": 10.0
+        },
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "*115/08/07",
+            "period": "115/08/10～115/08/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 7,
+            "price": 364.0,
+            "change": -2.15
+        },
+        {
+            "market": "上市",
             "code": "3026",
             "name": "禾伸堂",
             "publish_date": "115/07/31",
@@ -130,6 +156,45 @@
             "countdown": 7,
             "price": 535.0,
             "change": -9.78
+        },
+        {
+            "market": "上市",
+            "code": "3037",
+            "name": "欣興",
+            "publish_date": "*115/08/07",
+            "period": "115/08/10～115/08/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 7,
+            "price": 955.0,
+            "change": -1.85
+        },
+        {
+            "market": "上市",
+            "code": "3189",
+            "name": "景碩",
+            "publish_date": "*115/08/07",
+            "period": "115/08/10～115/08/14",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/14",
+            "countdown": 7,
+            "price": 823.0,
+            "change": -3.52
+        },
+        {
+            "market": "上市",
+            "code": "3653",
+            "name": "健策",
+            "publish_date": "*115/08/07",
+            "period": "115/08/10～115/08/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 7,
+            "price": 4380.0,
+            "change": -1.57
         },
         {
             "market": "上市",
@@ -156,6 +221,19 @@
             "countdown": 7,
             "price": 951.0,
             "change": 5.67
+        },
+        {
+            "market": "上櫃",
+            "code": "6274",
+            "name": "台燿",
+            "publish_date": "",
+            "period": "115/08/10~115/08/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/14",
+            "countdown": 7,
+            "price": 1440.0,
+            "change": -5.88
         },
         {
             "market": "上櫃",
