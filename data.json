@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-07 13:56:02",
+    "update_time": "2026-08-07 14:08:50",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -289,20 +289,6 @@
             "price": 36.15,
             "change": -7.31,
             "exit_date": "2026-08-06"
-        },
-        {
-            "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/07/23~115/08/05",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/08/05",
-            "countdown": -2,
-            "price": 165.0,
-            "change": 2.17,
-            "exit_date": "2026-08-05"
         },
         {
             "market": "上櫃",
