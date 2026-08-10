@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-10 13:39:35",
+    "update_time": "2026-08-10 14:09:48",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/08/10",
             "countdown": 0,
-            "price": 34.2,
-            "change": -3.66
+            "price": 34.3,
+            "change": -3.38
         },
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/08/12",
             "countdown": 2,
-            "price": 1930.0,
-            "change": 4.32
+            "price": 1950.0,
+            "change": 5.41
         },
         {
             "market": "上市",
@@ -37,8 +37,8 @@
             "level": "20分盤",
             "end_date": "115/08/13",
             "countdown": 3,
-            "price": 31.05,
-            "change": 2.14
+            "price": 31.2,
+            "change": 2.63
         },
         {
             "market": "上市",
@@ -63,8 +63,8 @@
             "level": "20分盤",
             "end_date": "115/08/13",
             "countdown": 3,
-            "price": 666.0,
-            "change": -3.62
+            "price": 655.0,
+            "change": -5.21
         },
         {
             "market": "上市",
@@ -76,8 +76,21 @@
             "level": "20分盤",
             "end_date": "115/08/13",
             "countdown": 3,
-            "price": 281.5,
-            "change": -9.92
+            "price": 283.0,
+            "change": -9.44
+        },
+        {
+            "market": "上櫃",
+            "code": "6217",
+            "name": "中探針",
+            "publish_date": "",
+            "period": "115/07/31~115/08/13",
+            "reason": "",
+            "level": "20分盤",
+            "end_date": "115/08/13",
+            "countdown": 3,
+            "price": 165.0,
+            "change": 0.0
         },
         {
             "market": "上市",
@@ -89,8 +102,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 11850.0,
-            "change": 6.66
+            "price": 11905.0,
+            "change": 7.16
         },
         {
             "market": "上市",
@@ -102,8 +115,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 384.0,
-            "change": 5.49
+            "price": 384.5,
+            "change": 5.63
         },
         {
             "market": "上市",
@@ -128,8 +141,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 986.0,
-            "change": 3.25
+            "price": 992.0,
+            "change": 3.87
         },
         {
             "market": "上市",
@@ -141,8 +154,8 @@
             "level": "20分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 823.0,
-            "change": 0.0
+            "price": 836.0,
+            "change": 1.58
         },
         {
             "market": "上市",
@@ -154,8 +167,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 4105.0,
-            "change": -6.28
+            "price": 4135.0,
+            "change": -5.59
         },
         {
             "market": "上市",
@@ -167,8 +180,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 154.5,
-            "change": -1.59
+            "price": 153.5,
+            "change": -2.23
         },
         {
             "market": "上市",
@@ -180,37 +193,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 930.0,
-            "change": -2.21
-        },
-        {
-            "market": "上市",
-            "code": "8046",
-            "name": "南電",
-            "publish_date": "115/07/31",
-            "period": "115/08/03～115/08/18",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/08/18",
-            "countdown": 8,
-            "price": 1125.0,
-            "change": 4.17
-        }
-    ],
-    "exited_stocks": [
-        {
-            "market": "上櫃",
-            "code": "6217",
-            "name": "中探針",
-            "publish_date": "",
-            "period": "115/07/31~115/08/13",
-            "reason": "",
-            "level": "20分盤",
-            "end_date": "115/08/13",
-            "countdown": 3,
-            "price": 167.5,
-            "change": 1.52,
-            "exit_date": "2026-08-10"
+            "price": 923.0,
+            "change": -2.94
         },
         {
             "market": "上櫃",
@@ -222,9 +206,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 1445.0,
-            "change": 0.35,
-            "exit_date": "2026-08-10"
+            "price": 1460.0,
+            "change": 1.39
         },
         {
             "market": "上櫃",
@@ -237,8 +220,7 @@
             "end_date": "115/08/14",
             "countdown": 4,
             "price": 82.2,
-            "change": 9.89,
-            "exit_date": "2026-08-10"
+            "change": 9.89
         },
         {
             "market": "上櫃",
@@ -250,9 +232,8 @@
             "level": "20分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 93.7,
-            "change": -7.23,
-            "exit_date": "2026-08-10"
+            "price": 93.0,
+            "change": -7.92
         },
         {
             "market": "上櫃",
@@ -264,9 +245,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 1055.0,
-            "change": 4.98,
-            "exit_date": "2026-08-10"
+            "price": 1050.0,
+            "change": 4.48
         },
         {
             "market": "上櫃",
@@ -278,9 +258,8 @@
             "level": "5分盤",
             "end_date": "115/08/14",
             "countdown": 4,
-            "price": 1660.0,
-            "change": -2.92,
-            "exit_date": "2026-08-10"
+            "price": 1655.0,
+            "change": -3.22
         },
         {
             "market": "上櫃",
@@ -293,8 +272,7 @@
             "end_date": "115/08/14",
             "countdown": 4,
             "price": 536.0,
-            "change": 9.84,
-            "exit_date": "2026-08-10"
+            "change": 9.84
         },
         {
             "market": "上櫃",
@@ -307,8 +285,7 @@
             "end_date": "115/08/14",
             "countdown": 4,
             "price": 511.0,
-            "change": 9.89,
-            "exit_date": "2026-08-10"
+            "change": 9.89
         },
         {
             "market": "上櫃",
@@ -320,9 +297,21 @@
             "level": "20分盤",
             "end_date": "115/08/17",
             "countdown": 7,
-            "price": 81.1,
-            "change": -2.29,
-            "exit_date": "2026-08-10"
+            "price": 83.8,
+            "change": 0.96
+        },
+        {
+            "market": "上市",
+            "code": "8046",
+            "name": "南電",
+            "publish_date": "115/07/31",
+            "period": "115/08/03～115/08/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/18",
+            "countdown": 8,
+            "price": 1130.0,
+            "change": 4.63
         },
         {
             "market": "上櫃",
@@ -334,10 +323,11 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 10,
-            "price": 177.5,
-            "change": 2.31,
-            "exit_date": "2026-08-10"
-        },
+            "price": 178.0,
+            "change": 2.59
+        }
+    ],
+    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "8291",
@@ -348,8 +338,8 @@
             "level": "5分盤",
             "end_date": "115/08/07",
             "countdown": -3,
-            "price": 41.5,
-            "change": 1.22,
+            "price": 41.95,
+            "change": 2.32,
             "exit_date": "2026-08-07"
         },
         {
