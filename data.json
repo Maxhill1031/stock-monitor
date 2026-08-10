@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-10 14:09:48",
+    "update_time": "2026-08-10 19:31:46",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,19 +13,6 @@
             "countdown": 0,
             "price": 34.3,
             "change": -3.38
-        },
-        {
-            "market": "上市",
-            "code": "7610",
-            "name": "聯友金屬-創",
-            "publish_date": "115/07/29",
-            "period": "115/07/30～115/08/12",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/12",
-            "countdown": 2,
-            "price": 1950.0,
-            "change": 5.41
         },
         {
             "market": "上市",
@@ -52,19 +39,6 @@
             "countdown": 3,
             "price": 113.5,
             "change": 9.66
-        },
-        {
-            "market": "上市",
-            "code": "3167",
-            "name": "大量",
-            "publish_date": "115/07/30",
-            "period": "115/07/31～115/08/13",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/13",
-            "countdown": 3,
-            "price": 655.0,
-            "change": -5.21
         },
         {
             "market": "上市",
@@ -184,19 +158,6 @@
             "change": -2.23
         },
         {
-            "market": "上市",
-            "code": "6531",
-            "name": "愛普*",
-            "publish_date": "115/07/31",
-            "period": "115/08/03～115/08/14",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/08/14",
-            "countdown": 4,
-            "price": 923.0,
-            "change": -2.94
-        },
-        {
             "market": "上櫃",
             "code": "6274",
             "name": "台燿",
@@ -286,6 +247,123 @@
             "countdown": 4,
             "price": 511.0,
             "change": 9.89
+        },
+        {
+            "market": "上市",
+            "code": "2491",
+            "name": "吉祥全",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 34.9,
+            "change": 9.92
+        },
+        {
+            "market": "上市",
+            "code": "3006",
+            "name": "晶豪科",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 275.5,
+            "change": 7.41
+        },
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 655.0,
+            "change": -5.21
+        },
+        {
+            "market": "上市",
+            "code": "3450",
+            "name": "聯鈞",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 524.0,
+            "change": 9.85
+        },
+        {
+            "market": "上市",
+            "code": "6213",
+            "name": "聯茂",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 427.5,
+            "change": 9.9
+        },
+        {
+            "market": "上市",
+            "code": "6451",
+            "name": "訊芯-KY",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 456.0,
+            "change": 8.31
+        },
+        {
+            "market": "上市",
+            "code": "6531",
+            "name": "愛普*",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 923.0,
+            "change": -2.94
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 1950.0,
+            "change": 5.41
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "*115/08/10",
+            "period": "115/08/11～115/08/17",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/17",
+            "countdown": 7,
+            "price": 434.5,
+            "change": 10.0
         },
         {
             "market": "上櫃",
