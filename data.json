@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-12 14:14:04",
+    "update_time": "2026-08-12 19:25:18",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -442,6 +442,19 @@
             "countdown": 6,
             "price": 1265.0,
             "change": 10.0
+        },
+        {
+            "market": "上市",
+            "code": "7711",
+            "name": "永擎",
+            "publish_date": "*115/08/12",
+            "period": "115/08/13～115/08/19",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/19",
+            "countdown": 7,
+            "price": 447.5,
+            "change": 9.95
         },
         {
             "market": "上櫃",
