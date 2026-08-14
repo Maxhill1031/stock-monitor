@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-14 14:13:34",
+    "update_time": "2026-08-14 19:22:59",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -429,6 +429,19 @@
             "countdown": 6,
             "price": 172.0,
             "change": -4.97
+        },
+        {
+            "market": "上市",
+            "code": "6225",
+            "name": "天瀚",
+            "publish_date": "*115/08/14",
+            "period": "115/08/17～115/08/21",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/08/21",
+            "countdown": 7,
+            "price": 40.4,
+            "change": 9.93
         },
         {
             "market": "上櫃",
