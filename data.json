@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-19 13:30:21",
+    "update_time": "2026-08-19 18:57:54",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/08/19",
             "countdown": 0,
-            "price": 486.0,
-            "change": -1.22
+            "price": 490.0,
+            "change": -0.41
         },
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 687.0,
-            "change": 2.84
+            "price": 690.0,
+            "change": 3.29
         },
         {
             "market": "上市",
@@ -37,8 +37,8 @@
             "level": "20分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 480.0,
-            "change": -1.64
+            "price": 484.0,
+            "change": -0.82
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 526.0,
-            "change": -0.38
+            "price": 529.0,
+            "change": 0.19
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 490.0,
-            "change": 1.03
+            "price": 486.5,
+            "change": 0.31
         },
         {
             "market": "上櫃",
@@ -76,34 +76,8 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 183.0,
-            "change": 4.57
-        },
-        {
-            "market": "上市",
-            "code": "6225",
-            "name": "天瀚",
-            "publish_date": "115/08/14",
-            "period": "115/08/17～115/08/21",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/08/21",
-            "countdown": 2,
-            "price": 53.5,
-            "change": 9.63
-        },
-        {
-            "market": "上櫃",
-            "code": "5475",
-            "name": "德宏",
-            "publish_date": "",
-            "period": "115/08/17~115/08/21",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/21",
-            "countdown": 2,
-            "price": 180.0,
-            "change": -1.37
+            "price": 181.5,
+            "change": 3.71
         },
         {
             "market": "上櫃",
@@ -115,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 2,
-            "price": 134.0,
-            "change": -2.55
+            "price": 136.5,
+            "change": -0.73
         },
         {
             "market": "上櫃",
@@ -154,8 +128,8 @@
             "level": "5分盤",
             "end_date": "115/08/24",
             "countdown": 5,
-            "price": 552.0,
-            "change": -3.5
+            "price": 544.0,
+            "change": -4.9
         },
         {
             "market": "上市",
@@ -167,8 +141,8 @@
             "level": "20分盤",
             "end_date": "115/08/24",
             "countdown": 5,
-            "price": 180.0,
-            "change": -3.23
+            "price": 185.0,
+            "change": -0.54
         },
         {
             "market": "上櫃",
@@ -180,8 +154,47 @@
             "level": "5分盤",
             "end_date": "115/08/25",
             "countdown": 6,
-            "price": 183.5,
-            "change": 5.46
+            "price": 190.5,
+            "change": 9.48
+        },
+        {
+            "market": "上市",
+            "code": "6225",
+            "name": "天瀚",
+            "publish_date": "*115/08/19",
+            "period": "115/08/20～115/08/26",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/08/26",
+            "countdown": 7,
+            "price": 53.6,
+            "change": 9.84
+        },
+        {
+            "market": "上櫃",
+            "code": "3490",
+            "name": "單井",
+            "publish_date": "",
+            "period": "115/08/20~115/08/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/26",
+            "countdown": 7,
+            "price": 46.8,
+            "change": 5.17
+        },
+        {
+            "market": "上櫃",
+            "code": "5475",
+            "name": "德宏",
+            "publish_date": "",
+            "period": "115/08/20~115/08/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/26",
+            "countdown": 7,
+            "price": 180.0,
+            "change": -1.37
         }
     ],
     "exited_stocks": [
