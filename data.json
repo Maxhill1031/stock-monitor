@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-19 07:22:13",
+    "update_time": "2026-08-19 10:21:40",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/08/19",
             "countdown": 0,
-            "price": 492.0,
-            "change": 3.58
+            "price": 471.0,
+            "change": -4.27
         },
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 668.0,
-            "change": -3.05
+            "price": 671.0,
+            "change": 0.45
         },
         {
             "market": "上市",
@@ -37,8 +37,8 @@
             "level": "20分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 488.0,
-            "change": 1.46
+            "price": 483.0,
+            "change": -1.02
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 528.0,
-            "change": -3.12
+            "price": 518.0,
+            "change": -1.89
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 485.0,
-            "change": -0.61
+            "price": 489.0,
+            "change": 0.82
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/08/20",
             "countdown": 1,
-            "price": 175.0,
-            "change": -1.96
+            "price": 176.0,
+            "change": 0.57
         },
         {
             "market": "上市",
@@ -89,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 2,
-            "price": 48.8,
-            "change": 9.91
+            "price": 52.5,
+            "change": 7.58
         },
         {
             "market": "上櫃",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 2,
-            "price": 182.5,
-            "change": 7.99
+            "price": 178.0,
+            "change": -2.47
         },
         {
             "market": "上櫃",
@@ -115,8 +115,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 2,
-            "price": 137.5,
-            "change": 5.77
+            "price": 135.0,
+            "change": -1.82
         },
         {
             "market": "上櫃",
@@ -128,8 +128,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 2,
-            "price": 711.0,
-            "change": -3.0
+            "price": 718.0,
+            "change": 0.98
         },
         {
             "market": "上櫃",
@@ -141,8 +141,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 2,
-            "price": 259.5,
-            "change": -3.71
+            "price": 267.0,
+            "change": 2.89
         },
         {
             "market": "上市",
@@ -154,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/08/24",
             "countdown": 5,
-            "price": 572.0,
-            "change": 4.19
+            "price": 560.0,
+            "change": -2.1
         },
         {
             "market": "上市",
@@ -167,8 +167,8 @@
             "level": "20分盤",
             "end_date": "115/08/24",
             "countdown": 5,
-            "price": 186.0,
-            "change": -2.87
+            "price": 180.0,
+            "change": -3.23
         },
         {
             "market": "上櫃",
@@ -180,8 +180,8 @@
             "level": "5分盤",
             "end_date": "115/08/25",
             "countdown": 6,
-            "price": 174.0,
-            "change": 9.78
+            "price": 180.0,
+            "change": 3.45
         }
     ],
     "exited_stocks": [
