@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-21 13:32:34",
+    "update_time": "2026-08-21 19:00:26",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 0,
-            "price": 132.5,
-            "change": -0.38
+            "price": 133.0,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 0,
-            "price": 773.0,
-            "change": 5.03
+            "price": 783.0,
+            "change": 6.39
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/08/21",
             "countdown": 0,
-            "price": 277.5,
-            "change": 1.65
+            "price": 280.0,
+            "change": 2.56
         },
         {
             "market": "上市",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/08/24",
             "countdown": 3,
-            "price": 564.0,
-            "change": 2.17
+            "price": 565.0,
+            "change": 2.36
         },
         {
             "market": "上市",
@@ -63,21 +63,8 @@
             "level": "20分盤",
             "end_date": "115/08/24",
             "countdown": 3,
-            "price": 188.5,
-            "change": 0.53
-        },
-        {
-            "market": "上櫃",
-            "code": "3498",
-            "name": "陽程",
-            "publish_date": "",
-            "period": "115/08/19~115/08/25",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/25",
-            "countdown": 4,
-            "price": 192.5,
-            "change": 4.9
+            "price": 185.5,
+            "change": -1.07
         },
         {
             "market": "上市",
@@ -102,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/08/26",
             "countdown": 5,
-            "price": 53.7,
-            "change": 9.26
+            "price": 53.9,
+            "change": 9.66
         },
         {
             "market": "上櫃",
@@ -115,8 +102,60 @@
             "level": "5分盤",
             "end_date": "115/08/26",
             "countdown": 5,
-            "price": 173.0,
-            "change": -1.7
+            "price": 174.5,
+            "change": -0.85
+        },
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "*115/08/21",
+            "period": "115/08/24～115/08/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/28",
+            "countdown": 7,
+            "price": 406.0,
+            "change": -1.46
+        },
+        {
+            "market": "上櫃",
+            "code": "3498",
+            "name": "陽程",
+            "publish_date": "",
+            "period": "115/08/24~115/08/28",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/28",
+            "countdown": 7,
+            "price": 192.0,
+            "change": 4.63
+        },
+        {
+            "market": "上櫃",
+            "code": "5314",
+            "name": "世紀*",
+            "publish_date": "",
+            "period": "115/08/24~115/08/28",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/28",
+            "countdown": 7,
+            "price": 26.0,
+            "change": 9.94
+        },
+        {
+            "market": "上櫃",
+            "code": "5321",
+            "name": "美而快",
+            "publish_date": "",
+            "period": "115/08/24~115/08/28",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/28",
+            "countdown": 7,
+            "price": 72.9,
+            "change": 1.39
         }
     ],
     "exited_stocks": [
@@ -440,20 +479,6 @@
             "countdown": 0,
             "price": 12500.0,
             "change": 2.17,
-            "exit_date": "2026-08-17"
-        },
-        {
-            "market": "上市",
-            "code": "2455",
-            "name": "全新",
-            "publish_date": "115/08/07",
-            "period": "115/08/10～115/08/14",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/08/14",
-            "countdown": 0,
-            "price": 379.5,
-            "change": -1.17,
             "exit_date": "2026-08-17"
         },
         {
