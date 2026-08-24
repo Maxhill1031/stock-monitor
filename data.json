@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-08-24 19:04:36",
+    "update_time": "2026-08-25 07:22:37",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "7795",
-            "name": "長廣",
-            "publish_date": "115/08/17",
-            "period": "115/08/18～115/08/24",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/08/24",
-            "countdown": 0,
-            "price": 568.0,
-            "change": 0.53
-        },
-        {
-            "market": "上市",
-            "code": "8033",
-            "name": "雷虎",
-            "publish_date": "115/08/17",
-            "period": "115/08/18～115/08/24",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/24",
-            "countdown": 0,
-            "price": 185.0,
-            "change": -0.27
-        },
         {
             "market": "上櫃",
             "code": "3490",
@@ -36,7 +10,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/26",
-            "countdown": 2,
+            "countdown": 1,
             "price": 49.7,
             "change": -7.79
         },
@@ -49,7 +23,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/26",
-            "countdown": 2,
+            "countdown": 1,
             "price": 159.5,
             "change": -8.6
         },
@@ -62,7 +36,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/08/28",
-            "countdown": 4,
+            "countdown": 3,
             "price": 381.5,
             "change": -6.03
         },
@@ -75,7 +49,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/28",
-            "countdown": 4,
+            "countdown": 3,
             "price": 185.0,
             "change": -3.65
         },
@@ -88,7 +62,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/28",
-            "countdown": 4,
+            "countdown": 3,
             "price": 28.6,
             "change": 10.0
         },
@@ -101,7 +75,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/08/28",
-            "countdown": 4,
+            "countdown": 3,
             "price": 78.5,
             "change": 7.68
         },
@@ -109,17 +83,45 @@
             "market": "上市",
             "code": "6225",
             "name": "天瀚",
-            "publish_date": "*115/08/24",
+            "publish_date": "115/08/24",
             "period": "115/08/25～115/08/31",
             "reason": "人工管制撮合",
             "level": "5分盤",
             "end_date": "115/08/31",
-            "countdown": 7,
+            "countdown": 6,
             "price": 71.1,
             "change": 9.89
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "7795",
+            "name": "長廣",
+            "publish_date": "115/08/17",
+            "period": "115/08/18～115/08/24",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/08/24",
+            "countdown": 0,
+            "price": 568.0,
+            "change": 0.53,
+            "exit_date": "2026-08-25"
+        },
+        {
+            "market": "上市",
+            "code": "8033",
+            "name": "雷虎",
+            "publish_date": "115/08/17",
+            "period": "115/08/18～115/08/24",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/24",
+            "countdown": 0,
+            "price": 185.0,
+            "change": -0.27,
+            "exit_date": "2026-08-25"
+        },
         {
             "market": "上櫃",
             "code": "6716",
@@ -245,34 +247,6 @@
             "price": 490.0,
             "change": -0.41,
             "exit_date": "2026-08-20"
-        },
-        {
-            "market": "上市",
-            "code": "6426",
-            "name": "統新",
-            "publish_date": "115/08/11",
-            "period": "115/08/12～115/08/18",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/08/18",
-            "countdown": 0,
-            "price": 244.0,
-            "change": 1.88,
-            "exit_date": "2026-08-19"
-        },
-        {
-            "market": "上市",
-            "code": "8046",
-            "name": "南電",
-            "publish_date": "115/07/31",
-            "period": "115/08/03～115/08/18",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/08/18",
-            "countdown": 0,
-            "price": 1245.0,
-            "change": -3.86,
-            "exit_date": "2026-08-19"
         }
     ],
     "etf_stocks": [
