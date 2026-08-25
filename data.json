@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-08-25 13:16:37",
+    "update_time": "2026-08-25 13:31:26",
     "disposal_stocks": [
-        {
-            "market": "上櫃",
-            "code": "3490",
-            "name": "單井",
-            "publish_date": "",
-            "period": "115/08/20~115/08/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/26",
-            "countdown": 1,
-            "price": 54.0,
-            "change": 8.65
-        },
-        {
-            "market": "上櫃",
-            "code": "5475",
-            "name": "德宏",
-            "publish_date": "",
-            "period": "115/08/20~115/08/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/26",
-            "countdown": 1,
-            "price": 166.0,
-            "change": 4.08
-        },
         {
             "market": "上市",
             "code": "2455",
@@ -37,47 +11,8 @@
             "level": "20分盤",
             "end_date": "115/08/28",
             "countdown": 3,
-            "price": 413.0,
-            "change": 8.26
-        },
-        {
-            "market": "上櫃",
-            "code": "3498",
-            "name": "陽程",
-            "publish_date": "",
-            "period": "115/08/24~115/08/28",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/28",
-            "countdown": 3,
-            "price": 197.0,
-            "change": 6.49
-        },
-        {
-            "market": "上櫃",
-            "code": "5314",
-            "name": "世紀*",
-            "publish_date": "",
-            "period": "115/08/24~115/08/28",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/28",
-            "countdown": 3,
-            "price": 31.45,
-            "change": 9.97
-        },
-        {
-            "market": "上櫃",
-            "code": "5321",
-            "name": "美而快",
-            "publish_date": "",
-            "period": "115/08/24~115/08/28",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/28",
-            "countdown": 3,
-            "price": 80.6,
-            "change": 2.68
+            "price": "N/A",
+            "change": "N/A"
         },
         {
             "market": "上市",
@@ -94,6 +29,76 @@
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3490",
+            "name": "單井",
+            "publish_date": "",
+            "period": "115/08/20~115/08/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/26",
+            "countdown": 1,
+            "price": 54.5,
+            "change": 9.66,
+            "exit_date": "2026-08-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "5475",
+            "name": "德宏",
+            "publish_date": "",
+            "period": "115/08/20~115/08/26",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/26",
+            "countdown": 1,
+            "price": 168.5,
+            "change": 5.64,
+            "exit_date": "2026-08-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "3498",
+            "name": "陽程",
+            "publish_date": "",
+            "period": "115/08/24~115/08/28",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/28",
+            "countdown": 3,
+            "price": 194.0,
+            "change": 4.86,
+            "exit_date": "2026-08-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "5314",
+            "name": "世紀*",
+            "publish_date": "",
+            "period": "115/08/24~115/08/28",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/28",
+            "countdown": 3,
+            "price": 31.45,
+            "change": 9.97,
+            "exit_date": "2026-08-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "5321",
+            "name": "美而快",
+            "publish_date": "",
+            "period": "115/08/24~115/08/28",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/28",
+            "countdown": 3,
+            "price": 81.0,
+            "change": 3.18,
+            "exit_date": "2026-08-25"
+        },
         {
             "market": "上市",
             "code": "7795",
