@@ -1,34 +1,6 @@
 {
-    "update_time": "2026-08-26 10:36:37",
+    "update_time": "2026-08-26 11:06:09",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2455",
-            "name": "全新",
-            "publish_date": "115/08/21",
-            "period": "115/08/24～115/08/28",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/08/28",
-            "countdown": 2,
-            "price": 425.0,
-            "change": 1.31
-        },
-        {
-            "market": "上市",
-            "code": "6225",
-            "name": "天瀚",
-            "publish_date": "115/08/24",
-            "period": "115/08/25～115/08/31",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/08/31",
-            "countdown": 5,
-            "price": 70.0,
-            "change": 5.9
-        }
-    ],
-    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "3490",
@@ -39,9 +11,8 @@
             "level": "5分盤",
             "end_date": "115/08/26",
             "countdown": 0,
-            "price": 56.0,
-            "change": 2.56,
-            "exit_date": "2026-08-26"
+            "price": 56.3,
+            "change": 3.11
         },
         {
             "market": "上櫃",
@@ -53,9 +24,21 @@
             "level": "5分盤",
             "end_date": "115/08/26",
             "countdown": 0,
-            "price": 179.5,
-            "change": 3.76,
-            "exit_date": "2026-08-26"
+            "price": 181.5,
+            "change": 4.91
+        },
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "115/08/21",
+            "period": "115/08/24～115/08/28",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/08/28",
+            "countdown": 2,
+            "price": 427.0,
+            "change": 1.79
         },
         {
             "market": "上櫃",
@@ -67,9 +50,8 @@
             "level": "5分盤",
             "end_date": "115/08/28",
             "countdown": 2,
-            "price": 200.5,
-            "change": 0.25,
-            "exit_date": "2026-08-26"
+            "price": 204.0,
+            "change": 2.0
         },
         {
             "market": "上櫃",
@@ -82,8 +64,7 @@
             "end_date": "115/08/28",
             "countdown": 2,
             "price": 34.55,
-            "change": 9.86,
-            "exit_date": "2026-08-26"
+            "change": 9.86
         },
         {
             "market": "上櫃",
@@ -95,9 +76,21 @@
             "level": "5分盤",
             "end_date": "115/08/28",
             "countdown": 2,
-            "price": 81.4,
-            "change": 0.49,
-            "exit_date": "2026-08-26"
+            "price": 81.0,
+            "change": 0.0
+        },
+        {
+            "market": "上市",
+            "code": "6225",
+            "name": "天瀚",
+            "publish_date": "115/08/24",
+            "period": "115/08/25～115/08/31",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/08/31",
+            "countdown": 5,
+            "price": 69.9,
+            "change": 5.75
         },
         {
             "market": "上櫃",
@@ -110,8 +103,7 @@
             "end_date": "115/08/31",
             "countdown": 5,
             "price": 12.7,
-            "change": 2.01,
-            "exit_date": "2026-08-26"
+            "change": 2.01
         },
         {
             "market": "上櫃",
@@ -124,8 +116,7 @@
             "end_date": "115/08/31",
             "countdown": 5,
             "price": 26.3,
-            "change": 4.57,
-            "exit_date": "2026-08-26"
+            "change": 4.57
         },
         {
             "market": "上櫃",
@@ -137,9 +128,8 @@
             "level": "5分盤",
             "end_date": "115/08/31",
             "countdown": 5,
-            "price": 552.0,
-            "change": -0.36,
-            "exit_date": "2026-08-26"
+            "price": 559.0,
+            "change": 0.9
         },
         {
             "market": "上櫃",
@@ -151,9 +141,24 @@
             "level": "5分盤",
             "end_date": "115/09/01",
             "countdown": 6,
-            "price": 176.0,
-            "change": -3.56,
-            "exit_date": "2026-08-26"
+            "price": 180.5,
+            "change": -1.1
+        }
+    ],
+    "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3498",
+            "name": "陽程",
+            "publish_date": "",
+            "period": "115/08/19~115/08/25",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/25",
+            "countdown": -1,
+            "price": 204.0,
+            "change": 2.0,
+            "exit_date": "2026-08-25"
         },
         {
             "market": "上市",
