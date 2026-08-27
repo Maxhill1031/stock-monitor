@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-27 12:20:40",
+    "update_time": "2026-08-27 19:07:49",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "20分盤",
             "end_date": "115/08/28",
             "countdown": 1,
-            "price": 437.0,
-            "change": 2.1
+            "price": 433.0,
+            "change": 1.17
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "115/08/28",
             "countdown": 1,
-            "price": 204.0,
-            "change": 0.25
+            "price": 203.5,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/08/28",
             "countdown": 1,
-            "price": 83.9,
-            "change": 3.45
+            "price": 85.0,
+            "change": 4.81
         },
         {
             "market": "上市",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/08/31",
             "countdown": 4,
-            "price": 65.6,
-            "change": -4.23
+            "price": 66.0,
+            "change": -3.65
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "115/08/31",
             "countdown": 4,
-            "price": 12.1,
-            "change": -2.81
+            "price": 12.45,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/08/31",
             "countdown": 4,
-            "price": 25.95,
-            "change": -1.33
+            "price": 24.65,
+            "change": -6.27
         },
         {
             "market": "上櫃",
@@ -89,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/08/31",
             "countdown": 4,
-            "price": 559.0,
-            "change": 1.27
+            "price": 567.0,
+            "change": 2.72
         },
         {
             "market": "上櫃",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "115/09/01",
             "countdown": 5,
-            "price": 181.5,
-            "change": 0.55
+            "price": 180.0,
+            "change": -0.28
         },
         {
             "market": "上市",
@@ -115,8 +115,8 @@
             "level": "5分盤",
             "end_date": "115/09/02",
             "countdown": 6,
-            "price": 260.0,
-            "change": -0.95
+            "price": 259.0,
+            "change": -1.33
         },
         {
             "market": "上櫃",
@@ -133,6 +133,19 @@
         },
         {
             "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "115/08/28~115/09/03",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/03",
+            "countdown": 7,
+            "price": 617.0,
+            "change": 3.18
+        },
+        {
+            "market": "上櫃",
             "code": "3362",
             "name": "先進光",
             "publish_date": "",
@@ -141,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/09/04",
             "countdown": 8,
-            "price": 202.5,
-            "change": 0.25
+            "price": 204.5,
+            "change": 1.24
         }
     ],
     "exited_stocks": [
