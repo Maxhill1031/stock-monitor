@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-28 14:47:31",
+    "update_time": "2026-08-28 20:39:58",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -143,6 +143,58 @@
             "countdown": 6,
             "price": 610.0,
             "change": -1.13
+        },
+        {
+            "market": "上櫃",
+            "code": "3163",
+            "name": "波若威",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 7,
+            "price": 754.0,
+            "change": -2.84
+        },
+        {
+            "market": "上櫃",
+            "code": "3441",
+            "name": "聯一光",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 7,
+            "price": 130.0,
+            "change": -5.45
+        },
+        {
+            "market": "上櫃",
+            "code": "4188",
+            "name": "安克",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 7,
+            "price": 16.15,
+            "change": 0.62
+        },
+        {
+            "market": "上櫃",
+            "code": "6103",
+            "name": "合邦",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 7,
+            "price": 47.0,
+            "change": 9.94
         },
         {
             "market": "上櫃",
