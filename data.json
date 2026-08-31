@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-08-31 16:15:35",
+    "update_time": "2026-08-31 19:23:53",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -169,6 +169,19 @@
             "countdown": 4,
             "price": 202.0,
             "change": 1.25
+        },
+        {
+            "market": "上市",
+            "code": "6226",
+            "name": "光鼎",
+            "publish_date": "*115/08/31",
+            "period": "115/09/01～115/09/07",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/07",
+            "countdown": 7,
+            "price": 31.6,
+            "change": -7.06
         }
     ],
     "exited_stocks": [
