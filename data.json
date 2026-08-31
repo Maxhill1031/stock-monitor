@@ -1,58 +1,6 @@
 {
-    "update_time": "2026-08-31 19:23:53",
+    "update_time": "2026-09-01 01:41:52",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "6225",
-            "name": "天瀚",
-            "publish_date": "115/08/24",
-            "period": "115/08/25～115/08/31",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/08/31",
-            "countdown": 0,
-            "price": 60.0,
-            "change": 0.84
-        },
-        {
-            "market": "上櫃",
-            "code": "3625",
-            "name": "西勝",
-            "publish_date": "",
-            "period": "115/08/25~115/08/31",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/31",
-            "countdown": 0,
-            "price": 12.85,
-            "change": 4.47
-        },
-        {
-            "market": "上櫃",
-            "code": "4304",
-            "name": "勝昱",
-            "publish_date": "",
-            "period": "115/08/25~115/08/31",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/31",
-            "countdown": 0,
-            "price": 25.3,
-            "change": 2.85
-        },
-        {
-            "market": "上櫃",
-            "code": "4971",
-            "name": "IET-KY",
-            "publish_date": "",
-            "period": "115/08/25~115/08/31",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/31",
-            "countdown": 0,
-            "price": 600.0,
-            "change": 5.63
-        },
         {
             "market": "上櫃",
             "code": "3234",
@@ -62,7 +10,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/01",
-            "countdown": 1,
+            "countdown": 0,
             "price": 185.0,
             "change": 1.93
         },
@@ -75,22 +23,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/09/02",
-            "countdown": 2,
+            "countdown": 1,
             "price": 263.0,
             "change": 0.77
-        },
-        {
-            "market": "上櫃",
-            "code": "5314",
-            "name": "世紀*",
-            "publish_date": "",
-            "period": "115/08/27~115/09/02",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/02",
-            "countdown": 2,
-            "price": 36.0,
-            "change": 5.26
         },
         {
             "market": "上櫃",
@@ -101,7 +36,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/03",
-            "countdown": 3,
+            "countdown": 2,
             "price": 609.0,
             "change": -0.16
         },
@@ -114,7 +49,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/04",
-            "countdown": 4,
+            "countdown": 3,
             "price": 741.0,
             "change": -1.72
         },
@@ -127,7 +62,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/04",
-            "countdown": 4,
+            "countdown": 3,
             "price": 136.0,
             "change": 4.62
         },
@@ -140,7 +75,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/04",
-            "countdown": 4,
+            "countdown": 3,
             "price": 14.85,
             "change": -8.05
         },
@@ -153,7 +88,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/04",
-            "countdown": 4,
+            "countdown": 3,
             "price": 44.5,
             "change": -5.32
         },
@@ -166,7 +101,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/04",
-            "countdown": 4,
+            "countdown": 3,
             "price": 202.0,
             "change": 1.25
         },
@@ -174,17 +109,99 @@
             "market": "上市",
             "code": "6226",
             "name": "光鼎",
-            "publish_date": "*115/08/31",
+            "publish_date": "115/08/31",
             "period": "115/09/01～115/09/07",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/09/07",
-            "countdown": 7,
+            "countdown": 6,
             "price": 31.6,
             "change": -7.06
+        },
+        {
+            "market": "上櫃",
+            "code": "5314",
+            "name": "世紀*",
+            "publish_date": "",
+            "period": "115/09/01~115/09/07",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/07",
+            "countdown": 6,
+            "price": 36.0,
+            "change": 5.26
+        },
+        {
+            "market": "上櫃",
+            "code": "4939",
+            "name": "亞電",
+            "publish_date": "",
+            "period": "115/09/01~115/09/09",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/09",
+            "countdown": 8,
+            "price": 89.2,
+            "change": -3.88
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3625",
+            "name": "西勝",
+            "publish_date": "",
+            "period": "115/08/25~115/08/31",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/31",
+            "countdown": -1,
+            "price": 12.85,
+            "change": 4.47,
+            "exit_date": "2026-08-31"
+        },
+        {
+            "market": "上櫃",
+            "code": "4304",
+            "name": "勝昱",
+            "publish_date": "",
+            "period": "115/08/25~115/08/31",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/31",
+            "countdown": -1,
+            "price": 25.3,
+            "change": 2.85,
+            "exit_date": "2026-08-31"
+        },
+        {
+            "market": "上櫃",
+            "code": "4971",
+            "name": "IET-KY",
+            "publish_date": "",
+            "period": "115/08/25~115/08/31",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/08/31",
+            "countdown": -1,
+            "price": 600.0,
+            "change": 5.63,
+            "exit_date": "2026-08-31"
+        },
+        {
+            "market": "上市",
+            "code": "6225",
+            "name": "天瀚",
+            "publish_date": "115/08/24",
+            "period": "115/08/25～115/08/31",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/08/31",
+            "countdown": 0,
+            "price": 60.0,
+            "change": 0.84,
+            "exit_date": "2026-09-01"
+        },
         {
             "market": "上櫃",
             "code": "3498",
@@ -226,34 +243,6 @@
             "price": 434.0,
             "change": 0.23,
             "exit_date": "2026-08-29"
-        },
-        {
-            "market": "上櫃",
-            "code": "3490",
-            "name": "單井",
-            "publish_date": "",
-            "period": "115/08/20~115/08/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/26",
-            "countdown": -1,
-            "price": 55.6,
-            "change": 3.73,
-            "exit_date": "2026-08-26"
-        },
-        {
-            "market": "上櫃",
-            "code": "5475",
-            "name": "德宏",
-            "publish_date": "",
-            "period": "115/08/20~115/08/26",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/08/26",
-            "countdown": -1,
-            "price": 199.0,
-            "change": 9.94,
-            "exit_date": "2026-08-26"
         }
     ],
     "etf_stocks": [
