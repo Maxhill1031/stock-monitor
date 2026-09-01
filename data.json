@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-01 17:46:57",
+    "update_time": "2026-09-01 23:09:00",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -132,6 +132,58 @@
             "change": -1.94
         },
         {
+            "market": "上市",
+            "code": "3406",
+            "name": "玉晶光",
+            "publish_date": "*115/09/01",
+            "period": "115/09/02～115/09/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/08",
+            "countdown": 7,
+            "price": 1005.0,
+            "change": 0.0
+        },
+        {
+            "market": "上市",
+            "code": "6805",
+            "name": "富世達",
+            "publish_date": "*115/09/01",
+            "period": "115/09/02～115/09/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/08",
+            "countdown": 7,
+            "price": 2285.0,
+            "change": -0.87
+        },
+        {
+            "market": "上市",
+            "code": "6933",
+            "name": "AMAX-KY",
+            "publish_date": "*115/09/01",
+            "period": "115/09/02～115/09/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/08",
+            "countdown": 7,
+            "price": 314.5,
+            "change": 9.97
+        },
+        {
+            "market": "上櫃",
+            "code": "3629",
+            "name": "地心引力",
+            "publish_date": "",
+            "period": "115/09/02~115/09/08",
+            "reason": "",
+            "level": "45分盤",
+            "end_date": "115/09/08",
+            "countdown": 7,
+            "price": 20.0,
+            "change": 0.5
+        },
+        {
             "market": "上櫃",
             "code": "4939",
             "name": "亞電",
@@ -143,6 +195,32 @@
             "countdown": 8,
             "price": 87.1,
             "change": -2.35
+        },
+        {
+            "market": "上櫃",
+            "code": "3374",
+            "name": "精材",
+            "publish_date": "",
+            "period": "115/09/02~115/09/10",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/10",
+            "countdown": 9,
+            "price": 421.5,
+            "change": -0.24
+        },
+        {
+            "market": "上櫃",
+            "code": "8358",
+            "name": "金居",
+            "publish_date": "",
+            "period": "115/09/02~115/09/10",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/10",
+            "countdown": 9,
+            "price": 526.0,
+            "change": -2.59
         }
     ],
     "exited_stocks": [
