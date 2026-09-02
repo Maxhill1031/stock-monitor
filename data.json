@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-02 08:52:17",
+    "update_time": "2026-09-02 13:39:17",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,86 +11,8 @@
             "level": "5分盤",
             "end_date": "115/09/02",
             "countdown": 0,
-            "price": 276.0,
-            "change": 4.94
-        },
-        {
-            "market": "上櫃",
-            "code": "4979",
-            "name": "華星光",
-            "publish_date": "",
-            "period": "115/08/28~115/09/03",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/03",
-            "countdown": 1,
-            "price": 600.0,
-            "change": -1.48
-        },
-        {
-            "market": "上櫃",
-            "code": "3163",
-            "name": "波若威",
-            "publish_date": "",
-            "period": "115/08/31~115/09/04",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/04",
-            "countdown": 2,
-            "price": 761.0,
-            "change": 2.7
-        },
-        {
-            "market": "上櫃",
-            "code": "3441",
-            "name": "聯一光",
-            "publish_date": "",
-            "period": "115/08/31~115/09/04",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/04",
-            "countdown": 2,
-            "price": 133.0,
-            "change": -2.21
-        },
-        {
-            "market": "上櫃",
-            "code": "4188",
-            "name": "安克",
-            "publish_date": "",
-            "period": "115/08/31~115/09/04",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/04",
-            "countdown": 2,
-            "price": 14.55,
-            "change": -2.02
-        },
-        {
-            "market": "上櫃",
-            "code": "6103",
-            "name": "合邦",
-            "publish_date": "",
-            "period": "115/08/31~115/09/04",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/04",
-            "countdown": 2,
-            "price": 44.6,
-            "change": 0.22
-        },
-        {
-            "market": "上櫃",
-            "code": "3362",
-            "name": "先進光",
-            "publish_date": "",
-            "period": "115/08/27~115/09/04",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/04",
-            "countdown": 2,
-            "price": 200.0,
-            "change": -0.99
+            "price": 285.5,
+            "change": 3.44
         },
         {
             "market": "上市",
@@ -102,21 +24,8 @@
             "level": "5分盤",
             "end_date": "115/09/07",
             "countdown": 5,
-            "price": 34.0,
-            "change": 7.59
-        },
-        {
-            "market": "上櫃",
-            "code": "5314",
-            "name": "世紀*",
-            "publish_date": "",
-            "period": "115/09/01~115/09/07",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/07",
-            "countdown": 5,
-            "price": 35.3,
-            "change": -1.94
+            "price": 34.1,
+            "change": 0.29
         },
         {
             "market": "上市",
@@ -128,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/09/08",
             "countdown": 6,
-            "price": 1005.0,
-            "change": 0.0
+            "price": 1040.0,
+            "change": 3.48
         },
         {
             "market": "上市",
@@ -141,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/09/08",
             "countdown": 6,
-            "price": 2285.0,
-            "change": -0.87
+            "price": 2115.0,
+            "change": -7.44
         },
         {
             "market": "上市",
@@ -154,8 +63,108 @@
             "level": "5分盤",
             "end_date": "115/09/08",
             "countdown": 6,
-            "price": 314.5,
-            "change": 9.97
+            "price": 327.5,
+            "change": 4.13
+        }
+    ],
+    "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "115/08/28~115/09/03",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/03",
+            "countdown": 1,
+            "price": 621.0,
+            "change": 3.5,
+            "exit_date": "2026-09-02"
+        },
+        {
+            "market": "上櫃",
+            "code": "3163",
+            "name": "波若威",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 2,
+            "price": 766.0,
+            "change": 0.66,
+            "exit_date": "2026-09-02"
+        },
+        {
+            "market": "上櫃",
+            "code": "3441",
+            "name": "聯一光",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 2,
+            "price": 138.5,
+            "change": 4.14,
+            "exit_date": "2026-09-02"
+        },
+        {
+            "market": "上櫃",
+            "code": "4188",
+            "name": "安克",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 2,
+            "price": 14.45,
+            "change": -0.69,
+            "exit_date": "2026-09-02"
+        },
+        {
+            "market": "上櫃",
+            "code": "6103",
+            "name": "合邦",
+            "publish_date": "",
+            "period": "115/08/31~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 2,
+            "price": 43.3,
+            "change": -2.91,
+            "exit_date": "2026-09-02"
+        },
+        {
+            "market": "上櫃",
+            "code": "3362",
+            "name": "先進光",
+            "publish_date": "",
+            "period": "115/08/27~115/09/04",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/04",
+            "countdown": 2,
+            "price": 208.5,
+            "change": 4.25,
+            "exit_date": "2026-09-02"
+        },
+        {
+            "market": "上櫃",
+            "code": "5314",
+            "name": "世紀*",
+            "publish_date": "",
+            "period": "115/09/01~115/09/07",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/07",
+            "countdown": 5,
+            "price": 34.45,
+            "change": -2.41,
+            "exit_date": "2026-09-02"
         },
         {
             "market": "上櫃",
@@ -167,8 +176,9 @@
             "level": "45分盤",
             "end_date": "115/09/08",
             "countdown": 6,
-            "price": 20.0,
-            "change": 0.5
+            "price": 19.9,
+            "change": -0.5,
+            "exit_date": "2026-09-02"
         },
         {
             "market": "上櫃",
@@ -180,8 +190,9 @@
             "level": "5分盤",
             "end_date": "115/09/09",
             "countdown": 7,
-            "price": 87.1,
-            "change": -2.35
+            "price": 87.6,
+            "change": 0.57,
+            "exit_date": "2026-09-02"
         },
         {
             "market": "上櫃",
@@ -193,8 +204,9 @@
             "level": "5分盤",
             "end_date": "115/09/10",
             "countdown": 8,
-            "price": 421.5,
-            "change": -0.24
+            "price": 419.0,
+            "change": -0.59,
+            "exit_date": "2026-09-02"
         },
         {
             "market": "上櫃",
@@ -206,11 +218,10 @@
             "level": "5分盤",
             "end_date": "115/09/10",
             "countdown": 8,
-            "price": 526.0,
-            "change": -2.59
-        }
-    ],
-    "exited_stocks": [
+            "price": 506.0,
+            "change": -3.8,
+            "exit_date": "2026-09-02"
+        },
         {
             "market": "上櫃",
             "code": "3234",
