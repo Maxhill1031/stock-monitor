@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-02 17:19:33",
+    "update_time": "2026-09-02 22:40:15",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -171,6 +171,45 @@
             "change": -0.5
         },
         {
+            "market": "上市",
+            "code": "3008",
+            "name": "大立光",
+            "publish_date": "*115/09/02",
+            "period": "115/09/03～115/09/09",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/09",
+            "countdown": 7,
+            "price": 7810.0,
+            "change": 3.03
+        },
+        {
+            "market": "上櫃",
+            "code": "3324",
+            "name": "雙鴻",
+            "publish_date": "",
+            "period": "115/09/03~115/09/09",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/09",
+            "countdown": 7,
+            "price": 1435.0,
+            "change": 4.36
+        },
+        {
+            "market": "上櫃",
+            "code": "4908",
+            "name": "前鼎",
+            "publish_date": "",
+            "period": "115/09/03~115/09/09",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/09",
+            "countdown": 7,
+            "price": 218.0,
+            "change": -5.01
+        },
+        {
             "market": "上櫃",
             "code": "4939",
             "name": "亞電",
@@ -208,6 +247,19 @@
             "countdown": 8,
             "price": 503.0,
             "change": -4.37
+        },
+        {
+            "market": "上市",
+            "code": "3450",
+            "name": "聯鈞",
+            "publish_date": "*115/09/02",
+            "period": "115/09/03～115/09/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/09/11",
+            "countdown": 9,
+            "price": 602.0,
+            "change": -3.68
         }
     ],
     "exited_stocks": [
