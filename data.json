@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-03 17:29:25",
+    "update_time": "2026-09-03 22:42:32",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -208,6 +208,32 @@
             "countdown": 6,
             "price": 81.5,
             "change": -8.32
+        },
+        {
+            "market": "上櫃",
+            "code": "3664",
+            "name": "安瑞-KY",
+            "publish_date": "",
+            "period": "115/09/04~115/09/10",
+            "reason": "",
+            "level": "45分盤",
+            "end_date": "115/09/10",
+            "countdown": 7,
+            "price": 9.1,
+            "change": 9.11
+        },
+        {
+            "market": "上櫃",
+            "code": "4991",
+            "name": "環宇-KY",
+            "publish_date": "",
+            "period": "115/09/04~115/09/10",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/10",
+            "countdown": 7,
+            "price": 484.5,
+            "change": -8.58
         },
         {
             "market": "上櫃",
