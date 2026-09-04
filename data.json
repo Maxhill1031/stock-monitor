@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-04 17:21:15",
+    "update_time": "2026-09-04 22:31:16",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -117,19 +117,6 @@
             "countdown": 4,
             "price": 2200.0,
             "change": 5.01
-        },
-        {
-            "market": "上市",
-            "code": "6933",
-            "name": "AMAX-KY",
-            "publish_date": "115/09/01",
-            "period": "115/09/02～115/09/08",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/09/08",
-            "countdown": 4,
-            "price": 317.0,
-            "change": 4.97
         },
         {
             "market": "上櫃",
@@ -260,6 +247,32 @@
             "countdown": 7,
             "price": 580.0,
             "change": 4.69
+        },
+        {
+            "market": "上市",
+            "code": "6933",
+            "name": "AMAX-KY",
+            "publish_date": "*115/09/04",
+            "period": "115/09/07～115/09/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/09/11",
+            "countdown": 7,
+            "price": 317.0,
+            "change": 4.97
+        },
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "*115/09/04",
+            "period": "115/09/07～115/09/15",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/09/15",
+            "countdown": 11,
+            "price": 528.0,
+            "change": 0.57
         }
     ],
     "exited_stocks": [
