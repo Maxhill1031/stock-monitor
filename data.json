@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-09-07 17:58:19",
+    "update_time": "2026-09-08 00:01:43",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "6226",
-            "name": "光鼎",
-            "publish_date": "115/08/31",
-            "period": "115/09/01～115/09/07",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/09/07",
-            "countdown": 0,
-            "price": 32.4,
-            "change": -3.28
-        },
-        {
-            "market": "上櫃",
-            "code": "5314",
-            "name": "世紀*",
-            "publish_date": "",
-            "period": "115/09/01~115/09/07",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/07",
-            "countdown": 0,
-            "price": 35.2,
-            "change": 10.0
-        },
         {
             "market": "上市",
             "code": "3406",
@@ -36,7 +10,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/09/08",
-            "countdown": 1,
+            "countdown": 0,
             "price": 987.0,
             "change": -6.45
         },
@@ -49,7 +23,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/09/08",
-            "countdown": 1,
+            "countdown": 0,
             "price": 2265.0,
             "change": 2.95
         },
@@ -62,7 +36,7 @@
             "reason": "",
             "level": "45分盤",
             "end_date": "115/09/08",
-            "countdown": 1,
+            "countdown": 0,
             "price": 19.85,
             "change": 0.25
         },
@@ -75,22 +49,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/09/09",
-            "countdown": 2,
+            "countdown": 1,
             "price": 6660.0,
             "change": -10.0
-        },
-        {
-            "market": "上櫃",
-            "code": "3324",
-            "name": "雙鴻",
-            "publish_date": "",
-            "period": "115/09/03~115/09/09",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/09",
-            "countdown": 2,
-            "price": 1440.0,
-            "change": -3.03
         },
         {
             "market": "上櫃",
@@ -101,7 +62,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/09",
-            "countdown": 2,
+            "countdown": 1,
             "price": 223.0,
             "change": -0.67
         },
@@ -114,7 +75,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/09",
-            "countdown": 2,
+            "countdown": 1,
             "price": 93.6,
             "change": 6.48
         },
@@ -127,7 +88,7 @@
             "reason": "",
             "level": "45分盤",
             "end_date": "115/09/10",
-            "countdown": 3,
+            "countdown": 2,
             "price": 7.38,
             "change": -9.89
         },
@@ -140,7 +101,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/10",
-            "countdown": 3,
+            "countdown": 2,
             "price": 494.0,
             "change": -0.6
         },
@@ -153,7 +114,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/10",
-            "countdown": 3,
+            "countdown": 2,
             "price": 469.5,
             "change": 9.19
         },
@@ -166,7 +127,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/10",
-            "countdown": 3,
+            "countdown": 2,
             "price": 515.0,
             "change": 3.0
         },
@@ -179,7 +140,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/09/11",
-            "countdown": 4,
+            "countdown": 3,
             "price": 585.0,
             "change": 0.86
         },
@@ -192,9 +153,35 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/09/11",
-            "countdown": 4,
+            "countdown": 3,
             "price": 313.0,
             "change": -1.26
+        },
+        {
+            "market": "上櫃",
+            "code": "3324",
+            "name": "雙鴻",
+            "publish_date": "",
+            "period": "115/09/08~115/09/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/14",
+            "countdown": 6,
+            "price": 1440.0,
+            "change": -3.03
+        },
+        {
+            "market": "上櫃",
+            "code": "6538",
+            "name": "倉和",
+            "publish_date": "",
+            "period": "115/09/08~115/09/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/14",
+            "countdown": 6,
+            "price": 305.0,
+            "change": 1.67
         },
         {
             "market": "上市",
@@ -205,12 +192,40 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/09/15",
-            "countdown": 8,
+            "countdown": 7,
             "price": 500.0,
             "change": -5.3
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "6226",
+            "name": "光鼎",
+            "publish_date": "115/08/31",
+            "period": "115/09/01～115/09/07",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/07",
+            "countdown": -1,
+            "price": 32.4,
+            "change": -3.28,
+            "exit_date": "2026-09-07"
+        },
+        {
+            "market": "上櫃",
+            "code": "5314",
+            "name": "世紀*",
+            "publish_date": "",
+            "period": "115/09/01~115/09/07",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/07",
+            "countdown": -1,
+            "price": 35.2,
+            "change": 10.0,
+            "exit_date": "2026-09-07"
+        },
         {
             "market": "上櫃",
             "code": "3163",
