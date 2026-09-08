@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-08 17:23:46",
+    "update_time": "2026-09-08 22:44:58",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -195,6 +195,32 @@
             "countdown": 7,
             "price": 515.0,
             "change": 3.0
+        },
+        {
+            "market": "上市",
+            "code": "8021",
+            "name": "尖點",
+            "publish_date": "*115/09/08",
+            "period": "115/09/09～115/09/15",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/09/15",
+            "countdown": 7,
+            "price": 450.0,
+            "change": -2.6
+        },
+        {
+            "market": "上櫃",
+            "code": "6620",
+            "name": "漢達",
+            "publish_date": "",
+            "period": "115/09/09~115/09/15",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/15",
+            "countdown": 7,
+            "price": 124.0,
+            "change": 9.73
         }
     ],
     "exited_stocks": [
