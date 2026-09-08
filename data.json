@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-08 00:01:43",
+    "update_time": "2026-09-08 08:57:44",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -199,20 +199,6 @@
     ],
     "exited_stocks": [
         {
-            "market": "上市",
-            "code": "6226",
-            "name": "光鼎",
-            "publish_date": "115/08/31",
-            "period": "115/09/01～115/09/07",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/09/07",
-            "countdown": -1,
-            "price": 32.4,
-            "change": -3.28,
-            "exit_date": "2026-09-07"
-        },
-        {
             "market": "上櫃",
             "code": "5314",
             "name": "世紀*",
@@ -224,6 +210,20 @@
             "countdown": -1,
             "price": 35.2,
             "change": 10.0,
+            "exit_date": "2026-09-07"
+        },
+        {
+            "market": "上市",
+            "code": "6226",
+            "name": "光鼎",
+            "publish_date": "115/08/31",
+            "period": "115/09/01～115/09/07",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/07",
+            "countdown": -1,
+            "price": 32.4,
+            "change": -3.28,
             "exit_date": "2026-09-07"
         },
         {
