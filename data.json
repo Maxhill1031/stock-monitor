@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 17:24:39",
+    "update_time": "2026-09-10 22:36:57",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -93,19 +93,6 @@
             "change": 3.97
         },
         {
-            "market": "上櫃",
-            "code": "6538",
-            "name": "倉和",
-            "publish_date": "",
-            "period": "115/09/08~115/09/14",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/14",
-            "countdown": 4,
-            "price": 338.5,
-            "change": -3.01
-        },
-        {
             "market": "上市",
             "code": "2455",
             "name": "全新",
@@ -169,6 +156,45 @@
             "countdown": 6,
             "price": 26.75,
             "change": 8.74
+        },
+        {
+            "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "115/09/11~115/09/17",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/17",
+            "countdown": 7,
+            "price": 571.0,
+            "change": -6.39
+        },
+        {
+            "market": "上櫃",
+            "code": "6538",
+            "name": "倉和",
+            "publish_date": "",
+            "period": "115/09/11~115/09/17",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/17",
+            "countdown": 7,
+            "price": 338.5,
+            "change": -3.01
+        },
+        {
+            "market": "上櫃",
+            "code": "7772",
+            "name": "耀穎",
+            "publish_date": "",
+            "period": "115/09/11~115/09/17",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/17",
+            "countdown": 7,
+            "price": 123.0,
+            "change": -5.38
         }
     ],
     "exited_stocks": [
