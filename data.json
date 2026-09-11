@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 17:23:01",
+    "update_time": "2026-09-11 22:35:24",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -143,6 +143,19 @@
             "countdown": 6,
             "price": 132.0,
             "change": 7.32
+        },
+        {
+            "market": "上市",
+            "code": "3055",
+            "name": "蔚華科",
+            "publish_date": "*115/09/11",
+            "period": "115/09/14～115/09/18",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/18",
+            "countdown": 7,
+            "price": 154.5,
+            "change": -3.44
         }
     ],
     "exited_stocks": [
