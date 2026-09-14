@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-14 15:39:39",
+    "update_time": "2026-09-14 18:21:15",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -39,6 +39,19 @@
             "countdown": 4,
             "price": 159.5,
             "change": 3.24
+        },
+        {
+            "market": "上市",
+            "code": "8996",
+            "name": "高力",
+            "publish_date": "*115/09/14",
+            "period": "115/09/15～115/09/21",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/21",
+            "countdown": 7,
+            "price": 1235.0,
+            "change": -7.14
         }
     ],
     "exited_stocks": [
