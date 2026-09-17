@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-17 15:18:09",
+    "update_time": "2026-09-17 17:51:05",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -78,6 +78,19 @@
             "countdown": 4,
             "price": 258.0,
             "change": -5.15
+        },
+        {
+            "market": "上市",
+            "code": "2305",
+            "name": "全友",
+            "publish_date": "*115/09/17",
+            "period": "115/09/18～115/09/30",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/09/30",
+            "countdown": 13,
+            "price": 54.3,
+            "change": 9.92
         }
     ],
     "exited_stocks": [
