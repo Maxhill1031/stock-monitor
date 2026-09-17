@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-17 17:51:05",
+    "update_time": "2026-09-17 23:16:59",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -68,16 +68,42 @@
         },
         {
             "market": "上櫃",
+            "code": "3467",
+            "name": "台灣精材",
+            "publish_date": "",
+            "period": "115/09/18~115/09/24",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/24",
+            "countdown": 7,
+            "price": 73.5,
+            "change": 2.65
+        },
+        {
+            "market": "上櫃",
             "code": "8227",
             "name": "巨有科技",
             "publish_date": "",
-            "period": "115/09/15~115/09/21",
+            "period": "115/09/18~115/09/24",
             "reason": "",
             "level": "5分盤",
-            "end_date": "115/09/21",
-            "countdown": 4,
+            "end_date": "115/09/24",
+            "countdown": 7,
             "price": 258.0,
             "change": -5.15
+        },
+        {
+            "market": "上櫃",
+            "code": "8358",
+            "name": "金居",
+            "publish_date": "",
+            "period": "115/09/18~115/09/24",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/24",
+            "countdown": 7,
+            "price": 478.5,
+            "change": -6.18
         },
         {
             "market": "上市",
@@ -91,6 +117,19 @@
             "countdown": 13,
             "price": 54.3,
             "change": 9.92
+        },
+        {
+            "market": "上櫃",
+            "code": "3441",
+            "name": "聯一光",
+            "publish_date": "",
+            "period": "115/09/18~115/09/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/30",
+            "countdown": 13,
+            "price": 192.5,
+            "change": 3.49
         }
     ],
     "exited_stocks": [
