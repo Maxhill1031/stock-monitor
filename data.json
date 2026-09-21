@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-21 08:52:58",
+    "update_time": "2026-09-21 14:08:21",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/09/21",
             "countdown": 0,
-            "price": 1365.0,
-            "change": 5.0
+            "price": 1505.0,
+            "change": 10.26
         },
         {
             "market": "上櫃",
@@ -25,7 +25,7 @@
             "end_date": "115/09/24",
             "countdown": 3,
             "price": 77.4,
-            "change": 5.31
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/09/24",
             "countdown": 3,
-            "price": 280.0,
-            "change": 8.53
+            "price": 287.5,
+            "change": 2.68
         },
         {
             "market": "上櫃",
@@ -50,8 +50,21 @@
             "level": "5分盤",
             "end_date": "115/09/24",
             "countdown": 3,
-            "price": 494.0,
-            "change": 3.24
+            "price": 491.5,
+            "change": -0.51
+        },
+        {
+            "market": "上櫃",
+            "code": "6221",
+            "name": "晉泰",
+            "publish_date": "",
+            "period": "115/09/21~115/09/29",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/29",
+            "countdown": 8,
+            "price": 31.0,
+            "change": -3.12
         },
         {
             "market": "上市",
@@ -63,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/09/30",
             "countdown": 9,
-            "price": 58.7,
-            "change": 8.1
+            "price": 58.8,
+            "change": 0.17
         },
         {
             "market": "上櫃",
@@ -76,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/09/30",
             "countdown": 9,
-            "price": 195.0,
-            "change": 1.3
+            "price": 177.5,
+            "change": -8.97
         },
         {
             "market": "上市",
@@ -89,8 +102,8 @@
             "level": "20分盤",
             "end_date": "115/10/01",
             "countdown": 10,
-            "price": 45.35,
-            "change": 3.42
+            "price": 44.5,
+            "change": -1.87
         }
     ],
     "exited_stocks": [
@@ -106,20 +119,6 @@
             "countdown": 0,
             "price": 188.0,
             "change": 16.77,
-            "exit_date": "2026-09-21"
-        },
-        {
-            "market": "上櫃",
-            "code": "6221",
-            "name": "晉泰",
-            "publish_date": "",
-            "period": "115/09/21~115/09/29",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/29",
-            "countdown": 11,
-            "price": 32.0,
-            "change": 11.69,
             "exit_date": "2026-09-21"
         },
         {
