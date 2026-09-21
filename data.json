@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-21 15:43:45",
+    "update_time": "2026-09-21 18:25:55",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -81,6 +81,19 @@
         },
         {
             "market": "上櫃",
+            "code": "5314",
+            "name": "世紀*",
+            "publish_date": "",
+            "period": "115/09/22~115/09/30",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/09/30",
+            "countdown": 9,
+            "price": 29.05,
+            "change": -4.75
+        },
+        {
+            "market": "上櫃",
             "code": "3441",
             "name": "聯一光",
             "publish_date": "",
@@ -104,6 +117,19 @@
             "countdown": 10,
             "price": 44.5,
             "change": -1.87
+        },
+        {
+            "market": "上市",
+            "code": "2468",
+            "name": "華經",
+            "publish_date": "*115/09/21",
+            "period": "115/09/22～115/10/02",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/02",
+            "countdown": 11,
+            "price": 46.55,
+            "change": 1.53
         }
     ],
     "exited_stocks": [
