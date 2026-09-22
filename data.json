@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-22 09:28:07",
+    "update_time": "2026-09-22 14:01:26",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/09/24",
             "countdown": 2,
-            "price": 79.7,
-            "change": 2.97
+            "price": 84.8,
+            "change": 9.56
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "115/09/24",
             "countdown": 2,
-            "price": 299.5,
-            "change": 4.17
+            "price": 305.0,
+            "change": 6.09
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/09/24",
             "countdown": 2,
-            "price": 495.5,
-            "change": 0.81
+            "price": 491.5,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/09/29",
             "countdown": 7,
-            "price": 30.4,
-            "change": -1.94
+            "price": 30.55,
+            "change": -1.45
         },
         {
             "market": "上市",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "115/09/30",
             "countdown": 8,
-            "price": 57.8,
-            "change": -1.7
+            "price": 60.0,
+            "change": 2.04
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/09/30",
             "countdown": 8,
-            "price": 28.0,
-            "change": -3.61
+            "price": 26.15,
+            "change": -9.98
         },
         {
             "market": "上櫃",
@@ -89,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/09/30",
             "countdown": 8,
-            "price": 177.0,
-            "change": -0.28
+            "price": 181.0,
+            "change": 1.97
         },
         {
             "market": "上市",
@@ -102,8 +102,8 @@
             "level": "20分盤",
             "end_date": "115/10/01",
             "countdown": 9,
-            "price": 44.0,
-            "change": -1.12
+            "price": 44.2,
+            "change": -0.67
         },
         {
             "market": "上市",
@@ -115,25 +115,11 @@
             "level": "5分盤",
             "end_date": "115/10/02",
             "countdown": 10,
-            "price": 46.0,
-            "change": -1.18
+            "price": 46.85,
+            "change": 0.64
         }
     ],
     "exited_stocks": [
-        {
-            "market": "上櫃",
-            "code": "8227",
-            "name": "巨有科技",
-            "publish_date": "",
-            "period": "115/09/15~115/09/21",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/21",
-            "countdown": -1,
-            "price": 299.5,
-            "change": 4.17,
-            "exit_date": "2026-09-21"
-        },
         {
             "market": "上市",
             "code": "8996",
