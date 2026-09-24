@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-24 15:21:30",
+    "update_time": "2026-09-24 17:43:36",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -195,6 +195,19 @@
             "countdown": 11,
             "price": 554.0,
             "change": 0.36
+        },
+        {
+            "market": "上市",
+            "code": "3443",
+            "name": "創意",
+            "publish_date": "*115/09/24",
+            "period": "115/09/29～115/10/05",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/05",
+            "countdown": 11,
+            "price": 8525.0,
+            "change": 1.67
         },
         {
             "market": "上櫃",
