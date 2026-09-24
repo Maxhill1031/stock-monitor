@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-24 17:43:36",
+    "update_time": "2026-09-24 23:28:55",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -208,6 +208,45 @@
             "countdown": 11,
             "price": 8525.0,
             "change": 1.67
+        },
+        {
+            "market": "上櫃",
+            "code": "3374",
+            "name": "精材",
+            "publish_date": "",
+            "period": "115/09/29~115/10/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/05",
+            "countdown": 11,
+            "price": 449.0,
+            "change": -4.87
+        },
+        {
+            "market": "上櫃",
+            "code": "4542",
+            "name": "科嶠",
+            "publish_date": "",
+            "period": "115/09/29~115/10/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/05",
+            "countdown": 11,
+            "price": 328.0,
+            "change": -1.06
+        },
+        {
+            "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "115/09/29~115/10/05",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/05",
+            "countdown": 11,
+            "price": 563.0,
+            "change": -4.58
         },
         {
             "market": "上櫃",
