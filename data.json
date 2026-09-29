@@ -1,19 +1,6 @@
 {
-    "update_time": "2026-09-29 19:09:49",
+    "update_time": "2026-09-30 00:37:00",
     "disposal_stocks": [
-        {
-            "market": "上櫃",
-            "code": "6221",
-            "name": "晉泰",
-            "publish_date": "",
-            "period": "115/09/21~115/09/29",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/29",
-            "countdown": 0,
-            "price": 32.85,
-            "change": 2.02
-        },
         {
             "market": "上市",
             "code": "2305",
@@ -23,7 +10,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/09/30",
-            "countdown": 1,
+            "countdown": 0,
             "price": 69.1,
             "change": 9.86
         },
@@ -36,7 +23,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/30",
-            "countdown": 1,
+            "countdown": 0,
             "price": 27.45,
             "change": 3.98
         },
@@ -49,7 +36,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/09/30",
-            "countdown": 1,
+            "countdown": 0,
             "price": 185.0,
             "change": 2.21
         },
@@ -62,7 +49,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/01",
-            "countdown": 2,
+            "countdown": 1,
             "price": 45.55,
             "change": 3.52
         },
@@ -75,7 +62,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/01",
-            "countdown": 2,
+            "countdown": 1,
             "price": 452.0,
             "change": -3.52
         },
@@ -88,7 +75,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/01",
-            "countdown": 2,
+            "countdown": 1,
             "price": 480.0,
             "change": 0.0
         },
@@ -101,7 +88,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/01",
-            "countdown": 2,
+            "countdown": 1,
             "price": 140.0,
             "change": 1.45
         },
@@ -114,7 +101,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/02",
-            "countdown": 3,
+            "countdown": 2,
             "price": 46.05,
             "change": -0.43
         },
@@ -127,7 +114,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/02",
-            "countdown": 3,
+            "countdown": 2,
             "price": 45.2,
             "change": 2.73
         },
@@ -140,7 +127,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/02",
-            "countdown": 3,
+            "countdown": 2,
             "price": 176.0,
             "change": -2.22
         },
@@ -153,7 +140,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/05",
-            "countdown": 6,
+            "countdown": 5,
             "price": 543.0,
             "change": -1.99
         },
@@ -166,7 +153,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/05",
-            "countdown": 6,
+            "countdown": 5,
             "price": 7925.0,
             "change": -7.04
         },
@@ -179,7 +166,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/05",
-            "countdown": 6,
+            "countdown": 5,
             "price": 455.0,
             "change": 1.34
         },
@@ -192,7 +179,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/05",
-            "countdown": 6,
+            "countdown": 5,
             "price": 339.0,
             "change": 3.35
         },
@@ -205,7 +192,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/05",
-            "countdown": 6,
+            "countdown": 5,
             "price": 567.0,
             "change": 0.71
         },
@@ -218,7 +205,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/05",
-            "countdown": 6,
+            "countdown": 5,
             "price": 63.2,
             "change": -0.63
         },
@@ -226,12 +213,12 @@
             "market": "上市",
             "code": "6526",
             "name": "達發",
-            "publish_date": "*115/09/29",
+            "publish_date": "115/09/29",
             "period": "115/09/30～115/10/06",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/06",
-            "countdown": 7,
+            "countdown": 6,
             "price": 814.0,
             "change": -3.1
         },
@@ -244,7 +231,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/06",
-            "countdown": 7,
+            "countdown": 6,
             "price": 416.0,
             "change": -4.48
         },
@@ -257,7 +244,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/06",
-            "countdown": 7,
+            "countdown": 6,
             "price": 180.0,
             "change": 9.76
         }
@@ -265,45 +252,17 @@
     "exited_stocks": [
         {
             "market": "上櫃",
-            "code": "3467",
-            "name": "台灣精材",
+            "code": "6221",
+            "name": "晉泰",
             "publish_date": "",
-            "period": "115/09/18~115/09/24",
+            "period": "115/09/21~115/09/29",
             "reason": "",
             "level": "5分盤",
-            "end_date": "115/09/24",
-            "countdown": -5,
-            "price": 74.0,
-            "change": -9.2,
-            "exit_date": "2026-09-24"
-        },
-        {
-            "market": "上櫃",
-            "code": "8227",
-            "name": "巨有科技",
-            "publish_date": "",
-            "period": "115/09/18~115/09/24",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/24",
-            "countdown": -5,
-            "price": 337.0,
-            "change": 9.95,
-            "exit_date": "2026-09-24"
-        },
-        {
-            "market": "上櫃",
-            "code": "8358",
-            "name": "金居",
-            "publish_date": "",
-            "period": "115/09/18~115/09/24",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/09/24",
-            "countdown": -5,
-            "price": 502.0,
-            "change": -1.76,
-            "exit_date": "2026-09-24"
+            "end_date": "115/09/29",
+            "countdown": -1,
+            "price": 32.85,
+            "change": 2.02,
+            "exit_date": "2026-09-29"
         }
     ],
     "etf_stocks": [
