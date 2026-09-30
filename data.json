@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-30 16:08:49",
+    "update_time": "2026-09-30 18:55:38",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -247,6 +247,32 @@
             "countdown": 6,
             "price": 197.5,
             "change": 9.72
+        },
+        {
+            "market": "上市",
+            "code": "3016",
+            "name": "嘉晶",
+            "publish_date": "*115/09/30",
+            "period": "115/10/01～115/10/12",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/12",
+            "countdown": 12,
+            "price": 169.0,
+            "change": -2.03
+        },
+        {
+            "market": "上市",
+            "code": "3055",
+            "name": "蔚華科",
+            "publish_date": "*115/09/30",
+            "period": "115/10/01～115/10/12",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/10/12",
+            "countdown": 12,
+            "price": 209.5,
+            "change": 2.95
         }
     ],
     "exited_stocks": [
