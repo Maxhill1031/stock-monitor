@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-01 16:28:34",
+    "update_time": "2026-10-01 19:24:35",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -208,6 +208,45 @@
             "countdown": 6,
             "price": 131.5,
             "change": 0.0
+        },
+        {
+            "market": "上市",
+            "code": "2030",
+            "name": "彰源",
+            "publish_date": "*115/10/01",
+            "period": "115/10/02～115/10/08",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/08",
+            "countdown": 7,
+            "price": 37.65,
+            "change": 2.59
+        },
+        {
+            "market": "上櫃",
+            "code": "8084",
+            "name": "巨虹",
+            "publish_date": "",
+            "period": "115/10/02~115/10/08",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/08",
+            "countdown": 7,
+            "price": 24.2,
+            "change": -9.87
+        },
+        {
+            "market": "上櫃",
+            "code": "8227",
+            "name": "巨有科技",
+            "publish_date": "",
+            "period": "115/10/02~115/10/08",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/08",
+            "countdown": 7,
+            "price": 363.5,
+            "change": -1.89
         },
         {
             "market": "上市",
