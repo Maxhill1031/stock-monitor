@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-05 16:33:36",
+    "update_time": "2026-10-05 20:04:31",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -234,6 +234,84 @@
             "countdown": 7,
             "price": 186.0,
             "change": -1.06
+        },
+        {
+            "market": "上市",
+            "code": "2033",
+            "name": "佳大",
+            "publish_date": "*115/10/05",
+            "period": "115/10/06～115/10/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 8,
+            "price": 51.0,
+            "change": -0.39
+        },
+        {
+            "market": "上市",
+            "code": "6533",
+            "name": "晶心科",
+            "publish_date": "*115/10/05",
+            "period": "115/10/06～115/10/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 8,
+            "price": 336.0,
+            "change": -4.55
+        },
+        {
+            "market": "上市",
+            "code": "6672",
+            "name": "騰輝電子-KY",
+            "publish_date": "*115/10/05",
+            "period": "115/10/06～115/10/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 8,
+            "price": 451.0,
+            "change": 2.73
+        },
+        {
+            "market": "上市",
+            "code": "8201",
+            "name": "無敵",
+            "publish_date": "*115/10/05",
+            "period": "115/10/06～115/10/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 8,
+            "price": 16.35,
+            "change": -4.39
+        },
+        {
+            "market": "上櫃",
+            "code": "3455",
+            "name": "由田",
+            "publish_date": "",
+            "period": "115/10/06~115/10/13",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 8,
+            "price": 283.5,
+            "change": 1.25
+        },
+        {
+            "market": "上櫃",
+            "code": "6708",
+            "name": "天擎",
+            "publish_date": "",
+            "period": "115/10/06~115/10/13",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 8,
+            "price": 68.6,
+            "change": 9.94
         }
     ],
     "exited_stocks": [
