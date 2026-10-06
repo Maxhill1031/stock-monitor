@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-06 16:41:10",
+    "update_time": "2026-10-06 19:49:33",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -52,19 +52,6 @@
             "countdown": 2,
             "price": 37.25,
             "change": 0.95
-        },
-        {
-            "market": "上櫃",
-            "code": "8084",
-            "name": "巨虹",
-            "publish_date": "",
-            "period": "115/10/02~115/10/08",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/08",
-            "countdown": 2,
-            "price": 17.7,
-            "change": -9.92
         },
         {
             "market": "上櫃",
@@ -234,6 +221,71 @@
             "countdown": 7,
             "price": 72.9,
             "change": 6.27
+        },
+        {
+            "market": "上市",
+            "code": "3094",
+            "name": "聯傑",
+            "publish_date": "*115/10/06",
+            "period": "115/10/07～115/10/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/14",
+            "countdown": 8,
+            "price": 69.2,
+            "change": 0.29
+        },
+        {
+            "market": "上市",
+            "code": "3518",
+            "name": "柏騰",
+            "publish_date": "*115/10/06",
+            "period": "115/10/07～115/10/14",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/14",
+            "countdown": 8,
+            "price": 50.3,
+            "change": 3.18
+        },
+        {
+            "market": "上櫃",
+            "code": "4556",
+            "name": "旭然",
+            "publish_date": "",
+            "period": "115/10/07~115/10/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/14",
+            "countdown": 8,
+            "price": 137.5,
+            "change": 9.56
+        },
+        {
+            "market": "上櫃",
+            "code": "5013",
+            "name": "強新",
+            "publish_date": "",
+            "period": "115/10/07~115/10/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/14",
+            "countdown": 8,
+            "price": 47.95,
+            "change": -6.89
+        },
+        {
+            "market": "上櫃",
+            "code": "8084",
+            "name": "巨虹",
+            "publish_date": "",
+            "period": "115/10/07~115/10/14",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/14",
+            "countdown": 8,
+            "price": 17.7,
+            "change": -9.92
         }
     ],
     "exited_stocks": [
