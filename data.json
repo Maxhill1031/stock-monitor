@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-10-09 10:49:04",
+    "update_time": "2026-10-09 15:18:22",
     "disposal_stocks": [
-        {
-            "market": "上櫃",
-            "code": "5475",
-            "name": "德宏",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 203.0,
-            "change": 5.18
-        },
-        {
-            "market": "上櫃",
-            "code": "6708",
-            "name": "天擎",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 69.2,
-            "change": 1.02
-        },
         {
             "market": "上市",
             "code": "3016",
@@ -143,6 +117,19 @@
             "countdown": 4,
             "price": 284.0,
             "change": 1.07
+        },
+        {
+            "market": "上櫃",
+            "code": "6708",
+            "name": "天擎",
+            "publish_date": "",
+            "period": "115/10/06~115/10/13",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "115/10/13",
+            "countdown": 4,
+            "price": 69.2,
+            "change": 1.02
         },
         {
             "market": "上市",
@@ -394,6 +381,20 @@
             "price": 335.0,
             "change": -9.95,
             "exit_date": "2026-10-08"
+        },
+        {
+            "market": "上櫃",
+            "code": "5475",
+            "name": "德宏",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 203.0,
+            "change": 5.18,
+            "exit_date": "2026-10-09"
         },
         {
             "market": "上市",
