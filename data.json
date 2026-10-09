@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-09 19:41:15",
+    "update_time": "2026-10-10 01:09:51",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -10,7 +10,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/12",
-            "countdown": 3,
+            "countdown": 2,
             "price": 183.5,
             "change": -5.9
         },
@@ -23,7 +23,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/12",
-            "countdown": 3,
+            "countdown": 2,
             "price": 223.0,
             "change": 0.0
         },
@@ -36,7 +36,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/12",
-            "countdown": 3,
+            "countdown": 2,
             "price": 1055.0,
             "change": 2.93
         },
@@ -49,7 +49,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/12",
-            "countdown": 3,
+            "countdown": 2,
             "price": 1710.0,
             "change": 3.95
         },
@@ -62,7 +62,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/12",
-            "countdown": 3,
+            "countdown": 2,
             "price": 192.0,
             "change": 1.32
         },
@@ -75,7 +75,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/13",
-            "countdown": 4,
+            "countdown": 3,
             "price": 52.2,
             "change": -1.88
         },
@@ -88,7 +88,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/13",
-            "countdown": 4,
+            "countdown": 3,
             "price": 352.5,
             "change": 1.59
         },
@@ -101,7 +101,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/13",
-            "countdown": 4,
+            "countdown": 3,
             "price": 16.85,
             "change": 0.6
         },
@@ -114,7 +114,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/13",
-            "countdown": 4,
+            "countdown": 3,
             "price": 284.0,
             "change": 1.07
         },
@@ -127,7 +127,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/13",
-            "countdown": 4,
+            "countdown": 3,
             "price": 69.2,
             "change": 1.02
         },
@@ -140,7 +140,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/14",
-            "countdown": 5,
+            "countdown": 4,
             "price": 69.3,
             "change": 2.67
         },
@@ -153,7 +153,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/14",
-            "countdown": 5,
+            "countdown": 4,
             "price": 49.5,
             "change": -1.59
         },
@@ -166,7 +166,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/14",
-            "countdown": 5,
+            "countdown": 4,
             "price": 145.0,
             "change": 0.0
         },
@@ -179,7 +179,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/14",
-            "countdown": 5,
+            "countdown": 4,
             "price": 53.0,
             "change": 0.57
         },
@@ -192,7 +192,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/14",
-            "countdown": 5,
+            "countdown": 4,
             "price": 14.4,
             "change": -9.72
         },
@@ -205,7 +205,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 61.0,
             "change": 1.33
         },
@@ -218,7 +218,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 198.5,
             "change": 9.97
         },
@@ -231,7 +231,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 63.0,
             "change": 3.11
         },
@@ -244,7 +244,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 448.0,
             "change": 0.9
         },
@@ -257,7 +257,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 53.7,
             "change": 3.07
         },
@@ -270,7 +270,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 367.0,
             "change": 9.88
         },
@@ -283,7 +283,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 33.3,
             "change": 9.9
         },
@@ -296,7 +296,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/15",
-            "countdown": 6,
+            "countdown": 5,
             "price": 535.0,
             "change": -2.55
         },
@@ -309,7 +309,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/16",
-            "countdown": 7,
+            "countdown": 6,
             "price": 555.0,
             "change": 9.9
         },
@@ -322,7 +322,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/16",
-            "countdown": 7,
+            "countdown": 6,
             "price": 557.0,
             "change": 0.18
         },
@@ -335,7 +335,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/10/19",
-            "countdown": 10,
+            "countdown": 9,
             "price": 806.0,
             "change": 1.26
         },
@@ -348,7 +348,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/19",
-            "countdown": 10,
+            "countdown": 9,
             "price": 249.5,
             "change": 0.2
         }
@@ -363,7 +363,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/08",
-            "countdown": -1,
+            "countdown": -2,
             "price": 14.4,
             "change": -9.72,
             "exit_date": "2026-10-08"
@@ -377,7 +377,7 @@
             "reason": "",
             "level": "5分盤",
             "end_date": "115/10/08",
-            "countdown": -1,
+            "countdown": -2,
             "price": 335.0,
             "change": -9.95,
             "exit_date": "2026-10-08"
