@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-12 16:46:16",
+    "update_time": "2026-10-12 20:48:11",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -52,6 +52,32 @@
             "countdown": 0,
             "price": 1720.0,
             "change": 0.58
+        },
+        {
+            "market": "上櫃",
+            "code": "5228",
+            "name": "鈺鎧",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 59.6,
+            "change": -2.77
+        },
+        {
+            "market": "上櫃",
+            "code": "8084",
+            "name": "巨虹",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 15.8,
+            "change": 9.72
         },
         {
             "market": "上櫃",
@@ -197,19 +223,6 @@
             "change": -10.0
         },
         {
-            "market": "上櫃",
-            "code": "8084",
-            "name": "巨虹",
-            "publish_date": "",
-            "period": "115/10/07~115/10/14",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/14",
-            "countdown": 2,
-            "price": 15.8,
-            "change": 9.72
-        },
-        {
             "market": "上市",
             "code": "1709",
             "name": "和益",
@@ -338,6 +351,19 @@
             "countdown": 4,
             "price": 553.0,
             "change": -0.72
+        },
+        {
+            "market": "上市",
+            "code": "2492",
+            "name": "華新科",
+            "publish_date": "*115/10/12",
+            "period": "115/10/13～115/10/19",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/19",
+            "countdown": 7,
+            "price": 418.0,
+            "change": -0.48
         },
         {
             "market": "上市",
