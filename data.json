@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-12 10:07:59",
+    "update_time": "2026-10-12 15:14:17",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/10/12",
             "countdown": 0,
-            "price": 1065.0,
-            "change": 0.95
+            "price": 1085.0,
+            "change": 2.84
         },
         {
             "market": "上市",
@@ -50,8 +50,34 @@
             "level": "20分盤",
             "end_date": "115/10/12",
             "countdown": 0,
-            "price": 1670.0,
-            "change": -2.34
+            "price": 1720.0,
+            "change": 0.58
+        },
+        {
+            "market": "上櫃",
+            "code": "5475",
+            "name": "德宏",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 207.0,
+            "change": 1.97
+        },
+        {
+            "market": "上櫃",
+            "code": "6708",
+            "name": "天擎",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 70.5,
+            "change": 1.88
         },
         {
             "market": "上櫃",
@@ -76,8 +102,8 @@
             "level": "5分盤",
             "end_date": "115/10/13",
             "countdown": 1,
-            "price": 49.95,
-            "change": -4.31
+            "price": 49.5,
+            "change": -5.17
         },
         {
             "market": "上市",
@@ -89,8 +115,8 @@
             "level": "5分盤",
             "end_date": "115/10/13",
             "countdown": 1,
-            "price": 340.0,
-            "change": -3.55
+            "price": 345.0,
+            "change": -2.13
         },
         {
             "market": "上市",
@@ -102,8 +128,8 @@
             "level": "5分盤",
             "end_date": "115/10/13",
             "countdown": 1,
-            "price": 16.05,
-            "change": -4.75
+            "price": 16.8,
+            "change": -0.3
         },
         {
             "market": "上櫃",
@@ -115,21 +141,8 @@
             "level": "5分盤",
             "end_date": "115/10/13",
             "countdown": 1,
-            "price": 290.0,
-            "change": 2.11
-        },
-        {
-            "market": "上櫃",
-            "code": "6708",
-            "name": "天擎",
-            "publish_date": "",
-            "period": "115/10/06~115/10/13",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/13",
-            "countdown": 1,
-            "price": 68.7,
-            "change": -0.72
+            "price": 291.5,
+            "change": 2.64
         },
         {
             "market": "上市",
@@ -141,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/10/14",
             "countdown": 2,
-            "price": 67.4,
-            "change": -2.74
+            "price": 67.9,
+            "change": -2.02
         },
         {
             "market": "上市",
@@ -154,8 +167,8 @@
             "level": "5分盤",
             "end_date": "115/10/14",
             "countdown": 2,
-            "price": 48.05,
-            "change": -2.93
+            "price": 47.85,
+            "change": -3.33
         },
         {
             "market": "上櫃",
@@ -193,8 +206,8 @@
             "level": "5分盤",
             "end_date": "115/10/14",
             "countdown": 2,
-            "price": 13.0,
-            "change": -9.72
+            "price": 15.8,
+            "change": 9.72
         },
         {
             "market": "上市",
@@ -206,8 +219,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 56.7,
-            "change": -7.05
+            "price": 58.6,
+            "change": -3.93
         },
         {
             "market": "上市",
@@ -219,8 +232,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 217.5,
-            "change": 9.57
+            "price": 218.0,
+            "change": 9.82
         },
         {
             "market": "上市",
@@ -232,8 +245,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 62.2,
-            "change": -1.27
+            "price": 62.1,
+            "change": -1.43
         },
         {
             "market": "上市",
@@ -245,8 +258,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 439.0,
-            "change": -2.01
+            "price": 456.0,
+            "change": 1.79
         },
         {
             "market": "上櫃",
@@ -258,8 +271,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 58.8,
-            "change": 9.5
+            "price": 57.5,
+            "change": 7.08
         },
         {
             "market": "上櫃",
@@ -271,8 +284,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 357.0,
-            "change": -2.72
+            "price": 369.0,
+            "change": 0.54
         },
         {
             "market": "上櫃",
@@ -297,8 +310,8 @@
             "level": "5分盤",
             "end_date": "115/10/15",
             "countdown": 3,
-            "price": 529.0,
-            "change": -1.12
+            "price": 522.0,
+            "change": -2.43
         },
         {
             "market": "上市",
@@ -310,8 +323,8 @@
             "level": "20分盤",
             "end_date": "115/10/16",
             "countdown": 4,
-            "price": 557.0,
-            "change": 0.36
+            "price": 598.0,
+            "change": 7.75
         },
         {
             "market": "上市",
@@ -323,8 +336,8 @@
             "level": "20分盤",
             "end_date": "115/10/16",
             "countdown": 4,
-            "price": 559.0,
-            "change": 0.36
+            "price": 553.0,
+            "change": -0.72
         },
         {
             "market": "上市",
@@ -336,8 +349,8 @@
             "level": "5分盤",
             "end_date": "115/10/19",
             "countdown": 7,
-            "price": 811.0,
-            "change": 0.62
+            "price": 812.0,
+            "change": 0.74
         },
         {
             "market": "上櫃",
@@ -349,25 +362,11 @@
             "level": "5分盤",
             "end_date": "115/10/19",
             "countdown": 7,
-            "price": 244.0,
-            "change": -2.2
+            "price": 243.5,
+            "change": -2.4
         }
     ],
     "exited_stocks": [
-        {
-            "market": "上櫃",
-            "code": "8084",
-            "name": "巨虹",
-            "publish_date": "",
-            "period": "115/10/02~115/10/08",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/08",
-            "countdown": -4,
-            "price": 13.0,
-            "change": -9.72,
-            "exit_date": "2026-10-08"
-        },
         {
             "market": "上櫃",
             "code": "8227",
@@ -381,20 +380,6 @@
             "price": 319.5,
             "change": -4.63,
             "exit_date": "2026-10-08"
-        },
-        {
-            "market": "上櫃",
-            "code": "5475",
-            "name": "德宏",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 203.0,
-            "change": 5.18,
-            "exit_date": "2026-10-09"
         },
         {
             "market": "上市",
