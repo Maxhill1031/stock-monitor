@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-13 17:04:23",
+    "update_time": "2026-10-13 20:29:03",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -39,6 +39,58 @@
             "countdown": 0,
             "price": 15.6,
             "change": -7.14
+        },
+        {
+            "market": "上櫃",
+            "code": "3265",
+            "name": "台星科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 266.0,
+            "change": 1.53
+        },
+        {
+            "market": "上櫃",
+            "code": "3597",
+            "name": "映興",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 48.6,
+            "change": 9.95
+        },
+        {
+            "market": "上櫃",
+            "code": "5205",
+            "name": "中茂",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 38.55,
+            "change": 5.33
+        },
+        {
+            "market": "上櫃",
+            "code": "7772",
+            "name": "耀穎",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 125.0,
+            "change": -5.3
         },
         {
             "market": "上櫃",
@@ -172,19 +224,6 @@
         },
         {
             "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/10/07",
-            "period": "115/10/08～115/10/15",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/10/15",
-            "countdown": 2,
-            "price": 237.0,
-            "change": 8.72
-        },
-        {
-            "market": "上市",
             "code": "3701",
             "name": "大眾控",
             "publish_date": "115/10/07",
@@ -234,19 +273,6 @@
             "countdown": 2,
             "price": 370.0,
             "change": 0.27
-        },
-        {
-            "market": "上櫃",
-            "code": "5205",
-            "name": "中茂",
-            "publish_date": "",
-            "period": "115/10/08~115/10/15",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/15",
-            "countdown": 2,
-            "price": 38.55,
-            "change": 5.33
         },
         {
             "market": "上櫃",
@@ -325,6 +351,32 @@
             "countdown": 6,
             "price": 229.5,
             "change": -5.75
+        },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "*115/10/13",
+            "period": "115/10/14～115/10/20",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/10/20",
+            "countdown": 7,
+            "price": 237.0,
+            "change": 8.72
+        },
+        {
+            "market": "上市",
+            "code": "9103",
+            "name": "美德醫療-DR",
+            "publish_date": "*115/10/13",
+            "period": "115/10/14～115/10/20",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/20",
+            "countdown": 7,
+            "price": 7.02,
+            "change": 8.67
         }
     ],
     "exited_stocks": [
