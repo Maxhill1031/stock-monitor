@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-15 17:38:09",
+    "update_time": "2026-10-15 23:18:34",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -39,6 +39,19 @@
             "countdown": 0,
             "price": 463.0,
             "change": -2.11
+        },
+        {
+            "market": "上櫃",
+            "code": "8111",
+            "name": "立碁",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 82.0,
+            "change": -4.65
         },
         {
             "market": "上櫃",
@@ -273,6 +286,19 @@
             "countdown": 5,
             "price": 6.03,
             "change": -4.59
+        },
+        {
+            "market": "上市",
+            "code": "2424",
+            "name": "隴華",
+            "publish_date": "*115/10/15",
+            "period": "115/10/16～115/10/22",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/10/22",
+            "countdown": 7,
+            "price": 14.2,
+            "change": 9.65
         }
     ],
     "exited_stocks": [
