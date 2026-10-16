@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-16 13:44:14",
+    "update_time": "2026-10-16 14:49:00",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "20分盤",
             "end_date": "115/10/16",
             "countdown": 0,
-            "price": 587.0,
-            "change": 2.98
+            "price": 591.0,
+            "change": 3.68
         },
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "20分盤",
             "end_date": "115/10/16",
             "countdown": 0,
-            "price": 495.0,
-            "change": -2.17
+            "price": 494.0,
+            "change": -2.37
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 82.8,
-            "change": 0.98
+            "price": 83.2,
+            "change": 1.46
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 264.0,
-            "change": -5.04
+            "price": 269.0,
+            "change": -3.24
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 51.3,
-            "change": 6.65
+            "price": 51.2,
+            "change": 6.44
         },
         {
             "market": "上櫃",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 55.4,
-            "change": -1.25
+            "price": 55.9,
+            "change": -0.36
         },
         {
             "market": "上櫃",
@@ -115,8 +115,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 14.0,
-            "change": 4.09
+            "price": 13.95,
+            "change": 3.72
         },
         {
             "market": "上櫃",
@@ -128,8 +128,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 200.0,
-            "change": 3.63
+            "price": 198.5,
+            "change": 2.85
         },
         {
             "market": "上櫃",
@@ -141,8 +141,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 56.9,
-            "change": -2.23
+            "price": 55.0,
+            "change": -5.5
         },
         {
             "market": "上市",
@@ -154,8 +154,8 @@
             "level": "5分盤",
             "end_date": "115/10/19",
             "countdown": 3,
-            "price": 396.0,
-            "change": -2.34
+            "price": 395.0,
+            "change": -2.59
         },
         {
             "market": "上市",
@@ -167,8 +167,8 @@
             "level": "5分盤",
             "end_date": "115/10/19",
             "countdown": 3,
-            "price": 776.0,
-            "change": -2.88
+            "price": 774.0,
+            "change": -3.13
         },
         {
             "market": "上櫃",
@@ -180,8 +180,8 @@
             "level": "5分盤",
             "end_date": "115/10/19",
             "countdown": 3,
-            "price": 236.0,
-            "change": 4.66
+            "price": 237.5,
+            "change": 5.32
         },
         {
             "market": "上市",
@@ -206,8 +206,8 @@
             "level": "5分盤",
             "end_date": "115/10/20",
             "countdown": 4,
-            "price": 5.98,
-            "change": -0.83
+            "price": 6.01,
+            "change": -0.33
         },
         {
             "market": "上市",
@@ -250,20 +250,6 @@
             "countdown": -1,
             "price": 376.5,
             "change": 2.17,
-            "exit_date": "2026-10-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "5205",
-            "name": "中茂",
-            "publish_date": "",
-            "period": "115/10/08~115/10/15",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/15",
-            "countdown": -1,
-            "price": 28.15,
-            "change": -9.92,
             "exit_date": "2026-10-15"
         },
         {
