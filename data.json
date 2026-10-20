@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-20 15:16:16",
+    "update_time": "2026-10-20 17:49:25",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -159,19 +159,6 @@
         },
         {
             "market": "上市",
-            "code": "2424",
-            "name": "隴華",
-            "publish_date": "115/10/15",
-            "period": "115/10/16～115/10/22",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/10/22",
-            "countdown": 2,
-            "price": 15.05,
-            "change": -0.66
-        },
-        {
-            "market": "上市",
             "code": "3055",
             "name": "蔚華科",
             "publish_date": "115/10/16",
@@ -195,6 +182,19 @@
             "countdown": 7,
             "price": 971.0,
             "change": -1.82
+        },
+        {
+            "market": "上市",
+            "code": "2424",
+            "name": "隴華",
+            "publish_date": "*115/10/20",
+            "period": "115/10/21～115/10/28",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/10/28",
+            "countdown": 8,
+            "price": 15.05,
+            "change": -0.66
         }
     ],
     "exited_stocks": [
