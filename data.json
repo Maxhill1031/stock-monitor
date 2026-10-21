@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-21 13:54:27",
+    "update_time": "2026-10-21 15:12:45",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -106,45 +106,6 @@
             "change": 4.16
         },
         {
-            "market": "上櫃",
-            "code": "3265",
-            "name": "台星科",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 249.0,
-            "change": 0.4
-        },
-        {
-            "market": "上櫃",
-            "code": "5205",
-            "name": "中茂",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 22.4,
-            "change": -3.45
-        },
-        {
-            "market": "上櫃",
-            "code": "7772",
-            "name": "耀穎",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 116.5,
-            "change": 0.0
-        },
-        {
             "market": "上市",
             "code": "3055",
             "name": "蔚華科",
@@ -185,6 +146,48 @@
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3265",
+            "name": "台星科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 249.0,
+            "change": 0.4,
+            "exit_date": "2026-10-21"
+        },
+        {
+            "market": "上櫃",
+            "code": "5205",
+            "name": "中茂",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 22.4,
+            "change": -3.45,
+            "exit_date": "2026-10-21"
+        },
+        {
+            "market": "上櫃",
+            "code": "7772",
+            "name": "耀穎",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 116.5,
+            "change": 0.0,
+            "exit_date": "2026-10-21"
+        },
         {
             "market": "上市",
             "code": "2466",
