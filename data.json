@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-10-20 23:20:36",
+    "update_time": "2026-10-21 09:20:55",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/10/13",
-            "period": "115/10/14～115/10/20",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/10/20",
-            "countdown": 0,
-            "price": 226.0,
-            "change": 0.0
-        },
-        {
-            "market": "上市",
-            "code": "9103",
-            "name": "美德醫療-DR",
-            "publish_date": "115/10/13",
-            "period": "115/10/14～115/10/20",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/10/20",
-            "countdown": 0,
-            "price": 5.73,
-            "change": 0.17
-        },
         {
             "market": "上櫃",
             "code": "3354",
@@ -37,8 +11,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 50.5,
-            "change": 9.9
+            "price": 55.2,
+            "change": 9.31
         },
         {
             "market": "上櫃",
@@ -50,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 95.7,
-            "change": 5.51
+            "price": 97.0,
+            "change": 1.36
         },
         {
             "market": "上櫃",
@@ -76,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 23.45,
-            "change": 9.84
+            "price": 25.2,
+            "change": 7.46
         },
         {
             "market": "上櫃",
@@ -89,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 70.3,
-            "change": 7.33
+            "price": 68.6,
+            "change": -2.42
         },
         {
             "market": "上櫃",
@@ -103,7 +77,7 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 49.3,
-            "change": 6.94
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -115,8 +89,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 470.0,
-            "change": -2.08
+            "price": 488.0,
+            "change": 3.83
         },
         {
             "market": "上櫃",
@@ -128,8 +102,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 79.3,
-            "change": 0.0
+            "price": 81.1,
+            "change": 2.27
         },
         {
             "market": "上櫃",
@@ -141,8 +115,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 248.0,
-            "change": -1.2
+            "price": 254.5,
+            "change": 2.62
         },
         {
             "market": "上櫃",
@@ -154,8 +128,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 23.2,
-            "change": -8.48
+            "price": 23.25,
+            "change": 0.22
         },
         {
             "market": "上櫃",
@@ -167,8 +141,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 116.5,
-            "change": -7.17
+            "price": 119.0,
+            "change": 2.15
         },
         {
             "market": "上市",
@@ -179,9 +153,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/23",
-            "countdown": 3,
-            "price": 144.5,
-            "change": -1.37
+            "countdown": 2,
+            "price": 149.0,
+            "change": 3.11
         },
         {
             "market": "上市",
@@ -192,25 +166,53 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/27",
-            "countdown": 7,
-            "price": 971.0,
-            "change": -1.82
+            "countdown": 6,
+            "price": 1000.0,
+            "change": 2.99
         },
         {
             "market": "上市",
             "code": "2424",
             "name": "隴華",
-            "publish_date": "*115/10/20",
+            "publish_date": "115/10/20",
             "period": "115/10/21～115/10/28",
             "reason": "人工管制撮合",
             "level": "5分盤",
             "end_date": "115/10/28",
-            "countdown": 8,
-            "price": 15.05,
-            "change": -0.66
+            "countdown": 7,
+            "price": 15.75,
+            "change": 4.65
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "115/10/13",
+            "period": "115/10/14～115/10/20",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/10/20",
+            "countdown": 0,
+            "price": 237.0,
+            "change": 4.87,
+            "exit_date": "2026-10-21"
+        },
+        {
+            "market": "上市",
+            "code": "9103",
+            "name": "美德醫療-DR",
+            "publish_date": "115/10/13",
+            "period": "115/10/14～115/10/20",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/10/20",
+            "countdown": 0,
+            "price": 5.7,
+            "change": -0.52,
+            "exit_date": "2026-10-21"
+        },
         {
             "market": "上櫃",
             "code": "5228",
@@ -338,48 +340,6 @@
             "exit_date": "2026-10-19"
         },
         {
-            "market": "上櫃",
-            "code": "4174",
-            "name": "浩鼎",
-            "publish_date": "",
-            "period": "115/10/08~115/10/15",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/15",
-            "countdown": -1,
-            "price": 57.0,
-            "change": -4.84,
-            "exit_date": "2026-10-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "4760",
-            "name": "勤凱",
-            "publish_date": "",
-            "period": "115/10/08~115/10/15",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/15",
-            "countdown": -1,
-            "price": 376.5,
-            "change": 2.17,
-            "exit_date": "2026-10-15"
-        },
-        {
-            "market": "上櫃",
-            "code": "8358",
-            "name": "金居",
-            "publish_date": "",
-            "period": "115/10/08~115/10/15",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "115/10/15",
-            "countdown": -1,
-            "price": 472.5,
-            "change": 2.38,
-            "exit_date": "2026-10-15"
-        },
-        {
             "market": "上市",
             "code": "1709",
             "name": "和益",
@@ -420,34 +380,6 @@
             "price": 463.0,
             "change": -2.11,
             "exit_date": "2026-10-16"
-        },
-        {
-            "market": "上市",
-            "code": "3094",
-            "name": "聯傑",
-            "publish_date": "115/10/06",
-            "period": "115/10/07～115/10/14",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/10/14",
-            "countdown": 0,
-            "price": 65.3,
-            "change": -2.68,
-            "exit_date": "2026-10-15"
-        },
-        {
-            "market": "上市",
-            "code": "3518",
-            "name": "柏騰",
-            "publish_date": "115/10/06",
-            "period": "115/10/07～115/10/14",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/10/14",
-            "countdown": 0,
-            "price": 46.05,
-            "change": 1.88,
-            "exit_date": "2026-10-15"
         }
     ],
     "etf_stocks": [
