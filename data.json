@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-10-21 17:51:11",
+    "update_time": "2026-10-21 23:34:10",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3287",
+            "name": "廣寰科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 70.1,
+            "change": -0.28
+        },
         {
             "market": "上櫃",
             "code": "3354",
@@ -52,19 +65,6 @@
             "countdown": 0,
             "price": 25.75,
             "change": 9.81
-        },
-        {
-            "market": "上櫃",
-            "code": "3287",
-            "name": "廣寰科",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 70.1,
-            "change": -0.28
         },
         {
             "market": "上櫃",
