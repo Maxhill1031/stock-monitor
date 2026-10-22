@@ -1,6 +1,58 @@
 {
-    "update_time": "2026-10-22 17:51:49",
+    "update_time": "2026-10-22 23:35:44",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4542",
+            "name": "科嶠",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 345.0,
+            "change": -9.92
+        },
+        {
+            "market": "上櫃",
+            "code": "5205",
+            "name": "中茂",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 24.6,
+            "change": 9.82
+        },
+        {
+            "market": "上櫃",
+            "code": "8358",
+            "name": "金居",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 438.5,
+            "change": -9.02
+        },
+        {
+            "market": "上櫃",
+            "code": "8437",
+            "name": "大地-KY",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 16.1,
+            "change": -3.59
+        },
         {
             "market": "上櫃",
             "code": "3287",
@@ -158,20 +210,6 @@
             "countdown": 0,
             "price": 249.0,
             "change": 0.4,
-            "exit_date": "2026-10-21"
-        },
-        {
-            "market": "上櫃",
-            "code": "5205",
-            "name": "中茂",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 22.4,
-            "change": -3.45,
             "exit_date": "2026-10-21"
         },
         {
