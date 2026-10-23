@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-10-22 23:35:44",
+    "update_time": "2026-10-23 09:16:54",
     "disposal_stocks": [
+        {
+            "market": "上市",
+            "code": "3055",
+            "name": "蔚華科",
+            "publish_date": "115/10/16",
+            "period": "115/10/19～115/10/23",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/10/23",
+            "countdown": 0,
+            "price": 143.0,
+            "change": -6.54
+        },
         {
             "market": "上櫃",
             "code": "4542",
@@ -159,19 +172,6 @@
         },
         {
             "market": "上市",
-            "code": "3055",
-            "name": "蔚華科",
-            "publish_date": "115/10/16",
-            "period": "115/10/19～115/10/23",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/10/23",
-            "countdown": 1,
-            "price": 143.0,
-            "change": -6.54
-        },
-        {
-            "market": "上市",
             "code": "3167",
             "name": "大量",
             "publish_date": "115/10/19",
@@ -179,7 +179,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/10/27",
-            "countdown": 5,
+            "countdown": 4,
             "price": 924.0,
             "change": -7.6
         },
@@ -192,7 +192,7 @@
             "reason": "人工管制撮合",
             "level": "5分盤",
             "end_date": "115/10/28",
-            "countdown": 6,
+            "countdown": 5,
             "price": 13.45,
             "change": -9.73
         }
