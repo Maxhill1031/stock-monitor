@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-23 13:55:05",
+    "update_time": "2026-10-23 15:06:51",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -158,19 +158,6 @@
             "change": -7.79
         },
         {
-            "market": "上櫃",
-            "code": "8111",
-            "name": "立碁",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 77.4,
-            "change": -6.3
-        },
-        {
             "market": "上市",
             "code": "3167",
             "name": "大量",
@@ -198,6 +185,20 @@
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "8111",
+            "name": "立碁",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 77.4,
+            "change": -6.3,
+            "exit_date": "2026-10-23"
+        },
         {
             "market": "上櫃",
             "code": "3265",
