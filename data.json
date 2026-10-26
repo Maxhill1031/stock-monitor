@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-10-26 18:47:21",
+    "update_time": "2026-10-27 00:56:58",
     "disposal_stocks": [
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "115/10/19",
+            "period": "115/10/20～115/10/27",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/10/27",
+            "countdown": 0,
+            "price": 924.0,
+            "change": -7.6
+        },
         {
             "market": "上櫃",
             "code": "3287",
@@ -107,19 +120,6 @@
         },
         {
             "market": "上市",
-            "code": "3167",
-            "name": "大量",
-            "publish_date": "115/10/19",
-            "period": "115/10/20～115/10/27",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/10/27",
-            "countdown": 1,
-            "price": 924.0,
-            "change": -7.6
-        },
-        {
-            "market": "上市",
             "code": "2424",
             "name": "隴華",
             "publish_date": "115/10/20",
@@ -127,7 +127,7 @@
             "reason": "人工管制撮合",
             "level": "5分盤",
             "end_date": "115/10/28",
-            "countdown": 2,
+            "countdown": 1,
             "price": 13.45,
             "change": -9.73
         }
@@ -202,62 +202,6 @@
             "price": 16.1,
             "change": -3.59,
             "exit_date": "2026-10-23"
-        },
-        {
-            "market": "上櫃",
-            "code": "3265",
-            "name": "台星科",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 249.0,
-            "change": 0.4,
-            "exit_date": "2026-10-21"
-        },
-        {
-            "market": "上櫃",
-            "code": "7772",
-            "name": "耀穎",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 116.5,
-            "change": 0.0,
-            "exit_date": "2026-10-21"
-        },
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/10/13",
-            "period": "115/10/14～115/10/20",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/10/20",
-            "countdown": 0,
-            "price": 237.0,
-            "change": 4.87,
-            "exit_date": "2026-10-21"
-        },
-        {
-            "market": "上市",
-            "code": "9103",
-            "name": "美德醫療-DR",
-            "publish_date": "115/10/13",
-            "period": "115/10/14～115/10/20",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/10/20",
-            "countdown": 0,
-            "price": 5.7,
-            "change": -0.52,
-            "exit_date": "2026-10-21"
         }
     ],
     "etf_stocks": [
