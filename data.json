@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-27 15:26:50",
+    "update_time": "2026-10-27 18:13:40",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,6 +13,58 @@
             "countdown": 0,
             "price": 960.0,
             "change": 3.9
+        },
+        {
+            "market": "上櫃",
+            "code": "3354",
+            "name": "律勝",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 50.1,
+            "change": 0.3
+        },
+        {
+            "market": "上櫃",
+            "code": "5475",
+            "name": "德宏",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 183.0,
+            "change": -6.63
+        },
+        {
+            "market": "上櫃",
+            "code": "6751",
+            "name": "智聯服務",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 77.2,
+            "change": 9.82
+        },
+        {
+            "market": "上櫃",
+            "code": "6925",
+            "name": "意藍",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 111.5,
+            "change": 9.85
         },
         {
             "market": "上櫃",
@@ -78,19 +130,6 @@
             "countdown": 0,
             "price": 61.0,
             "change": -3.33
-        },
-        {
-            "market": "上櫃",
-            "code": "3354",
-            "name": "律勝",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 50.1,
-            "change": 0.3
         },
         {
             "market": "上櫃",
