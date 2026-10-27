@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-27 09:50:58",
+    "update_time": "2026-10-27 14:09:08",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,60 @@
             "level": "20分盤",
             "end_date": "115/10/27",
             "countdown": 0,
-            "price": 922.0,
-            "change": -0.22
+            "price": 960.0,
+            "change": 3.9
+        },
+        {
+            "market": "上櫃",
+            "code": "4542",
+            "name": "科嶠",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 358.0,
+            "change": 3.77
+        },
+        {
+            "market": "上櫃",
+            "code": "5205",
+            "name": "中茂",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 22.15,
+            "change": -9.96
+        },
+        {
+            "market": "上櫃",
+            "code": "8358",
+            "name": "金居",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 420.5,
+            "change": -4.1
+        },
+        {
+            "market": "上櫃",
+            "code": "8437",
+            "name": "大地-KY",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 16.1,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -24,8 +76,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 62.3,
-            "change": -1.27
+            "price": 61.0,
+            "change": -3.33
         },
         {
             "market": "上櫃",
@@ -37,8 +89,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 49.55,
-            "change": -0.8
+            "price": 50.1,
+            "change": 0.3
         },
         {
             "market": "上櫃",
@@ -50,73 +102,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 92.3,
-            "change": -0.75
-        },
-        {
-            "market": "上櫃",
-            "code": "2221",
-            "name": "大甲",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 126.0,
-            "change": -2.33
-        },
-        {
-            "market": "上櫃",
-            "code": "3230",
-            "name": "錦明",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 27.15,
-            "change": 0.0
-        },
-        {
-            "market": "上櫃",
-            "code": "3597",
-            "name": "映興",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 43.9,
-            "change": -6.79
-        },
-        {
-            "market": "上櫃",
-            "code": "4979",
-            "name": "華星光",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 461.5,
-            "change": 2.56
-        },
-        {
-            "market": "上櫃",
-            "code": "8111",
-            "name": "立碁",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 76.8,
-            "change": -0.78
+            "price": 90.6,
+            "change": -2.58
         },
         {
             "market": "上市",
@@ -128,11 +115,81 @@
             "level": "5分盤",
             "end_date": "115/10/28",
             "countdown": 1,
-            "price": 12.3,
-            "change": -8.55
+            "price": 12.35,
+            "change": -8.18
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "2221",
+            "name": "大甲",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 132.0,
+            "change": 2.33,
+            "exit_date": "2026-10-27"
+        },
+        {
+            "market": "上櫃",
+            "code": "3230",
+            "name": "錦明",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 25.7,
+            "change": -5.34,
+            "exit_date": "2026-10-27"
+        },
+        {
+            "market": "上櫃",
+            "code": "3597",
+            "name": "映興",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 42.4,
+            "change": -9.98,
+            "exit_date": "2026-10-27"
+        },
+        {
+            "market": "上櫃",
+            "code": "4979",
+            "name": "華星光",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 467.5,
+            "change": 3.89,
+            "exit_date": "2026-10-27"
+        },
+        {
+            "market": "上櫃",
+            "code": "8111",
+            "name": "立碁",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 75.3,
+            "change": -2.71,
+            "exit_date": "2026-10-27"
+        },
         {
             "market": "上市",
             "code": "3055",
@@ -146,62 +203,6 @@
             "price": 143.0,
             "change": -6.54,
             "exit_date": "2026-10-26"
-        },
-        {
-            "market": "上櫃",
-            "code": "4542",
-            "name": "科嶠",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 345.0,
-            "change": -9.92,
-            "exit_date": "2026-10-23"
-        },
-        {
-            "market": "上櫃",
-            "code": "5205",
-            "name": "中茂",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 24.6,
-            "change": 9.82,
-            "exit_date": "2026-10-23"
-        },
-        {
-            "market": "上櫃",
-            "code": "8358",
-            "name": "金居",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 438.5,
-            "change": -9.02,
-            "exit_date": "2026-10-23"
-        },
-        {
-            "market": "上櫃",
-            "code": "8437",
-            "name": "大地-KY",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 16.1,
-            "change": -3.59,
-            "exit_date": "2026-10-23"
         }
     ],
     "etf_stocks": [
