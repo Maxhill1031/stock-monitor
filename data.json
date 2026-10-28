@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-28 16:00:04",
+    "update_time": "2026-10-28 19:01:11",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,6 +13,19 @@
             "countdown": 0,
             "price": 13.55,
             "change": 9.72
+        },
+        {
+            "market": "上櫃",
+            "code": "3441",
+            "name": "聯一光",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 199.5,
+            "change": 1.79
         },
         {
             "market": "上櫃",
