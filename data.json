@@ -1,18 +1,18 @@
 {
-    "update_time": "2026-10-27 23:59:44",
+    "update_time": "2026-10-28 10:02:30",
     "disposal_stocks": [
         {
             "market": "上市",
-            "code": "3167",
-            "name": "大量",
-            "publish_date": "115/10/19",
-            "period": "115/10/20～115/10/27",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/10/27",
+            "code": "2424",
+            "name": "隴華",
+            "publish_date": "115/10/20",
+            "period": "115/10/21～115/10/28",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/10/28",
             "countdown": 0,
-            "price": 960.0,
-            "change": 3.9
+            "price": 13.55,
+            "change": 9.72
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 50.1,
-            "change": 0.3
+            "price": 49.5,
+            "change": -1.2
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 183.0,
-            "change": -6.63
+            "price": 176.0,
+            "change": -3.83
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 77.2,
-            "change": 9.82
+            "price": 81.0,
+            "change": 4.92
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 111.5,
-            "change": 9.85
+            "price": 119.5,
+            "change": 7.17
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 358.0,
-            "change": 3.77
+            "price": 370.5,
+            "change": 3.49
         },
         {
             "market": "上櫃",
@@ -90,7 +90,7 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 22.15,
-            "change": -9.96
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 420.5,
-            "change": -4.1
+            "price": 431.0,
+            "change": 2.5
         },
         {
             "market": "上櫃",
@@ -115,8 +115,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 16.1,
-            "change": 0.0
+            "price": 16.3,
+            "change": 1.24
         },
         {
             "market": "上櫃",
@@ -128,8 +128,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 61.0,
-            "change": -3.33
+            "price": 63.6,
+            "change": 4.26
         },
         {
             "market": "上櫃",
@@ -141,24 +141,25 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 90.6,
-            "change": -2.58
-        },
-        {
-            "market": "上市",
-            "code": "2424",
-            "name": "隴華",
-            "publish_date": "115/10/20",
-            "period": "115/10/21～115/10/28",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/10/28",
-            "countdown": 1,
-            "price": 12.35,
-            "change": -8.18
+            "price": 92.7,
+            "change": 2.32
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "3167",
+            "name": "大量",
+            "publish_date": "115/10/19",
+            "period": "115/10/20～115/10/27",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/10/27",
+            "countdown": 0,
+            "price": 1000.0,
+            "change": 4.17,
+            "exit_date": "2026-10-28"
+        },
         {
             "market": "上櫃",
             "code": "2221",
