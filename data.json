@@ -1,19 +1,6 @@
 {
-    "update_time": "2026-10-28 19:01:11",
+    "update_time": "2026-10-29 00:47:56",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2424",
-            "name": "隴華",
-            "publish_date": "115/10/20",
-            "period": "115/10/21～115/10/28",
-            "reason": "人工管制撮合",
-            "level": "5分盤",
-            "end_date": "115/10/28",
-            "countdown": 0,
-            "price": 13.55,
-            "change": 9.72
-        },
         {
             "market": "上櫃",
             "code": "3441",
@@ -146,6 +133,20 @@
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "2424",
+            "name": "隴華",
+            "publish_date": "115/10/20",
+            "period": "115/10/21～115/10/28",
+            "reason": "人工管制撮合",
+            "level": "5分盤",
+            "end_date": "115/10/28",
+            "countdown": 0,
+            "price": 13.55,
+            "change": 9.72,
+            "exit_date": "2026-10-29"
+        },
         {
             "market": "上櫃",
             "code": "6716",
