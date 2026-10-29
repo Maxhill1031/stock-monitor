@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-10-29 16:09:53",
+    "update_time": "2026-10-29 19:19:23",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4577",
+            "name": "達航科技",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 130.5,
+            "change": 3.98
+        },
         {
             "market": "上櫃",
             "code": "3441",
@@ -130,6 +143,32 @@
             "countdown": 0,
             "price": 59.9,
             "change": -3.39
+        },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "*115/10/29",
+            "period": "115/10/30～115/11/05",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/05",
+            "countdown": 7,
+            "price": 322.0,
+            "change": 2.06
+        },
+        {
+            "market": "上市",
+            "code": "4526",
+            "name": "東台",
+            "publish_date": "*115/10/29",
+            "period": "115/10/30～115/11/09",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/09",
+            "countdown": 11,
+            "price": 52.8,
+            "change": 6.34
         }
     ],
     "exited_stocks": [
