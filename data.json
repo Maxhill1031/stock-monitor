@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-10-29 00:47:56",
+    "update_time": "2026-10-29 10:10:24",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 199.5,
-            "change": 1.79
+            "price": 184.0,
+            "change": -7.77
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 53.5,
-            "change": 6.79
+            "price": 50.5,
+            "change": -5.61
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 188.5,
-            "change": 3.01
+            "price": 187.0,
+            "change": -0.8
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 82.4,
-            "change": 6.74
+            "price": 80.0,
+            "change": -2.91
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 122.5,
-            "change": 9.87
+            "price": 128.5,
+            "change": 4.9
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 369.0,
-            "change": 3.07
+            "price": 364.5,
+            "change": -1.22
         },
         {
             "market": "上櫃",
@@ -89,8 +89,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 22.2,
-            "change": 0.23
+            "price": 20.1,
+            "change": -9.46
         },
         {
             "market": "上櫃",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 460.0,
-            "change": 9.39
+            "price": 443.0,
+            "change": -3.7
         },
         {
             "market": "上櫃",
@@ -116,7 +116,7 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 15.5,
-            "change": -3.73
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -128,8 +128,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 62.0,
-            "change": 1.64
+            "price": 62.1,
+            "change": 0.16
         }
     ],
     "exited_stocks": [
