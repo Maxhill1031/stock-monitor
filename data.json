@@ -1,6 +1,45 @@
 {
-    "update_time": "2026-10-30 16:13:29",
+    "update_time": "2026-10-30 19:11:53",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3374",
+            "name": "精材",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 488.0,
+            "change": 0.1
+        },
+        {
+            "market": "上櫃",
+            "code": "3691",
+            "name": "碩禾",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 141.0,
+            "change": -2.08
+        },
+        {
+            "market": "上櫃",
+            "code": "8099",
+            "name": "大世科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 111.5,
+            "change": 8.78
+        },
         {
             "market": "上櫃",
             "code": "4577",
