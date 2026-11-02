@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-11-02 16:59:12",
+    "update_time": "2026-11-02 21:09:39",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 30.9,
+            "change": -8.85
+        },
         {
             "market": "上櫃",
             "code": "3374",
