@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-03 17:07:34",
+    "update_time": "2026-11-03 20:38:27",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -146,19 +146,6 @@
         },
         {
             "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/10/29",
-            "period": "115/10/30～115/11/05",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/05",
-            "countdown": 2,
-            "price": 342.0,
-            "change": -10.0
-        },
-        {
-            "market": "上市",
             "code": "4526",
             "name": "東台",
             "publish_date": "115/10/29",
@@ -169,6 +156,19 @@
             "countdown": 6,
             "price": 54.9,
             "change": -1.08
+        },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "*115/11/03",
+            "period": "115/11/04～115/11/10",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/10",
+            "countdown": 7,
+            "price": 342.0,
+            "change": -10.0
         }
     ],
     "exited_stocks": [
