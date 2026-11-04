@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-04 10:55:57",
+    "update_time": "2026-11-04 15:25:30",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 25.6,
-            "change": -8.08
+            "price": 25.7,
+            "change": -7.72
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 411.0,
-            "change": -4.42
+            "price": 447.0,
+            "change": 3.95
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 135.0,
-            "change": 0.75
+            "price": 147.0,
+            "change": 9.7
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 140.0,
-            "change": 4.09
+            "price": 143.5,
+            "change": 6.69
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 115.5,
-            "change": -3.75
+            "price": 128.0,
+            "change": 6.67
         },
         {
             "market": "上櫃",
@@ -80,6 +80,34 @@
             "change": 0.62
         },
         {
+            "market": "上市",
+            "code": "4526",
+            "name": "東台",
+            "publish_date": "115/10/29",
+            "period": "115/10/30～115/11/09",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/09",
+            "countdown": 5,
+            "price": 60.3,
+            "change": 9.84
+        },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "115/11/03",
+            "period": "115/11/04～115/11/10",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/10",
+            "countdown": 6,
+            "price": 330.5,
+            "change": -3.36
+        }
+    ],
+    "exited_stocks": [
+        {
             "market": "上櫃",
             "code": "3354",
             "name": "律勝",
@@ -89,8 +117,9 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 39.9,
-            "change": -6.34
+            "price": 40.0,
+            "change": -6.1,
+            "exit_date": "2026-11-04"
         },
         {
             "market": "上櫃",
@@ -103,7 +132,8 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 185.0,
-            "change": 1.65
+            "change": 1.65,
+            "exit_date": "2026-11-04"
         },
         {
             "market": "上櫃",
@@ -115,8 +145,9 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 73.1,
-            "change": -4.44
+            "price": 71.8,
+            "change": -6.14,
+            "exit_date": "2026-11-04"
         },
         {
             "market": "上櫃",
@@ -129,7 +160,8 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 112.5,
-            "change": 9.76
+            "change": 9.76,
+            "exit_date": "2026-11-04"
         },
         {
             "market": "上櫃",
@@ -141,37 +173,10 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 264.5,
-            "change": -8.0
+            "price": 278.5,
+            "change": -3.13,
+            "exit_date": "2026-11-04"
         },
-        {
-            "market": "上市",
-            "code": "4526",
-            "name": "東台",
-            "publish_date": "115/10/29",
-            "period": "115/10/30～115/11/09",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/09",
-            "countdown": 5,
-            "price": 56.2,
-            "change": 2.37
-        },
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/11/03",
-            "period": "115/11/04～115/11/10",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/10",
-            "countdown": 6,
-            "price": 327.0,
-            "change": -4.39
-        }
-    ],
-    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "5205",
