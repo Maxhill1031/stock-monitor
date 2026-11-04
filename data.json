@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-04 20:47:58",
+    "update_time": "2026-11-05 02:12:25",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -101,7 +101,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/09",
-            "countdown": 5,
+            "countdown": 4,
             "price": 60.3,
             "change": 9.84
         },
@@ -114,7 +114,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/10",
-            "countdown": 6,
+            "countdown": 5,
             "price": 330.5,
             "change": -3.36
         },
@@ -122,12 +122,12 @@
             "market": "上市",
             "code": "6213",
             "name": "聯茂",
-            "publish_date": "*115/11/04",
+            "publish_date": "115/11/04",
             "period": "115/11/05～115/11/11",
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/11",
-            "countdown": 7,
+            "countdown": 6,
             "price": 612.0,
             "change": 2.0
         }
@@ -244,20 +244,6 @@
             "price": 13.6,
             "change": -8.11,
             "exit_date": "2026-11-02"
-        },
-        {
-            "market": "上櫃",
-            "code": "3287",
-            "name": "廣寰科",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 58.8,
-            "change": -1.84,
-            "exit_date": "2026-10-30"
         }
     ],
     "etf_stocks": [
