@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-05 20:57:10",
+    "update_time": "2026-11-06 02:14:24",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -101,7 +101,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/09",
-            "countdown": 4,
+            "countdown": 3,
             "price": 54.5,
             "change": -9.62
         },
@@ -114,7 +114,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/10",
-            "countdown": 5,
+            "countdown": 4,
             "price": 297.5,
             "change": -9.98
         },
@@ -127,7 +127,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/11",
-            "countdown": 6,
+            "countdown": 5,
             "price": 551.0,
             "change": -9.97
         }
