@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-06 16:59:44",
+    "update_time": "2026-11-06 20:44:06",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -117,6 +117,32 @@
             "countdown": 5,
             "price": 496.0,
             "change": -9.98
+        },
+        {
+            "market": "上市",
+            "code": "2360",
+            "name": "致茂",
+            "publish_date": "*115/11/06",
+            "period": "115/11/09～115/11/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/13",
+            "countdown": 7,
+            "price": 1205.0,
+            "change": -9.74
+        },
+        {
+            "market": "上市",
+            "code": "3532",
+            "name": "台勝科",
+            "publish_date": "*115/11/06",
+            "period": "115/11/09～115/11/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/13",
+            "countdown": 7,
+            "price": 256.5,
+            "change": -8.88
         }
     ],
     "exited_stocks": [
