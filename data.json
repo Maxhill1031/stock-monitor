@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-06 11:15:24",
+    "update_time": "2026-11-06 15:51:20",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 88.5,
-            "change": -4.53
+            "price": 88.3,
+            "change": -4.75
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 21.6,
-            "change": -8.09
+            "price": 21.5,
+            "change": -8.51
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 369.5,
-            "change": -8.2
+            "price": 375.0,
+            "change": -6.83
         },
         {
             "market": "上櫃",
@@ -63,21 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 145.0,
-            "change": 4.32
-        },
-        {
-            "market": "上櫃",
-            "code": "4577",
-            "name": "達航科技",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 105.0,
-            "change": -9.09
+            "price": 135.0,
+            "change": -2.88
         },
         {
             "market": "上櫃",
@@ -102,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/11/09",
             "countdown": 3,
-            "price": 50.6,
-            "change": -7.16
+            "price": 49.35,
+            "change": -9.45
         },
         {
             "market": "上市",
@@ -115,8 +102,8 @@
             "level": "20分盤",
             "end_date": "115/11/10",
             "countdown": 4,
-            "price": 298.5,
-            "change": 0.34
+            "price": 299.0,
+            "change": 0.5
         },
         {
             "market": "上市",
@@ -133,6 +120,20 @@
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4577",
+            "name": "達航科技",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 104.0,
+            "change": -9.96,
+            "exit_date": "2026-11-06"
+        },
         {
             "market": "上櫃",
             "code": "3354",
