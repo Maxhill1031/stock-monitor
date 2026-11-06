@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-06 20:44:06",
+    "update_time": "2026-11-07 01:39:51",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -88,7 +88,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/09",
-            "countdown": 3,
+            "countdown": 2,
             "price": 49.35,
             "change": -9.45
         },
@@ -101,7 +101,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/10",
-            "countdown": 4,
+            "countdown": 3,
             "price": 299.0,
             "change": 0.5
         },
@@ -114,7 +114,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/11",
-            "countdown": 5,
+            "countdown": 4,
             "price": 496.0,
             "change": -9.98
         },
@@ -122,12 +122,12 @@
             "market": "上市",
             "code": "2360",
             "name": "致茂",
-            "publish_date": "*115/11/06",
+            "publish_date": "115/11/06",
             "period": "115/11/09～115/11/13",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 7,
+            "countdown": 6,
             "price": 1205.0,
             "change": -9.74
         },
@@ -135,12 +135,12 @@
             "market": "上市",
             "code": "3532",
             "name": "台勝科",
-            "publish_date": "*115/11/06",
+            "publish_date": "115/11/06",
             "period": "115/11/09～115/11/13",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 7,
+            "countdown": 6,
             "price": 256.5,
             "change": -8.88
         }
