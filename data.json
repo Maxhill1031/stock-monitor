@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-09 17:20:03",
+    "update_time": "2026-11-09 21:39:12",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,6 +13,19 @@
             "countdown": 0,
             "price": 54.2,
             "change": 9.83
+        },
+        {
+            "market": "上櫃",
+            "code": "4542",
+            "name": "科嶠",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 225.0,
+            "change": -0.44
         },
         {
             "market": "上櫃",
@@ -117,6 +130,19 @@
             "countdown": 4,
             "price": 282.0,
             "change": 9.94
+        },
+        {
+            "market": "上市",
+            "code": "3189",
+            "name": "景碩",
+            "publish_date": "*115/11/09",
+            "period": "115/11/10～115/11/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/16",
+            "countdown": 7,
+            "price": 690.0,
+            "change": 2.83
         }
     ],
     "exited_stocks": [
@@ -216,20 +242,6 @@
             "countdown": 0,
             "price": 112.5,
             "change": 9.76,
-            "exit_date": "2026-11-04"
-        },
-        {
-            "market": "上櫃",
-            "code": "4542",
-            "name": "科嶠",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 278.5,
-            "change": -3.13,
             "exit_date": "2026-11-04"
         }
     ],
