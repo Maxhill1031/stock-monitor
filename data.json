@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-09 10:25:18",
+    "update_time": "2026-11-09 15:51:06",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "115/11/09",
             "countdown": 0,
-            "price": 52.5,
-            "change": 6.38
+            "price": 54.2,
+            "change": 9.83
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 149.5,
-            "change": 0.67
+            "price": 140.5,
+            "change": -5.39
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 89.2,
-            "change": 1.02
+            "price": 87.0,
+            "change": -1.47
         },
         {
             "market": "上櫃",
@@ -63,9 +63,63 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 398.0,
-            "change": 6.13
+            "price": 404.0,
+            "change": 7.73
         },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "115/11/03",
+            "period": "115/11/04～115/11/10",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/10",
+            "countdown": 1,
+            "price": 328.5,
+            "change": 9.87
+        },
+        {
+            "market": "上市",
+            "code": "6213",
+            "name": "聯茂",
+            "publish_date": "115/11/04",
+            "period": "115/11/05～115/11/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/11",
+            "countdown": 2,
+            "price": 531.0,
+            "change": 7.06
+        },
+        {
+            "market": "上市",
+            "code": "2360",
+            "name": "致茂",
+            "publish_date": "115/11/06",
+            "period": "115/11/09～115/11/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/13",
+            "countdown": 4,
+            "price": 1250.0,
+            "change": 3.73
+        },
+        {
+            "market": "上市",
+            "code": "3532",
+            "name": "台勝科",
+            "publish_date": "115/11/06",
+            "period": "115/11/09～115/11/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/13",
+            "countdown": 4,
+            "price": 282.0,
+            "change": 9.94
+        }
+    ],
+    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "3691",
@@ -77,7 +131,8 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 148.5,
-            "change": 10.0
+            "change": 10.0,
+            "exit_date": "2026-11-09"
         },
         {
             "market": "上櫃",
@@ -90,62 +145,9 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 159.5,
-            "change": 10.0
+            "change": 10.0,
+            "exit_date": "2026-11-09"
         },
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/11/03",
-            "period": "115/11/04～115/11/10",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/10",
-            "countdown": 1,
-            "price": 328.0,
-            "change": 9.7
-        },
-        {
-            "market": "上市",
-            "code": "6213",
-            "name": "聯茂",
-            "publish_date": "115/11/04",
-            "period": "115/11/05～115/11/11",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/11",
-            "countdown": 2,
-            "price": 510.0,
-            "change": 2.82
-        },
-        {
-            "market": "上市",
-            "code": "2360",
-            "name": "致茂",
-            "publish_date": "115/11/06",
-            "period": "115/11/09～115/11/13",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/13",
-            "countdown": 4,
-            "price": 1230.0,
-            "change": 2.07
-        },
-        {
-            "market": "上市",
-            "code": "3532",
-            "name": "台勝科",
-            "publish_date": "115/11/06",
-            "period": "115/11/09～115/11/13",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/13",
-            "countdown": 4,
-            "price": 281.5,
-            "change": 9.75
-        }
-    ],
-    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "4577",
