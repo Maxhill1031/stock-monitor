@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-11-07 01:39:51",
+    "update_time": "2026-11-09 10:25:18",
     "disposal_stocks": [
+        {
+            "market": "上市",
+            "code": "4526",
+            "name": "東台",
+            "publish_date": "115/10/29",
+            "period": "115/10/30～115/11/09",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/09",
+            "countdown": 0,
+            "price": 52.5,
+            "change": 6.38
+        },
         {
             "market": "上櫃",
             "code": "8099",
@@ -11,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 148.5,
-            "change": -2.3
+            "price": 149.5,
+            "change": 0.67
         },
         {
             "market": "上櫃",
@@ -24,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 88.3,
-            "change": -4.75
+            "price": 89.2,
+            "change": 1.02
         },
         {
             "market": "上櫃",
@@ -37,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 21.5,
-            "change": -8.51
+            "price": 23.65,
+            "change": 10.0
         },
         {
             "market": "上櫃",
@@ -50,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 375.0,
-            "change": -6.83
+            "price": 398.0,
+            "change": 6.13
         },
         {
             "market": "上櫃",
@@ -63,8 +76,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 135.0,
-            "change": -2.88
+            "price": 148.5,
+            "change": 10.0
         },
         {
             "market": "上櫃",
@@ -76,21 +89,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 145.0,
-            "change": -1.36
-        },
-        {
-            "market": "上市",
-            "code": "4526",
-            "name": "東台",
-            "publish_date": "115/10/29",
-            "period": "115/10/30～115/11/09",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/09",
-            "countdown": 2,
-            "price": 49.35,
-            "change": -9.45
+            "price": 159.5,
+            "change": 10.0
         },
         {
             "market": "上市",
@@ -101,9 +101,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/10",
-            "countdown": 3,
-            "price": 299.0,
-            "change": 0.5
+            "countdown": 1,
+            "price": 328.0,
+            "change": 9.7
         },
         {
             "market": "上市",
@@ -114,9 +114,9 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/11",
-            "countdown": 4,
-            "price": 496.0,
-            "change": -9.98
+            "countdown": 2,
+            "price": 510.0,
+            "change": 2.82
         },
         {
             "market": "上市",
@@ -127,9 +127,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 6,
-            "price": 1205.0,
-            "change": -9.74
+            "countdown": 4,
+            "price": 1230.0,
+            "change": 2.07
         },
         {
             "market": "上市",
@@ -140,9 +140,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 6,
-            "price": 256.5,
-            "change": -8.88
+            "countdown": 4,
+            "price": 281.5,
+            "change": 9.75
         }
     ],
     "exited_stocks": [
@@ -229,48 +229,6 @@
             "price": 278.5,
             "change": -3.13,
             "exit_date": "2026-11-04"
-        },
-        {
-            "market": "上櫃",
-            "code": "5205",
-            "name": "中茂",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 18.4,
-            "change": -1.87,
-            "exit_date": "2026-11-02"
-        },
-        {
-            "market": "上櫃",
-            "code": "8358",
-            "name": "金居",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 417.5,
-            "change": 3.09,
-            "exit_date": "2026-11-02"
-        },
-        {
-            "market": "上櫃",
-            "code": "8437",
-            "name": "大地-KY",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 13.6,
-            "change": -8.11,
-            "exit_date": "2026-11-02"
         }
     ],
     "etf_stocks": [
