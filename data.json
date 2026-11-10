@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-10 12:30:20",
+    "update_time": "2026-11-10 16:15:08",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 239.0,
-            "change": 6.22
+            "price": 245.5,
+            "change": 9.11
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 137.5,
-            "change": -2.14
+            "price": 137.0,
+            "change": -2.49
         },
         {
             "market": "上櫃",
@@ -50,21 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 85.8,
-            "change": -1.38
-        },
-        {
-            "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 24.95,
-            "change": 5.5
+            "price": 88.5,
+            "change": 1.72
         },
         {
             "market": "上櫃",
@@ -76,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 408.0,
-            "change": 0.99
+            "price": 424.5,
+            "change": 5.07
         },
         {
             "market": "上市",
@@ -89,8 +76,8 @@
             "level": "20分盤",
             "end_date": "115/11/11",
             "countdown": 1,
-            "price": 531.0,
-            "change": 0.0
+            "price": 528.0,
+            "change": -0.56
         },
         {
             "market": "上市",
@@ -102,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/11/13",
             "countdown": 3,
-            "price": 1355.0,
-            "change": 8.4
+            "price": 1310.0,
+            "change": 4.8
         },
         {
             "market": "上市",
@@ -115,8 +102,8 @@
             "level": "5分盤",
             "end_date": "115/11/13",
             "countdown": 3,
-            "price": 294.0,
-            "change": 4.26
+            "price": 302.0,
+            "change": 7.09
         },
         {
             "market": "上市",
@@ -128,11 +115,25 @@
             "level": "5分盤",
             "end_date": "115/11/16",
             "countdown": 6,
-            "price": 715.0,
-            "change": 3.62
+            "price": 745.0,
+            "change": 7.97
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "8291",
+            "name": "尚茂",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 26.0,
+            "change": 9.94,
+            "exit_date": "2026-11-10"
+        },
         {
             "market": "上市",
             "code": "4526",
