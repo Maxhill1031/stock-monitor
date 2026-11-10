@@ -1,18 +1,18 @@
 {
-    "update_time": "2026-11-10 21:16:38",
+    "update_time": "2026-11-11 02:11:33",
     "disposal_stocks": [
         {
             "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/11/03",
-            "period": "115/11/04～115/11/10",
+            "code": "6213",
+            "name": "聯茂",
+            "publish_date": "115/11/04",
+            "period": "115/11/05～115/11/11",
             "reason": "第二次處置",
             "level": "20分盤",
-            "end_date": "115/11/10",
+            "end_date": "115/11/11",
             "countdown": 0,
-            "price": 361.0,
-            "change": 9.89
+            "price": 528.0,
+            "change": -0.56
         },
         {
             "market": "上櫃",
@@ -68,19 +68,6 @@
         },
         {
             "market": "上市",
-            "code": "6213",
-            "name": "聯茂",
-            "publish_date": "115/11/04",
-            "period": "115/11/05～115/11/11",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/11",
-            "countdown": 1,
-            "price": 528.0,
-            "change": -0.56
-        },
-        {
-            "market": "上市",
             "code": "2360",
             "name": "致茂",
             "publish_date": "115/11/06",
@@ -88,7 +75,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 3,
+            "countdown": 2,
             "price": 1310.0,
             "change": 4.8
         },
@@ -101,7 +88,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 3,
+            "countdown": 2,
             "price": 302.0,
             "change": 7.09
         },
@@ -114,7 +101,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/16",
-            "countdown": 6,
+            "countdown": 5,
             "price": 745.0,
             "change": 7.97
         },
@@ -122,17 +109,31 @@
             "market": "上市",
             "code": "2455",
             "name": "全新",
-            "publish_date": "*115/11/10",
+            "publish_date": "115/11/10",
             "period": "115/11/11～115/11/17",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/17",
-            "countdown": 7,
+            "countdown": 6,
             "price": 369.5,
             "change": 8.2
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "115/11/03",
+            "period": "115/11/04～115/11/10",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/10",
+            "countdown": 0,
+            "price": 361.0,
+            "change": 9.89,
+            "exit_date": "2026-11-11"
+        },
         {
             "market": "上櫃",
             "code": "8291",
