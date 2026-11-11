@@ -1,19 +1,6 @@
 {
-    "update_time": "2026-11-11 20:27:31",
+    "update_time": "2026-11-12 02:01:01",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "6213",
-            "name": "聯茂",
-            "publish_date": "115/11/04",
-            "period": "115/11/05～115/11/11",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/11",
-            "countdown": 0,
-            "price": 580.0,
-            "change": 9.85
-        },
         {
             "market": "上櫃",
             "code": "4542",
@@ -62,7 +49,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 2,
+            "countdown": 1,
             "price": 1370.0,
             "change": 4.58
         },
@@ -75,7 +62,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/13",
-            "countdown": 2,
+            "countdown": 1,
             "price": 303.0,
             "change": 0.33
         },
@@ -88,7 +75,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/16",
-            "countdown": 5,
+            "countdown": 4,
             "price": 741.0,
             "change": -0.54
         },
@@ -101,12 +88,26 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/17",
-            "countdown": 6,
+            "countdown": 5,
             "price": 384.5,
             "change": 4.06
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "6213",
+            "name": "聯茂",
+            "publish_date": "115/11/04",
+            "period": "115/11/05～115/11/11",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/11",
+            "countdown": 0,
+            "price": 580.0,
+            "change": 9.85,
+            "exit_date": "2026-11-12"
+        },
         {
             "market": "上櫃",
             "code": "3374",
@@ -190,20 +191,6 @@
             "price": 159.5,
             "change": 10.0,
             "exit_date": "2026-11-09"
-        },
-        {
-            "market": "上櫃",
-            "code": "4577",
-            "name": "達航科技",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 104.0,
-            "change": -9.96,
-            "exit_date": "2026-11-06"
         }
     ],
     "etf_stocks": [
