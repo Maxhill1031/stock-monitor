@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-12 02:01:01",
+    "update_time": "2026-11-12 11:38:41",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 259.0,
-            "change": 5.5
+            "price": 262.0,
+            "change": 1.16
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 150.5,
-            "change": 9.85
+            "price": 165.5,
+            "change": 9.97
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 97.3,
-            "change": 9.94
+            "price": 99.4,
+            "change": 2.16
         },
         {
             "market": "上市",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "115/11/13",
             "countdown": 1,
-            "price": 1370.0,
-            "change": 4.58
+            "price": 1505.0,
+            "change": 9.85
         },
         {
             "market": "上市",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "115/11/13",
             "countdown": 1,
-            "price": 303.0,
-            "change": 0.33
+            "price": 294.5,
+            "change": -2.81
         },
         {
             "market": "上市",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "115/11/16",
             "countdown": 4,
-            "price": 741.0,
-            "change": -0.54
+            "price": 706.0,
+            "change": -4.72
         },
         {
             "market": "上市",
@@ -89,8 +89,8 @@
             "level": "5分盤",
             "end_date": "115/11/17",
             "countdown": 5,
-            "price": 384.5,
-            "change": 4.06
+            "price": 397.5,
+            "change": 3.38
         }
     ],
     "exited_stocks": [
