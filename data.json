@@ -1,32 +1,6 @@
 {
-    "update_time": "2026-11-13 20:52:49",
+    "update_time": "2026-11-14 02:00:39",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2360",
-            "name": "致茂",
-            "publish_date": "115/11/06",
-            "period": "115/11/09～115/11/13",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/13",
-            "countdown": 0,
-            "price": 1400.0,
-            "change": -1.41
-        },
-        {
-            "market": "上市",
-            "code": "3532",
-            "name": "台勝科",
-            "publish_date": "115/11/06",
-            "period": "115/11/09～115/11/13",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/13",
-            "countdown": 0,
-            "price": 295.0,
-            "change": 1.37
-        },
         {
             "market": "上櫃",
             "code": "4542",
@@ -49,7 +23,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/16",
-            "countdown": 3,
+            "countdown": 2,
             "price": 668.0,
             "change": 0.15
         },
@@ -62,12 +36,40 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/17",
-            "countdown": 4,
+            "countdown": 3,
             "price": 392.0,
             "change": 3.98
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "2360",
+            "name": "致茂",
+            "publish_date": "115/11/06",
+            "period": "115/11/09～115/11/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/13",
+            "countdown": 0,
+            "price": 1400.0,
+            "change": -1.41,
+            "exit_date": "2026-11-14"
+        },
+        {
+            "market": "上市",
+            "code": "3532",
+            "name": "台勝科",
+            "publish_date": "115/11/06",
+            "period": "115/11/09～115/11/13",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/13",
+            "countdown": 0,
+            "price": 295.0,
+            "change": 1.37,
+            "exit_date": "2026-11-14"
+        },
         {
             "market": "上櫃",
             "code": "8099",
