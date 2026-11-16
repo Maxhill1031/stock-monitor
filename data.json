@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-16 10:35:43",
+    "update_time": "2026-11-16 15:51:42",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 233.0,
-            "change": -9.16
+            "price": 231.0,
+            "change": -9.94
         },
         {
             "market": "上市",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "115/11/17",
             "countdown": 1,
-            "price": 356.0,
-            "change": -9.18
+            "price": 353.0,
+            "change": -9.95
         }
     ],
     "exited_stocks": [
