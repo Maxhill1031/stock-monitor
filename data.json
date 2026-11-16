@@ -1,18 +1,18 @@
 {
-    "update_time": "2026-11-16 21:23:30",
+    "update_time": "2026-11-17 04:39:22",
     "disposal_stocks": [
         {
             "market": "上市",
-            "code": "3189",
-            "name": "景碩",
-            "publish_date": "115/11/09",
-            "period": "115/11/10～115/11/16",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "115/11/10",
+            "period": "115/11/11～115/11/17",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/11/16",
+            "end_date": "115/11/17",
             "countdown": 0,
-            "price": 602.0,
-            "change": -9.88
+            "price": 353.0,
+            "change": -9.95
         },
         {
             "market": "上櫃",
@@ -55,27 +55,14 @@
         },
         {
             "market": "上市",
-            "code": "2455",
-            "name": "全新",
-            "publish_date": "115/11/10",
-            "period": "115/11/11～115/11/17",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/17",
-            "countdown": 1,
-            "price": 353.0,
-            "change": -9.95
-        },
-        {
-            "market": "上市",
             "code": "2466",
             "name": "冠西電",
-            "publish_date": "*115/11/16",
+            "publish_date": "115/11/16",
             "period": "115/11/17～115/11/23",
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/23",
-            "countdown": 7,
+            "countdown": 6,
             "price": 402.5,
             "change": 2.42
         },
@@ -83,17 +70,31 @@
             "market": "上市",
             "code": "6108",
             "name": "競國",
-            "publish_date": "*115/11/16",
+            "publish_date": "115/11/16",
             "period": "115/11/17～115/11/23",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/23",
-            "countdown": 7,
+            "countdown": 6,
             "price": 40.4,
             "change": -1.46
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "3189",
+            "name": "景碩",
+            "publish_date": "115/11/09",
+            "period": "115/11/10～115/11/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/16",
+            "countdown": 0,
+            "price": 602.0,
+            "change": -9.88,
+            "exit_date": "2026-11-17"
+        },
         {
             "market": "上市",
             "code": "2360",
@@ -163,20 +164,6 @@
             "price": 580.0,
             "change": 9.85,
             "exit_date": "2026-11-12"
-        },
-        {
-            "market": "上櫃",
-            "code": "3374",
-            "name": "精材",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 466.5,
-            "change": 9.89,
-            "exit_date": "2026-11-11"
         }
     ],
     "etf_stocks": [
