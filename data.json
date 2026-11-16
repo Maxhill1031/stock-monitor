@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-16 17:07:06",
+    "update_time": "2026-11-16 21:23:30",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,6 +13,32 @@
             "countdown": 0,
             "price": 602.0,
             "change": -9.88
+        },
+        {
+            "market": "上櫃",
+            "code": "3441",
+            "name": "聯一光",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 178.5,
+            "change": -9.85
+        },
+        {
+            "market": "上櫃",
+            "code": "6751",
+            "name": "智聯服務",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 113.0,
+            "change": 9.71
         },
         {
             "market": "上櫃",
@@ -39,6 +65,32 @@
             "countdown": 1,
             "price": 353.0,
             "change": -9.95
+        },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "*115/11/16",
+            "period": "115/11/17～115/11/23",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/23",
+            "countdown": 7,
+            "price": 402.5,
+            "change": 2.42
+        },
+        {
+            "market": "上市",
+            "code": "6108",
+            "name": "競國",
+            "publish_date": "*115/11/16",
+            "period": "115/11/17～115/11/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/23",
+            "countdown": 7,
+            "price": 40.4,
+            "change": -1.46
         }
     ],
     "exited_stocks": [
@@ -123,20 +175,6 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": 466.5,
-            "change": 9.89,
-            "exit_date": "2026-11-11"
-        },
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/11/03",
-            "period": "115/11/04～115/11/10",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/10",
-            "countdown": 0,
-            "price": 361.0,
             "change": 9.89,
             "exit_date": "2026-11-11"
         }
