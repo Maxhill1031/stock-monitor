@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-11-14 02:00:39",
+    "update_time": "2026-11-16 10:35:43",
     "disposal_stocks": [
+        {
+            "market": "上市",
+            "code": "3189",
+            "name": "景碩",
+            "publish_date": "115/11/09",
+            "period": "115/11/10～115/11/16",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/16",
+            "countdown": 0,
+            "price": 602.0,
+            "change": -9.88
+        },
         {
             "market": "上櫃",
             "code": "4542",
@@ -11,21 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 256.5,
-            "change": 9.85
-        },
-        {
-            "market": "上市",
-            "code": "3189",
-            "name": "景碩",
-            "publish_date": "115/11/09",
-            "period": "115/11/10～115/11/16",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/16",
-            "countdown": 2,
-            "price": 668.0,
-            "change": 0.15
+            "price": 233.0,
+            "change": -9.16
         },
         {
             "market": "上市",
@@ -36,9 +36,9 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/17",
-            "countdown": 3,
-            "price": 392.0,
-            "change": 3.98
+            "countdown": 1,
+            "price": 356.0,
+            "change": -9.18
         }
     ],
     "exited_stocks": [
@@ -139,62 +139,6 @@
             "price": 361.0,
             "change": 9.89,
             "exit_date": "2026-11-11"
-        },
-        {
-            "market": "上櫃",
-            "code": "8291",
-            "name": "尚茂",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 26.0,
-            "change": 9.94,
-            "exit_date": "2026-11-10"
-        },
-        {
-            "market": "上市",
-            "code": "4526",
-            "name": "東台",
-            "publish_date": "115/10/29",
-            "period": "115/10/30～115/11/09",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/09",
-            "countdown": 0,
-            "price": 54.2,
-            "change": 9.83,
-            "exit_date": "2026-11-10"
-        },
-        {
-            "market": "上櫃",
-            "code": "3691",
-            "name": "碩禾",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 148.5,
-            "change": 10.0,
-            "exit_date": "2026-11-09"
-        },
-        {
-            "market": "上櫃",
-            "code": "3441",
-            "name": "聯一光",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 159.5,
-            "change": 10.0,
-            "exit_date": "2026-11-09"
         }
     ],
     "etf_stocks": [
