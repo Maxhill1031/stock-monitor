@@ -1,19 +1,6 @@
 {
-    "update_time": "2026-11-17 22:08:08",
+    "update_time": "2026-11-18 03:20:18",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2455",
-            "name": "全新",
-            "publish_date": "115/11/10",
-            "period": "115/11/11～115/11/17",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/17",
-            "countdown": 0,
-            "price": 324.0,
-            "change": -8.22
-        },
         {
             "market": "上櫃",
             "code": "4174",
@@ -114,7 +101,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/23",
-            "countdown": 6,
+            "countdown": 5,
             "price": 435.5,
             "change": 8.2
         },
@@ -127,12 +114,26 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/23",
-            "countdown": 6,
+            "countdown": 5,
             "price": 41.45,
             "change": 2.6
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "2455",
+            "name": "全新",
+            "publish_date": "115/11/10",
+            "period": "115/11/11～115/11/17",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/17",
+            "countdown": 0,
+            "price": 324.0,
+            "change": -8.22,
+            "exit_date": "2026-11-18"
+        },
         {
             "market": "上櫃",
             "code": "4542",
@@ -188,48 +189,6 @@
             "price": 295.0,
             "change": 1.37,
             "exit_date": "2026-11-14"
-        },
-        {
-            "market": "上櫃",
-            "code": "8099",
-            "name": "大世科",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 165.5,
-            "change": 9.97,
-            "exit_date": "2026-11-12"
-        },
-        {
-            "market": "上櫃",
-            "code": "8272",
-            "name": "全景軟體",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 99.5,
-            "change": 2.26,
-            "exit_date": "2026-11-12"
-        },
-        {
-            "market": "上市",
-            "code": "6213",
-            "name": "聯茂",
-            "publish_date": "115/11/04",
-            "period": "115/11/05～115/11/11",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/11",
-            "countdown": 0,
-            "price": 580.0,
-            "change": 9.85,
-            "exit_date": "2026-11-12"
         }
     ],
     "etf_stocks": [
