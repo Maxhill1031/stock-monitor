@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-18 12:02:31",
+    "update_time": "2026-11-18 16:25:34",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -11,8 +11,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 78.5,
-            "change": 0.13
+            "price": 77.5,
+            "change": -1.15
         },
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 30.9,
-            "change": -1.59
+            "price": 30.1,
+            "change": -4.14
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 562.0,
-            "change": 5.44
+            "price": 570.0,
+            "change": 6.94
         },
         {
             "market": "上櫃",
@@ -76,8 +76,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 166.5,
-            "change": -3.2
+            "price": 164.5,
+            "change": -4.36
         },
         {
             "market": "上櫃",
@@ -91,9 +91,7 @@
             "countdown": 0,
             "price": 91.8,
             "change": -10.0
-        }
-    ],
-    "exited_stocks": [
+        },
         {
             "market": "上市",
             "code": "2466",
@@ -104,9 +102,8 @@
             "level": "20分盤",
             "end_date": "115/11/23",
             "countdown": 5,
-            "price": 433.0,
-            "change": -0.57,
-            "exit_date": "2026-11-18"
+            "price": 436.5,
+            "change": 0.23
         },
         {
             "market": "上市",
@@ -119,9 +116,10 @@
             "end_date": "115/11/23",
             "countdown": 5,
             "price": 42.5,
-            "change": 2.53,
-            "exit_date": "2026-11-18"
-        },
+            "change": 2.53
+        }
+    ],
+    "exited_stocks": [
         {
             "market": "上市",
             "code": "2455",
