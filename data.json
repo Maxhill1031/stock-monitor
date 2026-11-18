@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-11-18 17:50:56",
+    "update_time": "2026-11-18 21:40:51",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3491",
+            "name": "昇達科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 1510.0,
+            "change": 4.5
+        },
         {
             "market": "上櫃",
             "code": "4174",
