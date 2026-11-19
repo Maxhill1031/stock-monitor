@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-19 16:37:23",
+    "update_time": "2026-11-19 17:58:33",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -130,6 +130,19 @@
             "countdown": 4,
             "price": 38.25,
             "change": -10.0
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "*115/11/19",
+            "period": "115/11/20～115/11/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/26",
+            "countdown": 7,
+            "price": 805.0,
+            "change": -9.96
         }
     ],
     "exited_stocks": [
