@@ -1,6 +1,32 @@
 {
-    "update_time": "2026-11-19 17:58:33",
+    "update_time": "2026-11-19 22:08:46",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3287",
+            "name": "廣寰科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 48.45,
+            "change": -8.93
+        },
+        {
+            "market": "上櫃",
+            "code": "4534",
+            "name": "慶騰",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 22.2,
+            "change": -9.94
+        },
         {
             "market": "上櫃",
             "code": "3491",
