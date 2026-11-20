@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-20 21:51:13",
+    "update_time": "2026-11-21 02:46:54",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -179,7 +179,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/23",
-            "countdown": 3,
+            "countdown": 2,
             "price": 387.0,
             "change": -4.21
         },
@@ -192,7 +192,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/23",
-            "countdown": 3,
+            "countdown": 2,
             "price": 34.45,
             "change": -9.93
         },
@@ -205,7 +205,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/26",
-            "countdown": 6,
+            "countdown": 5,
             "price": 725.0,
             "change": -9.94
         },
@@ -213,12 +213,12 @@
             "market": "上市",
             "code": "2305",
             "name": "全友",
-            "publish_date": "*115/11/20",
+            "publish_date": "115/11/20",
             "period": "115/11/23～115/11/27",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/27",
-            "countdown": 7,
+            "countdown": 6,
             "price": 26.85,
             "change": -9.44
         },
@@ -226,12 +226,12 @@
             "market": "上市",
             "code": "3532",
             "name": "台勝科",
-            "publish_date": "*115/11/20",
+            "publish_date": "115/11/20",
             "period": "115/11/23～115/11/27",
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/27",
-            "countdown": 7,
+            "countdown": 6,
             "price": 186.5,
             "change": -9.9
         }
