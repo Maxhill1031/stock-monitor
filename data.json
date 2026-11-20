@@ -1,47 +1,6 @@
 {
-    "update_time": "2026-11-20 03:07:45",
+    "update_time": "2026-11-20 11:53:03",
     "disposal_stocks": [
-        {
-            "market": "上市",
-            "code": "2466",
-            "name": "冠西電",
-            "publish_date": "115/11/16",
-            "period": "115/11/17～115/11/23",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/23",
-            "countdown": 3,
-            "price": 404.0,
-            "change": -7.45
-        },
-        {
-            "market": "上市",
-            "code": "6108",
-            "name": "競國",
-            "publish_date": "115/11/16",
-            "period": "115/11/17～115/11/23",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/23",
-            "countdown": 3,
-            "price": 38.25,
-            "change": -10.0
-        },
-        {
-            "market": "上市",
-            "code": "7610",
-            "name": "聯友金屬-創",
-            "publish_date": "115/11/19",
-            "period": "115/11/20～115/11/26",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/26",
-            "countdown": 6,
-            "price": 805.0,
-            "change": -9.96
-        }
-    ],
-    "exited_stocks": [
         {
             "market": "上櫃",
             "code": "3287",
@@ -52,9 +11,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 48.45,
-            "change": -8.93,
-            "exit_date": "2026-11-20"
+            "price": 43.65,
+            "change": -2.57
         },
         {
             "market": "上櫃",
@@ -66,9 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 22.2,
-            "change": -9.94,
-            "exit_date": "2026-11-20"
+            "price": 20.0,
+            "change": -0.74
         },
         {
             "market": "上櫃",
@@ -80,9 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 1360.0,
-            "change": -9.93,
-            "exit_date": "2026-11-20"
+            "price": 1225.0,
+            "change": -1.21
         },
         {
             "market": "上櫃",
@@ -94,9 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 69.8,
-            "change": -9.94,
-            "exit_date": "2026-11-20"
+            "price": 64.8,
+            "change": 1.25
         },
         {
             "market": "上櫃",
@@ -108,9 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 27.45,
-            "change": -8.8,
-            "exit_date": "2026-11-20"
+            "price": 24.9,
+            "change": -2.35
         },
         {
             "market": "上櫃",
@@ -122,9 +76,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 64.8,
-            "change": -9.87,
-            "exit_date": "2026-11-20"
+            "price": 58.4,
+            "change": -0.0
         },
         {
             "market": "上櫃",
@@ -136,9 +89,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 513.0,
-            "change": -10.0,
-            "exit_date": "2026-11-20"
+            "price": 462.0,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -151,8 +103,7 @@
             "end_date": "日期未抓取",
             "countdown": 0,
             "price": "N/A",
-            "change": "N/A",
-            "exit_date": "2026-11-20"
+            "change": "N/A"
         },
         {
             "market": "上櫃",
@@ -164,9 +115,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 148.5,
-            "change": -9.73,
-            "exit_date": "2026-11-20"
+            "price": 134.0,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -178,10 +128,50 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 82.7,
-            "change": -9.91,
-            "exit_date": "2026-11-20"
+            "price": 74.5,
+            "change": 0.0
         },
+        {
+            "market": "上市",
+            "code": "2466",
+            "name": "冠西電",
+            "publish_date": "115/11/16",
+            "period": "115/11/17～115/11/23",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/11/23",
+            "countdown": 3,
+            "price": 380.5,
+            "change": -2.19
+        },
+        {
+            "market": "上市",
+            "code": "6108",
+            "name": "競國",
+            "publish_date": "115/11/16",
+            "period": "115/11/17～115/11/23",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/23",
+            "countdown": 3,
+            "price": 34.45,
+            "change": -0.0
+        },
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/11/19",
+            "period": "115/11/20～115/11/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/26",
+            "countdown": 6,
+            "price": 725.0,
+            "change": -2.16
+        }
+    ],
+    "exited_stocks": [
         {
             "market": "上市",
             "code": "2455",
