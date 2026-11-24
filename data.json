@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-24 23:33:51",
+    "update_time": "2026-11-25 04:50:46",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -283,7 +283,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/26",
-            "countdown": 2,
+            "countdown": 1,
             "price": 867.0,
             "change": 9.89
         },
@@ -296,7 +296,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/27",
-            "countdown": 3,
+            "countdown": 2,
             "price": 32.45,
             "change": 10.0
         },
@@ -309,7 +309,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/27",
-            "countdown": 3,
+            "countdown": 2,
             "price": 184.5,
             "change": 9.82
         },
@@ -322,7 +322,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 4050.0,
             "change": 9.91
         },
@@ -335,7 +335,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 37.05,
             "change": 9.94
         },
@@ -348,7 +348,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 40.75,
             "change": 9.99
         },
@@ -361,7 +361,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 202.5,
             "change": 9.76
         },
@@ -374,7 +374,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 301.0,
             "change": 9.85
         },
@@ -387,7 +387,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 271.5,
             "change": 9.92
         },
@@ -400,7 +400,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 6,
+            "countdown": 5,
             "price": 943.0,
             "change": 9.91
         },
@@ -408,12 +408,12 @@
             "market": "上市",
             "code": "3443",
             "name": "創意",
-            "publish_date": "*115/11/24",
+            "publish_date": "115/11/24",
             "period": "115/11/25～115/12/01",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/01",
-            "countdown": 7,
+            "countdown": 6,
             "price": 5630.0,
             "change": 9.96
         },
@@ -421,12 +421,12 @@
             "market": "上市",
             "code": "6456",
             "name": "GIS-KY",
-            "publish_date": "*115/11/24",
+            "publish_date": "115/11/24",
             "period": "115/11/25～115/12/01",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/01",
-            "countdown": 7,
+            "countdown": 6,
             "price": 64.8,
             "change": -0.61
         }
