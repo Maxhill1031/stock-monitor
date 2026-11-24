@@ -1,6 +1,45 @@
 {
-    "update_time": "2026-11-24 14:47:41",
+    "update_time": "2026-11-24 18:48:49",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "3287",
+            "name": "廣寰科",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 44.85,
+            "change": 9.93
+        },
+        {
+            "market": "上櫃",
+            "code": "3693",
+            "name": "營邦",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 481.5,
+            "change": 9.93
+        },
+        {
+            "market": "上櫃",
+            "code": "4716",
+            "name": "大立",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 13.45,
+            "change": 3.86
+        },
         {
             "market": "上櫃",
             "code": "1569",
@@ -130,19 +169,6 @@
             "countdown": 0,
             "price": 46.85,
             "change": -3.4
-        },
-        {
-            "market": "上櫃",
-            "code": "3287",
-            "name": "廣寰科",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 44.85,
-            "change": 9.93
         },
         {
             "market": "上櫃",
@@ -377,6 +403,32 @@
             "countdown": 6,
             "price": 943.0,
             "change": 9.91
+        },
+        {
+            "market": "上市",
+            "code": "3443",
+            "name": "創意",
+            "publish_date": "*115/11/24",
+            "period": "115/11/25～115/12/01",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/12/01",
+            "countdown": 7,
+            "price": 5630.0,
+            "change": 9.96
+        },
+        {
+            "market": "上市",
+            "code": "6456",
+            "name": "GIS-KY",
+            "publish_date": "*115/11/24",
+            "period": "115/11/25～115/12/01",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/12/01",
+            "countdown": 7,
+            "price": 64.8,
+            "change": -0.61
         }
     ],
     "exited_stocks": [
