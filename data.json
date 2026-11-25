@@ -1,6 +1,32 @@
 {
-    "update_time": "2026-11-25 17:44:08",
+    "update_time": "2026-11-25 18:57:19",
     "disposal_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4577",
+            "name": "達航科技",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 74.5,
+            "change": -9.92
+        },
+        {
+            "market": "上櫃",
+            "code": "6697",
+            "name": "東捷資訊",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 53.0,
+            "change": -7.67
+        },
         {
             "market": "上櫃",
             "code": "3287",
@@ -133,19 +159,6 @@
         },
         {
             "market": "上櫃",
-            "code": "4577",
-            "name": "達航科技",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 74.5,
-            "change": -9.92
-        },
-        {
-            "market": "上櫃",
             "code": "6538",
             "name": "倉和",
             "publish_date": "",
@@ -198,19 +211,6 @@
         },
         {
             "market": "上櫃",
-            "code": "6697",
-            "name": "東捷資訊",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 53.0,
-            "change": -7.67
-        },
-        {
-            "market": "上櫃",
             "code": "3441",
             "name": "聯一光",
             "publish_date": "",
@@ -247,19 +247,6 @@
             "countdown": 2,
             "price": 29.7,
             "change": -8.47
-        },
-        {
-            "market": "上市",
-            "code": "3532",
-            "name": "台勝科",
-            "publish_date": "115/11/20",
-            "period": "115/11/23～115/11/27",
-            "reason": "第二次處置",
-            "level": "20分盤",
-            "end_date": "115/11/27",
-            "countdown": 2,
-            "price": 176.0,
-            "change": -4.61
         },
         {
             "market": "上市",
@@ -377,6 +364,32 @@
             "countdown": 6,
             "price": 58.4,
             "change": -9.88
+        },
+        {
+            "market": "上市",
+            "code": "3532",
+            "name": "台勝科",
+            "publish_date": "*115/11/25",
+            "period": "115/11/26～115/12/02",
+            "reason": "第二次處置",
+            "level": "20分盤",
+            "end_date": "115/12/02",
+            "countdown": 7,
+            "price": 176.0,
+            "change": -4.61
+        },
+        {
+            "market": "上市",
+            "code": "3593",
+            "name": "力銘",
+            "publish_date": "*115/11/25",
+            "period": "115/11/26～115/12/02",
+            "reason": "人工管制撮合",
+            "level": "45分盤",
+            "end_date": "115/12/02",
+            "countdown": 7,
+            "price": 5.1,
+            "change": -9.89
         }
     ],
     "exited_stocks": [
