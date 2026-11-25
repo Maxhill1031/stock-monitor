@@ -1,6 +1,19 @@
 {
-    "update_time": "2026-11-25 23:19:04",
+    "update_time": "2026-11-26 04:07:51",
     "disposal_stocks": [
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/11/19",
+            "period": "115/11/20～115/11/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/26",
+            "countdown": 0,
+            "price": 782.0,
+            "change": -9.8
+        },
         {
             "market": "上櫃",
             "code": "4577",
@@ -224,19 +237,6 @@
         },
         {
             "market": "上市",
-            "code": "7610",
-            "name": "聯友金屬-創",
-            "publish_date": "115/11/19",
-            "period": "115/11/20～115/11/26",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/26",
-            "countdown": 1,
-            "price": 782.0,
-            "change": -9.8
-        },
-        {
-            "market": "上市",
             "code": "2305",
             "name": "全友",
             "publish_date": "115/11/20",
@@ -244,7 +244,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/27",
-            "countdown": 2,
+            "countdown": 1,
             "price": 29.7,
             "change": -8.47
         },
@@ -257,7 +257,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 4170.0,
             "change": 2.96
         },
@@ -270,7 +270,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 33.35,
             "change": -9.99
         },
@@ -283,7 +283,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 38.5,
             "change": -5.52
         },
@@ -296,7 +296,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 188.5,
             "change": -6.91
         },
@@ -309,7 +309,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 273.5,
             "change": -9.14
         },
@@ -322,7 +322,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 244.5,
             "change": -9.94
         },
@@ -335,7 +335,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 5,
+            "countdown": 4,
             "price": 870.0,
             "change": -7.74
         },
@@ -348,7 +348,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/01",
-            "countdown": 6,
+            "countdown": 5,
             "price": 5070.0,
             "change": -9.95
         },
@@ -361,7 +361,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/01",
-            "countdown": 6,
+            "countdown": 5,
             "price": 58.4,
             "change": -9.88
         },
@@ -369,12 +369,12 @@
             "market": "上市",
             "code": "3532",
             "name": "台勝科",
-            "publish_date": "*115/11/25",
+            "publish_date": "115/11/25",
             "period": "115/11/26～115/12/02",
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/12/02",
-            "countdown": 7,
+            "countdown": 6,
             "price": 176.0,
             "change": -4.61
         },
@@ -382,12 +382,12 @@
             "market": "上市",
             "code": "3593",
             "name": "力銘",
-            "publish_date": "*115/11/25",
+            "publish_date": "115/11/25",
             "period": "115/11/26～115/12/02",
             "reason": "人工管制撮合",
             "level": "45分盤",
             "end_date": "115/12/02",
-            "countdown": 7,
+            "countdown": 6,
             "price": 5.1,
             "change": -9.89
         }
