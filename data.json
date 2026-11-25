@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-25 13:15:05",
+    "update_time": "2026-11-25 17:44:08",
     "disposal_stocks": [
         {
             "market": "上櫃",
@@ -24,8 +24,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 435.0,
-            "change": -9.66
+            "price": 433.5,
+            "change": -9.97
         },
         {
             "market": "上櫃",
@@ -37,8 +37,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 12.2,
-            "change": -9.29
+            "price": 12.9,
+            "change": -4.09
         },
         {
             "market": "上櫃",
@@ -50,8 +50,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 71.5,
-            "change": -1.11
+            "price": 72.3,
+            "change": 0.0
         },
         {
             "market": "上櫃",
@@ -63,8 +63,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 1450.0,
-            "change": -4.92
+            "price": 1420.0,
+            "change": -6.89
         },
         {
             "market": "上櫃",
@@ -102,8 +102,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 245.5,
-            "change": -9.74
+            "price": 245.0,
+            "change": -9.93
         },
         {
             "market": "上櫃",
@@ -128,8 +128,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 77.4,
-            "change": -9.79
+            "price": 77.3,
+            "change": -9.91
         },
         {
             "market": "上櫃",
@@ -167,8 +167,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 43.3,
-            "change": -7.58
+            "price": 42.2,
+            "change": -9.93
         },
         {
             "market": "上櫃",
@@ -180,8 +180,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 19.9,
-            "change": -7.23
+            "price": 19.65,
+            "change": -8.39
         },
         {
             "market": "上櫃",
@@ -198,32 +198,6 @@
         },
         {
             "market": "上櫃",
-            "code": "4174",
-            "name": "浩鼎",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 67.1,
-            "change": -1.03
-        },
-        {
-            "market": "上櫃",
-            "code": "6140",
-            "name": "訊達",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 32.7,
-            "change": 9.92
-        },
-        {
-            "market": "上櫃",
             "code": "6697",
             "name": "東捷資訊",
             "publish_date": "",
@@ -232,34 +206,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 53.5,
-            "change": -6.79
-        },
-        {
-            "market": "上櫃",
-            "code": "7717",
-            "name": "萊德光電-KY",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 463.5,
-            "change": -9.3
-        },
-        {
-            "market": "上櫃",
-            "code": "8084",
-            "name": "巨虹",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": "N/A",
-            "change": "N/A"
+            "price": 53.0,
+            "change": -7.67
         },
         {
             "market": "上櫃",
@@ -271,8 +219,8 @@
             "level": "5分盤",
             "end_date": "日期未抓取",
             "countdown": 0,
-            "price": 125.5,
-            "change": -9.06
+            "price": 125.0,
+            "change": -9.42
         },
         {
             "market": "上市",
@@ -284,8 +232,8 @@
             "level": "5分盤",
             "end_date": "115/11/26",
             "countdown": 1,
-            "price": 790.0,
-            "change": -8.88
+            "price": 782.0,
+            "change": -9.8
         },
         {
             "market": "上市",
@@ -297,8 +245,8 @@
             "level": "5分盤",
             "end_date": "115/11/27",
             "countdown": 2,
-            "price": 29.95,
-            "change": -7.7
+            "price": 29.7,
+            "change": -8.47
         },
         {
             "market": "上市",
@@ -310,8 +258,8 @@
             "level": "20分盤",
             "end_date": "115/11/27",
             "countdown": 2,
-            "price": 170.0,
-            "change": -7.86
+            "price": 176.0,
+            "change": -4.61
         },
         {
             "market": "上市",
@@ -323,8 +271,8 @@
             "level": "5分盤",
             "end_date": "115/11/30",
             "countdown": 5,
-            "price": 4105.0,
-            "change": 1.36
+            "price": 4170.0,
+            "change": 2.96
         },
         {
             "market": "上市",
@@ -349,8 +297,8 @@
             "level": "5分盤",
             "end_date": "115/11/30",
             "countdown": 5,
-            "price": 38.85,
-            "change": -4.66
+            "price": 38.5,
+            "change": -5.52
         },
         {
             "market": "上市",
@@ -375,8 +323,8 @@
             "level": "5分盤",
             "end_date": "115/11/30",
             "countdown": 5,
-            "price": 277.5,
-            "change": -7.81
+            "price": 273.5,
+            "change": -9.14
         },
         {
             "market": "上市",
@@ -432,6 +380,62 @@
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上櫃",
+            "code": "4174",
+            "name": "浩鼎",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 66.2,
+            "change": -2.36,
+            "exit_date": "2026-11-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "6140",
+            "name": "訊達",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 32.7,
+            "change": 9.92,
+            "exit_date": "2026-11-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "7717",
+            "name": "萊德光電-KY",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 460.0,
+            "change": -9.98,
+            "exit_date": "2026-11-25"
+        },
+        {
+            "market": "上櫃",
+            "code": "8084",
+            "name": "巨虹",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": "N/A",
+            "change": "N/A",
+            "exit_date": "2026-11-25"
+        },
         {
             "market": "上櫃",
             "code": "6751",
