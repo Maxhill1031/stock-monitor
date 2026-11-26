@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-26 17:21:31",
+    "update_time": "2026-11-26 18:33:07",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,6 +13,32 @@
             "countdown": 0,
             "price": 860.0,
             "change": 9.97
+        },
+        {
+            "market": "上櫃",
+            "code": "3259",
+            "name": "鑫創",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 5.08,
+            "change": -9.93
+        },
+        {
+            "market": "上櫃",
+            "code": "7856",
+            "name": "漢測",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 1580.0,
+            "change": 0.96
         },
         {
             "market": "上櫃",
@@ -143,19 +169,6 @@
             "countdown": 0,
             "price": 269.5,
             "change": 10.0
-        },
-        {
-            "market": "上櫃",
-            "code": "7856",
-            "name": "漢測",
-            "publish_date": "",
-            "period": "日期未抓取",
-            "reason": "",
-            "level": "5分盤",
-            "end_date": "日期未抓取",
-            "countdown": 0,
-            "price": 1580.0,
-            "change": 0.96
         },
         {
             "market": "上櫃",
@@ -377,6 +390,19 @@
             "countdown": 6,
             "price": 4.59,
             "change": -10.0
+        },
+        {
+            "market": "上市",
+            "code": "7827",
+            "name": "漢康-KY創",
+            "publish_date": "*115/11/26",
+            "period": "115/11/27～115/12/03",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/12/03",
+            "countdown": 7,
+            "price": 74.7,
+            "change": -9.89
         }
     ],
     "exited_stocks": [
