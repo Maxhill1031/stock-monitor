@@ -1,18 +1,18 @@
 {
-    "update_time": "2026-11-26 22:45:35",
+    "update_time": "2026-11-27 03:47:37",
     "disposal_stocks": [
         {
             "market": "上市",
-            "code": "7610",
-            "name": "聯友金屬-創",
-            "publish_date": "115/11/19",
-            "period": "115/11/20～115/11/26",
+            "code": "2305",
+            "name": "全友",
+            "publish_date": "115/11/20",
+            "period": "115/11/23～115/11/27",
             "reason": "第一次處置",
             "level": "5分盤",
-            "end_date": "115/11/26",
+            "end_date": "115/11/27",
             "countdown": 0,
-            "price": 860.0,
-            "change": 9.97
+            "price": 31.2,
+            "change": 5.05
         },
         {
             "market": "上櫃",
@@ -237,19 +237,6 @@
         },
         {
             "market": "上市",
-            "code": "2305",
-            "name": "全友",
-            "publish_date": "115/11/20",
-            "period": "115/11/23～115/11/27",
-            "reason": "第一次處置",
-            "level": "5分盤",
-            "end_date": "115/11/27",
-            "countdown": 1,
-            "price": 31.2,
-            "change": 5.05
-        },
-        {
-            "market": "上市",
             "code": "3653",
             "name": "健策",
             "publish_date": "115/11/23",
@@ -257,7 +244,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 4585.0,
             "change": 9.95
         },
@@ -270,7 +257,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 33.0,
             "change": -1.05
         },
@@ -283,7 +270,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 42.15,
             "change": 9.48
         },
@@ -296,7 +283,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 201.0,
             "change": 6.63
         },
@@ -309,7 +296,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 293.0,
             "change": 7.13
         },
@@ -322,7 +309,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 261.5,
             "change": 6.95
         },
@@ -335,7 +322,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/11/30",
-            "countdown": 4,
+            "countdown": 3,
             "price": 956.0,
             "change": 9.89
         },
@@ -348,7 +335,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/01",
-            "countdown": 5,
+            "countdown": 4,
             "price": 5390.0,
             "change": 6.31
         },
@@ -361,7 +348,7 @@
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/01",
-            "countdown": 5,
+            "countdown": 4,
             "price": 62.7,
             "change": 7.36
         },
@@ -374,7 +361,7 @@
             "reason": "第二次處置",
             "level": "20分盤",
             "end_date": "115/12/02",
-            "countdown": 6,
+            "countdown": 5,
             "price": 184.5,
             "change": 4.83
         },
@@ -387,7 +374,7 @@
             "reason": "人工管制撮合",
             "level": "45分盤",
             "end_date": "115/12/02",
-            "countdown": 6,
+            "countdown": 5,
             "price": 4.59,
             "change": -10.0
         },
@@ -395,17 +382,31 @@
             "market": "上市",
             "code": "7827",
             "name": "漢康-KY創",
-            "publish_date": "*115/11/26",
+            "publish_date": "115/11/26",
             "period": "115/11/27～115/12/03",
             "reason": "第一次處置",
             "level": "5分盤",
             "end_date": "115/12/03",
-            "countdown": 7,
+            "countdown": 6,
             "price": 74.7,
             "change": -9.89
         }
     ],
     "exited_stocks": [
+        {
+            "market": "上市",
+            "code": "7610",
+            "name": "聯友金屬-創",
+            "publish_date": "115/11/19",
+            "period": "115/11/20～115/11/26",
+            "reason": "第一次處置",
+            "level": "5分盤",
+            "end_date": "115/11/26",
+            "countdown": 0,
+            "price": 860.0,
+            "change": 9.97,
+            "exit_date": "2026-11-27"
+        },
         {
             "market": "上櫃",
             "code": "3441",
