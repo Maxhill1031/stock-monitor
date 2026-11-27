@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-11-27 17:35:27",
+    "update_time": "2026-11-27 18:37:07",
     "disposal_stocks": [
         {
             "market": "上市",
@@ -13,6 +13,19 @@
             "countdown": 0,
             "price": 30.05,
             "change": -3.69
+        },
+        {
+            "market": "上櫃",
+            "code": "5013",
+            "name": "強新",
+            "publish_date": "",
+            "period": "日期未抓取",
+            "reason": "",
+            "level": "5分盤",
+            "end_date": "日期未抓取",
+            "countdown": 0,
+            "price": 40.95,
+            "change": -7.77
         },
         {
             "market": "上櫃",
